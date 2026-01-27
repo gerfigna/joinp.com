@@ -97,6 +97,18 @@
             50% { opacity: 1; }
             100% { opacity: 0.4; }
         }
+        footer a.contact {
+            color: var(--fg);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease, color 0.2s ease;
+        }
+
+        footer a.contact:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
     </style>
 </head>
 <body>
@@ -104,14 +116,16 @@
     <h1>joinp<span class="dot">.</span></h1>
 
     <p>
-        Estamos construyendo algo nuevo.<br />
-        Muy pronto.
+        Podríamos construir algo nuevo
     </p>
 
     <div class="divider"></div>
 
     <footer>
-        © 2026 joinp.com
+        © 2026 joinp.com ·
+        <a href="mailto:german@joinp.com" class="contact">
+            german@joinp.com
+        </a>
     </footer>
 </main>
 </body>
