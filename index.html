@@ -123,10 +123,20 @@
 
     <footer>
         © 2026 joinp.com ·
-        <a href="mailto:german@joinp.com" class="contact">
-            german@joinp.com
+        <a href="#" id="contactEmail" class="contact">
         </a>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const user = 'german';
+            const domain = 'joinp.com';
+            const emailLink = document.getElementById('contactEmail');
+            if (emailLink) {
+                emailLink.href = 'mailto:' + user + '@' + domain;
+                emailLink.textContent = user + '@' + domain;
+            }
+        });
+    </script>
 </main>
 </body>
 </html>
