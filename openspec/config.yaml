@@ -1,0 +1,20 @@
+schema: spec-driven
+
+context: |
+  Repo: joinp.com — GitHub Pages monorepo con múltiples proyectos bajo el mismo dominio.
+
+  Estructura:
+  - / (raíz): index.html ya existente. Página de presentación del dominio: está en venta o abierto a nuevos proyectos. HTML/CSS/JS vanilla, sin build step.
+  - /dgt-matriculaciones-moto/: proyecto de análisis estadístico de matriculaciones de motos en España (datos DGT). Proyecto independiente dentro del mismo repo.
+      Fuente de datos: ficheros CSV mensuales en /dgt-matriculaciones-moto/{año}/{mes}.csv
+      Ejemplo: /dgt-matriculaciones-moto/2026/02.csv → matriculaciones de febrero 2026.
+      Los CSV son la única fuente de datos; no hay backend ni API externa.
+
+  Deployment: GitHub Pages, rama main. Ficheros estáticos servidos directamente.
+  No hay framework ni bundler — todo es HTML, CSS y JS vanilla.
+  El directorio de cada proyecto es autocontenido (su propio index.html, assets, etc.).
+
+rules:
+  tasks:
+    - Indica siempre en qué directorio deben crearse o modificarse los ficheros
+    - Cada proyecto debe ser autocontenido en su subdirectorio
