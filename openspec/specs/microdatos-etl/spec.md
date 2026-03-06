@@ -73,6 +73,22 @@ This temporary workspace SHALL be non-persistent between workflow runs.
 - THEN ZIP and TXT artifacts from previous runs are not available
 - AND the run does not depend on persisted temporary artifacts
 
+### Requirement: Record filtering rules
+
+The system SHALL discard records that do not satisfy all these conditions:
+`COD_TIPO === "50"`, `CLAVE_TRAMITE === "1"`, `IND_NUEVO_USADO === "N"`, `FABRICANTE_ITV !== "ND"`.
+The system SHALL apply these filtering rules at the earliest feasible stage after parsing each record, before downstream transformations and aggregations.
+
+#### Scenario: Record discarded by rules
+
+- WHEN a record fails any of the four rules
+- THEN the record is not part of the final output
+
+#### Scenario: Valid record
+
+- WHEN a record satisfies all four rules
+- THEN the record can be included in the resulting dataset with the target fields
+
 ### Requirement: Target field extraction
 
 The system SHALL extract the following fields from each record:
@@ -150,25 +166,9 @@ For each month selected for recalculation, the system SHALL use all existing dai
 - WHEN there are no new days for a specific month in the run
 - THEN that month's monthly CSV is not recalculated
 
-### Requirement: Record filtering rules
-
-The system SHALL discard records that do not satisfy all these conditions:
-`COD_TIPO === "50"`, `CLAVE_TRAMITE === "1"`, `IND_NUEVO_USADO === "N"`, `FABRICANTE_ITV !== "ND"`.
-The system SHALL apply these filtering rules at the earliest feasible stage after parsing each record, before downstream transformations and aggregations.
-
-#### Scenario: Record discarded by rules
-
-- WHEN a record fails any of the four rules
-- THEN the record is not part of the final output
-
-#### Scenario: Valid record
-
-- WHEN a record satisfies all four rules
-- THEN the record can be included in the resulting dataset with the target fields
-
 ### Requirement: ETL orchestration across multiple GitHub jobs
 
-The system MAY split end-to-end ETL execution into multiple GitHub Actions jobs.
+The system SHALL support splitting end-to-end ETL execution into multiple GitHub Actions jobs.
 If split, job dependencies SHALL preserve the required execution order and data consistency.
 
 #### Scenario: Multi-job ETL workflow
