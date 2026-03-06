@@ -91,25 +91,31 @@ function getField(line, name) {
 }
 
 // Model normalization rules
-const YAMAHA_MAP = {
-  'GPD125D-A': 'NMAX125',
-  'GPD125-A':  'NMAX125',
-  'YP125R-DA': 'XMAX125',
-  'YP125RA':   'XMAX125',
+const BRAND_EXACT = {
+  YAMAHA:  { 'GPD125D-A': 'NMAX125', 'GPD125-A': 'NMAX125', 'YP125R-DA': 'XMAX125', 'YP125RA': 'XMAX125', 'WR125-A': 'WR125' },
+  HONDA:   { 'WW125A': 'PCX125', 'WW125S': 'PCX125', 'FSH125': 'SH125', 'SH125AD': 'SH125', 'NSS125AD': 'FORZA125' },
+  APRILIA: { 'RS 660 FACTORY': 'RS 660', 'RSV4 FACTORY': 'RSV4', 'TUONO V4 FACTORY': 'TUONO V4', 'TUAREG 660 RALLY': 'TUAREG 660' },
+  BENELLI: { 'BKX 125 S': 'BN125', 'TRK 702 35KW': 'TRK 702', 'TRK 702X': 'TRK 702', 'TRK 702X 35KW': 'TRK 702' },
+  BMW:     { 'CE04': 'CE 04', 'F 900 GS ADVENTURE': 'F 900 GS', 'F 900 XR A2': 'F 900 XR', 'F 900 R A2': 'F 900 R' },
 };
 
-const HONDA_MAP = {
-  'WW125A':   'PCX125',
-  'WW125S':   'PCX125',
-  'FSH125':   'SH125',
-  'SH125AD':  'SH125',
-  'NSS125AD': 'FORZA125',
+const BRAND_PREFIX = {
+  SYM:     [['SYMPHONY 125', 'SYMPHONY 125']],
+  YAMAHA:  [['MTT690', 'MT-07'], ['MTT890', 'MT-09'], ['MWS125', 'TRICITY 125']],
+  BMW:     [['K 1600 ', 'K 1600'], ['M 1000 ', 'M 1000'], ['R 12 ', 'R 12'], ['R 1300 ', 'R 1300'], ['R 18 ', 'R 18'], ['S 1000 ', 'S 1000']],
+  BRIXTON: [['CROSSFIRE 500 ', 'CROSSFIRE 500']],
+  DUCATI:  [['MULTISTRADA V2 ', 'MULTISTRADA V2'], ['MULTISTRADA V4 ', 'MULTISTRADA V4'], ['PANIGALE V2 ', 'PANIGALE V2'], ['PANIGALE V4 ', 'PANIGALE V4'], ['STREETFIGHTER ', 'STREETFIGHTER']],
+  HONDA:   [['CB650RA', 'CB650RA'], ['CBR1000', 'CBR1000'], ['CBR500', 'CBR500'], ['CMX1100', 'CMX1100'], ['CRF1100', 'CRF1100'], ['NT1100', 'NT1100']],
+  KTM:     [['KTM 250 EXC', 'KTM 250 EXC'], ['KTM 300 EXC', 'KTM 300 EXC']],
+  KYMCO:   [['AGILITY S ', 'AGILITY S']],
 };
 
 function normalizeModel(marca, modelo) {
-  if (marca === 'YAMAHA' && YAMAHA_MAP[modelo]) return YAMAHA_MAP[modelo];
-  if (marca === 'HONDA'  && HONDA_MAP[modelo])  return HONDA_MAP[modelo];
-  if (marca === 'SYM' && modelo.startsWith('SYMPHONY 125')) return 'SYMPHONY 125';
+  const exact = BRAND_EXACT[marca]?.[modelo];
+  if (exact) return exact;
+  for (const [prefix, canonical] of (BRAND_PREFIX[marca] || [])) {
+    if (modelo.startsWith(prefix)) return canonical;
+  }
   return modelo;
 }
 
