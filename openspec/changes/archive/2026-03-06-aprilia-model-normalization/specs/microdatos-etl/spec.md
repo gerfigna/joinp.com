@@ -8,9 +8,9 @@ Normalization applies two types of rules, evaluated in order: exact match first,
 **Exact rules** (full model string match → canonical):
 
 - For `YAMAHA`:
-  `GPD125D-A -> NMAX125`, `GPD125-A -> NMAX125`, `YP125R-DA -> XMAX125`, `YP125RA -> XMAX125`, `WR125-A -> WR125`
+  `GPD125D-A -> NMAX125`, `GPD125-A -> NMAX125`, `YP125R-DA -> XMAX125`, `YP125RA -> XMAX125`, `WR125-A -> WR125`, `LCG125 -> RayZR 125`
 - For `HONDA`:
-  `WW125A -> PCX125`, `WW125S -> PCX125`, `FSH125 -> SH125`, `SH125AD -> SH125`, `NSS125AD -> FORZA125`
+  `WW125A -> PCX125`, `WW125S -> PCX125`, `FSH125 -> SH125`, `SH125AD -> SH125`, `NSS125AD -> FORZA125`, `XL750  -> XL750 Transalp`
 - For `APRILIA`:
   `RS 660 FACTORY -> RS 660`, `RSV4 FACTORY -> RSV4`, `TUONO V4 FACTORY -> TUONO V4`, `TUAREG 660 RALLY -> TUAREG 660`
 - For `BENELLI`:
@@ -21,8 +21,9 @@ Normalization applies two types of rules, evaluated in order: exact match first,
 **Prefix rules** (model starts with prefix → canonical):
 
 - For `YAMAHA`:
-  prefix `MTT690` → `MT-07`,
+  prefix `MTN690` → `MT-07`,
   prefix `MTT890` → `MT-09`,
+  prefix `XTZ690` → `XTZ 700 Tenere`,
   prefix `MWS125` → `TRICITY 125`
 - For `SYM`: prefix `SYMPHONY 125` → `SYMPHONY 125`
 - For `BMW`:

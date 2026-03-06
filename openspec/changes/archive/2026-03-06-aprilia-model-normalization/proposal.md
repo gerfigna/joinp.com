@@ -32,9 +32,10 @@ Los datos brutos de DGT registran variantes de modelos (ediciones de fábrica, s
 
 | Marca | Prefijo | Canónico |
 |---|---|---|
-| YAMAHA | `MTT690` | MT-07 |
+| YAMAHA | `MTN690` | MT-07 |
 | YAMAHA | `MTT890` | MT-09 |
 | YAMAHA | `MWS125` | TRICITY 125 |
+| YAMAHA | `XTZ690` | XTZ 700 Tenere |
 | BMW | `K 1600 ` | K 1600 |
 | BMW | `M 1000 ` | M 1000 |
 | BMW | `R 12 ` | R 12 |
