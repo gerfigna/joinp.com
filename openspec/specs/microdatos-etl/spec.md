@@ -56,6 +56,23 @@ The TXT SHALL be interpreted as fixed-width character-column records, following 
 - THEN the system decompresses it
 - AND locates and reads the contained TXT as fixed-width records
 
+### Requirement: Ephemeral temporary storage for ZIP and TXT artifacts
+
+The system SHALL store downloaded ZIP files and extracted TXT files only in a temporary workspace.
+This temporary workspace SHALL be non-persistent between workflow runs.
+
+#### Scenario: Temporary artifact placement
+
+- WHEN a ZIP file is downloaded and its TXT is extracted
+- THEN both artifacts are written to a temporary directory
+- AND they are not written under `/microdatos-etl/data/`
+
+#### Scenario: No artifact persistence between runs
+
+- WHEN a new workflow run starts
+- THEN ZIP and TXT artifacts from previous runs are not available
+- AND the run does not depend on persisted temporary artifacts
+
 ### Requirement: Target field extraction
 
 The system SHALL extract the following fields from each record:
@@ -120,11 +137,13 @@ The monthly output SHALL be stored at:
 ### Requirement: Selective monthly recalculation
 
 On each run, the system SHALL recalculate only months for which new data was incorporated during that same run.
+For each month selected for recalculation, the system SHALL use all existing daily CSV files in that month as input.
 
 #### Scenario: Month with new data
 
 - WHEN at least one new day from a specific month is downloaded and processed in the run
 - THEN `acumulado-marca-modelo.csv` for that month is recalculated
+- AND the recalculation reads every existing daily file `/microdatos-etl/data/YYYY/MM/DD.csv` for that month
 
 #### Scenario: Month without new data
 
@@ -135,6 +154,7 @@ On each run, the system SHALL recalculate only months for which new data was inc
 
 The system SHALL discard records that do not satisfy all these conditions:
 `COD_TIPO === "50"`, `CLAVE_TRAMITE === "1"`, `IND_NUEVO_USADO === "N"`, `FABRICANTE_ITV !== "ND"`.
+The system SHALL apply these filtering rules at the earliest feasible stage after parsing each record, before downstream transformations and aggregations.
 
 #### Scenario: Record discarded by rules
 
@@ -145,6 +165,31 @@ The system SHALL discard records that do not satisfy all these conditions:
 
 - WHEN a record satisfies all four rules
 - THEN the record can be included in the resulting dataset with the target fields
+
+### Requirement: ETL orchestration across multiple GitHub jobs
+
+The system MAY split end-to-end ETL execution into multiple GitHub Actions jobs.
+If split, job dependencies SHALL preserve the required execution order and data consistency.
+
+#### Scenario: Multi-job ETL workflow
+
+- WHEN ETL is implemented as multiple jobs
+- THEN each downstream job waits for required upstream jobs
+- AND the final outputs are equivalent to a single-job execution
+
+### Requirement: Commit generated data artifacts at end of run
+
+At the end of a successful ETL run, the workflow SHALL commit changes under `/microdatos-etl/data/`, including daily extracts and monthly aggregates.
+
+#### Scenario: Data changes detected
+
+- WHEN the run produces additions or modifications in `/microdatos-etl/data/`
+- THEN the workflow creates a commit with those data changes
+
+#### Scenario: No data changes detected
+
+- WHEN no files under `/microdatos-etl/data/` changed
+- THEN no data commit is created
 
 ### Requirement: Script location
 
