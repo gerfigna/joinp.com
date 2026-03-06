@@ -9,6 +9,7 @@ context: |
       Fuente de datos: ficheros CSV mensuales en /dgt-matriculaciones-moto/{año}/{mes}.csv
       Ejemplo: /dgt-matriculaciones-moto/2026/02.csv → matriculaciones de febrero 2026.
       Los CSV son la única fuente de datos; no hay backend ni API externa.
+  - /microdatos-etl/: carpeta con un script JS programado para ejecutarse cada mañana y extraer los microdatos desde la web de la DGT de España.
 
   Deployment: GitHub Pages, rama main. Ficheros estáticos servidos directamente.
   No hay framework ni bundler — todo es HTML, CSS y JS vanilla.
