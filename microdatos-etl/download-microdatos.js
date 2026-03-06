@@ -173,6 +173,10 @@ function monthlyPath(year, month) {
   return path.join(DATA_DIR, year, month, 'acumulado-marca-modelo.csv');
 }
 
+function brandMonthlyPath(year, month) {
+  return path.join(DATA_DIR, year, month, 'acumulado-marca.csv');
+}
+
 function extractTxtFromZip(zipBuf) {
   const zip = new AdmZip(zipBuf);
   const entry = zip.getEntries().find((e) => /\.txt$/i.test(e.entryName));
@@ -239,6 +243,14 @@ function recalculateMonthly(year, month) {
   const lines = ['MARCA_ITV,MODELO_ITV,COUNT'];
   for (const r of rows) lines.push(`"${r.marca}","${r.modelo}",${r.count}`);
   fs.writeFileSync(monthlyPath(year, month), lines.join('\n') + '\n');
+
+  const brandCounts = new Map();
+  for (const r of rows) brandCounts.set(r.marca, (brandCounts.get(r.marca) || 0) + r.count);
+  const brandLines = ['MARCA_ITV,COUNT'];
+  for (const [marca, count] of Array.from(brandCounts.entries()).sort((a, b) => a[0].localeCompare(b[0])))
+    brandLines.push(`"${marca}",${count}`);
+  fs.writeFileSync(brandMonthlyPath(year, month), brandLines.join('\n') + '\n');
+
   console.log(`  Recalculated monthly: ${year}/${month}`);
 }
 
