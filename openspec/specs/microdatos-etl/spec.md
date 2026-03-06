@@ -1,156 +1,156 @@
-# Microdatos ETL
+# Microdata ETL
 
 ## Purpose
 
-Automatizar la descarga diaria de microdatos de matriculaciones desde DGT.
+Automate the daily download of vehicle registration microdata from DGT.
 
 ## Requirements
 
-### Requirement: Ejecucion diaria programada
+### Requirement: Scheduled daily execution
 
-El sistema SHALL ejecutar una tarea programada diaria a las 08:00 GMT+0 en GitHub Actions.
+The system SHALL run a daily scheduled job at 08:00 GMT+0 in GitHub Actions.
 
-#### Scenario: Ejecucion programada
+#### Scenario: Scheduled execution
 
-- WHEN llega la hora 08:00 GMT+0
-- THEN se ejecuta un workflow de GitHub Actions
-- AND se inicia el proceso ETL de microdatos
+- WHEN the time reaches 08:00 GMT+0
+- THEN a GitHub Actions workflow runs
+- AND the microdata ETL process starts
 
-### Requirement: Descarga y parseo del listado HTML
+### Requirement: HTML listing download and parsing
 
-El sistema SHALL descargar el HTML de:
+The system SHALL download the HTML from:
 `https://www.dgt.es/menusecundario/dgt-en-cifras/matraba-listados/matriculaciones-automoviles-diario.html`.
-Luego SHALL interpretar el listado dentro de `ul#listado` para extraer enlaces `.zip` de microdatos.
+It SHALL then parse the listing inside `ul#listado` to extract `.zip` microdata links.
 
-#### Scenario: Extraccion de enlaces zip
+#### Scenario: ZIP link extraction
 
-- WHEN el HTML contiene elementos `<a>` dentro de `#listado`
-- THEN el sistema obtiene las URLs `https://www.dgt.es/microdatos/.../export_mat_YYYYMMDD.zip`
-- AND descarta enlaces no zip o duplicados
+- WHEN the HTML contains `<a>` elements inside `#listado`
+- THEN the system obtains URLs `https://www.dgt.es/microdatos/.../export_mat_YYYYMMDD.zip`
+- AND ignores non-ZIP or duplicate links
 
-### Requirement: Descarga incremental por fecha
+### Requirement: Incremental download by date
 
-El sistema SHALL descargar solo los ficheros ZIP de fechas cuyo CSV final no exista ya en `/microdatos-etl/data/YYYY/MM/DD.csv`.
+The system SHALL download only ZIP files whose final CSV does not already exist in `/microdatos-etl/data/YYYY/MM/DD.csv`.
 
-#### Scenario: CSV de fecha ya existente
+#### Scenario: CSV for date already exists
 
-- WHEN existe `/microdatos-etl/data/YYYY/MM/DD.csv` para una fecha concreta
-- THEN el sistema no descarga el `export_mat_YYYYMMDD.zip` de esa fecha
+- WHEN `/microdatos-etl/data/YYYY/MM/DD.csv` exists for a given date
+- THEN the system does not download `export_mat_YYYYMMDD.zip` for that date
 
-#### Scenario: CSV de fecha inexistente
+#### Scenario: CSV for date does not exist
 
-- WHEN no existe `/microdatos-etl/data/YYYY/MM/DD.csv` para una fecha concreta
-- THEN el sistema descarga el `export_mat_YYYYMMDD.zip` de esa fecha
-- AND procesa su contenido para generar el CSV de salida
+- WHEN `/microdatos-etl/data/YYYY/MM/DD.csv` does not exist for a given date
+- THEN the system downloads `export_mat_YYYYMMDD.zip` for that date
+- AND processes its contents to generate the output CSV
 
-### Requirement: Descompresión y lectura del contenido
+### Requirement: Decompression and content reading
 
-El sistema SHALL tratar los ficheros descargados como ZIP, descomprimirlos y leer el fichero TXT contenido.
-El TXT SHALL interpretarse como registros de columnas de ancho fijo en caracteres, siguiendo esta estructura de campos y longitudes:
+The system SHALL treat downloaded files as ZIP archives, decompress them, and read the contained TXT file.
+The TXT SHALL be interpreted as fixed-width character-column records, following this field structure and length definition:
 
 `FEC_MATRICULA(8), COD_CLASE_MAT(1), FEC_TRAMITACION(8), MARCA_ITV(30), MODELO_ITV(22), COD_PROCEDENCIA_ITV(1), BASTIDOR_ITV(21), COD_TIPO(2), COD_PROPULSION_ITV(1), CILINDRADA_ITV(5), POTENCIA_ITV(6), TARA(6), PESO_MAX(6), NUM_PLAZAS(3), IND_PRECINTO(2), IND_EMBARGO(2), NUM_TRANSMISIONES(2), NUM_TITULARES(2), LOCALIDAD_VEHICULO(24), COD_PROVINCIA_VEH(2), COD_PROVINCIA_MAT(2), CLAVE_TRAMITE(1), FEC_TRAMITE(8), CODIGO_POSTAL(5), FEC_PRIM_MATRICULACION(8), IND_NUEVO_USADO(1), PERSONA_FISICA_JURIDICA(1), CODIGO_ITV(9), SERVICIO(3), COD_MUNICIPIO_INE_VEH(5), MUNICIPIO(30), KW_ITV(7), NUM_PLAZAS_MAX(3), CO2_ITV(5), RENTING(1), COD_TUTELA(1), COD_POSESION(1), IND_BAJA_DEF(1), IND_BAJA_TEMP(1), IND_SUSTRACCION(1), BAJA_TELEMATICA(11), TIPO_ITV(25), VARIANTE_ITV(25), VERSION_ITV(35), FABRICANTE_ITV(70), MASA_ORDEN_MARCHA_ITV(6), MASA_MAXIMA_TECNICA_ITV(6), CATEGORIA_HOMOLOGACION_EUROPEA_ITV(4), CARROCERIA(4), PLAZAS_PIE(3), NIVEL_EMISIONES_EURO_ITV(8), CONSUMO_WH_KM_ITV(4), CLASIFICACION_REGLAMENTO_VEHICULOS_ITV(4), CATEGORIA_VEHICULO_ELECTRICO(4), AUTONOMIA_VEHICULO_ELECTRICO(6), MARCA_VEHICULO_BASE(30), FABRICANTE_VEHICULO_BASE(50), TIPO_VEHICULO_BASE(35), VARIANTE_VEHICULO_BASE(25), VERSION_VEHICULO_BASE(35), DISTANCIA_EJES_12_ITV(4), VIA_ANTERIOR_ITV(4), VIA_POSTERIOR_ITV(4), TIPO_ALIMENTACION_ITV(1), CONTRASENA_HOMOLOGACION_ITV(25), ECO_INNOVACION_ITV(1), REDUCCION_ECO_ITV(4), CODIGO_ECO_ITV(25), FEC_PROCESO(8)`
 
-#### Scenario: ZIP procesado correctamente
+#### Scenario: ZIP processed successfully
 
-- WHEN existe un `export_mat_YYYYMMDD.zip` nuevo
-- THEN el sistema lo descomprime
-- AND localiza y lee el TXT contenido como registros de ancho fijo
+- WHEN a new `export_mat_YYYYMMDD.zip` exists
+- THEN the system decompresses it
+- AND locates and reads the contained TXT as fixed-width records
 
-### Requirement: Extracción de campos objetivo
+### Requirement: Target field extraction
 
-El sistema SHALL extraer de cada registro los campos:
+The system SHALL extract the following fields from each record:
 `FEC_MATRICULA`, `COD_CLASE_MAT`, `FEC_TRAMITACION`, `MARCA_ITV`, `MODELO_ITV`.
 
-#### Scenario: Extracción por registro
+#### Scenario: Per-record extraction
 
-- WHEN un registro es parseado correctamente
-- THEN se obtienen los cinco campos objetivo con el valor recortado de espacios laterales
+- WHEN a record is parsed successfully
+- THEN the five target fields are obtained with leading and trailing spaces trimmed
 
-### Requirement: Normalización de modelo por marca
+### Requirement: Model normalization by brand
 
-Durante la extracción, el sistema SHALL aplicar normalización de `MODELO_ITV` según `MARCA_ITV` con estas reglas:
+During extraction, the system SHALL normalize `MODELO_ITV` based on `MARCA_ITV` with these rules:
 
-- Para `YAMAHA`:
+- For `YAMAHA`:
   `GPD125D-A -> NMAX125`, `GPD125-A -> NMAX125`, `YP125R-DA -> XMAX125`, `YP125RA -> XMAX125`
-- Para `SYM`:
-  si `MODELO_ITV` empieza por `SYMPHONY 125`, normalizar a `SYMPHONY 125`
-- Para `HONDA`:
+- For `SYM`:
+  if `MODELO_ITV` starts with `SYMPHONY 125`, normalize to `SYMPHONY 125`
+- For `HONDA`:
   `WW125A -> PCX125`, `WW125S -> PCX125`, `FSH125 -> SH125`, `SH125AD -> SH125`, `NSS125AD -> FORZA125`
 
-#### Scenario: Modelo mapeado
+#### Scenario: Model mapped
 
-- WHEN una fila cumple alguna regla de normalización
-- THEN `MODELO_ITV` se sustituye por el valor canónico definido para su marca
+- WHEN a row matches any normalization rule
+- THEN `MODELO_ITV` is replaced with the canonical value defined for its brand
 
-#### Scenario: Modelo no mapeado
+#### Scenario: Model not mapped
 
-- WHEN una fila no cumple ninguna regla de normalización
-- THEN `MODELO_ITV` conserva su valor original
+- WHEN a row matches no normalization rule
+- THEN `MODELO_ITV` keeps its original value
 
-### Requirement: Generación y almacenamiento CSV
+### Requirement: CSV generation and storage
 
-El sistema SHALL guardar los registros resultantes en formato CSV con una salida por fecha en:
+The system SHALL store resulting records in CSV format with one output per date at:
 `/microdatos-etl/data/YYYY/MM/DD.csv`.
 
-#### Scenario: Escritura de salida por fecha
+#### Scenario: Per-date output write
 
-- WHEN termina el procesamiento de una fecha `YYYYMMDD`
-- THEN se crea el archivo `/microdatos-etl/data/YYYY/MM/DD.csv`
-- AND el CSV contiene las columnas `FEC_MATRICULA,COD_CLASE_MAT,FEC_TRAMITACION,MARCA_ITV,MODELO_ITV`
+- WHEN processing for a date `YYYYMMDD` finishes
+- THEN the file `/microdatos-etl/data/YYYY/MM/DD.csv` is created
+- AND the CSV contains columns `FEC_MATRICULA,COD_CLASE_MAT,FEC_TRAMITACION,MARCA_ITV,MODELO_ITV`
 
-### Requirement: Agregado mensual por marca y modelo
+### Requirement: Monthly aggregation by brand and model
 
-El sistema SHALL mantener un CSV mensual con el acumulado (contador) de combinaciones `MARCA_ITV` y `MODELO_ITV`.
-La salida mensual SHALL guardarse en:
+The system SHALL maintain a monthly CSV with accumulated counts for `MARCA_ITV` and `MODELO_ITV` combinations.
+The monthly output SHALL be stored at:
 `/microdatos-etl/data/YYYY/MM/acumulado-marca-modelo.csv`.
 
-#### Scenario: Estructura del acumulado mensual
+#### Scenario: Monthly aggregation structure
 
-- WHEN se genera el CSV mensual
-- THEN incluye las columnas `MARCA_ITV,MODELO_ITV,COUNT`
-- AND cada fila representa una combinación única `MARCA_ITV` + `MODELO_ITV`
-- AND `COUNT` es el número total de registros de ese mes para esa combinación
+- WHEN the monthly CSV is generated
+- THEN it includes columns `MARCA_ITV,MODELO_ITV,COUNT`
+- AND each row represents a unique `MARCA_ITV` + `MODELO_ITV` combination
+- AND `COUNT` is the total number of records in that month for that combination
 
-#### Scenario: Orden del acumulado mensual
+#### Scenario: Monthly aggregation ordering
 
-- WHEN se escribe el CSV mensual
-- THEN las filas se ordenan alfabéticamente por `MARCA_ITV`
-- AND en caso de empate, por `MODELO_ITV`
+- WHEN the monthly CSV is written
+- THEN rows are sorted alphabetically by `MARCA_ITV`
+- AND in case of ties, by `MODELO_ITV`
 
-### Requirement: Recalculo selectivo de meses
+### Requirement: Selective monthly recalculation
 
-En cada ejecución, el sistema SHALL recalcular solo los meses para los que se hayan incorporado datos nuevos durante esa misma ejecución.
+On each run, the system SHALL recalculate only months for which new data was incorporated during that same run.
 
-#### Scenario: Mes con datos nuevos
+#### Scenario: Month with new data
 
-- WHEN en la ejecución se descarga y procesa al menos un día nuevo de un mes concreto
-- THEN se recalcula `acumulado-marca-modelo.csv` para ese mes
+- WHEN at least one new day from a specific month is downloaded and processed in the run
+- THEN `acumulado-marca-modelo.csv` for that month is recalculated
 
-#### Scenario: Mes sin datos nuevos
+#### Scenario: Month without new data
 
-- WHEN en la ejecución no hay días nuevos para un mes concreto
-- THEN no se recalcula el CSV mensual de ese mes
+- WHEN there are no new days for a specific month in the run
+- THEN that month's monthly CSV is not recalculated
 
-### Requirement: Reglas de filtrado de registros
+### Requirement: Record filtering rules
 
-El sistema SHALL descartar registros que no cumplan todas estas condiciones:
+The system SHALL discard records that do not satisfy all these conditions:
 `COD_TIPO === "50"`, `CLAVE_TRAMITE === "1"`, `IND_NUEVO_USADO === "N"`, `FABRICANTE_ITV !== "ND"`.
 
-#### Scenario: Registro descartado por reglas
+#### Scenario: Record discarded by rules
 
-- WHEN un registro incumple cualquiera de las cuatro reglas
-- THEN el registro no forma parte de la salida final
+- WHEN a record fails any of the four rules
+- THEN the record is not part of the final output
 
-#### Scenario: Registro valido
+#### Scenario: Valid record
 
-- WHEN un registro cumple las cuatro reglas
-- THEN el registro puede incluirse en el conjunto resultante con los campos objetivo
+- WHEN a record satisfies all four rules
+- THEN the record can be included in the resulting dataset with the target fields
 
-### Requirement: Ubicacion del script
+### Requirement: Script location
 
-El sistema SHALL ubicar el script principal de ETL dentro del directorio `/microdatos-etl/`.
+The system SHALL place the main ETL script inside the `/microdatos-etl/` directory.
 
-#### Scenario: Estructura del repositorio
+#### Scenario: Repository structure
 
-- WHEN se ejecuta el workflow
-- THEN el comando usa un script en `/microdatos-etl/`
+- WHEN the workflow runs
+- THEN the command uses a script in `/microdatos-etl/`

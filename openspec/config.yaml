@@ -1,21 +1,21 @@
 schema: spec-driven
 
 context: |
-  Repo: joinp.com — GitHub Pages monorepo con múltiples proyectos bajo el mismo dominio.
+  Repo: joinp.com - GitHub Pages monorepo with multiple projects under the same domain.
 
-  Estructura:
-  - / (raíz): index.html ya existente. Página de presentación del dominio: está en venta o abierto a nuevos proyectos. HTML/CSS/JS vanilla, sin build step.
-  - /dgt-matriculaciones-moto/: proyecto de análisis estadístico de matriculaciones de motos en España (datos DGT). Proyecto independiente dentro del mismo repo.
-      Fuente de datos: ficheros CSV mensuales en /dgt-matriculaciones-moto/{año}/{mes}.csv
-      Ejemplo: /dgt-matriculaciones-moto/2026/02.csv → matriculaciones de febrero 2026.
-      Los CSV son la única fuente de datos; no hay backend ni API externa.
-  - /microdatos-etl/: carpeta con un script JS programado para ejecutarse cada mañana y extraer los microdatos desde la web de la DGT de España.
+  Structure:
+  - / (root): existing index.html. Domain landing page: for sale or open to new projects. Vanilla HTML/CSS/JS, no build step.
+  - /dgt-matriculaciones-moto/: statistical analysis project for motorcycle registrations in Spain (DGT data). Independent project within the same repo.
+      Data source: monthly CSV files in /dgt-matriculaciones-moto/{year}/{month}.csv
+      Example: /dgt-matriculaciones-moto/2026/02.csv -> registrations for February 2026.
+      CSV files are the only data source; there is no backend or external API.
+  - /microdatos-etl/: folder containing a JS script scheduled to run every morning and extract microdata from the Spanish DGT website.
 
-  Deployment: GitHub Pages, rama main. Ficheros estáticos servidos directamente.
-  No hay framework ni bundler — todo es HTML, CSS y JS vanilla.
-  El directorio de cada proyecto es autocontenido (su propio index.html, assets, etc.).
+  Deployment: GitHub Pages, main branch. Static files served directly.
+  There is no framework or bundler - everything is vanilla HTML, CSS, and JS.
+  Each project directory is self-contained (its own index.html, assets, etc.).
 
 rules:
   tasks:
-    - Indica siempre en qué directorio deben crearse o modificarse los ficheros
-    - Cada proyecto debe ser autocontenido en su subdirectorio
+    - Always specify which directory files must be created or modified in
+    - Each project must be self-contained in its own subdirectory
