@@ -109,6 +109,69 @@ const BRAND_PREFIX = {
   ZONTES:  [['125C', '125C']],
 };
 
+const PROVINCE_MAP = {
+  A:  'Alicante/Alacant',
+  AB: 'Albacete',
+  AL: 'Almería',
+  AV: 'Ávila',
+  B:  'Barcelona',
+  BA: 'Badajoz',
+  BI: 'Bizkaia',
+  BU: 'Burgos',
+  C:  'Coruña (A)',
+  CA: 'Cádiz',
+  CC: 'Cáceres',
+  CE: 'Ceuta',
+  CO: 'Córdoba',
+  CR: 'Ciudad Real',
+  CS: 'Castellón/Castelló',
+  CU: 'Cuenca',
+  DS: 'Desconocido',
+  EX: 'Extranjero',
+  GC: 'Palmas (Las)',
+  GI: 'Girona',
+  GR: 'Granada',
+  GU: 'Guadalajara',
+  H:  'Huelva',
+  HU: 'Huesca',
+  IB: 'Illes Balears',
+  J:  'Jaén',
+  L:  'Lleida',
+  LE: 'León',
+  LO: 'Rioja (La)',
+  LU: 'Lugo',
+  M:  'Madrid',
+  MA: 'Málaga',
+  ML: 'Melilla',
+  MU: 'Murcia',
+  NA: 'Navarra',
+  O:  'Asturias',
+  OR: 'Ourense',
+  OU: 'Ourense',
+  P:  'Palencia',
+  PM: 'Illes Balears',
+  PO: 'Pontevedra',
+  S:  'Cantabria',
+  SA: 'Salamanca',
+  SE: 'Sevilla',
+  SG: 'Segovia',
+  SO: 'Soria',
+  SS: 'Gipuzkoa',
+  T:  'Tarragona',
+  TE: 'Teruel',
+  TF: 'Santa Cruz de Tenerife',
+  TO: 'Toledo',
+  V:  'Valencia/València',
+  VA: 'Valladolid',
+  VI: 'Álava/Araba',
+  Z:  'Zaragoza',
+  ZA: 'Zamora',
+};
+
+function normalizeProvince(code) {
+  return PROVINCE_MAP[code] || code;
+}
+
 function normalizeModel(marca, modelo) {
   const exact = BRAND_EXACT[marca]?.[modelo];
   if (exact) return exact;
@@ -209,7 +272,7 @@ function processTxt(txt) {
       getField(line, 'FEC_TRAMITACION'),
       marca,
       modelo,
-      getField(line, 'COD_PROVINCIA_VEH'),
+      normalizeProvince(getField(line, 'COD_PROVINCIA_VEH')),
       getField(line, 'CILINDRADA_ITV'),
     ]);
   }
@@ -218,7 +281,7 @@ function processTxt(txt) {
 
 function writeDailyCsv(filePath, rows) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
-  const lines = ['FEC_MATRICULA,COD_CLASE_MAT,FEC_TRAMITACION,MARCA_ITV,MODELO_ITV,COD_PROVINCIA_VEH,CILINDRADA_ITV'];
+  const lines = ['FEC_MATRICULA,COD_CLASE_MAT,FEC_TRAMITACION,MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV'];
   for (const r of rows) lines.push(r.map((v) => `"${v}"`).join(','));
   fs.writeFileSync(filePath, lines.join('\n') + '\n');
 }
@@ -240,7 +303,7 @@ function recalculateMonthly(year, month) {
       if (parts.length < 5) continue;
       const marca = parts[3];
       const modelo = parts[4];
-      const provincia = parts[5] || '';
+      const provincia = normalizeProvince(parts[5] || '');
       const cilindrada = parts[6] || '';
       const key = `${marca}\t${modelo}`;
       if (!data.has(key)) data.set(key, { count: 0, cilindradaCounts: new Map(), provinciaCounts: new Map() });
@@ -286,7 +349,7 @@ function recalculateMonthly(year, month) {
       provRows.push({ marca: r.marca, modelo: r.modelo, provincia, cilindrada: r.cilindrada, count });
   }
   provRows.sort((a, b) => a.marca.localeCompare(b.marca) || a.modelo.localeCompare(b.modelo) || a.provincia.localeCompare(b.provincia));
-  const provLines = ['MARCA_ITV,MODELO_ITV,COD_PROVINCIA_VEH,CILINDRADA_ITV,COUNT'];
+  const provLines = ['MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT'];
   for (const r of provRows) provLines.push(`"${r.marca}","${r.modelo}","${r.provincia}","${r.cilindrada}",${r.count}`);
   fs.writeFileSync(provinciaMonthlyPath(year, month), provLines.join('\n') + '\n');
 

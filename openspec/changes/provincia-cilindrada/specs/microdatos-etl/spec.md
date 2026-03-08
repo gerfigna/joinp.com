@@ -50,6 +50,83 @@ In the same operation, the system SHALL also generate `/microdatos-etl/data/YYYY
 
 ## ADDED Requirements
 
+### Requirement: Province code normalization
+
+The system SHALL normalize `COD_PROVINCIA_VEH` to a human-readable province name using the official DGT mapping.
+The normalized value SHALL be used as `PROVINCIA_VEH` in all CSV outputs (daily and aggregates) instead of the raw code.
+If a code is not found in the mapping, the raw code SHALL be used as-is.
+
+The mapping is:
+
+| Code | Province |
+|------|----------|
+| A | Alicante/Alacant |
+| AB | Albacete |
+| AL | Almería |
+| AV | Ávila |
+| B | Barcelona |
+| BA | Badajoz |
+| BI | Bizkaia |
+| BU | Burgos |
+| C | Coruña (A) |
+| CA | Cádiz |
+| CC | Cáceres |
+| CE | Ceuta |
+| CO | Córdoba |
+| CR | Ciudad Real |
+| CS | Castellón/Castelló |
+| CU | Cuenca |
+| DS | Desconocido |
+| EX | Extranjero |
+| GC | Palmas (Las) |
+| GI | Girona |
+| GR | Granada |
+| GU | Guadalajara |
+| H | Huelva |
+| HU | Huesca |
+| IB | Illes Balears |
+| J | Jaén |
+| L | Lleida |
+| LE | León |
+| LO | Rioja (La) |
+| LU | Lugo |
+| M | Madrid |
+| MA | Málaga |
+| ML | Melilla |
+| MU | Murcia |
+| NA | Navarra |
+| O | Asturias |
+| OR | Ourense |
+| OU | Ourense |
+| P | Palencia |
+| PM | Illes Balears |
+| PO | Pontevedra |
+| S | Cantabria |
+| SA | Salamanca |
+| SE | Sevilla |
+| SG | Segovia |
+| SO | Soria |
+| SS | Gipuzkoa |
+| T | Tarragona |
+| TE | Teruel |
+| TF | Santa Cruz de Tenerife |
+| TO | Toledo |
+| V | Valencia/València |
+| VA | Valladolid |
+| VI | Álava/Araba |
+| Z | Zaragoza |
+| ZA | Zamora |
+
+#### Scenario: Known province code
+
+- **WHEN** `COD_PROVINCIA_VEH` matches a code in the mapping
+- **THEN** `PROVINCIA_VEH` is the corresponding province name
+
+#### Scenario: Unknown province code
+
+- **WHEN** `COD_PROVINCIA_VEH` does not match any code in the mapping
+- **THEN** `PROVINCIA_VEH` equals the raw `COD_PROVINCIA_VEH` value
+
 ### Requirement: Cilindrada consistency validation
 
 For each `MARCA_ITV` + `MODELO_ITV` combination, the system SHALL use the most frequent `CILINDRADA_ITV` value across all records in a month.

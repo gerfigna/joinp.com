@@ -21,6 +21,12 @@
 - [x] 4.1 Añadir la función `provinciaMonthlyPath(year, month)` en `microdatos-etl/download-microdatos.js` que devuelve `data/YYYY/MM/acumulado-marca-modelo-provincia.csv`
 - [x] 4.2 En `recalculateMonthly`, acumular conteos por clave `MARCA_ITV + MODELO_ITV + COD_PROVINCIA_VEH` y escribir `acumulado-marca-modelo-provincia.csv` con cabecera `MARCA_ITV,MODELO_ITV,COD_PROVINCIA_VEH,CILINDRADA_ITV,COUNT`, filas ordenadas por `MARCA_ITV` → `MODELO_ITV` → `COD_PROVINCIA_VEH`
 
+## 6. Normalización de provincia
+
+- [x] 6.1 Añadir en `microdatos-etl/download-microdatos.js` la tabla de mapeo `COD_PROVINCIA_VEH` → nombre y la función `normalizeProvince(code)`
+- [x] 6.2 Aplicar `normalizeProvince` al escribir el CSV diario y al acumular en `recalculateMonthly`, usando `PROVINCIA_VEH` como nombre de columna en lugar de `COD_PROVINCIA_VEH`
+- [x] 6.3 Verificar que `acumulado-marca-modelo-provincia.csv` y los CSV diarios usan nombres de provincia en lugar de códigos
+
 ## 5. Verificación
 
 - [x] 5.1 Ejecutar el script con datos reales en `microdatos-etl/data/` y verificar que `acumulado-marca-modelo.csv` incluye `CILINDRADA_ITV`
