@@ -7,7 +7,8 @@ Los datos diarios y los agregados mensuales actuales no incluyen información ge
 - Los CSV diarios (`DD.csv`) incluirán `COD_PROVINCIA_VEH` y `CILINDRADA_ITV` además de los cinco campos actuales. Los archivos diarios existentes se eliminarán para regenerarlos con el nuevo formato completo.
 - El agregado mensual `acumulado-marca-modelo.csv` incluirá `CILINDRADA_ITV` como campo adicional.
 - Se creará un nuevo agregado mensual `acumulado-marca-modelo-provincia.csv` con los campos `MARCA_ITV`, `MODELO_ITV`, `COD_PROVINCIA_VEH`, `CILINDRADA_ITV` y `COUNT`.
-- Se añadirá una validación que garantiza que cada combinación `MARCA_ITV + MODELO_ITV` tiene siempre el mismo valor de `CILINDRADA_ITV`. Si se detecta inconsistencia, el script terminará con un error descriptivo.
+- Se añadirá una validación que garantiza que cada combinación `MARCA_ITV + MODELO_ITV` tiene siempre el mismo valor de `CILINDRADA_ITV`. Si se detecta inconsistencia, se usa el valor más frecuente y se emite un warning.
+- El código de provincia (`COD_PROVINCIA_VEH`) se normalizará a nombre completo usando la tabla oficial DGT. El campo resultante se llamará `PROVINCIA_VEH`.
 
 ## Capabilities
 
@@ -17,7 +18,7 @@ Los datos diarios y los agregados mensuales actuales no incluyen información ge
 
 ### Modified Capabilities
 
-- `microdatos-etl`: Extracción de campos adicionales (`COD_PROVINCIA_VEH`, `CILINDRADA_ITV`), nueva validación de consistencia de cilindrada, y generación del nuevo agregado mensual.
+- `microdatos-etl`: Extracción de campos adicionales (`COD_PROVINCIA_VEH`, `CILINDRADA_ITV`), normalización de código de provincia a nombre completo (`PROVINCIA_VEH`), nueva validación de consistencia de cilindrada, y generación del nuevo agregado mensual.
 - `acumulado-marca-modelo`: El agregado mensual existente añade `CILINDRADA_ITV` como campo.
 
 ## Impact
