@@ -9,7 +9,7 @@ The Ishikawa RAG interface currently has no authentication — anyone with the U
 - Store the returned JWT in `sessionStorage` (cleared on tab close)
 - Attach `Authorization: Bearer <token>` header to all upload and chat requests
 - Add a logout button that clears the token and returns to the login screen
-- Fix `API_BASE` from the local n8n URL to `http://185.230.219.16:5678/webhook`
+- Fix `API_BASE` from the local n8n URL to `https://n8n.joinp.com/webhook`
 
 ## Capabilities
 

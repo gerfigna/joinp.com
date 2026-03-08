@@ -1,6 +1,6 @@
 ## Context
 
-`ishikawa/index.html` is a single-file vanilla JS app with no build step. It currently exposes the full RAG interface (file upload + chat) to anyone with the URL. The backend at `http://185.230.219.16:5678/webhook` already implements JWT auth — the frontend just needs to participate.
+`ishikawa/index.html` is a single-file vanilla JS app with no build step. It currently exposes the full RAG interface (file upload + chat) to anyone with the URL. The backend at `https://n8n.joinp.com/webhook` already implements JWT auth — the frontend just needs to participate.
 
 Current `API_BASE` points to a local n8n instance (`https://n8n.data-ms-ai.orb.local/webhook`) and must be updated to the public server.
 
@@ -32,12 +32,12 @@ Login screen and main app coexist in the same file; CSS `display: none / flex` t
 - On HTTP 401 from any request: clear token, redirect to login
 
 **API_BASE fix: hardcoded update**
-Replace the commented-out `http://185.230.219.16:5678/webhook` with the active base URL. The local orb URL is removed.
+Replace the commented-out `https://n8n.joinp.com/webhook` with the active base URL. The local orb URL is removed.
 
 ## Risks / Trade-offs
 
 **JWT expiry mid-session** → If the token expires while the user is active, the next request returns 401. The app will clear the token and show the login screen. User loses unsent input. Acceptable given no refresh flow is in scope.
 
-**HTTP (not HTTPS) backend** → Requests to `http://185.230.219.16:5678` are unencrypted. GitHub Pages is served over HTTPS, so mixed-content rules apply — modern browsers block active mixed content (fetch/XHR) from HTTPS pages to HTTP origins. This may prevent the app from working in production. Mitigation: either serve the backend over HTTPS, or host ishikawa itself on HTTP. Out of scope for this change but must be validated during testing.
+**HTTPS backend** → Backend at `https://n8n.joinp.com/webhook` is served over HTTPS, consistent with GitHub Pages. No mixed-content issues.
 
 **Single HTML file grows** → Adding login UI, CSS, and JS to an already-large file. Acceptable for this project scale; no abstraction needed.

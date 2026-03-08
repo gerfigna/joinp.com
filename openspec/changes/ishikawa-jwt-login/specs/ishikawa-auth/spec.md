@@ -18,7 +18,7 @@ The system SHALL display a login screen on load if no valid JWT is present in `s
 
 ### Requirement: Login via email and password
 
-The system SHALL authenticate users by posting credentials to `POST http://185.230.219.16:5678/webhook/auth` with body `{ "path": "signin", "email": "<email>", "password": "<password>" }`.
+The system SHALL authenticate users by posting credentials to `POST https://n8n.joinp.com/webhook/auth` with body `{ "path": "signin", "email": "<email>", "password": "<password>" }`.
 
 #### Scenario: Successful login
 
@@ -83,9 +83,9 @@ The main app SHALL include a logout button. Clicking it SHALL remove the JWT fro
 
 ### Requirement: Correct API base URL
 
-All requests SHALL use `http://185.230.219.16:5678/webhook` as the base URL.
+All requests SHALL use `https://n8n.joinp.com/webhook` as the base URL.
 
 #### Scenario: API_BASE is set correctly
 
 - **WHEN** any request is made (auth, upload, or chat)
-- **THEN** the request targets `http://185.230.219.16:5678/webhook/<endpoint>`
+- **THEN** the request targets `https://n8n.joinp.com/webhook/<endpoint>`
