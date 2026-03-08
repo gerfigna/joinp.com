@@ -2,7 +2,7 @@ name: Microdatos ETL
 
 on:
   schedule:
-    - cron: '50 11 * * *'
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 jobs:
