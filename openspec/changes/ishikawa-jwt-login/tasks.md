@@ -1,6 +1,6 @@
 ## 1. Fix API base URL
 
-- [x] 1.1 In `ishikawa/index.html`, replace `API_BASE` with `http://185.230.219.16:5678/webhook` and remove the commented-out alternative URLs
+- [x] 1.1 In `ishikawa/index.html`, replace `API_BASE` with `https://n8n.joinp.com/webhook` and remove the commented-out alternative URLs
 
 ## 2. Add login screen HTML and CSS
 
