@@ -709,7 +709,7 @@
     Ishikawa RAG
   </div>
   <div style="display:flex;align-items:center;gap:0.75rem;">
-    <div class="kb-badge">KB_ISHIKAWA</div>
+    <div class="kb-badge" id="kbBadge"></div>
     <button class="btn-new-chat" id="logoutBtn" style="color:var(--danger);border-color:var(--danger);">Salir</button>
   </div>
 </header>
@@ -801,17 +801,30 @@
   const AUTH_URL    = `${API_BASE}/auth`;
   const UPLOAD_URL  = `${API_BASE}/updload-file-rag`;
   const CHAT_URL    = `${API_BASE}/ai-agent-with-rag`;
-  const KB_ID       = 'KB_ISHIKAWA';
+  function getKbId() {
+    const token = getToken();
+    if (!token) return null;
+    try {
+      const payload = JSON.parse(atob(token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/')));
+      return payload.user_id || null;
+    } catch (_) { return null; }
+  }
 
   // ── Auth ─────────────────────────────────────────────────
   function getToken() {
     return sessionStorage.getItem('token');
   }
 
+  function updateKbBadge() {
+    const kbId = getKbId();
+    document.getElementById('kbBadge').textContent = kbId ? kbId.slice(0, 8) + '…' : '';
+  }
+
   function checkAuth() {
     const hasToken = !!getToken();
     document.getElementById('loginScreen').style.display = hasToken ? 'none' : 'flex';
     document.getElementById('logoutBtn').style.display   = hasToken ? '' : 'none';
+    updateKbBadge();
   }
 
   async function login(email, password) {
@@ -839,6 +852,7 @@
 
       const data = await res.json();
       sessionStorage.setItem('token', data.token);
+      updateKbBadge();
       document.getElementById('loginScreen').style.display = 'none';
       document.getElementById('logoutBtn').style.display   = '';
     } catch (_) {
@@ -974,7 +988,7 @@
 
     const formData = new FormData();
     formData.append('file', selectedFile);
-    formData.append('knowledgeBaseId', KB_ID);
+    formData.append('knowledgeBaseId', getKbId());
 
     const xhr = new XMLHttpRequest();
 
@@ -1180,7 +1194,7 @@
         body: JSON.stringify({
           language:        lang,
           sessionId:       sessionId,
-          knowledgeBaseId: KB_ID,
+          knowledgeBaseId: getKbId(),
           chatInput:       text,
         }),
       });
