@@ -52,17 +52,18 @@ In the same operation, the system SHALL also generate `/microdatos-etl/data/YYYY
 
 ### Requirement: Cilindrada consistency validation
 
-For each `MARCA_ITV` + `MODELO_ITV` combination, `CILINDRADA_ITV` SHALL be identical across all records in a month.
-If any combination has more than one distinct `CILINDRADA_ITV` value, the system SHALL abort with a descriptive error message indicating the brand, model, and conflicting values.
+For each `MARCA_ITV` + `MODELO_ITV` combination, the system SHALL use the most frequent `CILINDRADA_ITV` value across all records in a month.
+If more than one distinct value exists, the system SHALL log a warning identifying the brand, model, all conflicting values, and the chosen value. Processing SHALL continue normally.
 
 #### Scenario: Consistent cilindrada
 
 - **WHEN** all records for a given `MARCA_ITV` + `MODELO_ITV` have the same `CILINDRADA_ITV`
-- **THEN** the aggregation proceeds normally
+- **THEN** that value is used in the aggregation
 
 #### Scenario: Inconsistent cilindrada detected
 
 - **WHEN** records for a given `MARCA_ITV` + `MODELO_ITV` have more than one distinct `CILINDRADA_ITV` value
-- **THEN** the script exits with a non-zero status code
-- **AND** an error message is printed identifying the brand, model, and conflicting `CILINDRADA_ITV` values
+- **THEN** the most frequent value is selected as `CILINDRADA_ITV` for that combination
+- **AND** a warning is printed to stderr identifying the brand, model, all conflicting values, and the chosen value
+- **AND** processing continues normally
 

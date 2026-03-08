@@ -177,6 +177,10 @@ function brandMonthlyPath(year, month) {
   return path.join(DATA_DIR, year, month, 'acumulado-marca.csv');
 }
 
+function provinciaMonthlyPath(year, month) {
+  return path.join(DATA_DIR, year, month, 'acumulado-marca-modelo-provincia.csv');
+}
+
 function extractTxtFromZip(zipBuf) {
   const zip = new AdmZip(zipBuf);
   const entry = zip.getEntries().find((e) => /\.txt$/i.test(e.entryName));
@@ -205,6 +209,8 @@ function processTxt(txt) {
       getField(line, 'FEC_TRAMITACION'),
       marca,
       modelo,
+      getField(line, 'COD_PROVINCIA_VEH'),
+      getField(line, 'CILINDRADA_ITV'),
     ]);
   }
   return rows;
@@ -212,7 +218,7 @@ function processTxt(txt) {
 
 function writeDailyCsv(filePath, rows) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
-  const lines = ['FEC_MATRICULA,COD_CLASE_MAT,FEC_TRAMITACION,MARCA_ITV,MODELO_ITV'];
+  const lines = ['FEC_MATRICULA,COD_CLASE_MAT,FEC_TRAMITACION,MARCA_ITV,MODELO_ITV,COD_PROVINCIA_VEH,CILINDRADA_ITV'];
   for (const r of rows) lines.push(r.map((v) => `"${v}"`).join(','));
   fs.writeFileSync(filePath, lines.join('\n') + '\n');
 }
@@ -221,7 +227,8 @@ function recalculateMonthly(year, month) {
   const monthDir = path.join(DATA_DIR, year, month);
   if (!fs.existsSync(monthDir)) return;
 
-  const counts = new Map();
+  // key: MARCA\tMODELO → { count, cilindradaCounts: Map, provinciaCounts: Map }
+  const data = new Map();
   const dayFiles = fs.readdirSync(monthDir).filter((f) => /^\d{2}\.csv$/.test(f)).sort();
 
   for (const f of dayFiles) {
@@ -231,25 +238,57 @@ function recalculateMonthly(year, month) {
       if (!line.trim()) continue;
       const parts = line.split(',').map((v) => v.replace(/^"|"$/g, ''));
       if (parts.length < 5) continue;
-      const key = `${parts[3]}\t${parts[4]}`;
-      counts.set(key, (counts.get(key) || 0) + 1);
+      const marca = parts[3];
+      const modelo = parts[4];
+      const provincia = parts[5] || '';
+      const cilindrada = parts[6] || '';
+      const key = `${marca}\t${modelo}`;
+      if (!data.has(key)) data.set(key, { count: 0, cilindradaCounts: new Map(), provinciaCounts: new Map() });
+      const entry = data.get(key);
+      entry.count++;
+      if (cilindrada) entry.cilindradaCounts.set(cilindrada, (entry.cilindradaCounts.get(cilindrada) || 0) + 1);
+      entry.provinciaCounts.set(provincia, (entry.provinciaCounts.get(provincia) || 0) + 1);
     }
   }
 
-  const rows = Array.from(counts.entries())
-    .map(([key, count]) => { const [marca, modelo] = key.split('\t'); return { marca, modelo, count }; })
+  const rows = Array.from(data.entries())
+    .map(([key, entry]) => {
+      const [marca, modelo] = key.split('\t');
+      let cilindrada = '';
+      if (entry.cilindradaCounts.size === 1) {
+        cilindrada = [...entry.cilindradaCounts.keys()][0];
+      } else if (entry.cilindradaCounts.size > 1) {
+        cilindrada = [...entry.cilindradaCounts.entries()].sort((a, b) => b[1] - a[1])[0][0];
+        const conflictos = [...entry.cilindradaCounts.keys()].join(', ');
+        console.warn(`WARN: CILINDRADA_ITV inconsistente para "${marca}" / "${modelo}": ${conflictos} → usando "${cilindrada}"`);
+      }
+      return { marca, modelo, cilindrada, count: entry.count, provinciaCounts: entry.provinciaCounts };
+    })
     .sort((a, b) => a.marca.localeCompare(b.marca) || a.modelo.localeCompare(b.modelo));
 
-  const lines = ['MARCA_ITV,MODELO_ITV,COUNT'];
-  for (const r of rows) lines.push(`"${r.marca}","${r.modelo}",${r.count}`);
+  // acumulado-marca-modelo.csv
+  const lines = ['MARCA_ITV,MODELO_ITV,CILINDRADA_ITV,COUNT'];
+  for (const r of rows) lines.push(`"${r.marca}","${r.modelo}","${r.cilindrada}",${r.count}`);
   fs.writeFileSync(monthlyPath(year, month), lines.join('\n') + '\n');
 
+  // acumulado-marca.csv
   const brandCounts = new Map();
   for (const r of rows) brandCounts.set(r.marca, (brandCounts.get(r.marca) || 0) + r.count);
   const brandLines = ['MARCA_ITV,COUNT'];
   for (const [marca, count] of Array.from(brandCounts.entries()).sort((a, b) => a[0].localeCompare(b[0])))
     brandLines.push(`"${marca}",${count}`);
   fs.writeFileSync(brandMonthlyPath(year, month), brandLines.join('\n') + '\n');
+
+  // acumulado-marca-modelo-provincia.csv
+  const provRows = [];
+  for (const r of rows) {
+    for (const [provincia, count] of r.provinciaCounts)
+      provRows.push({ marca: r.marca, modelo: r.modelo, provincia, cilindrada: r.cilindrada, count });
+  }
+  provRows.sort((a, b) => a.marca.localeCompare(b.marca) || a.modelo.localeCompare(b.modelo) || a.provincia.localeCompare(b.provincia));
+  const provLines = ['MARCA_ITV,MODELO_ITV,COD_PROVINCIA_VEH,CILINDRADA_ITV,COUNT'];
+  for (const r of provRows) provLines.push(`"${r.marca}","${r.modelo}","${r.provincia}","${r.cilindrada}",${r.count}`);
+  fs.writeFileSync(provinciaMonthlyPath(year, month), provLines.join('\n') + '\n');
 
   console.log(`  Recalculated monthly: ${year}/${month}`);
 }
