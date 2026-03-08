@@ -1014,13 +1014,19 @@
         return;
       }
 
-      if (xhr.status >= 200 && xhr.status < 300) {
+      if (xhr.status === 200) {
         let textLength = null;
         try {
           const data = JSON.parse(xhr.responseText);
           const item = Array.isArray(data) ? data[0] : data;
           textLength = item?.text_length ?? null;
         } catch (_) { /* non-JSON response */ }
+
+        if (textLength === null) {
+          setUploadStatus('Error: el servidor no devolvió text_length', 'err');
+          uploadBtn.disabled = false;
+          return;
+        }
 
         setUploadStatus('Documento indexado correctamente', 'ok');
         addToUploadList(selectedFile.name);
