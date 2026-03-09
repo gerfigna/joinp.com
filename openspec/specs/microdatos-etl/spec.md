@@ -6,13 +6,13 @@ Automate the daily download of vehicle registration microdata from DGT.
 
 ## Requirements
 
-### Requirement: Scheduled daily execution
+### Requirement: Scheduled execution every 6 hours
 
-The system SHALL run a daily scheduled job at 08:00 GMT+0 in GitHub Actions.
+The system SHALL run a scheduled job every 6 hours (at 00:00, 06:00, 12:00, and 18:00 UTC) in GitHub Actions.
 
 #### Scenario: Scheduled execution
 
-- WHEN the time reaches 08:00 GMT+0
+- WHEN the time reaches any of 00:00, 06:00, 12:00, or 18:00 UTC
 - THEN a GitHub Actions workflow runs
 - AND the microdata ETL process starts
 
