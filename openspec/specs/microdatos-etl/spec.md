@@ -309,21 +309,43 @@ If more than one distinct value exists, the system SHALL log a warning identifyi
 - **AND** a warning is printed to stderr identifying the brand, model, all conflicting values, and the chosen value
 - **AND** processing continues normally
 
+### Requirement: Monthly aggregation by brand, model and province
+
+The system SHALL maintain a monthly CSV with accumulated counts for `MARCA_ITV`, `MODELO_ITV`, and `PROVINCIA_VEH` combinations.
+The monthly output SHALL be stored at `/microdatos-etl/data/YYYY/MM/acumulado-marca-modelo-provincia.csv`.
+It SHALL be generated in the same operation as `acumulado-marca-modelo.csv`.
+
+#### Scenario: Monthly aggregation structure
+
+- WHEN the monthly province CSV is generated
+- THEN it includes columns `MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT`
+- AND each row represents a unique `MARCA_ITV` + `MODELO_ITV` + `PROVINCIA_VEH` combination
+- AND `COUNT` is the total number of records in that month for that combination
+- AND `CILINDRADA_ITV` is the validated displacement value for that brand-model combination
+
+#### Scenario: Monthly aggregation ordering
+
+- WHEN the monthly province CSV is written
+- THEN rows are sorted alphabetically by `MARCA_ITV`
+- AND in case of ties, by `MODELO_ITV`
+- AND in case of ties, by `PROVINCIA_VEH`
+
 ### Requirement: Selective monthly recalculation
 
 On each run, the system SHALL recalculate only months for which new data was incorporated during that same run.
 For each month selected for recalculation, the system SHALL use all existing daily CSV files in that month as input.
+All three monthly aggregates (`acumulado-marca-modelo.csv`, `acumulado-marca.csv`, and `acumulado-marca-modelo-provincia.csv`) SHALL be recalculated together for the affected months.
 
 #### Scenario: Month with new data
 
 - WHEN at least one new day from a specific month is downloaded and processed in the run
-- THEN `acumulado-marca-modelo.csv` for that month is recalculated
+- THEN `acumulado-marca-modelo.csv`, `acumulado-marca.csv`, and `acumulado-marca-modelo-provincia.csv` for that month are recalculated
 - AND the recalculation reads every existing daily file `/microdatos-etl/data/YYYY/MM/DD.csv` for that month
 
 #### Scenario: Month without new data
 
 - WHEN there are no new days for a specific month in the run
-- THEN that month's monthly CSV is not recalculated
+- THEN that month's monthly CSVs are not recalculated
 
 ### Requirement: ETL orchestration across multiple GitHub jobs
 
