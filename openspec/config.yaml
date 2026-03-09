@@ -10,9 +10,6 @@ context: |
       Example: /microdatos-etl/data/2026/02/acumulado-marca-modelo.csv -> brand+model aggregation for February 2026.
       CSV files are the only data source; there is no backend or external API.
   - /microdatos-etl/: folder containing a JS script scheduled to run every morning and extract microdata from the Spanish DGT website.
-  - /ishikawa/: folder containing a Vanilla HTML/CSS/JS site, no build step.
-      Simple static site simple login against backend using JWT autentication. Once you log in, you can upload files and send messages to an IA. The IA processes the files and messages and responds with insights.
-      The backend is a separate project (not in this repo) that provides the JWT authentication and the endpoints to chat with IA.
 
   Deployment: GitHub Pages, main branch. Static files served directly.
   There is no framework or bundler - everything is vanilla HTML, CSS, and JS.
