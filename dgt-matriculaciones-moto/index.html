@@ -408,11 +408,12 @@
               <tr>
                 <th data-col="MARCA_ITV">Marca <i class="sort-icon">↕</i></th>
                 <th data-col="MODELO_ITV">Modelo <i class="sort-icon">↕</i></th>
+                <th data-col="CILINDRADA_ITV" class="num">Cilindrada (cc) <i class="sort-icon">↕</i></th>
                 <th data-col="COUNT" class="sorted">Matriculaciones <i class="sort-icon">↓</i></th>
               </tr>
             </thead>
             <tbody id="table-body">
-              <tr class="empty-row"><td colspan="3">Selecciona un mes para cargar datos</td></tr>
+              <tr class="empty-row"><td colspan="4">Selecciona un mes para cargar datos</td></tr>
             </tbody>
           </table>
         </div>
@@ -689,12 +690,13 @@
       const pageRows = filteredData.slice(start, start + PAGE_SIZE);
 
       if (total === 0) {
-        tableBody.innerHTML = '<tr class="empty-row"><td colspan="3">Sin resultados para los filtros seleccionados</td></tr>';
+        tableBody.innerHTML = '<tr class="empty-row"><td colspan="4">Sin resultados para los filtros seleccionados</td></tr>';
       } else {
         tableBody.innerHTML = pageRows.map(row => `
           <tr>
             <td>${esc(row.MARCA_ITV)}</td>
             <td>${esc(row.MODELO_ITV)}</td>
+            <td class="num">${row.CILINDRADA_ITV.toLocaleString('es')}</td>
             <td class="count">${row.COUNT.toLocaleString('es')}</td>
           </tr>
         `).join('');
@@ -812,7 +814,7 @@
     }
 
     function showEmpty(msg) {
-      tableBody.innerHTML = `<tr class="empty-row"><td colspan="3">${esc(msg)}</td></tr>`;
+      tableBody.innerHTML = `<tr class="empty-row"><td colspan="4">${esc(msg)}</td></tr>`;
       resultCount.textContent = '';
     }
 
