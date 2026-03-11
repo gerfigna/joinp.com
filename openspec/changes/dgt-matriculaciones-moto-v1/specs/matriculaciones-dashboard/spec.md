@@ -150,8 +150,8 @@ The page SHALL include a Chart.js pie chart that shows the share of total regist
 ---
 
 ### Requirement: Table columns
-The table SHALL display the following columns: Marca, Modelo, Matriculaciones.
+The table SHALL display the following columns: Marca, Modelo, Cilindrada (cc), Matriculaciones.
 
 #### Scenario: All columns visible
 - **WHEN** the table renders
-- **THEN** all three columns are visible with correct data
+- **THEN** all four columns are visible with correct data
