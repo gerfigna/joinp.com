@@ -48,11 +48,11 @@ The page SHALL provide a province (provincia) filter. The filter SHALL be a drop
 
 #### Scenario: No province filter selected
 - **WHEN** no province is selected (default)
-- **THEN** all provinces are shown
+- **THEN** data is aggregated by marca+modelo (summing registrations across all provinces) and shown in the table
 
 #### Scenario: Province filter applied
 - **WHEN** the user selects a province
-- **THEN** the table shows only rows matching that province and the chart updates accordingly
+- **THEN** the table shows only rows matching that province (no aggregation) and the chart updates accordingly
 
 ---
 
@@ -129,11 +129,11 @@ The table SHALL paginate results showing 25 rows per page. Navigation controls (
 ---
 
 ### Requirement: Pie chart shows brand market share
-The page SHALL include a Chart.js pie chart that shows the share of total registrations by brand for the currently filtered dataset. The chart SHALL update every time a filter changes.
+The page SHALL include a Chart.js pie chart that shows the share of total registrations by brand for the currently filtered dataset. The chart SHALL display the top 14 brands by registration count; remaining brands SHALL be grouped into a single "Otras" slice. The chart SHALL update every time a filter changes.
 
 #### Scenario: Chart shows top brands
 - **WHEN** data is loaded
-- **THEN** the pie chart shows each brand's share of total registrations in the filtered data
+- **THEN** the pie chart shows the top 14 brands by registration count, with all remaining brands grouped as "Otras"
 
 #### Scenario: Chart updates on filter change
 - **WHEN** any filter (brand, province, displacement, year/month) changes
@@ -150,8 +150,8 @@ The page SHALL include a Chart.js pie chart that shows the share of total regist
 ---
 
 ### Requirement: Table columns
-The table SHALL display the following columns: Marca, Modelo, Provincia, Cilindrada (cc), Matriculaciones.
+The table SHALL display the following columns: Marca, Modelo, Matriculaciones.
 
 #### Scenario: All columns visible
 - **WHEN** the table renders
-- **THEN** all five columns are visible with correct data from the CSV
+- **THEN** all three columns are visible with correct data
