@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matriculaciones de Motos en España · DGT</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #020617;
+      --bg2: #0f172a;
+      --bg3: #1e293b;
+      --fg: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #6366f1;
+      --accent-dim: #4f46e5;
+      --border: #1e293b;
+      --row-hover: #1e293b;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 2rem 2rem 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--fg);
+    }
+
+    header p {
+      margin-top: 0.25rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+
+    .main {
+      padding: 1.5rem 2rem;
+      max-width: 1400px;
+    }
+
+    /* Filters */
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: flex-end;
+      margin-bottom: 1.5rem;
+      padding: 1rem 1.25rem;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .filter-group label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .filter-group select,
+    .filter-group input[type="number"] {
+      background: var(--bg3);
+      border: 1px solid #334155;
+      border-radius: 6px;
+      color: var(--fg);
+      padding: 0.375rem 0.625rem;
+      font-size: 0.875rem;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.15s;
+      min-width: 120px;
+    }
+
+    .filter-group input[type="number"] {
+      min-width: 80px;
+      width: 90px;
+    }
+
+    .filter-group select:focus,
+    .filter-group input:focus {
+      border-color: var(--accent);
+    }
+
+    .filter-group select option {
+      background: var(--bg3);
+    }
+
+    .filter-inline {
+      display: flex;
+      gap: 0.375rem;
+      align-items: center;
+    }
+
+    .filter-inline span {
+      color: var(--muted);
+      font-size: 0.75rem;
+    }
+
+    .btn-reset {
+      background: transparent;
+      border: 1px solid #334155;
+      border-radius: 6px;
+      color: var(--muted);
+      padding: 0.375rem 0.75rem;
+      font-size: 0.8rem;
+      font-family: inherit;
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+      align-self: flex-end;
+    }
+
+    .btn-reset:hover {
+      border-color: var(--accent);
+      color: var(--fg);
+    }
+
+    /* Content layout */
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    /* Table section */
+    .table-section {
+      min-width: 0;
+    }
+
+    .table-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+
+    thead {
+      background: var(--bg2);
+    }
+
+    th {
+      padding: 0.65rem 0.875rem;
+      text-align: left;
+      font-weight: 600;
+      color: var(--muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      user-select: none;
+      white-space: nowrap;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.15s;
+    }
+
+    th:hover {
+      color: var(--fg);
+    }
+
+    th.sorted {
+      color: var(--accent);
+    }
+
+    th .sort-icon {
+      display: inline-block;
+      margin-left: 0.3em;
+      opacity: 0.4;
+      font-style: normal;
+    }
+
+    th.sorted .sort-icon {
+      opacity: 1;
+    }
+
+    td {
+      padding: 0.55rem 0.875rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--fg);
+    }
+
+    td.num {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      color: var(--muted);
+    }
+
+    td.count {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      font-weight: 600;
+      color: var(--fg);
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr:hover td {
+      background: var(--row-hover);
+    }
+
+    .empty-row td {
+      text-align: center;
+      color: var(--muted);
+      padding: 2.5rem;
+    }
+
+    /* Pagination */
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.875rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .pagination-controls {
+      display: flex;
+      gap: 0.375rem;
+      align-items: center;
+    }
+
+    .btn-page {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      color: var(--fg);
+      padding: 0.3rem 0.65rem;
+      font-size: 0.8rem;
+      font-family: inherit;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .btn-page:hover:not(:disabled) {
+      border-color: var(--accent);
+      background: var(--bg3);
+    }
+
+    .btn-page:disabled {
+      opacity: 0.35;
+      cursor: default;
+    }
+
+    .page-info {
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Chart section */
+    .chart-section {
+      position: sticky;
+      top: 1.5rem;
+    }
+
+    .chart-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
+
+    .chart-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+
+    .chart-wrap {
+      position: relative;
+      height: 280px;
+    }
+
+    .chart-empty {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      height: 280px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    .chart-total {
+      margin-top: 0.875rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .chart-total strong {
+      color: var(--fg);
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Loading spinner */
+    .loading {
+      display: none;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      padding: 2rem;
+    }
+
+    .spinner {
+      width: 16px;
+      height: 16px;
+      border: 2px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.6s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Matriculaciones de Motos en España</h1>
+    <p>Datos oficiales de la DGT · Motos nuevas matriculadas por marca, modelo y provincia</p>
+  </header>
+
+  <div class="main">
+    <!-- Filters -->
+    <div class="filters">
+      <div class="filter-group">
+        <label>Año</label>
+        <select id="sel-year"></select>
+      </div>
+      <div class="filter-group">
+        <label>Mes</label>
+        <select id="sel-month"></select>
+      </div>
+      <div class="filter-group">
+        <label>Marca</label>
+        <select id="sel-brand">
+          <option value="">Todas las marcas</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Provincia</label>
+        <select id="sel-province">
+          <option value="">Todas las provincias</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Cilindrada (cc)</label>
+        <div class="filter-inline">
+          <input type="number" id="inp-cc-min" placeholder="Mín" min="0">
+          <span>—</span>
+          <input type="number" id="inp-cc-max" placeholder="Máx" min="0">
+        </div>
+      </div>
+      <button class="btn-reset" id="btn-reset">Limpiar filtros</button>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Table -->
+      <div class="table-section">
+        <div class="table-meta">
+          <span id="result-count">—</span>
+          <div class="loading" id="loading"><div class="spinner"></div> Cargando…</div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th data-col="MARCA_ITV">Marca <i class="sort-icon">↕</i></th>
+                <th data-col="MODELO_ITV">Modelo <i class="sort-icon">↕</i></th>
+                <th data-col="COUNT" class="sorted">Matriculaciones <i class="sort-icon">↓</i></th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+              <tr class="empty-row"><td colspan="3">Selecciona un mes para cargar datos</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <span id="pagination-info"></span>
+          <div class="pagination-controls">
+            <button class="btn-page" id="btn-prev" disabled>← Anterior</button>
+            <span class="page-info" id="page-display"></span>
+            <button class="btn-page" id="btn-next" disabled>Siguiente →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chart -->
+      <div class="chart-section">
+        <div class="chart-card">
+          <div class="chart-title">Cuota de mercado por marca</div>
+          <div class="chart-wrap" id="chart-wrap">
+            <canvas id="pie-chart"></canvas>
+          </div>
+          <div class="chart-empty" id="chart-empty">Sin datos para<br>los filtros seleccionados</div>
+          <div class="chart-total" id="chart-total"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ── Constants ─────────────────────────────────────────────────────────────
+
+    const PAGE_SIZE = 25;
+    const START_YEAR = 2026;
+    const MONTH_NAMES = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+
+    const CHART_COLORS = [
+      '#6366f1','#22d3ee','#f59e0b','#10b981','#f43f5e',
+      '#a855f7','#3b82f6','#84cc16','#fb923c','#14b8a6',
+      '#e879f9','#facc15','#60a5fa','#34d399','#fb7185',
+    ];
+
+    // ── State ─────────────────────────────────────────────────────────────────
+
+    let rawData = [];
+    let filteredData = [];
+    let sortCol = 'COUNT';
+    let sortDir = -1; // -1 = DESC, 1 = ASC
+    let currentPage = 1;
+    let pieChart = null;
+
+    // ── DOM refs ──────────────────────────────────────────────────────────────
+
+    const selYear     = document.getElementById('sel-year');
+    const selMonth    = document.getElementById('sel-month');
+    const selBrand    = document.getElementById('sel-brand');
+    const selProvince = document.getElementById('sel-province');
+    const inpCcMin    = document.getElementById('inp-cc-min');
+    const inpCcMax    = document.getElementById('inp-cc-max');
+    const btnReset    = document.getElementById('btn-reset');
+    const tableBody   = document.getElementById('table-body');
+    const resultCount = document.getElementById('result-count');
+    const loading     = document.getElementById('loading');
+    const btnPrev     = document.getElementById('btn-prev');
+    const btnNext     = document.getElementById('btn-next');
+    const pageDisplay = document.getElementById('page-display');
+    const paginationInfo = document.getElementById('pagination-info');
+    const chartWrap   = document.getElementById('chart-wrap');
+    const chartEmpty  = document.getElementById('chart-empty');
+    const chartTotal  = document.getElementById('chart-total');
+    const ths         = document.querySelectorAll('th[data-col]');
+
+    // ── Year/Month selectors ──────────────────────────────────────────────────
+
+    function buildSelectors() {
+      const now = new Date();
+      const curYear = now.getFullYear();
+      const curMonth = now.getMonth() + 1;
+
+      for (let y = START_YEAR; y <= curYear; y++) {
+        const opt = document.createElement('option');
+        opt.value = y;
+        opt.textContent = y;
+        selYear.appendChild(opt);
+      }
+
+      for (let m = 1; m <= 12; m++) {
+        const opt = document.createElement('option');
+        opt.value = String(m).padStart(2, '0');
+        opt.textContent = MONTH_NAMES[m - 1];
+        selMonth.appendChild(opt);
+      }
+
+      // Default to current month (or Dec of start year if before start)
+      selYear.value = curYear >= START_YEAR ? curYear : START_YEAR;
+      selMonth.value = String(curMonth).padStart(2, '0');
+    }
+
+    // ── CSV fetch + parse ─────────────────────────────────────────────────────
+
+    function parseCSV(text) {
+      const lines = text.trim().split('\n');
+      if (lines.length < 2) return [];
+      const headers = splitCSVLine(lines[0]);
+      const rows = [];
+      for (let i = 1; i < lines.length; i++) {
+        const vals = splitCSVLine(lines[i]);
+        if (vals.length !== headers.length) continue;
+        const row = {};
+        headers.forEach((h, idx) => { row[h] = vals[idx]; });
+        row.COUNT = parseInt(row.COUNT, 10) || 0;
+        row.CILINDRADA_ITV = parseInt(row.CILINDRADA_ITV, 10) || 0;
+        rows.push(row);
+      }
+      return rows;
+    }
+
+    function splitCSVLine(line) {
+      const result = [];
+      let cur = '';
+      let inQuote = false;
+      for (let i = 0; i < line.length; i++) {
+        const ch = line[i];
+        if (ch === '"') {
+          inQuote = !inQuote;
+        } else if (ch === ',' && !inQuote) {
+          result.push(cur.trim());
+          cur = '';
+        } else {
+          cur += ch;
+        }
+      }
+      result.push(cur.trim());
+      return result;
+    }
+
+    async function fetchData() {
+      const year = selYear.value;
+      const month = selMonth.value;
+      const path = `/microdatos-etl/data/${year}/${month}/acumulado-marca-modelo-provincia.csv`;
+
+      setLoading(true);
+      rawData = [];
+
+      try {
+        const res = await fetch(path);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const text = await res.text();
+        rawData = parseCSV(text);
+      } catch {
+        rawData = [];
+        showEmpty('Datos no disponibles para el período seleccionado');
+      } finally {
+        setLoading(false);
+      }
+
+      populateDropdowns();
+      applyFiltersAndRender();
+    }
+
+    // ── Dropdowns ─────────────────────────────────────────────────────────────
+
+    function populateDropdowns() {
+      const brands    = [...new Set(rawData.map(r => r.MARCA_ITV))].sort();
+      const provinces = [...new Set(rawData.map(r => r.PROVINCIA_VEH))].sort();
+
+      rebuildSelect(selBrand, brands, 'Todas las marcas');
+      rebuildSelect(selProvince, provinces, 'Todas las provincias');
+    }
+
+    function rebuildSelect(sel, options, placeholder) {
+      const prev = sel.value;
+      sel.innerHTML = `<option value="">${placeholder}</option>`;
+      options.forEach(v => {
+        const opt = document.createElement('option');
+        opt.value = v;
+        opt.textContent = v;
+        sel.appendChild(opt);
+      });
+      // Restore previous selection if still valid
+      if (prev && options.includes(prev)) sel.value = prev;
+      else sel.value = '';
+    }
+
+    // ── Filters ───────────────────────────────────────────────────────────────
+
+    function applyFilters(data, filters) {
+      const { brand, province, ccMin, ccMax } = filters;
+      return data.filter(row => {
+        if (brand    && row.MARCA_ITV    !== brand)    return false;
+        if (province && row.PROVINCIA_VEH !== province) return false;
+        if (ccMin !== '' && !isNaN(ccMin) && row.CILINDRADA_ITV < Number(ccMin)) return false;
+        if (ccMax !== '' && !isNaN(ccMax) && row.CILINDRADA_ITV > Number(ccMax)) return false;
+        return true;
+      });
+    }
+
+    function getFilters() {
+      return {
+        brand:    selBrand.value,
+        province: selProvince.value,
+        ccMin:    inpCcMin.value,
+        ccMax:    inpCcMax.value,
+      };
+    }
+
+    function aggregateByMarcaModelo(data) {
+      const map = {};
+      data.forEach(row => {
+        const key = `${row.MARCA_ITV}\x00${row.MODELO_ITV}\x00${row.CILINDRADA_ITV}`;
+        if (!map[key]) map[key] = { MARCA_ITV: row.MARCA_ITV, MODELO_ITV: row.MODELO_ITV, CILINDRADA_ITV: row.CILINDRADA_ITV, COUNT: 0 };
+        map[key].COUNT += row.COUNT;
+      });
+      return Object.values(map);
+    }
+
+    function applyFiltersAndRender() {
+      const filters = getFilters();
+      const filtered = applyFilters(rawData, filters);
+      filteredData = filters.province ? filtered : aggregateByMarcaModelo(filtered);
+      sortData();
+      currentPage = 1;
+      renderTable();
+      renderChart();
+    }
+
+    // ── Sort ──────────────────────────────────────────────────────────────────
+
+    function sortData() {
+      const col = sortCol;
+      const dir = sortDir;
+      filteredData.sort((a, b) => {
+        let av = a[col], bv = b[col];
+        if (col === 'COUNT' || col === 'CILINDRADA_ITV') {
+          return (Number(av) - Number(bv)) * dir;
+        }
+        return String(av).localeCompare(String(bv), 'es') * dir;
+      });
+    }
+
+    function setSortCol(col) {
+      if (sortCol === col) {
+        sortDir = -sortDir;
+      } else {
+        sortCol = col;
+        sortDir = col === 'COUNT' ? -1 : 1;
+      }
+      updateSortHeaders();
+      sortData();
+      currentPage = 1;
+      renderTable();
+    }
+
+    function updateSortHeaders() {
+      ths.forEach(th => {
+        const col = th.dataset.col;
+        const icon = th.querySelector('.sort-icon');
+        if (col === sortCol) {
+          th.classList.add('sorted');
+          icon.textContent = sortDir === -1 ? '↓' : '↑';
+        } else {
+          th.classList.remove('sorted');
+          icon.textContent = '↕';
+        }
+      });
+    }
+
+    // ── Table render ──────────────────────────────────────────────────────────
+
+    function renderTable() {
+      const total = filteredData.length;
+      const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+      if (currentPage > totalPages) currentPage = totalPages;
+
+      const start = (currentPage - 1) * PAGE_SIZE;
+      const pageRows = filteredData.slice(start, start + PAGE_SIZE);
+
+      if (total === 0) {
+        tableBody.innerHTML = '<tr class="empty-row"><td colspan="3">Sin resultados para los filtros seleccionados</td></tr>';
+      } else {
+        tableBody.innerHTML = pageRows.map(row => `
+          <tr>
+            <td>${esc(row.MARCA_ITV)}</td>
+            <td>${esc(row.MODELO_ITV)}</td>
+            <td class="count">${row.COUNT.toLocaleString('es')}</td>
+          </tr>
+        `).join('');
+      }
+
+      // Pagination
+      const showing = total === 0 ? 0 : start + 1;
+      const showingEnd = Math.min(start + PAGE_SIZE, total);
+      resultCount.textContent = total === 0
+        ? 'Sin resultados'
+        : `${total.toLocaleString('es')} registros`;
+      paginationInfo.textContent = total === 0 ? '' : `Mostrando ${showing}–${showingEnd} de ${total.toLocaleString('es')}`;
+      pageDisplay.textContent = total === 0 ? '' : `Página ${currentPage} / ${totalPages}`;
+      btnPrev.disabled = currentPage <= 1;
+      btnNext.disabled = currentPage >= totalPages;
+    }
+
+    function esc(str) {
+      return String(str ?? '')
+        .replace(/&/g,'&amp;')
+        .replace(/</g,'&lt;')
+        .replace(/>/g,'&gt;');
+    }
+
+    // ── Chart ─────────────────────────────────────────────────────────────────
+
+    function aggregateByBrand(data) {
+      const map = {};
+      data.forEach(row => {
+        map[row.MARCA_ITV] = (map[row.MARCA_ITV] || 0) + row.COUNT;
+      });
+      return Object.entries(map)
+        .map(([brand, count]) => ({ brand, count }))
+        .sort((a, b) => b.count - a.count);
+    }
+
+    function renderChart() {
+      const agg = aggregateByBrand(filteredData);
+      const total = agg.reduce((s, r) => s + r.count, 0);
+
+      if (agg.length === 0 || total === 0) {
+        chartWrap.style.display = 'none';
+        chartEmpty.style.display = 'flex';
+        chartTotal.textContent = '';
+        if (pieChart) { pieChart.destroy(); pieChart = null; }
+        return;
+      }
+
+      chartWrap.style.display = 'block';
+      chartEmpty.style.display = 'none';
+      chartTotal.innerHTML = `Total: <strong>${total.toLocaleString('es')}</strong> matriculaciones`;
+
+      // Group small slices into "Otros"
+      const TOP_N = 14;
+      const top = agg.slice(0, TOP_N);
+      const rest = agg.slice(TOP_N);
+      const labels = top.map(r => r.brand);
+      const values = top.map(r => r.count);
+      if (rest.length > 0) {
+        labels.push('Otros');
+        values.push(rest.reduce((s, r) => s + r.count, 0));
+      }
+
+      const colors = labels.map((_, i) => i < CHART_COLORS.length ? CHART_COLORS[i] : '#64748b');
+
+      if (pieChart) {
+        pieChart.data.labels = labels;
+        pieChart.data.datasets[0].data = values;
+        pieChart.data.datasets[0].backgroundColor = colors;
+        pieChart.update();
+      } else {
+        const ctx = document.getElementById('pie-chart').getContext('2d');
+        pieChart = new Chart(ctx, {
+          type: 'pie',
+          data: {
+            labels,
+            datasets: [{
+              data: values,
+              backgroundColor: colors,
+              borderColor: '#020617',
+              borderWidth: 2,
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                position: 'bottom',
+                labels: {
+                  color: '#94a3b8',
+                  font: { size: 11 },
+                  boxWidth: 12,
+                  padding: 10,
+                }
+              },
+              tooltip: {
+                callbacks: {
+                  label(ctx) {
+                    const pct = ((ctx.parsed / total) * 100).toFixed(1);
+                    return ` ${ctx.parsed.toLocaleString('es')} unidades (${pct}%)`;
+                  }
+                }
+              }
+            }
+          }
+        });
+      }
+    }
+
+    // ── Helpers ───────────────────────────────────────────────────────────────
+
+    function setLoading(on) {
+      loading.style.display = on ? 'flex' : 'none';
+    }
+
+    function showEmpty(msg) {
+      tableBody.innerHTML = `<tr class="empty-row"><td colspan="3">${esc(msg)}</td></tr>`;
+      resultCount.textContent = '';
+    }
+
+    // ── Event wiring ──────────────────────────────────────────────────────────
+
+    selYear.addEventListener('change', fetchData);
+    selMonth.addEventListener('change', fetchData);
+    selBrand.addEventListener('change', applyFiltersAndRender);
+    selProvince.addEventListener('change', applyFiltersAndRender);
+    inpCcMin.addEventListener('input', applyFiltersAndRender);
+    inpCcMax.addEventListener('input', applyFiltersAndRender);
+
+    btnReset.addEventListener('click', () => {
+      selBrand.value    = '';
+      selProvince.value = '';
+      inpCcMin.value    = '';
+      inpCcMax.value    = '';
+      applyFiltersAndRender();
+    });
+
+    btnPrev.addEventListener('click', () => { currentPage--; renderTable(); });
+    btnNext.addEventListener('click', () => { currentPage++; renderTable(); });
+
+    ths.forEach(th => {
+      th.addEventListener('click', () => setSortCol(th.dataset.col));
+    });
+
+    // ── Init ──────────────────────────────────────────────────────────────────
+
+    buildSelectors();
+    fetchData();
+  </script>
+</body>
+</html>
