@@ -86,7 +86,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "APRILIA","TUONO 457","Almería","457",1
 "APRILIA","TUONO 457","Cáceres","457",1
 "APRILIA","TUONO V4","Barcelona","1077",1
-"ARENA","VORTEX","Zaragoza","0",1
 "BAJAJ","DOMINAR D 400","Barcelona","373",1
 "BAJAJ","DOMINAR D 400","Lleida","373",1
 "BAJAJ","DOMINAR D 400","Madrid","373",1
@@ -275,15 +274,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "BMW","C 400 X","Tarragona","350",2
 "BMW","C 400 X","Valencia/València","350",2
 "BMW","C 400 X","Valladolid","350",1
-"BMW","CE 02","Madrid","0",4
-"BMW","CE 02","Navarra","0",1
-"BMW","CE 02","Santa Cruz de Tenerife","0",2
-"BMW","CE 02","Valencia/València","0",1
-"BMW","CE 04","Alicante/Alacant","0",1
-"BMW","CE 04","Barcelona","0",2
-"BMW","CE 04","Pontevedra","0",1
-"BMW","CE04","Illes Balears","0",1
-"BMW","CE04","Madrid","0",2
 "BMW","F 800 GS","Albacete","895",1
 "BMW","F 800 GS","Alicante/Alacant","895",3
 "BMW","F 800 GS","Ávila","895",2
@@ -613,13 +603,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "BSA","SCRAMBLER","Barcelona","652",2
 "BSA","SCRAMBLER","Madrid","652",2
 "BSA","SCRAMBLER","Tarragona","652",1
-"CECOTEC","CECOTEC SHARK RS","Barcelona","0",1
-"CECOTEC","CECOTEC SHARK RS","Murcia","0",1
-"CECOTEC","VULCANO","Ciudad Real","0",1
-"CECOTEC","VULCANO","Córdoba","0",1
-"CECOTEC","VULCANO","Granada","0",1
-"CECOTEC","VULCANO","Madrid","0",1
-"CECOTEC","VULCANO","Valencia/València","0",3
 "CFMOTO","125 NK","Alicante/Alacant","124",2
 "CFMOTO","125 NK","Almería","124",1
 "CFMOTO","125 NK","Barcelona","124",1
@@ -852,11 +835,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "DUCATI","STREETFIGHTER","Pontevedra","890",1
 "DUCATI","STREETFIGHTER","Santa Cruz de Tenerife","890",1
 "DUCATI","STREETFIGHTER","Tarragona","890",1
-"E RIDE PRO","SS 3.0","Málaga","0",1
-"E RIDE PRO","SS 3.0","Valencia/València","0",1
-"E-BROH","ALEX","Zaragoza","0",1
-"ECOOTER","E2M","Illes Balears","0",1
-"EFUN","DEER 100","Barcelona","0",1
 "EFUN","LION","Alicante/Alacant","125",1
 "EFUN","LION","Barcelona","125",4
 "EFUN","LION","Bizkaia","125",1
@@ -867,21 +845,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "EFUN","LION","Palmas (Las)","125",2
 "EFUN","LION","Sevilla","125",1
 "EFUN","LION","Valladolid","125",1
-"EFUN","PUSA 90","Barcelona","0",1
-"EFUN","PUSA90","Alicante/Alacant","0",1
-"EFUN","PUSA90","Barcelona","0",1
-"EFUN","PUSA90","Burgos","0",1
-"EFUN","PUSA90","Granada","0",1
-"EFUN","PUSA90","Sevilla","0",1
-"EFUN","PUSA90","Valencia/València","0",1
-"EFUN","PUSA90","Zaragoza","0",1
-"EFUN","TIGER 100","Alicante/Alacant","0",1
-"EFUN","TIGER 100","Madrid","0",1
-"EFUN","TIGER 100","Navarra","0",1
-"EFUN","TIGER 100","Pontevedra","0",1
-"EFUN","TIGER 100","Sevilla","0",1
-"ELECTRIC MOTION","TEM","Barcelona","0",1
-"ELECTRIC MOTION","TEM","Madrid","0",3
 "F.B MONDIAL","FLEX 300","Albacete","292",1
 "F.B MONDIAL","IMOLA","Almería","125",1
 "F.B MONDIAL","IMOLA","Valencia/València","125",1
@@ -1378,7 +1341,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "HONDA","CRF300LRA","Girona","286",2
 "HONDA","CRF300LRA","Granada","286",1
 "HONDA","CRF300LRA","Rioja (La)","286",1
-"HONDA","EVF9018","Barcelona","0",14
 "HONDA","FORZA125","Álava/Araba","125",1
 "HONDA","FORZA125","Albacete","125",2
 "HONDA","FORZA125","Alicante/Alacant","125",21
@@ -1734,7 +1696,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "HONDA","Z125MA","Sevilla","124",1
 "HONDA","Z125MA","Tarragona","124",2
 "HONDA","Z125MA","Valencia/València","124",1
-"HONGFANWX","STREET RAPTOR 300S T10","Madrid","0",2
 "HUSQVARNA","HUSQVARNA 701 ENDURO","Barcelona","693",1
 "HUSQVARNA","HUSQVARNA 701 ENDURO","Granada","693",1
 "HUSQVARNA","HUSQVARNA 701 ENDURO","Madrid","693",1
@@ -2761,11 +2722,9 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "LETBE","VELOCITY","Illes Balears","125",1
 "LETBE","VELOCITY","Madrid","125",1
 "LETBE","VELOCITY","Palmas (Las)","125",1
-"LIFAN","E4","Madrid","0",1
 "LINHAI","---","Ávila","125",1
 "LINHAI","BUCK ADV","Almería","124",1
 "LINHAI","BUCK ADV","Rioja (La)","124",1
-"LVNENG","LX06MAX","Alicante/Alacant","0",1
 "MACBOR","EIGHT MILE 125 LC","Barcelona","124",2
 "MACBOR","EIGHT MILE 125 LC","Cádiz","124",1
 "MACBOR","EIGHT MILE 125 LC","Huelva","124",1
@@ -2983,7 +2942,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "MITT","XRS","Sevilla","125",1
 "MONDIAL","HPS","Ceuta","124",1
 "MONDIAL","SPARTAN 125","Granada","124",1
-"MONNIER","E-3500","Madrid","0",1
 "MONTESA","4RIDE","Palmas (Las)","259",2
 "MONTESA","4RIDE","Soria","259",1
 "MONTESA","4RIDE","Valladolid","259",1
@@ -3127,14 +3085,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "MV AGUSTA","LXP ORIOLI","Málaga","931",1
 "MV AGUSTA","SUPERVELOCE S","Burgos","798",1
 "MV AGUSTA","TURISMO VELOCE LUSSO","Barcelona","798",1
-"NERVA","EXE II","Bizkaia","0",2
-"NEXT","MOJITO","Alicante/Alacant","0",3
-"NEXT","MOJITO","Bizkaia","0",1
-"NEXT","MOJITO","Cádiz","0",1
-"NEXT","MOJITO","Málaga","0",2
-"NEXT","MOJITO","Murcia","0",1
-"NEXT","MOJITO","Navarra","0",2
-"NEXT","MOJITO","Valencia/València","0",1
 "NEXT","NX CROSS 125I","Alicante/Alacant","125",6
 "NEXT","NX CROSS 125I","Almería","125",1
 "NEXT","NX CROSS 125I","Barcelona","125",2
@@ -3152,27 +3102,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "NEXT","NX2 125I","Murcia","125",1
 "NEXT","NX2 125I","Sevilla","125",1
 "NEXT","NX2 125I","Valencia/València","125",1
-"NEXT","OVEGA","Alicante/Alacant","0",1
-"NEXT","OVEGA","Barcelona","0",1
-"NEXT","OVEGA","Bizkaia","0",1
-"NEXT","OVEGA","Huelva","0",1
-"NEXT","OVEGA","Málaga","0",1
-"NEXT","OVEGA","Sevilla","0",1
-"NEXT","V5","Málaga","0",1
-"NEXT","V5","Santa Cruz de Tenerife","0",1
-"NEXTELECTRICMOTORS","NX PLUS","Alicante/Alacant","0",4
-"NEXTELECTRICMOTORS","NX PLUS","Madrid","0",2
-"NEXTELECTRICMOTORS","NX PLUS","Sevilla","0",1
-"NIU","MQI GT L3 3KWH ESTANDA","Palmas (Las)","0",1
-"NIU","NQIX 300","Alicante/Alacant","0",1
-"NIU","NQIX 300","Valencia/València","0",1
-"NIU","NQIX 500","Cádiz","0",1
-"NIU","NQIX 500","Zaragoza","0",1
-"NIU","RQI SPORT","Alicante/Alacant","0",1
-"NIU","RQI SPORT","Barcelona","0",1
-"NIU","RQI SPORT","Cádiz","0",2
-"NIU","RQI SPORT","Sevilla","0",1
-"NIU","RQI SPORT","Valencia/València","0",1
 "NO STOCK BIKES","JAMTEK ACOST PROJECT","Valencia/València","1127",1
 "PEUGEOT","DJANGO","Alicante/Alacant","125",3
 "PEUGEOT","DJANGO","Asturias","125",1
@@ -3284,12 +3213,9 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "PIAGGIO","MEDLEY 200","Madrid","174",1
 "PIAGGIO","MEDLEY 200","Santa Cruz de Tenerife","174",1
 "PIAGGIO","MEDLEY 200","Sevilla","174",1
-"PIAGGIO","PIAGGIO 1","Toledo","0",1
-"PIAGGIO","PIAGGIO 1","Zaragoza","0",1
 "PIAGGIO","VESPA 946","Barcelona","124",2
 "PIAGGIO","VESPA 946","Illes Balears","124",1
 "PIAGGIO","VESPA 946","Sevilla","124",1
-"PIAGGIO","VESPA ELETTRICA","Coruña (A)","0",1
 "PIAGGIO","VESPA GTS","Alicante/Alacant","310",1
 "PIAGGIO","VESPA GTS","Asturias","310",1
 "PIAGGIO","VESPA GTS","Barcelona","310",1
@@ -3572,8 +3498,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "QJMOTOR","SRV 600 V","Barcelona","561",1
 "QJMOTOR","TRX 125 E5+","Castellón/Castelló","125",1
 "QJMOTOR","TRX 125 E5+","Santa Cruz de Tenerife","125",2
-"RAY ELECTRIC MOTORS","RAY 7.7","Illes Balears","0",1
-"RAY ELECTRIC MOTORS","RAY 7.7","Santa Cruz de Tenerife","0",1
 "REDMOTO","---","Almería","449",1
 "REDMOTO","---","Barcelona","449",1
 "REDMOTO","---","Cádiz","449",1
@@ -3780,10 +3704,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "ROYAL ENFIELD","SUPER METEOR 650","Sevilla","648",4
 "ROYAL ENFIELD","SUPER METEOR 650","Valencia/València","648",2
 "ROYAL ENFIELD","SUPER METEOR 650","Zaragoza","648",1
-"SEGWAY","--","Barcelona","0",1
-"SEGWAY","--","Bizkaia","0",1
-"SEGWAY","--","Navarra","0",1
-"SEGWAY","--","Tarragona","0",1
 "SHERCO","__","Madrid","124",1
 "SHERCO","125 SE-R","Alicante/Alacant","125",1
 "SHERCO","125 SE-R","Badajoz","125",1
@@ -3836,62 +3756,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "SHERCO","N.A","Sevilla","125",1
 "SHERCO","N.A","Tarragona","125",1
 "SHERCO","N.A","Zaragoza","125",1
-"SILENCE","S01","Almería","0",1
-"SILENCE","S01","Barcelona","0",12
-"SILENCE","S01","Castellón/Castelló","0",1
-"SILENCE","S01","Girona","0",1
-"SILENCE","S01","Granada","0",1
-"SILENCE","S01","Illes Balears","0",1
-"SILENCE","S01","Madrid","0",14
-"SILENCE","S01","Málaga","0",1
-"SILENCE","S01","Murcia","0",1
-"SILENCE","S01","Navarra","0",1
-"SILENCE","S01","Pontevedra","0",1
-"SILENCE","S01","Valladolid","0",1
-"SILENCE","S01+","Alicante/Alacant","0",1
-"SILENCE","S01+","Barcelona","0",7
-"SILENCE","S01+","Illes Balears","0",1
-"SILENCE","S01+","Málaga","0",1
-"SILENCE","S01+","Zaragoza","0",1
-"SILENCE","S02","Álava/Araba","0",3
-"SILENCE","S02","Barcelona","0",14
-"SILENCE","S02","Granada","0",2
-"SILENCE","S02","Illes Balears","0",1
-"SILENCE","S02","Málaga","0",1
-"SILENCE","S02","Murcia","0",1
-"SILENCE","S02","Rioja (La)","0",1
-"SILENCE","S02","Sevilla","0",3
-"SILENCE","S02","Valencia/València","0",1
-"SILENCE","SEAT MÓ 125 PERFORMANC","Barcelona","0",2
-"SILENCE","SEAT MÓ ESCOOTER 125","Cádiz","0",2
-"SILENCE","SEAT MÓ ESCOOTER 125","Granada","0",1
-"SILENCE","SEAT MÓ ESCOOTER 125","Pontevedra","0",4
-"STARK","STARK VARG","Barcelona","0",1
-"STARK","STARK VARG","Granada","0",1
-"STARK","STARK VARG","Navarra","0",1
-"STARK","VARG","Alicante/Alacant","0",3
-"STARK","VARG","Almería","0",1
-"STARK","VARG","Ávila","0",1
-"STARK","VARG","Barcelona","0",4
-"STARK","VARG","Cádiz","0",3
-"STARK","VARG","Córdoba","0",1
-"STARK","VARG","Coruña (A)","0",1
-"STARK","VARG","Granada","0",1
-"STARK","VARG","Huelva","0",1
-"STARK","VARG","Huesca","0",1
-"STARK","VARG","Illes Balears","0",1
-"STARK","VARG","Madrid","0",5
-"STARK","VARG","Málaga","0",1
-"STARK","VARG","Murcia","0",1
-"STARK","VARG","Navarra","0",1
-"STARK","VARG","Pontevedra","0",1
-"STARK","VARG","Santa Cruz de Tenerife","0",1
-"STARK","VARG","Soria","0",1
-"STARK","VARG","Tarragona","0",2
-"STARK","VARG","Valladolid","0",2
-"SUNRA","ROBO-S","Málaga","0",1
-"SUPER SOCO","CPX","Valencia/València","0",1
-"SUPER SOCO","TC MAX E5","Sevilla","0",1
 "SUZUKI","AN400","Alicante/Alacant","400",3
 "SUZUKI","AN400","Asturias","400",1
 "SUZUKI","AN400","Barcelona","400",2
@@ -4164,19 +4028,7 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "SYM","SYMPHONY 125","Toledo","125",1
 "SYM","SYMPHONY 125","Valencia/València","125",7
 "SYM","SYMPHONY 125","Zaragoza","125",4
-"TALARIA","KOMODO","Asturias","0",1
-"TALARIA","KOMODO","Barcelona","0",1
-"TALARIA","KOMODO","Cádiz","0",2
-"TALARIA","KOMODO","Girona","0",1
-"TALARIA","KOMODO","Granada","0",1
-"TALARIA","KOMODO","Guadalajara","0",1
-"TALARIA","KOMODO","Madrid","0",7
-"TALARIA","KOMODO","Málaga","0",1
-"TALARIA","KOMODO","Santa Cruz de Tenerife","0",1
-"TALARIA","KOMODO","Toledo","0",1
-"TALARIA","KOMODO","Valladolid","0",1
 "TALARIA","TL2500YE-A"," XXX","M",1
-"TINBOT","E-SUM","Cádiz","0",1
 "TM MOTO","---","Almería","293",1
 "TM MOTO","---","Lugo","293",1
 "TM MOTO","---","Ourense","293",1
@@ -4392,52 +4244,15 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "TRS","TR1 300","Valladolid","294",2
 "TRS","TR1 300I","Illes Balears","294",1
 "TRS","TR1 300I","Navarra","294",1
-"TYE","----","Madrid","0",1
-"UGBEST","LEGEND","Madrid","0",2
-"ULTRAVIOLETTE AUTOMOTIVE PRIVA","F77 MACH 2 RECON","Barcelona","0",2
-"ULTRAVIOLETTE AUTOMOTIVE PRIVA","F77 MACH 2 RECON","Lugo","0",1
-"ULTRAVIOLETTE AUTOMOTIVE PRIVA","F77 SUPERSTREET RECON","Illes Balears","0",1
 "UM","DSR ADVENTURE","Barcelona","124",1
 "UM","DSR ADVENTURE","Palmas (Las)","124",1
 "UM","DSR SM 125","Rioja (La)","124",1
 "UM","RENEGADE FREEDOM 125","Valencia/València","124",1
 "UM","RENEGADE SPORT Z 125","Alicante/Alacant","125",1
-"VELCA","CALIMA S","Madrid","0",1
-"VELCA","CALIMA S","Sevilla","0",1
-"VELCA","CALIMA S","Valladolid","0",1
-"VELCA","DP03","Valencia/València","0",1
-"VELCA","EON","Alicante/Alacant","0",1
-"VELCA","EON","Barcelona","0",3
-"VELCA","EON","Bizkaia","0",2
-"VELCA","EON","Castellón/Castelló","0",1
-"VELCA","EON","Córdoba","0",1
-"VELCA","EON","Cuenca","0",1
-"VELCA","EON","Granada","0",2
-"VELCA","EON","Illes Balears","0",5
-"VELCA","EON","Jaén","0",1
-"VELCA","EON","Lugo","0",1
-"VELCA","EON","Madrid","0",13
-"VELCA","EON","Málaga","0",3
-"VELCA","EON","Navarra","0",1
-"VELCA","EON","Pontevedra","0",1
-"VELCA","EON","Salamanca","0",1
-"VELCA","EON","Sevilla","0",1
-"VELCA","EON","Valencia/València","0",4
-"VELCA","EON","Zaragoza","0",2
-"VELCA","JSQ1","Palmas (Las)","0",2
-"VELCA","JSQ1","Sevilla","0",1
-"VELCA","ONE","Guadalajara","0",1
-"VELCA","ONE","Illes Balears","0",1
-"VELCA","ONE","Toledo","0",1
-"VELCA","VORTEX","Barcelona","0",2
-"VELIMOTOR","VMX10S","Madrid","0",1
-"VELIMOTOR","VMX10S","Murcia","0",1
 "VENT S.R.L.","---","Barcelona","125",4
 "VENT S.R.L.","---","Navarra","125",1
 "VERTIGO MOTORS","VERTIGO NITRO 300","Barcelona","294",1
 "VESPA","125","Málaga","123",1
-"VMOTO","F01","Madrid","0",1
-"VMOTO","STASH","Madrid","0",1
 "VOGE","300RALLY","Alicante/Alacant","292",2
 "VOGE","300RALLY","Almería","292",2
 "VOGE","300RALLY","Asturias","292",1
@@ -4786,7 +4601,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "VOGE","SR4 MAX","Santa Cruz de Tenerife","350",1
 "VOGE","SR4 MAX","Valencia/València","350",3
 "VOGE","SR4 MAX","Valladolid","350",1
-"WAYSCRAL","E-SPEED","Málaga","0",1
 "WOTTAN","CIVIS-C","Granada","125",2
 "WOTTAN","CIVIS-C","Illes Balears","125",1
 "WOTTAN","CIVIS-C","Madrid","125",1
@@ -4815,7 +4629,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "WOTTAN MOTOR","STORM-T","Granada","125",1
 "WOTTAN MOTOR","STORM-T","Madrid","125",1
 "WOTTAN MOTOR","STORM-T","Valencia/València","125",2
-"YADEA","Y1S PRO","Bizkaia","0",1
 "YAMAHA","CZD300-A","Albacete","292",1
 "YAMAHA","CZD300-A","Alicante/Alacant","292",6
 "YAMAHA","CZD300-A","Almería","292",1
@@ -5375,13 +5188,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "YAMAHA","YZF890-U","Málaga","890",1
 "YAMAHA","YZF890-U","Valencia/València","890",2
 "YAMAHA","YZF890-U","Valladolid","890",1
-"ZERO MOTORCYCLES","DS 14.4","Madrid","0",1
-"ZERO MOTORCYCLES","LS1","Barcelona","0",2
-"ZERO MOTORCYCLES","S 14.4","Barcelona","0",2
-"ZERO MOTORCYCLES","S 15.6","Illes Balears","0",1
-"ZERO MOTORCYCLES","S 15.6","Málaga","0",1
-"ZERO MOTORCYCLES","SR ZF14.4","Illes Balears","0",1
-"ZERO MOTORCYCLES","ZERO MOTORCYCLE XE","Cáceres","0",1
 "ZNEN","FALCON 125","Valencia/València","125",1
 "ZNEN","P45","Castellón/Castelló","125",1
 "ZNEN","P45","Valencia/València","125",1
