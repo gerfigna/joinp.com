@@ -263,6 +263,9 @@ function processTxt(txt) {
 
     if (COD_TIPO !== '50' || CLAVE_TRAMITE !== '1' || IND_NUEVO !== 'N' || FABRICANTE === 'ND') continue;
 
+    const cilindrada = getField(line, 'CILINDRADA_ITV');
+    if (!cilindrada || cilindrada === '0') continue;
+
     const marca  = getField(line, 'MARCA_ITV');
     const modelo = normalizeModel(marca, getField(line, 'MODELO_ITV'));
 
@@ -273,7 +276,7 @@ function processTxt(txt) {
       marca,
       modelo,
       normalizeProvince(getField(line, 'COD_PROVINCIA_VEH')),
-      getField(line, 'CILINDRADA_ITV'),
+      cilindrada,
     ]);
   }
   return rows;
