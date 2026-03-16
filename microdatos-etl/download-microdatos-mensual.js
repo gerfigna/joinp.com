@@ -5,7 +5,7 @@
  * download-microdatos-mensual.js
  *
  * Downloads and processes DGT monthly motorcycle registration exports.
- * Targets: all 12 months of 2025 + January 2026.
+ * Targets: all 12 months of 2025 + January and February 2026.
  *
  * Skip rule: if the month directory already contains daily CSV files
  * (e.g. 01.csv, 02.csv ...) written by the daily ETL, skip entirely
@@ -26,7 +26,7 @@ const AdmZip = require('adm-zip');
 
 const DATA_DIR = path.join(__dirname, 'data');
 
-// Months to process: all of 2025 + January 2026
+// Months to process: all of 2025 + January and February 2026
 const TARGET_MONTHS = [
   { year: '2025', month: '01' },
   { year: '2025', month: '02' },
@@ -41,6 +41,7 @@ const TARGET_MONTHS = [
   { year: '2025', month: '11' },
   { year: '2025', month: '12' },
   { year: '2026', month: '01' },
+  { year: '2026', month: '02' },
 ];
 
 // Fixed-width field definitions: [name, start, length]
