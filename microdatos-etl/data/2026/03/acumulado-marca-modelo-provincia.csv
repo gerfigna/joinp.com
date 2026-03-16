@@ -3372,7 +3372,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "YAMAHA","MT-03","Toledo","321",1
 "YAMAHA","MT-07","Albacete","689",2
 "YAMAHA","MT-07","Alicante/Alacant","689",8
-"YAMAHA","MT-07","Almería","689",1
 "YAMAHA","MT-07","Asturias","689",4
 "YAMAHA","MT-07","Badajoz","689",1
 "YAMAHA","MT-07","Barcelona","689",35
@@ -3406,38 +3405,25 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "YAMAHA","MT-07","Toledo","689",1
 "YAMAHA","MT-07","Valencia/València","689",4
 "YAMAHA","MT-07","Valladolid","689",2
-"YAMAHA","MT-07","Zaragoza","689",1
 "YAMAHA","MT-09","Alicante/Alacant","890",1
 "YAMAHA","MT-09","Almería","890",2
-"YAMAHA","MT-09","Asturias","890",2
-"YAMAHA","MT-09","Badajoz","890",3
-"YAMAHA","MT-09","Barcelona","890",32
-"YAMAHA","MT-09","Bizkaia","890",5
-"YAMAHA","MT-09","Cádiz","890",1
-"YAMAHA","MT-09","Cantabria","890",4
-"YAMAHA","MT-09","Castellón/Castelló","890",1
-"YAMAHA","MT-09","Ceuta","890",1
-"YAMAHA","MT-09","Coruña (A)","890",2
-"YAMAHA","MT-09","Girona","890",5
-"YAMAHA","MT-09","Granada","890",5
+"YAMAHA","MT-09","Badajoz","890",2
+"YAMAHA","MT-09","Barcelona","890",15
+"YAMAHA","MT-09","Bizkaia","890",3
+"YAMAHA","MT-09","Cantabria","890",1
+"YAMAHA","MT-09","Girona","890",4
+"YAMAHA","MT-09","Granada","890",1
 "YAMAHA","MT-09","Huelva","890",1
-"YAMAHA","MT-09","Illes Balears","890",4
+"YAMAHA","MT-09","Illes Balears","890",2
 "YAMAHA","MT-09","León","890",2
-"YAMAHA","MT-09","Lleida","890",1
-"YAMAHA","MT-09","Madrid","890",19
-"YAMAHA","MT-09","Málaga","890",3
-"YAMAHA","MT-09","Murcia","890",3
-"YAMAHA","MT-09","Navarra","890",1
+"YAMAHA","MT-09","Madrid","890",11
+"YAMAHA","MT-09","Málaga","890",2
 "YAMAHA","MT-09","Palmas (Las)","890",1
-"YAMAHA","MT-09","Pontevedra","890",1
 "YAMAHA","MT-09","Salamanca","890",1
 "YAMAHA","MT-09","Santa Cruz de Tenerife","890",2
 "YAMAHA","MT-09","Sevilla","890",2
 "YAMAHA","MT-09","Tarragona","890",2
-"YAMAHA","MT-09","Toledo","890",1
-"YAMAHA","MT-09","Valencia/València","890",7
-"YAMAHA","MT-09","Valladolid","890",3
-"YAMAHA","MT-09","Zaragoza","890",2
+"YAMAHA","MT-09","Valencia/València","890",3
 "YAMAHA","MT-10","Alicante/Alacant","998",1
 "YAMAHA","MT-10","Málaga","998",1
 "YAMAHA","MT-125","Alicante/Alacant","125",5
@@ -3468,6 +3454,7 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "YAMAHA","MT-125","Toledo","125",1
 "YAMAHA","MT-125","Valencia/València","125",7
 "YAMAHA","MT-125","Zaragoza","125",1
+"YAMAHA","NIKEN GT","Valencia/València","890",1
 "YAMAHA","NMAX125","Albacete","125",5
 "YAMAHA","NMAX125","Alicante/Alacant","125",19
 "YAMAHA","NMAX125","Almería","125",5
@@ -3511,6 +3498,20 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "YAMAHA","NMAX125","Valencia/València","125",33
 "YAMAHA","NMAX125","Valladolid","125",3
 "YAMAHA","NMAX125","Zaragoza","125",6
+"YAMAHA","R125","Alicante/Alacant","125",1
+"YAMAHA","R125","Badajoz","125",1
+"YAMAHA","R125","Barcelona","125",4
+"YAMAHA","R125","Girona","125",2
+"YAMAHA","R125","Illes Balears","125",2
+"YAMAHA","R125","Jaén","125",1
+"YAMAHA","R125","Madrid","125",3
+"YAMAHA","R125","Málaga","125",1
+"YAMAHA","R125","Murcia","125",1
+"YAMAHA","R125","Pontevedra","125",1
+"YAMAHA","R125","Santa Cruz de Tenerife","125",1
+"YAMAHA","R125","Tarragona","125",1
+"YAMAHA","R125","Toledo","125",1
+"YAMAHA","R125","Valencia/València","125",3
 "YAMAHA","RayZR 125","Álava/Araba","125",1
 "YAMAHA","RayZR 125","Albacete","125",1
 "YAMAHA","RayZR 125","Alicante/Alacant","125",5
@@ -3559,6 +3560,27 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "YAMAHA","TMAX 560","Sevilla","562",1
 "YAMAHA","TMAX 560","Tarragona","562",2
 "YAMAHA","TMAX 560","Valencia/València","562",8
+"YAMAHA","Tracer 9 GT ","Asturias","890",2
+"YAMAHA","Tracer 9 GT ","Barcelona","890",14
+"YAMAHA","Tracer 9 GT ","Bizkaia","890",2
+"YAMAHA","Tracer 9 GT ","Cádiz","890",1
+"YAMAHA","Tracer 9 GT ","Cantabria","890",3
+"YAMAHA","Tracer 9 GT ","Castellón/Castelló","890",1
+"YAMAHA","Tracer 9 GT ","Ceuta","890",1
+"YAMAHA","Tracer 9 GT ","Coruña (A)","890",2
+"YAMAHA","Tracer 9 GT ","Girona","890",1
+"YAMAHA","Tracer 9 GT ","Granada","890",4
+"YAMAHA","Tracer 9 GT ","Illes Balears","890",1
+"YAMAHA","Tracer 9 GT ","Lleida","890",1
+"YAMAHA","Tracer 9 GT ","Madrid","890",6
+"YAMAHA","Tracer 9 GT ","Málaga","890",1
+"YAMAHA","Tracer 9 GT ","Murcia","890",2
+"YAMAHA","Tracer 9 GT ","Navarra","890",1
+"YAMAHA","Tracer 9 GT ","Pontevedra","890",1
+"YAMAHA","Tracer 9 GT ","Toledo","890",1
+"YAMAHA","Tracer 9 GT ","Valencia/València","890",3
+"YAMAHA","Tracer 9 GT ","Valladolid","890",3
+"YAMAHA","Tracer 9 GT ","Zaragoza","890",2
 "YAMAHA","TRICITY 125","Barcelona","125",1
 "YAMAHA","TRICITY 125","Cantabria","125",1
 "YAMAHA","TRICITY 125","Girona","125",1
@@ -3639,6 +3661,13 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "YAMAHA","XMAX125","Valencia/València","125",12
 "YAMAHA","XMAX125","Valladolid","125",1
 "YAMAHA","XMAX125","Zaragoza","125",3
+"YAMAHA","XSR-900","Badajoz","890",1
+"YAMAHA","XSR-900","Barcelona","890",3
+"YAMAHA","XSR-900","Illes Balears","890",1
+"YAMAHA","XSR-900","Madrid","890",2
+"YAMAHA","XSR-900","Murcia","890",1
+"YAMAHA","XSR700","Almería","689",1
+"YAMAHA","XSR700","Zaragoza","689",1
 "YAMAHA","XTZ 700 Tenere","Almería","689",1
 "YAMAHA","XTZ 700 Tenere","Asturias","689",2
 "YAMAHA","XTZ 700 Tenere","Badajoz","689",1
@@ -3667,20 +3696,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "YAMAHA","XTZ 700 Tenere","Sevilla","689",3
 "YAMAHA","XTZ 700 Tenere","Valencia/València","689",3
 "YAMAHA","XTZ 700 Tenere","Zaragoza","689",1
-"YAMAHA","YZF-R125","Alicante/Alacant","125",1
-"YAMAHA","YZF-R125","Badajoz","125",1
-"YAMAHA","YZF-R125","Barcelona","125",4
-"YAMAHA","YZF-R125","Girona","125",2
-"YAMAHA","YZF-R125","Illes Balears","125",2
-"YAMAHA","YZF-R125","Jaén","125",1
-"YAMAHA","YZF-R125","Madrid","125",3
-"YAMAHA","YZF-R125","Málaga","125",1
-"YAMAHA","YZF-R125","Murcia","125",1
-"YAMAHA","YZF-R125","Pontevedra","125",1
-"YAMAHA","YZF-R125","Santa Cruz de Tenerife","125",1
-"YAMAHA","YZF-R125","Tarragona","125",1
-"YAMAHA","YZF-R125","Toledo","125",1
-"YAMAHA","YZF-R125","Valencia/València","125",3
 "YAMAHA","YZF-R3","Barcelona","321",5
 "YAMAHA","YZF-R3","Cantabria","321",1
 "YAMAHA","YZF-R3","Madrid","321",1
