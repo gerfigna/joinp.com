@@ -4623,44 +4623,39 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "YAMAHA","MT-03","Valencia/València","321",1
 "YAMAHA","MT-03","Valladolid","321",1
 "YAMAHA","MT-07","Albacete","689",1
-"YAMAHA","MT-07","Alicante/Alacant","689",5
+"YAMAHA","MT-07","Alicante/Alacant","689",3
 "YAMAHA","MT-07","Almería","689",1
-"YAMAHA","MT-07","Asturias","689",2
-"YAMAHA","MT-07","Badajoz","689",2
-"YAMAHA","MT-07","Barcelona","689",59
-"YAMAHA","MT-07","Bizkaia","689",6
+"YAMAHA","MT-07","Asturias","689",1
+"YAMAHA","MT-07","Badajoz","689",1
+"YAMAHA","MT-07","Barcelona","689",42
+"YAMAHA","MT-07","Bizkaia","689",4
 "YAMAHA","MT-07","Burgos","689",2
-"YAMAHA","MT-07","Cáceres","689",2
-"YAMAHA","MT-07","Cádiz","689",8
-"YAMAHA","MT-07","Cantabria","689",2
+"YAMAHA","MT-07","Cádiz","689",6
+"YAMAHA","MT-07","Cantabria","689",1
 "YAMAHA","MT-07","Castellón/Castelló","689",4
 "YAMAHA","MT-07","Ciudad Real","689",1
 "YAMAHA","MT-07","Córdoba","689",1
 "YAMAHA","MT-07","Coruña (A)","689",3
-"YAMAHA","MT-07","Gipuzkoa","689",3
-"YAMAHA","MT-07","Girona","689",9
-"YAMAHA","MT-07","Granada","689",7
+"YAMAHA","MT-07","Gipuzkoa","689",2
+"YAMAHA","MT-07","Girona","689",5
+"YAMAHA","MT-07","Granada","689",5
 "YAMAHA","MT-07","Guadalajara","689",1
-"YAMAHA","MT-07","Huesca","689",1
-"YAMAHA","MT-07","Illes Balears","689",14
+"YAMAHA","MT-07","Illes Balears","689",10
 "YAMAHA","MT-07","León","689",1
-"YAMAHA","MT-07","Lleida","689",4
-"YAMAHA","MT-07","Lugo","689",3
-"YAMAHA","MT-07","Madrid","689",27
-"YAMAHA","MT-07","Málaga","689",4
-"YAMAHA","MT-07","Murcia","689",12
-"YAMAHA","MT-07","Navarra","689",2
-"YAMAHA","MT-07","Ourense","689",1
-"YAMAHA","MT-07","Palencia","689",1
+"YAMAHA","MT-07","Lleida","689",2
+"YAMAHA","MT-07","Lugo","689",2
+"YAMAHA","MT-07","Madrid","689",17
+"YAMAHA","MT-07","Málaga","689",2
+"YAMAHA","MT-07","Murcia","689",7
+"YAMAHA","MT-07","Navarra","689",1
 "YAMAHA","MT-07","Palmas (Las)","689",9
-"YAMAHA","MT-07","Pontevedra","689",8
-"YAMAHA","MT-07","Rioja (La)","689",1
+"YAMAHA","MT-07","Pontevedra","689",4
 "YAMAHA","MT-07","Salamanca","689",1
-"YAMAHA","MT-07","Santa Cruz de Tenerife","689",3
-"YAMAHA","MT-07","Sevilla","689",14
-"YAMAHA","MT-07","Tarragona","689",7
+"YAMAHA","MT-07","Santa Cruz de Tenerife","689",2
+"YAMAHA","MT-07","Sevilla","689",11
+"YAMAHA","MT-07","Tarragona","689",5
 "YAMAHA","MT-07","Toledo","689",3
-"YAMAHA","MT-07","Valencia/València","689",9
+"YAMAHA","MT-07","Valencia/València","689",5
 "YAMAHA","MT-07","Valladolid","689",2
 "YAMAHA","MT-07","Zaragoza","689",2
 "YAMAHA","MT-09","Albacete","890",1
@@ -4853,6 +4848,33 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "YAMAHA","TMAX 560","Toledo","562",2
 "YAMAHA","TMAX 560","Valencia/València","562",13
 "YAMAHA","TMAX 560","Valladolid","562",1
+"YAMAHA","TRACER 700","Alicante/Alacant","689",2
+"YAMAHA","TRACER 700","Asturias","689",1
+"YAMAHA","TRACER 700","Badajoz","689",1
+"YAMAHA","TRACER 700","Barcelona","689",17
+"YAMAHA","TRACER 700","Bizkaia","689",2
+"YAMAHA","TRACER 700","Cáceres","689",2
+"YAMAHA","TRACER 700","Cádiz","689",2
+"YAMAHA","TRACER 700","Cantabria","689",1
+"YAMAHA","TRACER 700","Gipuzkoa","689",1
+"YAMAHA","TRACER 700","Girona","689",4
+"YAMAHA","TRACER 700","Granada","689",2
+"YAMAHA","TRACER 700","Huesca","689",1
+"YAMAHA","TRACER 700","Illes Balears","689",4
+"YAMAHA","TRACER 700","Lleida","689",2
+"YAMAHA","TRACER 700","Lugo","689",1
+"YAMAHA","TRACER 700","Madrid","689",10
+"YAMAHA","TRACER 700","Málaga","689",2
+"YAMAHA","TRACER 700","Murcia","689",5
+"YAMAHA","TRACER 700","Navarra","689",1
+"YAMAHA","TRACER 700","Ourense","689",1
+"YAMAHA","TRACER 700","Palencia","689",1
+"YAMAHA","TRACER 700","Pontevedra","689",4
+"YAMAHA","TRACER 700","Rioja (La)","689",1
+"YAMAHA","TRACER 700","Santa Cruz de Tenerife","689",1
+"YAMAHA","TRACER 700","Sevilla","689",3
+"YAMAHA","TRACER 700","Tarragona","689",2
+"YAMAHA","TRACER 700","Valencia/València","689",4
 "YAMAHA","Tracer 9 GT ","Alicante/Alacant","890",3
 "YAMAHA","Tracer 9 GT ","Asturias","890",4
 "YAMAHA","Tracer 9 GT ","Barcelona","890",14
