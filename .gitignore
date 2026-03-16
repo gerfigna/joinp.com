@@ -1,2 +1,3 @@
 node_modules/
 .atl/.claude/settings.local.json
+/.claude/settings.local.json
