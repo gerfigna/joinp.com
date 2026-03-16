@@ -117,27 +117,32 @@ Normalization applies two types of rules, evaluated in order: exact match first,
 - For `BENELLI`:
   `BKX 125 S -> BN125`, `TRK 702 35KW -> TRK 702`, `TRK 702X -> TRK 702`, `TRK 702X 35KW -> TRK 702`
 - For `SUZUKI`:
-  `UB125L -> ADDRESS 125`, `UZ125 -> AVENIS 125`, `DL800 -> V-Strom 800`, `DL800U -> V-Strom 800`, `GSX800 -> GSX-8S`, `DL1050 -> V-Strom 1050`, `AN400 -> BURGMAN 400`
+  `UB125L -> ADDRESS 125`, `UZ125 -> AVENIS 125`, `DL800 -> V-Strom 800`, `DL800U -> V-Strom 800`, `GSX800 -> GSX-8S`, `GSX800U -> GSX-8S`, `GSX800T -> GSX-8S`, `DL1050 -> V-Strom 1050`, `AN400 -> BURGMAN 400`
 
 **Prefix rules** (model starts with prefix → canonical):
 
 - For `YAMAHA`:
   prefix `MTN690` → `MT-07`,
-  prefix `MTT890` → `MT-09`,
+  prefix `MTT890` → `Tracer 9 GT`,
   prefix `XTZ690` → `XTZ 700 Tenere`,
   prefix `MWS125` → `TRICITY 125`,
   prefix `MTN125` → `MT-125`,
   prefix `MTM125` → `MT-125`,
   prefix `XP560` → `TMAX 560`,
   prefix `CZD300` → `XMAX 300`,
-  prefix `YZF125` → `YZF-R125`,
+  prefix `YZF125` → `R125`,
   prefix `MTN890` → `MT-09`,
-  prefix `MTT690` → `MT-07`,
-  prefix `MTM690` → `MT-07`,
+  prefix `MTT690` → `TRACER 700`,
+  prefix `MTM690` → `XSR700`,
   prefix `YZF890` → `YZF-R9`,
   prefix `MTN1000` → `MT-10`,
-  prefix `MTM890` → `MT-09`
-- For `SYM`: prefix `SYMPHONY 125` → `SYMPHONY 125`
+  prefix `MTM890` → `XSR-900`,
+  prefix `YZF320` → `YZF-R3`,
+  prefix `MXT890` → `NIKEN GT`
+- For `SYM`:
+  prefix `SYMPHONY 125` → `SYMPHONY 125`,
+  prefix `JET 14` → `JET 14`,
+  prefix `JET X` → `JET X`
 - For `BRIXTON`: prefix `CROSSFIRE 500 ` → `CROSSFIRE 500`
 - For `DUCATI`:
   prefix `MULTISTRADA V2 ` → `MULTISTRADA V2`,
@@ -157,6 +162,7 @@ Normalization applies two types of rules, evaluated in order: exact match first,
   prefix `KTM 250 EXC` → `KTM 250 EXC`,
   prefix `KTM 300 EXC` → `KTM 300 EXC`
 - For `KYMCO`: prefix `AGILITY S ` → `AGILITY S`
+- For `ZONTES`: prefix `125C` → `125C`
 - For `SUZUKI`:
   prefix `GSX-S1000` → `GSX-S 1000`
 
@@ -250,17 +256,23 @@ Normalization applies two types of rules, evaluated in order: exact match first,
 - WHEN `MODELO_ITV` starts with `CZD300` (e.g. `CZD300D-A`, `CZD300-A`)
 - THEN `MODELO_ITV` is replaced with `XMAX 300`
 
-#### Scenario: Yamaha MT-09 families unified — MTN890 and MTM890
+#### Scenario: Yamaha XSR-900 prefix rule — MTM890
 
 - GIVEN `MARCA_ITV` = `YAMAHA`
-- WHEN `MODELO_ITV` starts with `MTN890` or `MTM890`
-- THEN `MODELO_ITV` is replaced with `MT-09`
+- WHEN `MODELO_ITV` starts with `MTM890`
+- THEN `MODELO_ITV` is replaced with `XSR-900`
 
-#### Scenario: Yamaha MT-07 families unified — MTT690 and MTM690
+#### Scenario: Yamaha TRACER 700 prefix rule — MTT690
 
 - GIVEN `MARCA_ITV` = `YAMAHA`
-- WHEN `MODELO_ITV` starts with `MTT690` or `MTM690`
-- THEN `MODELO_ITV` is replaced with `MT-07`
+- WHEN `MODELO_ITV` starts with `MTT690`
+- THEN `MODELO_ITV` is replaced with `TRACER 700`
+
+#### Scenario: Yamaha XSR700 prefix rule — MTM690
+
+- GIVEN `MARCA_ITV` = `YAMAHA`
+- WHEN `MODELO_ITV` starts with `MTM690`
+- THEN `MODELO_ITV` is replaced with `XSR700`
 
 #### Scenario: Yamaha prefix rules have no shadowing conflicts
 
@@ -272,7 +284,7 @@ Normalization applies two types of rules, evaluated in order: exact match first,
 
 - GIVEN `MARCA_ITV` = `YAMAHA`
 - WHEN `MODELO_ITV` = `MTT890-A` (starts with `MTT890`)
-- THEN `MODELO_ITV` is replaced with `MT-09` (not `MT-07`)
+- THEN `MODELO_ITV` is replaced with `Tracer 9 GT` (not `TRACER 700`)
 - AND the `MTT690` rule is NOT triggered because `MTT890-A` does not start with `MTT690`
 
 - GIVEN `MARCA_ITV` = `YAMAHA`
