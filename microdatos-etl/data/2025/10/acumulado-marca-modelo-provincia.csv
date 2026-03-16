@@ -5449,42 +5449,40 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "YAMAHA","MT-07","Álava/Araba","689",3
 "YAMAHA","MT-07","Alicante/Alacant","689",16
 "YAMAHA","MT-07","Almería","689",3
-"YAMAHA","MT-07","Asturias","689",7
+"YAMAHA","MT-07","Asturias","689",6
 "YAMAHA","MT-07","Ávila","689",1
-"YAMAHA","MT-07","Badajoz","689",6
-"YAMAHA","MT-07","Barcelona","689",72
-"YAMAHA","MT-07","Bizkaia","689",5
-"YAMAHA","MT-07","Cáceres","689",2
-"YAMAHA","MT-07","Cádiz","689",23
+"YAMAHA","MT-07","Badajoz","689",5
+"YAMAHA","MT-07","Barcelona","689",52
+"YAMAHA","MT-07","Bizkaia","689",4
+"YAMAHA","MT-07","Cáceres","689",1
+"YAMAHA","MT-07","Cádiz","689",17
 "YAMAHA","MT-07","Cantabria","689",2
-"YAMAHA","MT-07","Castellón/Castelló","689",3
+"YAMAHA","MT-07","Castellón/Castelló","689",1
 "YAMAHA","MT-07","Ciudad Real","689",1
-"YAMAHA","MT-07","Córdoba","689",3
-"YAMAHA","MT-07","Coruña (A)","689",1
-"YAMAHA","MT-07","Gipuzkoa","689",3
-"YAMAHA","MT-07","Girona","689",10
-"YAMAHA","MT-07","Granada","689",6
+"YAMAHA","MT-07","Córdoba","689",2
+"YAMAHA","MT-07","Gipuzkoa","689",2
+"YAMAHA","MT-07","Girona","689",3
+"YAMAHA","MT-07","Granada","689",4
 "YAMAHA","MT-07","Huelva","689",3
 "YAMAHA","MT-07","Huesca","689",2
-"YAMAHA","MT-07","Illes Balears","689",18
+"YAMAHA","MT-07","Illes Balears","689",14
 "YAMAHA","MT-07","Jaén","689",3
-"YAMAHA","MT-07","Lugo","689",2
-"YAMAHA","MT-07","Madrid","689",34
-"YAMAHA","MT-07","Málaga","689",17
-"YAMAHA","MT-07","Murcia","689",8
-"YAMAHA","MT-07","Navarra","689",5
-"YAMAHA","MT-07","Ourense","689",2
+"YAMAHA","MT-07","Madrid","689",25
+"YAMAHA","MT-07","Málaga","689",10
+"YAMAHA","MT-07","Murcia","689",6
+"YAMAHA","MT-07","Navarra","689",4
+"YAMAHA","MT-07","Ourense","689",1
 "YAMAHA","MT-07","Palencia","689",1
-"YAMAHA","MT-07","Palmas (Las)","689",10
-"YAMAHA","MT-07","Pontevedra","689",5
+"YAMAHA","MT-07","Palmas (Las)","689",7
+"YAMAHA","MT-07","Pontevedra","689",4
 "YAMAHA","MT-07","Rioja (La)","689",1
 "YAMAHA","MT-07","Santa Cruz de Tenerife","689",7
-"YAMAHA","MT-07","Sevilla","689",15
-"YAMAHA","MT-07","Tarragona","689",8
-"YAMAHA","MT-07","Toledo","689",2
-"YAMAHA","MT-07","Valencia/València","689",15
-"YAMAHA","MT-07","Valladolid","689",4
-"YAMAHA","MT-07","Zaragoza","689",8
+"YAMAHA","MT-07","Sevilla","689",8
+"YAMAHA","MT-07","Tarragona","689",4
+"YAMAHA","MT-07","Toledo","689",1
+"YAMAHA","MT-07","Valencia/València","689",12
+"YAMAHA","MT-07","Valladolid","689",2
+"YAMAHA","MT-07","Zaragoza","689",5
 "YAMAHA","MT-09","Alicante/Alacant","890",7
 "YAMAHA","MT-09","Almería","890",1
 "YAMAHA","MT-09","Asturias","890",2
@@ -5709,6 +5707,33 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "YAMAHA","TMAX 560","Valencia/València","562",12
 "YAMAHA","TMAX 560","Valladolid","562",1
 "YAMAHA","TMAX 560","Zaragoza","562",1
+"YAMAHA","TRACER 700","Asturias","689",1
+"YAMAHA","TRACER 700","Badajoz","689",1
+"YAMAHA","TRACER 700","Barcelona","689",20
+"YAMAHA","TRACER 700","Bizkaia","689",1
+"YAMAHA","TRACER 700","Cáceres","689",1
+"YAMAHA","TRACER 700","Cádiz","689",6
+"YAMAHA","TRACER 700","Castellón/Castelló","689",2
+"YAMAHA","TRACER 700","Córdoba","689",1
+"YAMAHA","TRACER 700","Coruña (A)","689",1
+"YAMAHA","TRACER 700","Gipuzkoa","689",1
+"YAMAHA","TRACER 700","Girona","689",7
+"YAMAHA","TRACER 700","Granada","689",2
+"YAMAHA","TRACER 700","Illes Balears","689",4
+"YAMAHA","TRACER 700","Lugo","689",2
+"YAMAHA","TRACER 700","Madrid","689",9
+"YAMAHA","TRACER 700","Málaga","689",7
+"YAMAHA","TRACER 700","Murcia","689",2
+"YAMAHA","TRACER 700","Navarra","689",1
+"YAMAHA","TRACER 700","Ourense","689",1
+"YAMAHA","TRACER 700","Palmas (Las)","689",3
+"YAMAHA","TRACER 700","Pontevedra","689",1
+"YAMAHA","TRACER 700","Sevilla","689",7
+"YAMAHA","TRACER 700","Tarragona","689",4
+"YAMAHA","TRACER 700","Toledo","689",1
+"YAMAHA","TRACER 700","Valencia/València","689",3
+"YAMAHA","TRACER 700","Valladolid","689",2
+"YAMAHA","TRACER 700","Zaragoza","689",3
 "YAMAHA","Tracer 9 GT ","Alicante/Alacant","890",4
 "YAMAHA","Tracer 9 GT ","Asturias","890",3
 "YAMAHA","Tracer 9 GT ","Badajoz","890",1

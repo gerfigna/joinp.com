@@ -5369,47 +5369,45 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "YAMAHA","MT-03","Valencia/València","321",5
 "YAMAHA","MT-03","Zaragoza","321",1
 "YAMAHA","MT-07","Álava/Araba","689",1
-"YAMAHA","MT-07","Alicante/Alacant","689",15
-"YAMAHA","MT-07","Almería","689",5
-"YAMAHA","MT-07","Asturias","689",5
-"YAMAHA","MT-07","Badajoz","689",2
-"YAMAHA","MT-07","Barcelona","689",59
-"YAMAHA","MT-07","Bizkaia","689",4
+"YAMAHA","MT-07","Alicante/Alacant","689",12
+"YAMAHA","MT-07","Almería","689",4
+"YAMAHA","MT-07","Asturias","689",3
+"YAMAHA","MT-07","Badajoz","689",1
+"YAMAHA","MT-07","Barcelona","689",38
+"YAMAHA","MT-07","Bizkaia","689",2
 "YAMAHA","MT-07","Cáceres","689",3
-"YAMAHA","MT-07","Cádiz","689",8
-"YAMAHA","MT-07","Cantabria","689",6
-"YAMAHA","MT-07","Castellón/Castelló","689",4
-"YAMAHA","MT-07","Ceuta","689",1
-"YAMAHA","MT-07","Córdoba","689",4
-"YAMAHA","MT-07","Coruña (A)","689",4
-"YAMAHA","MT-07","Gipuzkoa","689",4
-"YAMAHA","MT-07","Girona","689",7
-"YAMAHA","MT-07","Granada","689",12
+"YAMAHA","MT-07","Cádiz","689",5
+"YAMAHA","MT-07","Cantabria","689",4
+"YAMAHA","MT-07","Castellón/Castelló","689",3
+"YAMAHA","MT-07","Córdoba","689",3
+"YAMAHA","MT-07","Coruña (A)","689",3
+"YAMAHA","MT-07","Gipuzkoa","689",3
+"YAMAHA","MT-07","Girona","689",6
+"YAMAHA","MT-07","Granada","689",10
 "YAMAHA","MT-07","Guadalajara","689",1
-"YAMAHA","MT-07","Huelva","689",3
+"YAMAHA","MT-07","Huelva","689",2
 "YAMAHA","MT-07","Huesca","689",1
-"YAMAHA","MT-07","Illes Balears","689",9
-"YAMAHA","MT-07","Jaén","689",5
+"YAMAHA","MT-07","Illes Balears","689",6
+"YAMAHA","MT-07","Jaén","689",4
 "YAMAHA","MT-07","León","689",1
-"YAMAHA","MT-07","Lleida","689",4
+"YAMAHA","MT-07","Lleida","689",3
 "YAMAHA","MT-07","Lugo","689",1
-"YAMAHA","MT-07","Madrid","689",38
-"YAMAHA","MT-07","Málaga","689",11
+"YAMAHA","MT-07","Madrid","689",32
+"YAMAHA","MT-07","Málaga","689",8
 "YAMAHA","MT-07","Melilla","689",1
-"YAMAHA","MT-07","Murcia","689",3
-"YAMAHA","MT-07","Navarra","689",3
+"YAMAHA","MT-07","Murcia","689",2
+"YAMAHA","MT-07","Navarra","689",2
 "YAMAHA","MT-07","Ourense","689",3
-"YAMAHA","MT-07","Palmas (Las)","689",11
+"YAMAHA","MT-07","Palmas (Las)","689",7
 "YAMAHA","MT-07","Pontevedra","689",2
-"YAMAHA","MT-07","Rioja (La)","689",3
-"YAMAHA","MT-07","Santa Cruz de Tenerife","689",7
+"YAMAHA","MT-07","Rioja (La)","689",1
+"YAMAHA","MT-07","Santa Cruz de Tenerife","689",6
 "YAMAHA","MT-07","Segovia","689",1
-"YAMAHA","MT-07","Sevilla","689",12
-"YAMAHA","MT-07","Tarragona","689",9
+"YAMAHA","MT-07","Sevilla","689",11
+"YAMAHA","MT-07","Tarragona","689",8
 "YAMAHA","MT-07","Teruel","689",1
-"YAMAHA","MT-07","Toledo","689",1
-"YAMAHA","MT-07","Valencia/València","689",21
-"YAMAHA","MT-07","Zaragoza","689",5
+"YAMAHA","MT-07","Valencia/València","689",14
+"YAMAHA","MT-07","Zaragoza","689",4
 "YAMAHA","MT-09","Albacete","890",2
 "YAMAHA","MT-09","Alicante/Alacant","890",3
 "YAMAHA","MT-09","Almería","890",1
@@ -5620,6 +5618,37 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT
 "YAMAHA","TMAX 560","Valencia/València","562",15
 "YAMAHA","TMAX 560","Valladolid","562",1
 "YAMAHA","TMAX 560","Zaragoza","562",2
+"YAMAHA","TRACER 700","Alicante/Alacant","689",3
+"YAMAHA","TRACER 700","Almería","689",1
+"YAMAHA","TRACER 700","Asturias","689",2
+"YAMAHA","TRACER 700","Badajoz","689",1
+"YAMAHA","TRACER 700","Barcelona","689",21
+"YAMAHA","TRACER 700","Bizkaia","689",2
+"YAMAHA","TRACER 700","Cádiz","689",3
+"YAMAHA","TRACER 700","Cantabria","689",2
+"YAMAHA","TRACER 700","Castellón/Castelló","689",1
+"YAMAHA","TRACER 700","Ceuta","689",1
+"YAMAHA","TRACER 700","Córdoba","689",1
+"YAMAHA","TRACER 700","Coruña (A)","689",1
+"YAMAHA","TRACER 700","Gipuzkoa","689",1
+"YAMAHA","TRACER 700","Girona","689",1
+"YAMAHA","TRACER 700","Granada","689",2
+"YAMAHA","TRACER 700","Huelva","689",1
+"YAMAHA","TRACER 700","Illes Balears","689",3
+"YAMAHA","TRACER 700","Jaén","689",1
+"YAMAHA","TRACER 700","Lleida","689",1
+"YAMAHA","TRACER 700","Madrid","689",6
+"YAMAHA","TRACER 700","Málaga","689",3
+"YAMAHA","TRACER 700","Murcia","689",1
+"YAMAHA","TRACER 700","Navarra","689",1
+"YAMAHA","TRACER 700","Palmas (Las)","689",4
+"YAMAHA","TRACER 700","Rioja (La)","689",2
+"YAMAHA","TRACER 700","Santa Cruz de Tenerife","689",1
+"YAMAHA","TRACER 700","Sevilla","689",1
+"YAMAHA","TRACER 700","Tarragona","689",1
+"YAMAHA","TRACER 700","Toledo","689",1
+"YAMAHA","TRACER 700","Valencia/València","689",7
+"YAMAHA","TRACER 700","Zaragoza","689",1
 "YAMAHA","Tracer 9 GT ","Álava/Araba","890",2
 "YAMAHA","Tracer 9 GT ","Albacete","890",1
 "YAMAHA","Tracer 9 GT ","Alicante/Alacant","890",3
