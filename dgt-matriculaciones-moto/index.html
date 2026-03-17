@@ -805,7 +805,8 @@
               tooltip: {
                 callbacks: {
                   label(ctx) {
-                    const pct = ((ctx.parsed / total) * 100).toFixed(1);
+                    const dataTotal = ctx.dataset.data.reduce((s, v) => s + v, 0);
+                    const pct = ((ctx.parsed / dataTotal) * 100).toFixed(1);
                     return ` ${ctx.parsed.toLocaleString('es')} unidades (${pct}%)`;
                   }
                 }
