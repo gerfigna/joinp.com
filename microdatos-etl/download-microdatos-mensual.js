@@ -67,14 +67,19 @@ function processTxt(txt) {
 
   for (const line of txt.split('\n')) {
     if (!isMotorcycleRow(line)) continue;
-    const { marca, modelo, provincia, cilindrada } = extractRowFields(line);
+    const { marca, modelo, provincia, comunidad, cilindrada } = extractRowFields(line);
 
     const key = `${marca}\t${modelo}`;
     if (!data.has(key)) data.set(key, { count: 0, cilindradaCounts: new Map(), provinciaCounts: new Map() });
     const entry = data.get(key);
     entry.count++;
     if (cilindrada) entry.cilindradaCounts.set(cilindrada, (entry.cilindradaCounts.get(cilindrada) || 0) + 1);
-    entry.provinciaCounts.set(provincia, (entry.provinciaCounts.get(provincia) || 0) + 1);
+    const provEntry = entry.provinciaCounts.get(provincia);
+    if (provEntry) {
+      provEntry.count++;
+    } else {
+      entry.provinciaCounts.set(provincia, { count: 1, comunidad });
+    }
   }
 
   return data;

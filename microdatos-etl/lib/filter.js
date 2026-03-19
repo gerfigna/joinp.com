@@ -1,7 +1,7 @@
 'use strict';
 
 const { getField } = require('./fields');
-const { normalizeModel, normalizeProvince } = require('./normalize');
+const { normalizeModel, normalizeProvince, normalizeComunidad } = require('./normalize');
 
 /**
  * Returns true if the line represents a new motorcycle registration that
@@ -34,7 +34,9 @@ function isMotorcycleRow(line) {
 function extractRowFields(line) {
   const marca     = getField(line, 'MARCA_ITV');
   const modelo    = normalizeModel(marca, getField(line, 'MODELO_ITV'));
-  const provincia = normalizeProvince(getField(line, 'COD_PROVINCIA_VEH'));
+  const codProvincia = getField(line, 'COD_PROVINCIA_VEH');
+  const provincia = normalizeProvince(codProvincia);
+  const comunidad = normalizeComunidad(codProvincia);
   const cilindrada = getField(line, 'CILINDRADA_ITV');
   return {
     fecMatricula:   getField(line, 'FEC_MATRICULA'),
@@ -43,6 +45,7 @@ function extractRowFields(line) {
     marca,
     modelo,
     provincia,
+    comunidad,
     cilindrada,
   };
 }

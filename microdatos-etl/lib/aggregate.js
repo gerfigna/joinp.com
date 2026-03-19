@@ -62,12 +62,12 @@ function writeAggregates(year, month, data) {
   // acumulado-marca-modelo-provincia.csv
   const provRows = [];
   for (const r of rows) {
-    for (const [provincia, count] of r.provinciaCounts)
-      provRows.push({ marca: r.marca, modelo: r.modelo, provincia, cilindrada: r.cilindrada, count });
+    for (const [provincia, { count, comunidad }] of r.provinciaCounts)
+      provRows.push({ marca: r.marca, modelo: r.modelo, provincia, comunidad, cilindrada: r.cilindrada, count });
   }
   provRows.sort((a, b) => a.marca.localeCompare(b.marca) || a.modelo.localeCompare(b.modelo) || a.provincia.localeCompare(b.provincia));
-  const provLines = ['MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT'];
-  for (const r of provRows) provLines.push(`"${r.marca}","${r.modelo}","${r.provincia}","${r.cilindrada}",${r.count}`);
+  const provLines = ['MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT'];
+  for (const r of provRows) provLines.push(`"${r.marca}","${r.modelo}","${r.provincia}","${r.comunidad}","${r.cilindrada}",${r.count}`);
   fs.writeFileSync(provinciaMonthlyPath(year, month), provLines.join('\n') + '\n');
 }
 

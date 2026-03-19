@@ -20,7 +20,9 @@ The page SHALL fetch and parse the monthly CSV file `acumulado-marca-modelo-prov
 ---
 
 ### Requirement: Year/Month selector
-The page SHALL provide a year selector and a month selector to choose which month's data to display. Available options SHALL cover from January 2026 up to the current month.
+The page SHALL provide a year selector and a month selector to choose which month's data to display. Available options SHALL cover from January 2025 up to the current month.
+
+The year and month selects SHALL be rendered in a dedicated `<div class="period-selector">` container that is visually distinct from and positioned above the `.filters` panel. The `.filters` panel SHALL NOT contain the year or month selects.
 
 #### Scenario: Default selection is most recent month
 - **WHEN** the page loads
@@ -29,6 +31,10 @@ The page SHALL provide a year selector and a month selector to choose which mont
 #### Scenario: Selecting a past month
 - **WHEN** the user selects a year and month
 - **THEN** the data, table, and chart update to reflect that month's registrations
+
+#### Scenario: Period selector rendered above filters
+- **WHEN** the page loads
+- **THEN** a `.period-selector` element is visible above the `.filters` panel containing `sel-year` and `sel-month`, and the `.filters` panel does not contain those selects
 
 ---
 
@@ -157,3 +163,15 @@ The table SHALL display the following columns: Marca, Modelo, Cilindrada (cc), M
 #### Scenario: All columns visible
 - **WHEN** the table renders
 - **THEN** all four columns are visible with correct data
+
+---
+
+### Requirement: CSV parsing uses current column order
+The dashboard CSV parser SHALL correctly read the column order produced by the ETL:
+`MARCA_ITV, MODELO_ITV, PROVINCIA_VEH, COMUNIDAD_AUTONOMA, CILINDRADA_ITV, COUNT`.
+
+Each parsed row object SHALL have properties: `MARCA_ITV`, `MODELO_ITV`, `PROVINCIA_VEH`, `COMUNIDAD_AUTONOMA`, `CILINDRADA_ITV`, `COUNT`. All field access SHALL use header names, not positional index.
+
+#### Scenario: COMUNIDAD_AUTONOMA parsed correctly
+- **WHEN** a CSV row is `"HONDA","PCX125","Madrid","Comunidad de Madrid","125",42`
+- **THEN** the parsed row has `COMUNIDAD_AUTONOMA === "Comunidad de Madrid"`, `CILINDRADA_ITV === 125`, and `COUNT === 42`

@@ -49,14 +49,14 @@ function processTxt(txt) {
   for (const line of txt.split('\n')) {
     if (!isMotorcycleRow(line)) continue;
     const f = extractRowFields(line);
-    rows.push([f.fecMatricula, f.codClaseMat, f.fecTramitacion, f.marca, f.modelo, f.provincia, f.cilindrada]);
+    rows.push([f.fecMatricula, f.codClaseMat, f.fecTramitacion, f.marca, f.modelo, f.provincia, f.comunidad, f.cilindrada]);
   }
   return rows;
 }
 
 function writeDailyCsv(filePath, rows) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
-  const lines = ['FEC_MATRICULA,COD_CLASE_MAT,FEC_TRAMITACION,MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV'];
+  const lines = ['FEC_MATRICULA,COD_CLASE_MAT,FEC_TRAMITACION,MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV'];
   for (const r of rows) lines.push(r.map((v) => `"${v}"`).join(','));
   fs.writeFileSync(filePath, lines.join('\n') + '\n');
 }
@@ -79,13 +79,19 @@ function recalculateMonthly(year, month) {
       const marca = parts[3];
       const modelo = parts[4];
       const provincia = normalizeProvince(parts[5] || '');
-      const cilindrada = parts[6] || '';
+      const comunidad = parts[6] || '';
+      const cilindrada = parts[7] || '';
       const key = `${marca}\t${modelo}`;
       if (!data.has(key)) data.set(key, { count: 0, cilindradaCounts: new Map(), provinciaCounts: new Map() });
       const entry = data.get(key);
       entry.count++;
       if (cilindrada) entry.cilindradaCounts.set(cilindrada, (entry.cilindradaCounts.get(cilindrada) || 0) + 1);
-      entry.provinciaCounts.set(provincia, (entry.provinciaCounts.get(provincia) || 0) + 1);
+      const provEntry = entry.provinciaCounts.get(provincia);
+      if (provEntry) {
+        provEntry.count++;
+      } else {
+        entry.provinciaCounts.set(provincia, { count: 1, comunidad });
+      }
     }
   }
 

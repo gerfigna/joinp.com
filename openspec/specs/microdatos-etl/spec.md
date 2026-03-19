@@ -317,7 +317,7 @@ The system SHALL store resulting records in CSV format with one output per date 
 
 - WHEN processing for a date `YYYYMMDD` finishes
 - THEN the file `/microdatos-etl/data/YYYY/MM/DD.csv` is created
-- AND the CSV contains columns `FEC_MATRICULA,COD_CLASE_MAT,FEC_TRAMITACION,MARCA_ITV,MODELO_ITV,COD_PROVINCIA_VEH,CILINDRADA_ITV`
+- AND the CSV contains columns `FEC_MATRICULA,COD_CLASE_MAT,FEC_TRAMITACION,MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV`
 
 ### Requirement: Monthly aggregation by brand and model
 
@@ -449,7 +449,7 @@ It SHALL be generated in the same operation as `acumulado-marca-modelo.csv`.
 #### Scenario: Monthly aggregation structure
 
 - WHEN the monthly province CSV is generated
-- THEN it includes columns `MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT`
+- THEN it includes columns `MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT`
 - AND each row represents a unique `MARCA_ITV` + `MODELO_ITV` + `PROVINCIA_VEH` combination
 - AND `COUNT` is the total number of records in that month for that combination
 - AND `CILINDRADA_ITV` is the validated displacement value for that brand-model combination
