@@ -357,6 +357,34 @@
     }
 
     @keyframes spin { to { transform: rotate(360deg); } }
+
+    .table-loading {
+      position: relative;
+    }
+
+    .table-loading table {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    .table-loading .spinner-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+    }
+
+    .table-loading .spinner-overlay::after {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 32px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.6s linear infinite;
+    }
   </style>
 </head>
 <body>
@@ -487,6 +515,7 @@
     const inpCcMax    = document.getElementById('inp-cc-max');
     const btnReset    = document.getElementById('btn-reset');
     const tableBody   = document.getElementById('table-body');
+    const tableWrap   = document.querySelector('.table-wrap');
 
 
     const btnPrev     = document.getElementById('btn-prev');
@@ -522,6 +551,24 @@
       // Default to current month (or Dec of start year if before start)
       selYear.value = curYear >= START_YEAR ? curYear : START_YEAR;
       selMonth.value = String(curMonth).padStart(2, '0');
+    }
+
+    function updateMonthOptions() {
+      const curYear = new Date().getFullYear();
+      const curMonth = new Date().getMonth() + 1;
+      const selectedYear = parseInt(selYear.value, 10);
+      const currentMonth = selectedYear === curYear ? curMonth : 12;
+
+      Array.from(selMonth.options).forEach((opt, idx) => {
+        const month = idx + 1;
+        opt.disabled = month > currentMonth;
+      });
+
+      if (parseInt(selMonth.value, 10) > currentMonth) {
+        selMonth.value = String(currentMonth).padStart(2, '0');
+      }
+
+      fetchData();
     }
 
     // ── CSV fetch + parse ─────────────────────────────────────────────────────
@@ -567,19 +614,42 @@
       const month = selMonth.value;
       const path = `/microdatos-etl/data/${year}/${month}/acumulado-marca-modelo-provincia.csv`;
 
-      tableBody.innerHTML = '<tr class="empty-row"><td colspan="4"><div class="spinner"></div></td></tr>';
       rawData = [];
+
+      const showSpinner = () => {
+        tableWrap.classList.add('table-loading');
+        const spinner = document.createElement('div');
+        spinner.className = 'spinner-overlay';
+        spinner.id = 'table-spinner';
+        tableWrap.appendChild(spinner);
+      };
+
+      const hideSpinner = () => {
+        const spinner = document.getElementById('table-spinner');
+        if (spinner) spinner.remove();
+        tableWrap.classList.remove('table-loading');
+      };
+
+      let loadError = false;
+
+      const spinnerTimeout = setTimeout(showSpinner, 500);
 
       try {
         const res = await fetch(path);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const text = await res.text();
         rawData = parseCSV(text);
-      } catch {
+      } catch (e) {
+        loadError = true;
         rawData = [];
-        showEmpty('Datos no disponibles para el período seleccionado');
       } finally {
+        clearTimeout(spinnerTimeout);
+        hideSpinner();
+      }
 
+      if (loadError) {
+        showEmpty('Error al cargar los datos. Inténtalo de nuevo.');
+        return;
       }
 
       populateDropdowns();
@@ -851,7 +921,7 @@
 
     // ── Event wiring ──────────────────────────────────────────────────────────
 
-    selYear.addEventListener('change', fetchData);
+    selYear.addEventListener('change', () => { updateMonthOptions(); });
     selMonth.addEventListener('change', fetchData);
     selBrand.addEventListener('change', applyFiltersAndRender);
     selComunidad.addEventListener('change', () => {
