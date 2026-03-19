@@ -3,9 +3,7 @@
 ## Purpose
 
 Automate the daily download of vehicle registration microdata from DGT.
-
 ## Requirements
-
 ### Requirement: Scheduled execution every 6 hours
 
 The system SHALL run a scheduled job every 6 hours (at 00:00, 06:00, 12:00, and 18:00 UTC) in GitHub Actions.
@@ -507,12 +505,14 @@ At the end of a successful ETL run, the workflow SHALL commit changes under `/mi
 
 ### Requirement: Script location
 
-The system SHALL place the main ETL script inside the `/microdatos-etl/` directory.
+The system SHALL place the main ETL scripts and all shared library modules inside the `/microdatos-etl/` directory.
+Shared modules SHALL reside under `/microdatos-etl/lib/`.
 
 #### Scenario: Repository structure
 
 - WHEN the workflow runs
 - THEN the command uses a script in `/microdatos-etl/`
+- AND shared modules used by those scripts are located under `/microdatos-etl/lib/`
 
 ### Requirement: Full reproceso after normalization rule changes
 
@@ -533,3 +533,4 @@ The system SHALL NOT assume that previously stored CSV files already contain the
 - WHEN the file has not been deleted before the next ETL run
 - THEN the monthly aggregates computed from it will contain the old non-canonical model names
 - AND the system produces no error (behavior consistent with incremental-skip requirement)
+
