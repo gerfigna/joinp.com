@@ -170,13 +170,6 @@
       min-width: 0;
     }
 
-    .table-meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: var(--muted);
-      font-size: 0.8rem;
-    }
 
     .table-wrap {
       overflow-x: auto;
@@ -352,23 +345,15 @@
       font-variant-numeric: tabular-nums;
     }
 
-    /* Loading spinner */
-    .loading {
-      display: none;
-      align-items: center;
-      gap: 0.5rem;
-      color: var(--muted);
-      font-size: 0.85rem;
-      padding: 2rem;
-    }
-
     .spinner {
+      display: inline-block;
       width: 16px;
       height: 16px;
       border: 2px solid var(--border);
       border-top-color: var(--accent);
       border-radius: 50%;
       animation: spin 0.6s linear infinite;
+      vertical-align: middle;
     }
 
     @keyframes spin { to { transform: rotate(360deg); } }
@@ -428,9 +413,7 @@
     <div class="content">
       <!-- Table -->
       <div class="table-section">
-        <div class="table-meta">
-          <div class="loading" id="loading"><div class="spinner"></div> Cargando…</div>
-        </div>
+
         <div class="table-wrap">
           <table>
             <thead>
@@ -505,7 +488,7 @@
     const btnReset    = document.getElementById('btn-reset');
     const tableBody   = document.getElementById('table-body');
 
-    const loading     = document.getElementById('loading');
+
     const btnPrev     = document.getElementById('btn-prev');
     const btnNext     = document.getElementById('btn-next');
     const pageDisplay = document.getElementById('page-display');
@@ -584,7 +567,7 @@
       const month = selMonth.value;
       const path = `/microdatos-etl/data/${year}/${month}/acumulado-marca-modelo-provincia.csv`;
 
-      setLoading(true);
+      tableBody.innerHTML = '<tr class="empty-row"><td colspan="4"><div class="spinner"></div></td></tr>';
       rawData = [];
 
       try {
@@ -596,7 +579,7 @@
         rawData = [];
         showEmpty('Datos no disponibles para el período seleccionado');
       } finally {
-        setLoading(false);
+
       }
 
       populateDropdowns();
@@ -861,10 +844,6 @@
 
     // ── Helpers ───────────────────────────────────────────────────────────────
 
-    function setLoading(on) {
-      loading.style.display = on ? 'flex' : 'none';
-      loading.style.marginBottom = on ? '0.75rem' : '0';
-    }
 
     function showEmpty(msg) {
       tableBody.innerHTML = `<tr class="empty-row"><td colspan="4">${esc(msg)}</td></tr>`;
