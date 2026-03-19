@@ -35,7 +35,6 @@ joinp.com/
 │           └── acumulado-marca-modelo-provincia.csv # Monthly aggregation by brand + model + province
 ├── openspec/                           # SDD artifacts (legacy openspec, all archived)
 └── .github/workflows/
-    ├── static.yml                      # Deploy to GitHub Pages on push to main
     ├── microdatos-etl.yml              # Scheduled ETL every 6h + manual dispatch
     ├── claude.yml                      # Claude Code bot (@claude in issues/PRs)
     └── claude-code-review.yml          # Automated PR review
@@ -69,7 +68,6 @@ Open `dgt-matriculaciones-moto/index.html` directly in a browser. The dashboard 
 ### CI/CD
 
 - The ETL workflow (`microdatos-etl.yml`) runs automatically every 6 hours. It commits new data directly to `main` with the message `"Update microdatos-etl data"`.
-- `static.yml` deploys to GitHub Pages on every push to `main`. The deployment branch is `main` — do not rename it.
 
 ---
 
