@@ -11,10 +11,8 @@
  * (e.g. 01.csv, 02.csv ...) written by the daily ETL, skip entirely
  * to avoid collision between daily granular data and monthly aggregated data.
  *
- * Output: writes directly to the same aggregated files that the daily ETL
+ * Output: writes directly to the aggregated CSV that the daily ETL
  * produces after accumulation:
- *   data/YYYY/MM/acumulado-marca-modelo.csv
- *   data/YYYY/MM/acumulado-marca.csv
  *   data/YYYY/MM/acumulado-marca-modelo-provincia.csv
  *
  * Idempotent: safe to run multiple times.
@@ -40,7 +38,7 @@ const TARGET_MONTHS = [
   { year: '2026', month: '02' },
 ];
 
-const { writeAggregates, monthDir, monthlyPath } = require('./lib/aggregate');
+const { writeAggregates, monthDir } = require('./lib/aggregate');
 const { httpGet } = require('./lib/http');
 const { extractTxtFromZip } = require('./lib/zip');
 const { isMotorcycleRow, extractRowFields } = require('./lib/filter');
@@ -55,10 +53,6 @@ function hasDailyData(year, month) {
   const dir = monthDir(year, month);
   if (!fs.existsSync(dir)) return false;
   return fs.readdirSync(dir).some((f) => /^\d{2}\.csv$/.test(f));
-}
-
-function hasMonthlyData(year, month) {
-  return fs.existsSync(monthlyPath(year, month));
 }
 
 function processTxt(txt) {
@@ -92,12 +86,6 @@ async function main() {
     // Skip if daily ETL data already exists for this month
     if (hasDailyData(year, month)) {
       console.log(`Skipping ${label} — daily data already exists (collision prevention)`);
-      continue;
-    }
-
-    // Skip if monthly aggregates already exist (idempotency)
-    if (hasMonthlyData(year, month)) {
-      console.log(`Skipping ${label} — monthly aggregates already exist`);
       continue;
     }
 
