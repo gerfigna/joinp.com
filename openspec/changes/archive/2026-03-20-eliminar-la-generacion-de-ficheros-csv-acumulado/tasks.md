@@ -22,8 +22,8 @@
 
 ## Phase 4: Verification (Manual)
 
-- [ ] 4.1 Run `node download-microdatos.js` locally and verify `data/YYYY/MM/` contains exactly 1 aggregate CSV (`acumulado-marca-modelo-provincia.csv`), not 3
+- [x] 4.1 Run `node download-microdatos.js` locally and verify `data/YYYY/MM/` contains exactly 1 aggregate CSV (`acumulado-marca-modelo-provincia.csv`), not 3
 
-- [ ] 4.2 Open `dgt-matriculaciones-moto/index.html` in browser and verify charts and tables still populate correctly
+- [x] 4.2 Open `dgt-matriculaciones-moto/index.html` in browser and verify charts and tables still populate correctly
 
-- [ ] 4.3 Commit all changes in a single atomic commit
+- [x] 4.3 Commit all changes in a single atomic commit
