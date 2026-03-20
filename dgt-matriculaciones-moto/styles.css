@@ -625,3 +625,37 @@ footer .label {
   .content { grid-template-columns: 1fr; }
   .chart-section { position: relative; top: 0; }
 }
+
+@media (max-width: 768px) {
+  header { padding: 1.5rem 1rem 1rem; }
+  header h1 { font-size: 1.5rem; }
+  .main { padding: 1rem; }
+  
+  .tab-nav { flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+  .tab-nav label { font-size: 0.85rem; padding: 0.5rem; flex: 1; text-align: center; }
+  
+  .period-selector { gap: 1rem; flex-wrap: wrap; }
+  .filters { gap: 1rem; }
+  .filter-group { flex: 1; min-width: calc(50% - 1rem); }
+  .filter-group select, .filter-group input[type="number"] { width: 100%; min-width: 0; }
+  .filter-inline input[type="number"] { width: 100%; }
+  
+  .btn-reset { width: 100%; margin-top: 0.5rem; }
+  
+  .chart-wrap { height: 250px; }
+  
+  .evolution-chart-section { padding: 1rem; }
+  .evolution-canvas-wrap { height: 300px; }
+  .evolution-canvas-wrap--tall { height: 400px; }
+  
+  footer { flex-direction: column; gap: 0.5rem; padding: 1rem; text-align: center; }
+  
+  .hide-mobile { display: none !important; }
+}
+
+@media (max-width: 480px) {
+  .filter-group { min-width: 100%; }
+  .pagination-controls { flex-direction: column; width: 100%; margin-top: 1rem; }
+  .btn-page { width: 100%; }
+  .pagination { flex-direction: column; align-items: center; gap: 0.5rem; }
+}
