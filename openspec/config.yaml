@@ -6,8 +6,7 @@ context: |
   Structure:
   - / (root): existing index.html. Domain landing page: for sale or open to new projects. Vanilla HTML/CSS/JS, no build step.
   - /dgt-matriculaciones-moto/: statistical analysis project for motorcycle registrations in Spain (DGT data). Independent project within the same repo.
-      Data source: monthly CSV files written by the ETL at /microdatos-etl/data/{year}/{month}/acumulado-marca-modelo.csv and /microdatos-etl/data/{year}/{month}/acumulado-marca.csv
-      Example: /microdatos-etl/data/2026/02/acumulado-marca-modelo.csv -> brand+model aggregation for February 2026.
+      Data source: monthly CSV files written by the ETL at /microdatos-etl/data/{year}/{month}/acumulado-marca-modelo-provincia.csv
       CSV files are the only data source; there is no backend or external API.
   - /microdatos-etl/: folder containing a JS script scheduled to run every morning and extract microdata from the Spanish DGT website.
 

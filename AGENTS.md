@@ -30,8 +30,6 @@ joinp.com/
 │   └── data/
 │       └── YYYY/MM/
 │           ├── DD.csv                              # Daily filtered records
-│           ├── acumulado-marca-modelo.csv          # Monthly aggregation by brand + model
-│           ├── acumulado-marca.csv                 # Monthly aggregation by brand only
 │           └── acumulado-marca-modelo-provincia.csv # Monthly aggregation by brand + model + province
 ├── openspec/                           # SDD artifacts (legacy openspec, all archived)
 └── .github/workflows/
@@ -52,7 +50,7 @@ npm install          # installs adm-zip only
 node download-microdatos.js
 ```
 
-This downloads new daily ZIPs from the DGT listing page, processes only dates whose `data/YYYY/MM/DD.csv` does not yet exist, and regenerates all monthly aggregation CSVs for affected months.
+This downloads new daily ZIPs from the DGT listing page, processes only dates whose `data/YYYY/MM/DD.csv` does not yet exist, and regenerates the monthly aggregation CSV for affected months.
 
 ### Re-aggregate a specific month
 
@@ -88,9 +86,7 @@ Daily CSVs use these columns (exactly):
 `FEC_MATRICULA`, `COD_CLASE_MAT`, `FEC_TRAMITACION`, `MARCA_ITV`, `MODELO_ITV`, `PROVINCIA_VEH`, `CILINDRADA_ITV`
 
 Monthly aggregation CSVs:
-- `acumulado-marca-modelo.csv`: `MARCA_ITV,MODELO_ITV,CILINDRADA_ITV,COUNT`
-- `acumulado-marca.csv`: `MARCA_ITV,COUNT`
-- `acumulado-marca-modelo-provincia.csv`: `MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT`
+- `acumulado-marca-modelo-provincia.csv`: `MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT`
 
 ### Model normalization
 

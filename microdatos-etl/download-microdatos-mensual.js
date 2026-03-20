@@ -11,10 +11,8 @@
  * (e.g. 01.csv, 02.csv ...) written by the daily ETL, skip entirely
  * to avoid collision between daily granular data and monthly aggregated data.
  *
- * Output: writes directly to the same aggregated files that the daily ETL
+ * Output: writes directly to the aggregated CSV that the daily ETL
  * produces after accumulation:
- *   data/YYYY/MM/acumulado-marca-modelo.csv
- *   data/YYYY/MM/acumulado-marca.csv
  *   data/YYYY/MM/acumulado-marca-modelo-provincia.csv
  *
  * Idempotent: safe to run multiple times.
@@ -40,7 +38,7 @@ const TARGET_MONTHS = [
   { year: '2026', month: '02' },
 ];
 
-const { writeAggregates, monthDir, monthlyPath } = require('./lib/aggregate');
+const { writeAggregates, monthDir } = require('./lib/aggregate');
 const { httpGet } = require('./lib/http');
 const { extractTxtFromZip } = require('./lib/zip');
 const { isMotorcycleRow, extractRowFields } = require('./lib/filter');
@@ -57,24 +55,25 @@ function hasDailyData(year, month) {
   return fs.readdirSync(dir).some((f) => /^\d{2}\.csv$/.test(f));
 }
 
-function hasMonthlyData(year, month) {
-  return fs.existsSync(monthlyPath(year, month));
-}
-
 function processTxt(txt) {
   // key: MARCA\tMODELO → { count, cilindradaCounts: Map, provinciaCounts: Map }
   const data = new Map();
 
   for (const line of txt.split('\n')) {
     if (!isMotorcycleRow(line)) continue;
-    const { marca, modelo, provincia, cilindrada } = extractRowFields(line);
+    const { marca, modelo, provincia, comunidad, cilindrada } = extractRowFields(line);
 
     const key = `${marca}\t${modelo}`;
     if (!data.has(key)) data.set(key, { count: 0, cilindradaCounts: new Map(), provinciaCounts: new Map() });
     const entry = data.get(key);
     entry.count++;
     if (cilindrada) entry.cilindradaCounts.set(cilindrada, (entry.cilindradaCounts.get(cilindrada) || 0) + 1);
-    entry.provinciaCounts.set(provincia, (entry.provinciaCounts.get(provincia) || 0) + 1);
+    const provEntry = entry.provinciaCounts.get(provincia);
+    if (provEntry) {
+      provEntry.count++;
+    } else {
+      entry.provinciaCounts.set(provincia, { count: 1, comunidad });
+    }
   }
 
   return data;
@@ -87,12 +86,6 @@ async function main() {
     // Skip if daily ETL data already exists for this month
     if (hasDailyData(year, month)) {
       console.log(`Skipping ${label} — daily data already exists (collision prevention)`);
-      continue;
-    }
-
-    // Skip if monthly aggregates already exist (idempotency)
-    if (hasMonthlyData(year, month)) {
-      console.log(`Skipping ${label} — monthly aggregates already exist`);
       continue;
     }
 

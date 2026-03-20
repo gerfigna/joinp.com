@@ -80,8 +80,75 @@ const PROVINCE_MAP = {
   ZA: 'Zamora',
 };
 
+const PROVINCIA_TO_COMUNIDAD = {
+  A:  'Comunidad Valenciana',
+  AB: 'Castilla-La Mancha',
+  AL: 'Andalucía',
+  AV: 'Castilla y León',
+  B:  'Cataluña',
+  BA: 'Extremadura',
+  BI: 'País Vasco',
+  BU: 'Castilla y León',
+  C:  'Galicia',
+  CA: 'Andalucía',
+  CC: 'Extremadura',
+  CE: 'Ceuta',
+  CO: 'Andalucía',
+  CR: 'Castilla-La Mancha',
+  CS: 'Comunidad Valenciana',
+  CU: 'Castilla-La Mancha',
+  DS: 'Desconocido',
+  EX: 'Extranjero',
+  GC: 'Canarias',
+  GI: 'Cataluña',
+  GR: 'Andalucía',
+  GU: 'Castilla-La Mancha',
+  H:  'Andalucía',
+  HU: 'Aragón',
+  IB: 'Illes Balears',
+  J:  'Andalucía',
+  L:  'Cataluña',
+  LE: 'Castilla y León',
+  LO: 'La Rioja',
+  LU: 'Galicia',
+  M:  'Comunidad de Madrid',
+  MA: 'Andalucía',
+  ML: 'Melilla',
+  MU: 'Región de Murcia',
+  NA: 'Comunidad Foral de Navarra',
+  O:  'Principado de Asturias',
+  OR: 'Galicia',
+  OU: 'Galicia',
+  P:  'Castilla y León',
+  PM: 'Illes Balears',
+  PO: 'Galicia',
+  S:  'Cantabria',
+  SA: 'Castilla y León',
+  SE: 'Andalucía',
+  SG: 'Castilla y León',
+  SO: 'Castilla y León',
+  SS: 'País Vasco',
+  T:  'Cataluña',
+  TE: 'Aragón',
+  TF: 'Canarias',
+  TO: 'Castilla-La Mancha',
+  V:  'Comunidad Valenciana',
+  VA: 'Castilla y León',
+  VI: 'País Vasco',
+  Z:  'Aragón',
+  ZA: 'Castilla y León',
+};
+
 function normalizeProvince(code) {
   return PROVINCE_MAP[code] || code;
+}
+
+function normalizeComunidad(code) {
+  if (!(code in PROVINCIA_TO_COMUNIDAD)) {
+    console.warn(`WARN: Código de provincia desconocido: "${code}"`);
+    return code;
+  }
+  return PROVINCIA_TO_COMUNIDAD[code];
 }
 
 function normalizeModel(marca, modelo) {
@@ -93,4 +160,4 @@ function normalizeModel(marca, modelo) {
   return modelo;
 }
 
-module.exports = { BRAND_EXACT, BRAND_PREFIX, PROVINCE_MAP, normalizeModel, normalizeProvince };
+module.exports = { BRAND_EXACT, BRAND_PREFIX, PROVINCE_MAP, PROVINCIA_TO_COMUNIDAD, normalizeModel, normalizeProvince, normalizeComunidad };
