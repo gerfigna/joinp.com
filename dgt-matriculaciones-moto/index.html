@@ -385,6 +385,31 @@
       border-radius: 50%;
       animation: spin 0.6s linear infinite;
     }
+
+    footer {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.78rem;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    footer span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    footer .label {
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: 0.7rem;
+      color: #64748b;
+    }
   </style>
 </head>
 <body>
@@ -480,6 +505,11 @@
       </div>
     </div>
   </div>
+
+  <footer>
+    <span><span class="label">Última ejecución ETL:</span> <span id="footer-last-run">—</span></span>
+    <span><span class="label">Matrícula más reciente:</span> <span id="footer-last-date">—</span></span>
+  </footer>
 
   <script>
     // ── Constants ─────────────────────────────────────────────────────────────
@@ -949,11 +979,36 @@
       th.addEventListener('click', () => setSortCol(th.dataset.col));
     });
 
+    // ── Footer metadata ───────────────────────────────────────────────────────
+
+    async function loadMetadata() {
+      try {
+        const res = await fetch('/microdatos-etl/data/metadata.json');
+        if (!res.ok) return;
+        const meta = await res.json();
+
+        if (meta.lastRun) {
+          const d = new Date(meta.lastRun);
+          document.getElementById('footer-last-run').textContent =
+            d.toLocaleString('es-ES', { dateStyle: 'short', timeStyle: 'short' });
+        }
+
+        if (meta.lastDataDate) {
+          const [year, month, day] = meta.lastDataDate.split('-');
+          document.getElementById('footer-last-date').textContent =
+            `${day}/${month}/${year}`;
+        }
+      } catch (_) {
+        // silently ignore if metadata not available
+      }
+    }
+
     // ── Init ──────────────────────────────────────────────────────────────────
 
     buildSelectors();
     updateMonthOptions();
     fetchData();
+    loadMetadata();
   </script>
 </body>
 </html>

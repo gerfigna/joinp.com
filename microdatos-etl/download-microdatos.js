@@ -99,6 +99,35 @@ function recalculateMonthly(year, month) {
   console.log(`  Recalculated monthly: ${year}/${month}`);
 }
 
+function findLastDataDate() {
+  if (!fs.existsSync(DATA_DIR)) return null;
+  let lastDate = null;
+  const years = fs.readdirSync(DATA_DIR).filter(f => /^\d{4}$/.test(f)).sort();
+  for (const year of years) {
+    const yearDir = path.join(DATA_DIR, year);
+    const months = fs.readdirSync(yearDir).filter(f => /^\d{2}$/.test(f)).sort();
+    for (const month of months) {
+      const monthDir = path.join(yearDir, month);
+      const days = fs.readdirSync(monthDir).filter(f => /^\d{2}\.csv$/.test(f)).sort();
+      if (days.length > 0) {
+        const day = days[days.length - 1].replace('.csv', '');
+        lastDate = `${year}-${month}-${day}`;
+      }
+    }
+  }
+  return lastDate;
+}
+
+function writeMetadata() {
+  const metadata = {
+    lastRun: new Date().toISOString(),
+    lastDataDate: findLastDataDate(),
+  };
+  const metaPath = path.join(DATA_DIR, 'metadata.json');
+  fs.writeFileSync(metaPath, JSON.stringify(metadata, null, 2) + '\n');
+  console.log(`  Metadata written: ${metaPath}`);
+}
+
 async function main() {
   const urls = await fetchZipUrls();
   console.log(`Found ${urls.length} ZIP URL(s)`);
@@ -134,6 +163,7 @@ async function main() {
     recalculateMonthly(year, month);
   }
 
+  writeMetadata();
   console.log('Done.');
 }
 
