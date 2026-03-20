@@ -37,32 +37,3 @@ jobs:
             git commit -m "Update microdatos-etl data"
             git push
           fi
-
-  potencia:
-    runs-on: ubuntu-latest
-    needs: etl
-    permissions:
-      contents: write
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Run potencia ETL
-        run: node download-microdatos-potencia.js
-        working-directory: microdatos-etl
-
-      - name: Commit potencia data changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add microdatos-etl/data/
-          if git diff --cached --quiet; then
-            echo "No potencia data changes to commit"
-          else
-            git commit -m "Update microdatos-etl potencia aggregates"
-            git push
-          fi
