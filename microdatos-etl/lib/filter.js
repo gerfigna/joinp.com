@@ -20,9 +20,8 @@ function isMotorcycleRow(line) {
   if (COD_TIPO !== '50' || CLAVE_TRAMITE !== '1' || IND_NUEVO !== 'N' || FABRICANTE === 'ND') return false;
 
   const cilindrada = getField(line, 'CILINDRADA_ITV');
-  if (!cilindrada || cilindrada === '0') return false;
 
-  return true;
+  return !(!cilindrada || cilindrada === '0');
 }
 
 /**
@@ -50,4 +49,17 @@ function extractRowFields(line) {
   };
 }
 
-module.exports = { isMotorcycleRow, extractRowFields };
+/**
+ * Extracts MARCA_ITV and KW_ITV from a line that has already passed `isMotorcycleRow`.
+ * @param {string} line
+ * @returns {{ marca: string, kw: string } | null}
+ */
+function extractPowerFields(line) {
+  const marca = getField(line, 'MARCA_ITV');
+  const kw = getField(line, 'KW_ITV');
+  const n = parseFloat(kw);
+  if (!kw || isNaN(n) || n <= 0) return null;
+  return { marca, kw };
+}
+
+module.exports = { isMotorcycleRow, extractRowFields, extractPowerFields };
