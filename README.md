@@ -70,12 +70,8 @@ Salidas generadas:
 
 - `microdatos-etl/data/YYYY/MM/DD.csv`
   CSV diario filtrado y normalizado.
-- `microdatos-etl/data/YYYY/MM/acumulado-marca-modelo.csv`
-  Agregado mensual por marca y modelo con columnas `MARCA_ITV,MODELO_ITV,CILINDRADA_ITV,COUNT`.
-- `microdatos-etl/data/YYYY/MM/acumulado-marca.csv`
-  Agregado mensual por marca con columnas `MARCA_ITV,COUNT`.
 - `microdatos-etl/data/YYYY/MM/acumulado-marca-modelo-provincia.csv`
-  Agregado mensual por marca, modelo y provincia con columnas `MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,CILINDRADA_ITV,COUNT`.
+  Agregado mensual por marca, modelo y provincia con columnas `MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT`.
 
 Notas de implementación:
 
