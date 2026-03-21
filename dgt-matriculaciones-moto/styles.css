@@ -218,31 +218,12 @@ th {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  cursor: pointer;
-  user-select: none;
   white-space: nowrap;
   border-bottom: 1px solid var(--border);
-  transition: color 0.2s;
 }
 
-th:hover {
-  color: var(--fg);
-}
-
-th.sorted {
-  color: var(--accent);
-}
-
-th .sort-icon {
-  display: inline-block;
-  margin-left: 0.4em;
-  opacity: 0.3;
-  font-style: normal;
-  font-family: var(--font-ui);
-}
-
-th.sorted .sort-icon {
-  opacity: 1;
+th.num {
+  text-align: right;
 }
 
 td {

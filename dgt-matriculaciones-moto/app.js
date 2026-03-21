@@ -14,8 +14,6 @@
 
     let rawData = [];
     let filteredData = [];
-    let sortCol = 'COUNT';
-    let sortDir = -1; // -1 = DESC, 1 = ASC
     let currentPage = 1;
     let pieChart = null;
     let comunidadProvinciaMap = new Map();
@@ -41,7 +39,6 @@
     const chartWrap   = document.getElementById('chart-wrap');
     const chartEmpty  = document.getElementById('chart-empty');
     const chartTotal  = document.getElementById('chart-total');
-    const ths         = document.querySelectorAll('th[data-col]');
 
     // ── Year/Month selectors ──────────────────────────────────────────────────
 
@@ -263,42 +260,7 @@
     // ── Sort ──────────────────────────────────────────────────────────────────
 
     function sortData() {
-      const col = sortCol;
-      const dir = sortDir;
-      filteredData.sort((a, b) => {
-        let av = a[col], bv = b[col];
-        if (col === 'COUNT' || col === 'CILINDRADA_ITV') {
-          return (Number(av) - Number(bv)) * dir;
-        }
-        return String(av).localeCompare(String(bv), 'es') * dir;
-      });
-    }
-
-    function setSortCol(col) {
-      if (sortCol === col) {
-        sortDir = -sortDir;
-      } else {
-        sortCol = col;
-        sortDir = col === 'COUNT' ? -1 : 1;
-      }
-      updateSortHeaders();
-      sortData();
-      currentPage = 1;
-      renderTable();
-    }
-
-    function updateSortHeaders() {
-      ths.forEach(th => {
-        const col = th.dataset.col;
-        const icon = th.querySelector('.sort-icon');
-        if (col === sortCol) {
-          th.classList.add('sorted');
-          icon.textContent = sortDir === -1 ? '↓' : '↑';
-        } else {
-          th.classList.remove('sorted');
-          icon.textContent = '↕';
-        }
-      });
+      filteredData.sort((a, b) => Number(b.COUNT) - Number(a.COUNT));
     }
 
     // ── Table render ──────────────────────────────────────────────────────────
@@ -390,27 +352,34 @@
       } else {
         const ctx = document.getElementById('pie-chart').getContext('2d');
         pieChart = new Chart(ctx, {
-          type: 'pie',
+          type: 'doughnut',
           data: {
             labels,
             datasets: [{
               data: values,
               backgroundColor: colors,
-              borderColor: '#020617',
-              borderWidth: 2,
+              borderColor: '#1a1d24',
+              borderWidth: 3,
+              borderRadius: 6,
+              hoverOffset: 8,
             }]
           },
           options: {
             responsive: true,
             maintainAspectRatio: false,
+            cutout: '72%',
+            layout: {
+              padding: { top: 10, bottom: 10 }
+            },
             plugins: {
               legend: {
                 position: 'bottom',
                 labels: {
                   color: '#94a3b8',
-                  font: { size: 11 },
-                  boxWidth: 12,
-                  padding: 10,
+                  font: { size: 11, family: "'Inter', sans-serif" },
+                  usePointStyle: true,
+                  boxWidth: 8,
+                  padding: 15,
                 }
               },
               tooltip: {
@@ -460,10 +429,6 @@
 
     btnPrev.addEventListener('click', () => { currentPage--; renderTable(); });
     btnNext.addEventListener('click', () => { currentPage++; renderTable(); });
-
-    ths.forEach(th => {
-      th.addEventListener('click', () => setSortCol(th.dataset.col));
-    });
 
     // ── Footer metadata ───────────────────────────────────────────────────────
 
