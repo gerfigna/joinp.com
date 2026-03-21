@@ -511,6 +511,10 @@
       height: 320px;
     }
 
+    .evolution-canvas-wrap--tall {
+      height: 1000px;
+    }
+
     /* ── Info tab ───────────────────────────────────────────────────────────── */
 
     .tab-info-content {
@@ -694,12 +698,12 @@
         </div>
 
         <div class="evolution-chart-section">
-          <h2>Evolución por marca (top 10)</h2>
+          <h2>Evolución por marca (top 20)</h2>
           <div class="chart-mode-toggle">
             <label><input type="radio" name="brand-mode" value="absolute" checked> Absoluto</label>
             <label><input type="radio" name="brand-mode" value="percent"> Porcentaje</label>
           </div>
-          <div class="evolution-canvas-wrap">
+          <div class="evolution-canvas-wrap evolution-canvas-wrap--tall">
             <canvas id="brandChart"></canvas>
           </div>
         </div>
@@ -1242,9 +1246,11 @@
     const POWER_RANGES = ['Hasta 11 kW', '11-35 kW', 'Más de 35 kW'];
     const POWER_COLORS = ['#4e79a7', '#f28e2b', '#e15759'];
     const BRAND_COLORS = [
-      '#6366f1', '#22d3ee', '#f59e0b', '#10b981', '#f43f5e',
-      '#a855f7', '#3b82f6', '#84cc16', '#fb923c', '#14b8a6',
-      '#64748b'
+      '#4e79a7','#f28e2b','#e15759','#76b7b2','#59a14f',
+      '#edc948','#b07aa1','#ff9da7','#9c755f','#bab0ac',
+      '#1f77b4','#ff7f0e','#2ca02c','#d62728','#9467bd',
+      '#8c564b','#e377c2','#7f7f7f','#bcbd22','#17becf',
+      '#aec7e8'
     ];
 
     let evolutionData = null;
@@ -1282,13 +1288,16 @@
       renderEvolutionCharts();
     }
 
-    function getTopBrands(n = 10) {
+    function getTopBrands(n = 15) {
       const totals = {};
-      evolutionData.forEach(({ brands }) => {
-        brands.forEach(row => {
-          totals[row.MARCA_ITV] = (totals[row.MARCA_ITV] || 0) + row.COUNT;
+      const maxYear = Math.max(...evolutionData.map(d => d.year));
+      evolutionData
+        .filter(d => d.year >= maxYear - 2)
+        .forEach(({ brands }) => {
+          brands.forEach(row => {
+            totals[row.MARCA_ITV] = (totals[row.MARCA_ITV] || 0) + row.COUNT;
+          });
         });
-      });
       return Object.entries(totals)
         .sort((a, b) => b[1] - a[1])
         .slice(0, n)
@@ -1312,10 +1321,18 @@
     }
 
     function buildBrandsChartData(topBrands, mode) {
+      const currentYear = new Date().getFullYear();
+      const visibleData = mode === 'percent'
+        ? evolutionData
+        : evolutionData.filter(d => d.year < currentYear);
       const datasets = topBrands.map((brand, i) => ({
         label: brand,
+        borderColor: BRAND_COLORS[i % BRAND_COLORS.length],
         backgroundColor: BRAND_COLORS[i % BRAND_COLORS.length],
-        data: evolutionData.map(({ brands }) => {
+        fill: false,
+        tension: 0.3,
+        pointRadius: 3,
+        data: visibleData.map(({ brands }) => {
           const row = brands.find(r => r.MARCA_ITV === brand);
           const val = row ? row.COUNT : 0;
           if (mode === 'percent') {
@@ -1326,26 +1343,14 @@
         })
       }));
 
-      // "Otras" category: everything not in topBrands
-      const otrasData = evolutionData.map(({ brands }) => {
-        const topSet = new Set(topBrands);
-        const otrasVal = brands
-          .filter(r => !topSet.has(r.MARCA_ITV))
-          .reduce((s, r) => s + r.COUNT, 0);
-        if (mode === 'percent') {
-          const total = brands.reduce((s, r) => s + r.COUNT, 0);
-          return total ? Math.round(otrasVal / total * 1000) / 10 : 0;
-        }
-        return otrasVal;
-      });
-
-      datasets.push({
-        label: 'Otras',
-        backgroundColor: BRAND_COLORS[BRAND_COLORS.length - 1],
-        data: otrasData
-      });
-
       return datasets;
+    }
+
+    function brandYears(mode) {
+      const currentYear = new Date().getFullYear();
+      return evolutionData
+        .filter(d => mode === 'percent' || d.year < currentYear)
+        .map(d => d.year);
     }
 
     function renderEvolutionCharts() {
@@ -1356,9 +1361,9 @@
       if (powerChart) powerChart.destroy();
       if (brandChart) brandChart.destroy();
 
-      const topBrands = getTopBrands(10);
+      const topBrands = getTopBrands(15);
 
-      const commonOptions = (mode) => ({
+      const stackedOptions = (mode) => ({
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
@@ -1391,16 +1396,47 @@
         }
       });
 
+      const lineOptions = (mode) => ({
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: {
+              color: '#94a3b8',
+              font: { size: 11 },
+              boxWidth: 12,
+              padding: 10,
+            }
+          }
+        },
+        scales: {
+          x: {
+            ticks: { color: '#94a3b8' },
+            grid: { color: '#1e293b' }
+          },
+          y: {
+            ticks: { color: '#94a3b8' },
+            grid: { color: '#1e293b' },
+            title: {
+              display: true,
+              text: mode === 'percent' ? '%' : 'Matrículas',
+              color: '#94a3b8'
+            }
+          }
+        }
+      });
+
       powerChart = new Chart(document.getElementById('powerChart'), {
         type: 'bar',
         data: { labels: years, datasets: buildPowerChartData(powerMode) },
-        options: commonOptions(powerMode)
+        options: stackedOptions(powerMode)
       });
 
       brandChart = new Chart(document.getElementById('brandChart'), {
-        type: 'bar',
-        data: { labels: years, datasets: buildBrandsChartData(topBrands, brandMode) },
-        options: commonOptions(brandMode)
+        type: 'line',
+        data: { labels: brandYears(brandMode), datasets: buildBrandsChartData(topBrands, brandMode) },
+        options: lineOptions(brandMode)
       });
     }
 
@@ -1418,8 +1454,9 @@
     document.querySelectorAll('input[name="brand-mode"]').forEach(r => {
       r.addEventListener('change', () => {
         if (!evolutionData) return;
-        const topBrands = getTopBrands(10);
+        const topBrands = getTopBrands(15);
         const mode = document.querySelector('input[name="brand-mode"]:checked').value;
+        brandChart.data.labels = brandYears(mode);
         brandChart.data.datasets = buildBrandsChartData(topBrands, mode);
         brandChart.options.scales.y.title.text = mode === 'percent' ? '%' : 'Matrículas';
         brandChart.update();

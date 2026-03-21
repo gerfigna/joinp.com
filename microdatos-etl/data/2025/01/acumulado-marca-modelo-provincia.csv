@@ -1482,26 +1482,26 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HYOSUNG","GV300","Madrid","Comunidad de Madrid","296",1
 "HYOSUNG","GV300","Palencia","Castilla y León","296",1
 "HYOSUNG","GV300","Santa Cruz de Tenerife","Canarias","296",1
-"INDIAN MOTORCYCLE","101 SCOUT","Madrid","Comunidad de Madrid","1250",2
-"INDIAN MOTORCYCLE","101 SCOUT","Málaga","Andalucía","1250",1
-"INDIAN MOTORCYCLE","101 SCOUT","Tarragona","Cataluña","1250",1
-"INDIAN MOTORCYCLE","CHIEF DARK HORSE","Valencia/València","Comunidad Valenciana","1890",1
-"INDIAN MOTORCYCLE","FTR R CARBON","Alicante/Alacant","Comunidad Valenciana","1203",1
-"INDIAN MOTORCYCLE","FTR R CARBON","Cáceres","Extremadura","1203",2
-"INDIAN MOTORCYCLE","FTR R CARBON","Murcia","Región de Murcia","1203",1
-"INDIAN MOTORCYCLE","FTR R CARBON LE","Málaga","Andalucía","1203",1
-"INDIAN MOTORCYCLE","INDIAN PURSUIT DARK HO","Barcelona","Cataluña","1768",1
-"INDIAN MOTORCYCLE","INDIAN PURSUIT LIMITED","Toledo","Castilla-La Mancha","1768",1
-"INDIAN MOTORCYCLE","INDIAN PURSUIT LIMITED","Valencia/València","Comunidad Valenciana","1768",1
-"INDIAN MOTORCYCLE","ROADMASTER ELITE","Valencia/València","Comunidad Valenciana","1890",1
-"INDIAN MOTORCYCLE","SCOUT BOBBER LIMITED","Bizkaia","País Vasco","1250",1
-"INDIAN MOTORCYCLE","SCOUT BOBBER LIMITED","Málaga","Andalucía","1250",1
-"INDIAN MOTORCYCLE","SCOUT BOBBER LIMITED","Palmas (Las)","Canarias","1250",1
-"INDIAN MOTORCYCLE","SCOUT BOBBER LIMITED +","Madrid","Comunidad de Madrid","1250",1
-"INDIAN MOTORCYCLE","SCOUT BOBBER LIMITED +","Valencia/València","Comunidad Valenciana","1250",1
-"INDIAN MOTORCYCLE","SPORT SCOUT LIMITED+TE","Madrid","Comunidad de Madrid","1250",1
-"INDIAN MOTORCYCLE","SUPER SCOUT LIMITED +","Cádiz","Andalucía","1250",1
-"INDIAN MOTORCYCLE","SUPER SCOUT LIMITED +","Tarragona","Cataluña","1250",1
+"INDIAN","101 SCOUT","Madrid","Comunidad de Madrid","1250",2
+"INDIAN","101 SCOUT","Málaga","Andalucía","1250",1
+"INDIAN","101 SCOUT","Tarragona","Cataluña","1250",1
+"INDIAN","CHIEF DARK HORSE","Valencia/València","Comunidad Valenciana","1890",1
+"INDIAN","FTR R CARBON","Alicante/Alacant","Comunidad Valenciana","1203",1
+"INDIAN","FTR R CARBON","Cáceres","Extremadura","1203",2
+"INDIAN","FTR R CARBON","Murcia","Región de Murcia","1203",1
+"INDIAN","FTR R CARBON LE","Málaga","Andalucía","1203",1
+"INDIAN","INDIAN PURSUIT DARK HO","Barcelona","Cataluña","1768",1
+"INDIAN","INDIAN PURSUIT LIMITED","Toledo","Castilla-La Mancha","1768",1
+"INDIAN","INDIAN PURSUIT LIMITED","Valencia/València","Comunidad Valenciana","1768",1
+"INDIAN","ROADMASTER ELITE","Valencia/València","Comunidad Valenciana","1890",1
+"INDIAN","SCOUT BOBBER LIMITED","Bizkaia","País Vasco","1250",1
+"INDIAN","SCOUT BOBBER LIMITED","Málaga","Andalucía","1250",1
+"INDIAN","SCOUT BOBBER LIMITED","Palmas (Las)","Canarias","1250",1
+"INDIAN","SCOUT BOBBER LIMITED +","Madrid","Comunidad de Madrid","1250",1
+"INDIAN","SCOUT BOBBER LIMITED +","Valencia/València","Comunidad Valenciana","1250",1
+"INDIAN","SPORT SCOUT LIMITED+TE","Madrid","Comunidad de Madrid","1250",1
+"INDIAN","SUPER SCOUT LIMITED +","Cádiz","Andalucía","1250",1
+"INDIAN","SUPER SCOUT LIMITED +","Tarragona","Cataluña","1250",1
 "ITALJET","DRAGSTER125","Badajoz","Extremadura","124",1
 "ITALJET","DRAGSTER125","Santa Cruz de Tenerife","Canarias","124",1
 "ITALJET","DRAGSTER200","Badajoz","Extremadura","181",1
@@ -2493,7 +2493,7 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "MITT","XRS","Jaén","Andalucía","124",1
 "MITT","XRS","Málaga","Andalucía","124",1
 "MITT","XRS","Sevilla","Andalucía","124",1
-"MONDIAL","FLAT TRACK"," FT"," FT","Sevilla",124
+"MONDIAL","FLAT TRACK, FT","Sevilla","Andalucía","124",1
 "MONDIAL","HPS","Bizkaia","País Vasco","124",1
 "MONDIAL","HPS","Castellón/Castelló","Comunidad Valenciana","124",1
 "MONDIAL","HPS","Ciudad Real","Castilla-La Mancha","124",1

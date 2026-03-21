@@ -1,5 +1,24 @@
 'use strict';
 
+// Brand name normalization rules
+const BRAND_NAME_MAP = {
+  'WOTTAN MOTOR':           'WOTTAN',
+  'GUZZI-HISPANIA':         'GUZZI',
+  'GAS GAS':                'GASGAS',
+  'GAS-GAS':                'GASGAS',
+  'KSR MOTO AUSTRIA':       'KSR MOTO',
+  'S.Y.M':                  'SYM',
+  'VICTORY MOTOR DIVISION': 'VICTORY MOTOR',
+  'VICTORY MOTORCYCLES':    'VICTORY MOTOR',
+  'VICTORY MOTORCYCLES DIV':'VICTORY MOTOR',
+  'HARLEY DAVIDSON':        'HARLEY-DAVIDSON',
+  'INDIAN MOTORCYCLE':      'INDIAN',
+};
+
+function normalizeBrand(name) {
+  return BRAND_NAME_MAP[name] || name;
+}
+
 // Model normalization rules
 const BRAND_EXACT = {
   YAMAHA:  { 'GPD125D-A': 'NMAX125', 'GPD125-A': 'NMAX125', 'YP125R-DA': 'XMAX125', 'YP125RA': 'XMAX125', 'WR125-A': 'WR125', 'LCG125' : 'RayZR 125', 'MTN320-A': 'MT-03', 'LTS125-C': "D'elight" },
@@ -160,4 +179,4 @@ function normalizeModel(marca, modelo) {
   return modelo;
 }
 
-module.exports = { BRAND_EXACT, BRAND_PREFIX, PROVINCE_MAP, PROVINCIA_TO_COMUNIDAD, normalizeModel, normalizeProvince, normalizeComunidad };
+module.exports = { BRAND_NAME_MAP, BRAND_EXACT, BRAND_PREFIX, PROVINCE_MAP, PROVINCIA_TO_COMUNIDAD, normalizeBrand, normalizeModel, normalizeProvince, normalizeComunidad };

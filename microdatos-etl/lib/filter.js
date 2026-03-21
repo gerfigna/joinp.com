@@ -1,7 +1,7 @@
 'use strict';
 
 const { getField } = require('./fields');
-const { normalizeModel, normalizeProvince, normalizeComunidad } = require('./normalize');
+const { normalizeBrand, normalizeModel, normalizeProvince, normalizeComunidad } = require('./normalize');
 
 /**
  * Returns true if the line represents a new motorcycle registration that
@@ -31,7 +31,7 @@ function isMotorcycleRow(line) {
  * @returns {{ fecMatricula: string, codClaseMat: string, fecTramitacion: string, marca: string, modelo: string, provincia: string, cilindrada: string }}
  */
 function extractRowFields(line) {
-  const marca     = getField(line, 'MARCA_ITV');
+  const marca     = normalizeBrand(getField(line, 'MARCA_ITV'));
   const modelo    = normalizeModel(marca, getField(line, 'MODELO_ITV'));
   const codProvincia = getField(line, 'COD_PROVINCIA_VEH');
   const provincia = normalizeProvince(codProvincia);
@@ -55,7 +55,7 @@ function extractRowFields(line) {
  * @returns {{ marca: string, kw: string } | null}
  */
 function extractPowerFields(line) {
-  const marca = getField(line, 'MARCA_ITV');
+  const marca = normalizeBrand(getField(line, 'MARCA_ITV'));
   const kw = getField(line, 'KW_ITV');
   const n = parseFloat(kw);
   if (!kw || isNaN(n) || n <= 0) return null;
