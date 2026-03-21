@@ -2075,37 +2075,37 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HUSQVARNA","HUSQVARNA VITPILEN 125","Madrid","Comunidad de Madrid","125",2
 "HUSQVARNA","HUSQVARNA VITPILEN 401","Bizkaia","País Vasco","399",1
 "HYOSUNG","GV125","Navarra","Comunidad Foral de Navarra","125",1
-"INDIAN MOTORCYCLE","101 SCOUT","Valencia/València","Comunidad Valenciana","1250",1
-"INDIAN MOTORCYCLE","101 SCOUT","Valladolid","Castilla y León","1250",1
-"INDIAN MOTORCYCLE","CHALLENGER DARK HORSE","Barcelona","Cataluña","1834",1
-"INDIAN MOTORCYCLE","CHIEF BOBBER DARK HORS","Valencia/València","Comunidad Valenciana","1890",1
-"INDIAN MOTORCYCLE","CHIEF DARK HORSE","Barcelona","Cataluña","1890",1
-"INDIAN MOTORCYCLE","CHIEFTAIN POWERPLUS DA","Barcelona","Cataluña","1834",1
-"INDIAN MOTORCYCLE","CHIEFTAIN POWERPLUS LI","Coruña (A)","Galicia","1834",1
-"INDIAN MOTORCYCLE","FTR","Valencia/València","Comunidad Valenciana","1203",1
-"INDIAN MOTORCYCLE","INDIAN CHALLENGER LIMI","Barcelona","Cataluña","1768",1
-"INDIAN MOTORCYCLE","ROADMASTER POWERPLUS L","Murcia","Región de Murcia","1834",1
-"INDIAN MOTORCYCLE","SCOUT BOBBER LIMITED","Alicante/Alacant","Comunidad Valenciana","1250",1
-"INDIAN MOTORCYCLE","SCOUT BOBBER LIMITED","Asturias","Principado de Asturias","1250",1
-"INDIAN MOTORCYCLE","SCOUT BOBBER LIMITED","Cádiz","Andalucía","1250",1
-"INDIAN MOTORCYCLE","SCOUT BOBBER LIMITED +","Cádiz","Andalucía","1250",1
-"INDIAN MOTORCYCLE","SCOUT BOBBER LIMITED +","Madrid","Comunidad de Madrid","1250",1
-"INDIAN MOTORCYCLE","SCOUT BOBBER LIMITED +","Murcia","Región de Murcia","1250",1
-"INDIAN MOTORCYCLE","SCOUT BOBBER LIMITED +","Valencia/València","Comunidad Valenciana","1250",1
-"INDIAN MOTORCYCLE","SCOUT CLASSIC","Burgos","Castilla y León","1250",1
-"INDIAN MOTORCYCLE","SCOUT CLASSIC LIMITED","Alicante/Alacant","Comunidad Valenciana","1250",1
-"INDIAN MOTORCYCLE","SCOUT SIXTY BOBBER","Madrid","Comunidad de Madrid","1000",2
-"INDIAN MOTORCYCLE","SCOUT SIXTY BOBBER","Toledo","Castilla-La Mancha","1000",1
-"INDIAN MOTORCYCLE","SCOUT SIXTY BOBBER LIM","Coruña (A)","Galicia","1000",1
-"INDIAN MOTORCYCLE","SCOUT SIXTY BOBBER LIM","Málaga","Andalucía","1000",1
-"INDIAN MOTORCYCLE","SCOUT SIXTY CLASSIC","Coruña (A)","Galicia","1000",1
-"INDIAN MOTORCYCLE","SCOUT SIXTY CLASSIC","Valencia/València","Comunidad Valenciana","1000",1
-"INDIAN MOTORCYCLE","SPORT CHIEF","Barcelona","Cataluña","1890",1
-"INDIAN MOTORCYCLE","SPORT CHIEF RT","Cantabria","Cantabria","1890",1
-"INDIAN MOTORCYCLE","SPORT SCOUT LIMITED+TE","Almería","Andalucía","1250",1
-"INDIAN MOTORCYCLE","SPORT SCOUT LIMITED+TE","Madrid","Comunidad de Madrid","1250",1
-"INDIAN MOTORCYCLE","SUPER CHIEF DARK HORSE","Barcelona","Cataluña","1890",1
-"INDIAN MOTORCYCLE","SUPER SCOUT LIMITED +","Girona","Cataluña","1250",1
+"INDIAN","101 SCOUT","Valencia/València","Comunidad Valenciana","1250",1
+"INDIAN","101 SCOUT","Valladolid","Castilla y León","1250",1
+"INDIAN","CHALLENGER DARK HORSE","Barcelona","Cataluña","1834",1
+"INDIAN","CHIEF BOBBER DARK HORS","Valencia/València","Comunidad Valenciana","1890",1
+"INDIAN","CHIEF DARK HORSE","Barcelona","Cataluña","1890",1
+"INDIAN","CHIEFTAIN POWERPLUS DA","Barcelona","Cataluña","1834",1
+"INDIAN","CHIEFTAIN POWERPLUS LI","Coruña (A)","Galicia","1834",1
+"INDIAN","FTR","Valencia/València","Comunidad Valenciana","1203",1
+"INDIAN","INDIAN CHALLENGER LIMI","Barcelona","Cataluña","1768",1
+"INDIAN","ROADMASTER POWERPLUS L","Murcia","Región de Murcia","1834",1
+"INDIAN","SCOUT BOBBER LIMITED","Alicante/Alacant","Comunidad Valenciana","1250",1
+"INDIAN","SCOUT BOBBER LIMITED","Asturias","Principado de Asturias","1250",1
+"INDIAN","SCOUT BOBBER LIMITED","Cádiz","Andalucía","1250",1
+"INDIAN","SCOUT BOBBER LIMITED +","Cádiz","Andalucía","1250",1
+"INDIAN","SCOUT BOBBER LIMITED +","Madrid","Comunidad de Madrid","1250",1
+"INDIAN","SCOUT BOBBER LIMITED +","Murcia","Región de Murcia","1250",1
+"INDIAN","SCOUT BOBBER LIMITED +","Valencia/València","Comunidad Valenciana","1250",1
+"INDIAN","SCOUT CLASSIC","Burgos","Castilla y León","1250",1
+"INDIAN","SCOUT CLASSIC LIMITED","Alicante/Alacant","Comunidad Valenciana","1250",1
+"INDIAN","SCOUT SIXTY BOBBER","Madrid","Comunidad de Madrid","1000",2
+"INDIAN","SCOUT SIXTY BOBBER","Toledo","Castilla-La Mancha","1000",1
+"INDIAN","SCOUT SIXTY BOBBER LIM","Coruña (A)","Galicia","1000",1
+"INDIAN","SCOUT SIXTY BOBBER LIM","Málaga","Andalucía","1000",1
+"INDIAN","SCOUT SIXTY CLASSIC","Coruña (A)","Galicia","1000",1
+"INDIAN","SCOUT SIXTY CLASSIC","Valencia/València","Comunidad Valenciana","1000",1
+"INDIAN","SPORT CHIEF","Barcelona","Cataluña","1890",1
+"INDIAN","SPORT CHIEF RT","Cantabria","Cantabria","1890",1
+"INDIAN","SPORT SCOUT LIMITED+TE","Almería","Andalucía","1250",1
+"INDIAN","SPORT SCOUT LIMITED+TE","Madrid","Comunidad de Madrid","1250",1
+"INDIAN","SUPER CHIEF DARK HORSE","Barcelona","Cataluña","1890",1
+"INDIAN","SUPER SCOUT LIMITED +","Girona","Cataluña","1250",1
 "ITALJET","DRAGSTER125","Illes Balears","Illes Balears","124",1
 "ITALJET","DRAGSTER125","Málaga","Andalucía","124",2
 "ITALJET","DRAGSTER200","Murcia","Región de Murcia","181",1
@@ -5303,11 +5303,36 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "WOTTAN","GT2","Valencia/València","Comunidad Valenciana","125",9
 "WOTTAN","REBBE","Girona","Cataluña","124",1
 "WOTTAN","REBBE","Madrid","Comunidad de Madrid","124",1
+"WOTTAN","SIXTEEN","Alicante/Alacant","Comunidad Valenciana","125",2
+"WOTTAN","SIXTEEN","Asturias","Principado de Asturias","125",1
+"WOTTAN","SIXTEEN","Barcelona","Cataluña","125",1
+"WOTTAN","SIXTEEN","Cádiz","Andalucía","125",1
+"WOTTAN","SIXTEEN","Granada","Andalucía","125",5
+"WOTTAN","SIXTEEN","Jaén","Andalucía","125",2
+"WOTTAN","SIXTEEN","Lleida","Cataluña","125",1
+"WOTTAN","SIXTEEN","Madrid","Comunidad de Madrid","125",1
+"WOTTAN","SIXTEEN","Valencia/València","Comunidad Valenciana","125",3
+"WOTTAN","STORM","Alicante/Alacant","Comunidad Valenciana","125",3
+"WOTTAN","STORM","Badajoz","Extremadura","125",1
+"WOTTAN","STORM","Castellón/Castelló","Comunidad Valenciana","125",1
+"WOTTAN","STORM","Madrid","Comunidad de Madrid","125",1
+"WOTTAN","STORM","Málaga","Andalucía","125",2
+"WOTTAN","STORM","Murcia","Región de Murcia","125",2
+"WOTTAN","STORM","Sevilla","Andalucía","125",3
+"WOTTAN","STORM","Tarragona","Cataluña","125",1
+"WOTTAN","STORM","Valencia/València","Comunidad Valenciana","125",4
 "WOTTAN","STORM-R","Alicante/Alacant","Comunidad Valenciana","124",1
 "WOTTAN","STORM-R","Málaga","Andalucía","124",1
 "WOTTAN","STORM-S","Alicante/Alacant","Comunidad Valenciana","276",1
 "WOTTAN","STORM-S","Barcelona","Cataluña","276",1
 "WOTTAN","STORM-S","Cantabria","Cantabria","276",1
+"WOTTAN","STORM-T","Alicante/Alacant","Comunidad Valenciana","125",4
+"WOTTAN","STORM-T","Illes Balears","Illes Balears","125",1
+"WOTTAN","STORM-T","Madrid","Comunidad de Madrid","125",1
+"WOTTAN","STORM-T","Málaga","Andalucía","125",2
+"WOTTAN","STORM-T","Murcia","Región de Murcia","125",1
+"WOTTAN","STORM-T","Sevilla","Andalucía","125",1
+"WOTTAN","STORM-T","Valencia/València","Comunidad Valenciana","125",4
 "WOTTAN","STORM-V","Madrid","Comunidad de Madrid","124",1
 "WOTTAN","STORM-X","Albacete","Castilla-La Mancha","125",2
 "WOTTAN","STORM-X","Alicante/Alacant","Comunidad Valenciana","125",5
@@ -5318,37 +5343,11 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "WOTTAN","STORM-X","Granada","Andalucía","125",1
 "WOTTAN","STORM-X","Huelva","Andalucía","125",1
 "WOTTAN","STORM-X","Jaén","Andalucía","125",3
-"WOTTAN","STORM-X","Madrid","Comunidad de Madrid","125",1
+"WOTTAN","STORM-X","Madrid","Comunidad de Madrid","125",2
 "WOTTAN","STORM-X","Málaga","Andalucía","125",2
 "WOTTAN","STORM-X","Sevilla","Andalucía","125",7
 "WOTTAN","STORM-X","Teruel","Aragón","125",1
 "WOTTAN","STORM-X","Valencia/València","Comunidad Valenciana","125",12
-"WOTTAN MOTOR","SIXTEEN","Alicante/Alacant","Comunidad Valenciana","125",2
-"WOTTAN MOTOR","SIXTEEN","Asturias","Principado de Asturias","125",1
-"WOTTAN MOTOR","SIXTEEN","Barcelona","Cataluña","125",1
-"WOTTAN MOTOR","SIXTEEN","Cádiz","Andalucía","125",1
-"WOTTAN MOTOR","SIXTEEN","Granada","Andalucía","125",5
-"WOTTAN MOTOR","SIXTEEN","Jaén","Andalucía","125",2
-"WOTTAN MOTOR","SIXTEEN","Lleida","Cataluña","125",1
-"WOTTAN MOTOR","SIXTEEN","Madrid","Comunidad de Madrid","125",1
-"WOTTAN MOTOR","SIXTEEN","Valencia/València","Comunidad Valenciana","125",3
-"WOTTAN MOTOR","STORM","Alicante/Alacant","Comunidad Valenciana","125",3
-"WOTTAN MOTOR","STORM","Badajoz","Extremadura","125",1
-"WOTTAN MOTOR","STORM","Castellón/Castelló","Comunidad Valenciana","125",1
-"WOTTAN MOTOR","STORM","Madrid","Comunidad de Madrid","125",1
-"WOTTAN MOTOR","STORM","Málaga","Andalucía","125",2
-"WOTTAN MOTOR","STORM","Murcia","Región de Murcia","125",2
-"WOTTAN MOTOR","STORM","Sevilla","Andalucía","125",3
-"WOTTAN MOTOR","STORM","Tarragona","Cataluña","125",1
-"WOTTAN MOTOR","STORM","Valencia/València","Comunidad Valenciana","125",4
-"WOTTAN MOTOR","STORM-T","Alicante/Alacant","Comunidad Valenciana","125",4
-"WOTTAN MOTOR","STORM-T","Illes Balears","Illes Balears","125",1
-"WOTTAN MOTOR","STORM-T","Madrid","Comunidad de Madrid","125",1
-"WOTTAN MOTOR","STORM-T","Málaga","Andalucía","125",2
-"WOTTAN MOTOR","STORM-T","Murcia","Región de Murcia","125",1
-"WOTTAN MOTOR","STORM-T","Sevilla","Andalucía","125",1
-"WOTTAN MOTOR","STORM-T","Valencia/València","Comunidad Valenciana","125",4
-"WOTTAN MOTOR","STORM-X","Madrid","Comunidad de Madrid","125",1
 "YAMAHA","D'elight","Barcelona","Cataluña","125",4
 "YAMAHA","D'elight","Girona","Cataluña","125",2
 "YAMAHA","D'elight","Huelva","Andalucía","125",1
