@@ -318,7 +318,7 @@
           <tr>
             <td>${esc(row.MARCA_ITV)}</td>
             <td>${esc(row.MODELO_ITV)}</td>
-            <td class="num">${row.CILINDRADA_ITV.toLocaleString('es')}</td>
+            <td class="num hide-mobile">${row.CILINDRADA_ITV.toLocaleString('es')}</td>
             <td class="count">${row.COUNT.toLocaleString('es')}</td>
           </tr>
         `).join('');
