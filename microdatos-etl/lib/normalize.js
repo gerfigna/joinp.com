@@ -179,4 +179,4 @@ function normalizeModel(marca, modelo) {
   return modelo;
 }
 
-module.exports = { BRAND_NAME_MAP, BRAND_EXACT, BRAND_PREFIX, PROVINCE_MAP, PROVINCIA_TO_COMUNIDAD, normalizeBrand, normalizeModel, normalizeProvince, normalizeComunidad };
+module.exports = { normalizeBrand, normalizeModel, normalizeProvince, normalizeComunidad };

@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const { DATA_DIR } = require('./constants');
+const { monthDir } = require('./aggregate');
 
 // ─── Power Range Classification ────────────────────────────────────────────
 
@@ -20,10 +21,6 @@ function getPowerRange(kw) {
 }
 
 // ─── CSV Path Helpers ────────────────────────────────────────────────────────
-
-function monthDir(year, month) {
-  return path.join(DATA_DIR, year, month);
-}
 
 function yearDir(year) {
   return path.join(DATA_DIR, year);
@@ -127,10 +124,6 @@ function _readAndMerge(filePath, accumulator) {
 }
 
 module.exports = {
-  getPowerRange,
   PowerAggregator,
-  marcaMonthlyPath,
   potenciaMonthlyPath,
-  marcaAnnualPath,
-  potenciaAnnualPath,
 };
