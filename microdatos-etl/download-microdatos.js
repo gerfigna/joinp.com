@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 const LISTING_URL =
-  'https://www.dgt.es/menusecundario/dgt-en-cifras/matraba-listados/matriculaciones-automoviles-diario.html';
+  `https://www.dgt.es/menusecundario/dgt-en-cifras/matraba-listados/matriculaciones-automoviles-diario.html?cachebust=${Date.now()}`;
 
 const { DATA_DIR } = require('./lib/constants');
 const { normalizeProvince } = require('./lib/normalize');

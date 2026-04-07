@@ -762,13 +762,10 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "YAMAHA","MT-125","Alicante/Alacant","Comunidad Valenciana","125",1
 "YAMAHA","MT-125","Barcelona","Cataluña","125",1
 "YAMAHA","MT-125","Castellón/Castelló","Comunidad Valenciana","125",1
-"YAMAHA","MT-125","Córdoba","Andalucía","125",1
 "YAMAHA","MT-125","Coruña (A)","Galicia","125",1
 "YAMAHA","MT-125","Illes Balears","Illes Balears","125",1
-"YAMAHA","MT-125","Madrid","Comunidad de Madrid","125",1
 "YAMAHA","MT-125","Palmas (Las)","Canarias","125",1
-"YAMAHA","MT-125","Santa Cruz de Tenerife","Canarias","125",1
-"YAMAHA","MT-125","Valencia/València","Comunidad Valenciana","125",2
+"YAMAHA","MT-125","Valencia/València","Comunidad Valenciana","125",1
 "YAMAHA","NMAX125","Alicante/Alacant","Comunidad Valenciana","125",3
 "YAMAHA","NMAX125","Almería","Andalucía","125",1
 "YAMAHA","NMAX125","Asturias","Principado de Asturias","125",2
@@ -847,6 +844,10 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "YAMAHA","XMAX125","Málaga","Andalucía","125",2
 "YAMAHA","XMAX125","Valencia/València","Comunidad Valenciana","125",4
 "YAMAHA","XMAX125","Zaragoza","Aragón","125",1
+"YAMAHA","XSR-125","Córdoba","Andalucía","125",1
+"YAMAHA","XSR-125","Madrid","Comunidad de Madrid","125",1
+"YAMAHA","XSR-125","Santa Cruz de Tenerife","Canarias","125",1
+"YAMAHA","XSR-125","Valencia/València","Comunidad Valenciana","125",1
 "YAMAHA","XSR-900","Madrid","Comunidad de Madrid","890",1
 "YAMAHA","XSR-900","Málaga","Andalucía","890",1
 "YAMAHA","XSR-900","Murcia","Región de Murcia","890",1
