@@ -1,6 +1,6 @@
     // ── Constants ─────────────────────────────────────────────────────────────
 
-    const PAGE_SIZE = 25;
+    const PAGE_SIZE = 30;
     const START_YEAR = 2025;
     const MONTH_NAMES = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 
