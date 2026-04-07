@@ -127,7 +127,7 @@
         <div class="evolution-chart-section glass-panel">
           <h2>Evolución Anual por Rango de Potencia</h2>
           <div class="chart-mode-toggle">
-            <label><input type="radio" name="power-mode" value="absolute" checked> Absoluto</label>
+            <label><input type="radio" name="power-mode" value="absolute" checked> Unidades matriculadas</label>
             <label><input type="radio" name="power-mode" value="percent"> Porcentaje</label>
           </div>
           <div class="evolution-canvas-wrap">
@@ -138,7 +138,7 @@
         <div class="evolution-chart-section glass-panel">
           <h2>Evolución Anual por Marca (Top 15)</h2>
           <div class="chart-mode-toggle">
-            <label><input type="radio" name="brand-mode" value="absolute" checked> Absoluto</label>
+            <label><input type="radio" name="brand-mode" value="absolute" checked> Unidades matriculadas</label>
             <label><input type="radio" name="brand-mode" value="percent"> Porcentaje</label>
           </div>
           <div class="evolution-canvas-wrap evolution-canvas-wrap--tall">
@@ -151,7 +151,7 @@
       <div class="tab-content tab-info-content">
         <div class="glass-panel" style="padding: 2.5rem;">
           <section class="disclaimer">
-            <h2>Marco Legal y Disclaimer</h2>
+            <h2>Descargo de responsabilidad</h2>
             <p>
               Los datos formativos de esta interfaz provienen de los <strong>microdatos oficiales de la Dirección General de Tráfico (DGT)</strong>,
               publicados periódicamente de forma abierta. Esta herramienta visual no custodia, procesa oficialmente, ni se encuentra afilada a ninguno de los organismos del gobierno.
@@ -162,8 +162,14 @@
           </section>
 
           <section class="release-notes">
-            <h2>Release Notes</h2>
+            <h2>Actualizaciones</h2>
             <ul class="release-list">
+              <li>
+                <div class="release-date">Abril 2026 - Corrección de normalización</div>
+                <div class="release-desc">
+                  Corregida la normalización del modelo Yamaha MTM-125: ahora se mapea correctamente a XSR-125 en lugar de MT-125.
+                </div>
+              </li>
               <li>
                 <div class="release-date">Marzo 2026 - Modern UI Upgrade</div>
                 <div class="release-desc">
