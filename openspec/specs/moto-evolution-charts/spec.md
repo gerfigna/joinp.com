@@ -31,13 +31,14 @@ La pestaña "Evolución" SHALL mostrar un gráfico de barras apiladas con la evo
 - **THEN** el gráfico se actualiza visualmente sin nuevas peticiones de red
 
 ### Requirement: Gráfico de evolución por marca
-La pestaña "Evolución" SHALL mostrar un gráfico de barras apiladas con la evolución anual de matrículas para las top 10 marcas por volumen total acumulado en el periodo, más una categoría "Otras" que agrupa el resto. El eje X representa los años disponibles. El eje Y representa matrículas (modo absoluto) o porcentaje del total anual (modo porcentaje).
+La pestaña "Evolución" SHALL mostrar un gráfico de barras apiladas con la evolución anual de matrículas para las top 30 marcas por volumen total acumulado en el periodo. No existe categoría "Otras" ni "Otros". El eje X representa los años disponibles. El eje Y representa matrículas (modo absoluto) o porcentaje del total anual (modo porcentaje).
 
-#### Scenario: Selección de top 10 marcas
+#### Scenario: Selección de top 30 marcas con visibilidad por defecto
 - **WHEN** se renderizan los datos de evolución por marca
-- **THEN** se calculan las 10 marcas con mayor suma total de matrículas en todos los años disponibles
-- **THEN** todas las marcas fuera del top 10 se agregan bajo la etiqueta "Otras"
-- **THEN** "Otras" aparece como un segmento diferenciado en el gráfico
+- **THEN** se calculan las 30 marcas con mayor suma total de matrículas en todos los años disponibles
+- **THEN** las marcas en las posiciones 1–15 (top 15) están habilitadas y visibles por defecto en el gráfico
+- **THEN** las marcas en las posiciones 16–30 están ocultas por defecto pero pueden activarse desde la leyenda de Chart.js
+- **THEN** no existe ninguna serie "Otras" ni "Otros"
 
 #### Scenario: Visualización en modo absoluto
 - **WHEN** el selector del gráfico de marcas está en modo "Absoluto"
