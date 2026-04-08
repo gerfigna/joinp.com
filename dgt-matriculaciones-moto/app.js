@@ -501,7 +501,7 @@
       renderEvolutionCharts();
     }
 
-    function getTopBrands(n = 15) {
+    function getTopBrands(n = 30) {
       const totals = {};
       const maxYear = Math.max(...evolutionData.map(d => d.year));
       evolutionData
@@ -538,6 +538,7 @@
       const visibleData = mode === 'percent'
         ? evolutionData
         : evolutionData.filter(d => d.year < currentYear);
+      const topBrandsSet = new Set(topBrands);
       const datasets = topBrands.map((brand, i) => ({
         label: brand,
         borderColor: BRAND_COLORS[i % BRAND_COLORS.length],
@@ -545,6 +546,7 @@
         fill: false,
         tension: 0.3,
         pointRadius: 3,
+        ...(i >= 15 ? { hidden: true } : {}),
         data: visibleData.map(({ brands }) => {
           const row = brands.find(r => r.MARCA_ITV === brand);
           const val = row ? row.COUNT : 0;
@@ -574,7 +576,7 @@
       if (powerChart) powerChart.destroy();
       if (brandChart) brandChart.destroy();
 
-      const topBrands = getTopBrands(15);
+      const topBrands = getTopBrands(30);
 
       const stackedOptions = (mode) => ({
         responsive: true,
@@ -667,7 +669,7 @@
     document.querySelectorAll('input[name="brand-mode"]').forEach(r => {
       r.addEventListener('change', () => {
         if (!evolutionData) return;
-        const topBrands = getTopBrands(15);
+        const topBrands = getTopBrands(30);
         const mode = document.querySelector('input[name="brand-mode"]:checked').value;
         brandChart.data.labels = brandYears(mode);
         brandChart.data.datasets = buildBrandsChartData(topBrands, mode);
