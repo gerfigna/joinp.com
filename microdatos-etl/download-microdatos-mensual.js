@@ -22,20 +22,7 @@ const fs = require('fs');
 
 // Months to process: all of 2025 + January and February 2026
 const TARGET_MONTHS = [
-  { year: '2025', month: '01' },
-  { year: '2025', month: '02' },
-  { year: '2025', month: '03' },
-  { year: '2025', month: '04' },
-  { year: '2025', month: '05' },
-  { year: '2025', month: '06' },
-  { year: '2025', month: '07' },
-  { year: '2025', month: '08' },
-  { year: '2025', month: '09' },
-  { year: '2025', month: '10' },
-  { year: '2025', month: '11' },
-  { year: '2025', month: '12' },
-  { year: '2026', month: '01' },
-  { year: '2026', month: '02' },
+  { year: '2026', month: '04' },
 ];
 
 const { writeAggregates, monthDir } = require('./lib/aggregate');
