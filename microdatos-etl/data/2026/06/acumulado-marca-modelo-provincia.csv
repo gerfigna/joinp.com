@@ -1376,37 +1376,28 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "SYM","JOYMAX Z 300 E5+","Girona","Cataluña","278",1
 "SYM","JOYMAX Z 300 E5+","Málaga","Andalucía","278",2
 "SYM","JOYMAX Z 300 E5+","Pontevedra","Galicia","278",1
-"SYM","SYMPHONY  NEW 125 SR C","Alicante/Alacant","Comunidad Valenciana","125",4
-"SYM","SYMPHONY  NEW 125 SR C","Barcelona","Cataluña","125",16
-"SYM","SYMPHONY  NEW 125 SR C","Burgos","Castilla y León","125",1
-"SYM","SYMPHONY  NEW 125 SR C","Cádiz","Andalucía","125",2
-"SYM","SYMPHONY  NEW 125 SR C","Castellón/Castelló","Comunidad Valenciana","125",1
-"SYM","SYMPHONY  NEW 125 SR C","Córdoba","Andalucía","125",2
-"SYM","SYMPHONY  NEW 125 SR C","Gipuzkoa","País Vasco","125",6
-"SYM","SYMPHONY  NEW 125 SR C","Girona","Cataluña","125",16
-"SYM","SYMPHONY  NEW 125 SR C","Granada","Andalucía","125",4
-"SYM","SYMPHONY  NEW 125 SR C","Illes Balears","Illes Balears","125",14
-"SYM","SYMPHONY  NEW 125 SR C","Jaén","Andalucía","125",1
-"SYM","SYMPHONY  NEW 125 SR C","León","Castilla y León","125",2
-"SYM","SYMPHONY  NEW 125 SR C","Madrid","Comunidad de Madrid","125",6
-"SYM","SYMPHONY  NEW 125 SR C","Málaga","Andalucía","125",7
-"SYM","SYMPHONY  NEW 125 SR C","Murcia","Región de Murcia","125",1
-"SYM","SYMPHONY  NEW 125 SR C","Tarragona","Cataluña","125",5
-"SYM","SYMPHONY  NEW 125 SR C","Teruel","Aragón","125",1
-"SYM","SYMPHONY  NEW 125 SR C","Valencia/València","Comunidad Valenciana","125",1
-"SYM","SYMPHONY  NEW 125 SR C","Zaragoza","Aragón","125",1
-"SYM","SYMPHONY 125","Barcelona","Cataluña","125",1
-"SYM","SYMPHONY 125","Gipuzkoa","País Vasco","125",2
-"SYM","SYMPHONY 125","Girona","Cataluña","125",2
+"SYM","SYMPHONY 125","Alicante/Alacant","Comunidad Valenciana","125",5
+"SYM","SYMPHONY 125","Barcelona","Cataluña","125",32
+"SYM","SYMPHONY 125","Burgos","Castilla y León","125",1
+"SYM","SYMPHONY 125","Cádiz","Andalucía","125",2
+"SYM","SYMPHONY 125","Castellón/Castelló","Comunidad Valenciana","125",1
+"SYM","SYMPHONY 125","Córdoba","Andalucía","125",2
+"SYM","SYMPHONY 125","Gipuzkoa","País Vasco","125",8
+"SYM","SYMPHONY 125","Girona","Cataluña","125",22
+"SYM","SYMPHONY 125","Granada","Andalucía","125",6
+"SYM","SYMPHONY 125","Illes Balears","Illes Balears","125",14
+"SYM","SYMPHONY 125","Jaén","Andalucía","125",1
+"SYM","SYMPHONY 125","León","Castilla y León","125",2
+"SYM","SYMPHONY 125","Madrid","Comunidad de Madrid","125",8
+"SYM","SYMPHONY 125","Málaga","Andalucía","125",7
+"SYM","SYMPHONY 125","Murcia","Región de Murcia","125",1
 "SYM","SYMPHONY 125","Pontevedra","Galicia","125",1
 "SYM","SYMPHONY 125","Santa Cruz de Tenerife","Canarias","125",3
-"SYM","SYMPHONY 125","Sevilla","Andalucía","125",2
-"SYM","SYMPHONY NEW 125 SR AB","Alicante/Alacant","Comunidad Valenciana","125",1
-"SYM","SYMPHONY NEW 125 SR AB","Barcelona","Cataluña","125",15
-"SYM","SYMPHONY NEW 125 SR AB","Girona","Cataluña","125",4
-"SYM","SYMPHONY NEW 125 SR AB","Granada","Andalucía","125",2
-"SYM","SYMPHONY NEW 125 SR AB","Madrid","Comunidad de Madrid","125",2
-"SYM","SYMPHONY NEW 125 SR AB","Sevilla","Andalucía","125",2
+"SYM","SYMPHONY 125","Sevilla","Andalucía","125",4
+"SYM","SYMPHONY 125","Tarragona","Cataluña","125",5
+"SYM","SYMPHONY 125","Teruel","Aragón","125",1
+"SYM","SYMPHONY 125","Valencia/València","Comunidad Valenciana","125",1
+"SYM","SYMPHONY 125","Zaragoza","Aragón","125",1
 "TM MOTO","---","Almería","Andalucía","449",1
 "TM MOTO","---","Rioja (La)","La Rioja","449",1
 "TRIUMPH","BONNEVILLE BOBBER","Alicante/Alacant","Comunidad Valenciana","1200",1
