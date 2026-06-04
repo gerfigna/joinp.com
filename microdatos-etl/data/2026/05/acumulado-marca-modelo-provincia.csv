@@ -5471,85 +5471,47 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "SYM","MAXSYM TL 508 E5+","Murcia","Región de Murcia","508",1
 "SYM","MAXSYM TL 508 E5+","Palmas (Las)","Canarias","508",1
 "SYM","MAXSYM TL 508 E5+","Pontevedra","Galicia","508",1
-"SYM","SYMPHONY  NEW 125 SR C","Álava/Araba","País Vasco","125",1
-"SYM","SYMPHONY  NEW 125 SR C","Alicante/Alacant","Comunidad Valenciana","125",11
-"SYM","SYMPHONY  NEW 125 SR C","Asturias","Principado de Asturias","125",6
-"SYM","SYMPHONY  NEW 125 SR C","Ávila","Castilla y León","125",1
-"SYM","SYMPHONY  NEW 125 SR C","Barcelona","Cataluña","125",100
-"SYM","SYMPHONY  NEW 125 SR C","Bizkaia","País Vasco","125",1
-"SYM","SYMPHONY  NEW 125 SR C","Burgos","Castilla y León","125",2
-"SYM","SYMPHONY  NEW 125 SR C","Cádiz","Andalucía","125",20
-"SYM","SYMPHONY  NEW 125 SR C","Cantabria","Cantabria","125",3
-"SYM","SYMPHONY  NEW 125 SR C","Castellón/Castelló","Comunidad Valenciana","125",3
-"SYM","SYMPHONY  NEW 125 SR C","Ciudad Real","Castilla-La Mancha","125",3
-"SYM","SYMPHONY  NEW 125 SR C","Córdoba","Andalucía","125",7
-"SYM","SYMPHONY  NEW 125 SR C","Coruña (A)","Galicia","125",3
-"SYM","SYMPHONY  NEW 125 SR C","Gipuzkoa","País Vasco","125",6
-"SYM","SYMPHONY  NEW 125 SR C","Girona","Cataluña","125",48
-"SYM","SYMPHONY  NEW 125 SR C","Granada","Andalucía","125",8
-"SYM","SYMPHONY  NEW 125 SR C","Huelva","Andalucía","125",2
-"SYM","SYMPHONY  NEW 125 SR C","Huesca","Aragón","125",2
-"SYM","SYMPHONY  NEW 125 SR C","Illes Balears","Illes Balears","125",49
-"SYM","SYMPHONY  NEW 125 SR C","Jaén","Andalucía","125",1
-"SYM","SYMPHONY  NEW 125 SR C","León","Castilla y León","125",1
-"SYM","SYMPHONY  NEW 125 SR C","Lleida","Cataluña","125",2
-"SYM","SYMPHONY  NEW 125 SR C","Lugo","Galicia","125",1
-"SYM","SYMPHONY  NEW 125 SR C","Madrid","Comunidad de Madrid","125",11
-"SYM","SYMPHONY  NEW 125 SR C","Málaga","Andalucía","125",47
-"SYM","SYMPHONY  NEW 125 SR C","Murcia","Región de Murcia","125",4
-"SYM","SYMPHONY  NEW 125 SR C","Navarra","Comunidad Foral de Navarra","125",4
-"SYM","SYMPHONY  NEW 125 SR C","Ourense","Galicia","125",1
-"SYM","SYMPHONY  NEW 125 SR C","Palmas (Las)","Canarias","125",1
-"SYM","SYMPHONY  NEW 125 SR C","Pontevedra","Galicia","125",3
-"SYM","SYMPHONY  NEW 125 SR C","Rioja (La)","La Rioja","125",2
-"SYM","SYMPHONY  NEW 125 SR C","Sevilla","Andalucía","125",14
-"SYM","SYMPHONY  NEW 125 SR C","Tarragona","Cataluña","125",17
-"SYM","SYMPHONY  NEW 125 SR C","Teruel","Aragón","125",1
-"SYM","SYMPHONY  NEW 125 SR C","Valencia/València","Comunidad Valenciana","125",5
-"SYM","SYMPHONY  NEW 125 SR C","Zamora","Castilla y León","125",1
-"SYM","SYMPHONY  NEW 125 SR C","Zaragoza","Aragón","125",3
-"SYM","SYMPHONY 125","Álava/Araba","País Vasco","125",1
-"SYM","SYMPHONY 125","Alicante/Alacant","Comunidad Valenciana","125",16
+"SYM","SYMPHONY 125","Álava/Araba","País Vasco","125",2
+"SYM","SYMPHONY 125","Alicante/Alacant","Comunidad Valenciana","125",33
 "SYM","SYMPHONY 125","Almería","Andalucía","125",3
-"SYM","SYMPHONY 125","Barcelona","Cataluña","125",26
-"SYM","SYMPHONY 125","Bizkaia","País Vasco","125",3
-"SYM","SYMPHONY 125","Cádiz","Andalucía","125",1
-"SYM","SYMPHONY 125","Córdoba","Andalucía","125",4
-"SYM","SYMPHONY 125","Gipuzkoa","País Vasco","125",6
-"SYM","SYMPHONY 125","Girona","Cataluña","125",14
-"SYM","SYMPHONY 125","Huelva","Andalucía","125",1
-"SYM","SYMPHONY 125","Illes Balears","Illes Balears","125",6
-"SYM","SYMPHONY 125","Lleida","Cataluña","125",1
-"SYM","SYMPHONY 125","Lugo","Galicia","125",1
-"SYM","SYMPHONY 125","Madrid","Comunidad de Madrid","125",6
-"SYM","SYMPHONY 125","Málaga","Andalucía","125",5
-"SYM","SYMPHONY 125","Murcia","Región de Murcia","125",3
-"SYM","SYMPHONY 125","Navarra","Comunidad Foral de Navarra","125",2
-"SYM","SYMPHONY 125","Palmas (Las)","Canarias","125",3
-"SYM","SYMPHONY 125","Rioja (La)","La Rioja","125",1
+"SYM","SYMPHONY 125","Asturias","Principado de Asturias","125",6
+"SYM","SYMPHONY 125","Ávila","Castilla y León","125",1
+"SYM","SYMPHONY 125","Barcelona","Cataluña","125",167
+"SYM","SYMPHONY 125","Bizkaia","País Vasco","125",4
+"SYM","SYMPHONY 125","Burgos","Castilla y León","125",2
+"SYM","SYMPHONY 125","Cádiz","Andalucía","125",21
+"SYM","SYMPHONY 125","Cantabria","Cantabria","125",4
+"SYM","SYMPHONY 125","Castellón/Castelló","Comunidad Valenciana","125",4
+"SYM","SYMPHONY 125","Ciudad Real","Castilla-La Mancha","125",3
+"SYM","SYMPHONY 125","Córdoba","Andalucía","125",11
+"SYM","SYMPHONY 125","Coruña (A)","Galicia","125",3
+"SYM","SYMPHONY 125","Gipuzkoa","País Vasco","125",17
+"SYM","SYMPHONY 125","Girona","Cataluña","125",72
+"SYM","SYMPHONY 125","Granada","Andalucía","125",10
+"SYM","SYMPHONY 125","Huelva","Andalucía","125",3
+"SYM","SYMPHONY 125","Huesca","Aragón","125",2
+"SYM","SYMPHONY 125","Illes Balears","Illes Balears","125",59
+"SYM","SYMPHONY 125","Jaén","Andalucía","125",1
+"SYM","SYMPHONY 125","León","Castilla y León","125",1
+"SYM","SYMPHONY 125","Lleida","Cataluña","125",3
+"SYM","SYMPHONY 125","Lugo","Galicia","125",2
+"SYM","SYMPHONY 125","Madrid","Comunidad de Madrid","125",22
+"SYM","SYMPHONY 125","Málaga","Andalucía","125",59
+"SYM","SYMPHONY 125","Murcia","Región de Murcia","125",8
+"SYM","SYMPHONY 125","Navarra","Comunidad Foral de Navarra","125",6
+"SYM","SYMPHONY 125","Ourense","Galicia","125",1
+"SYM","SYMPHONY 125","Palmas (Las)","Canarias","125",5
+"SYM","SYMPHONY 125","Pontevedra","Galicia","125",3
+"SYM","SYMPHONY 125","Rioja (La)","La Rioja","125",3
 "SYM","SYMPHONY 125","Santa Cruz de Tenerife","Canarias","125",25
-"SYM","SYMPHONY 125","Sevilla","Andalucía","125",1
-"SYM","SYMPHONY 125","Tarragona","Cataluña","125",4
+"SYM","SYMPHONY 125","Sevilla","Andalucía","125",16
+"SYM","SYMPHONY 125","Tarragona","Cataluña","125",23
+"SYM","SYMPHONY 125","Teruel","Aragón","125",1
 "SYM","SYMPHONY 125","Toledo","Castilla-La Mancha","125",1
-"SYM","SYMPHONY 125","Valencia/València","Comunidad Valenciana","125",3
+"SYM","SYMPHONY 125","Valencia/València","Comunidad Valenciana","125",9
 "SYM","SYMPHONY 125","Valladolid","Castilla y León","125",1
-"SYM","SYMPHONY 125","Zaragoza","Aragón","125",1
-"SYM","SYMPHONY NEW 125 SR AB","Alicante/Alacant","Comunidad Valenciana","125",6
-"SYM","SYMPHONY NEW 125 SR AB","Barcelona","Cataluña","125",41
-"SYM","SYMPHONY NEW 125 SR AB","Cantabria","Cantabria","125",1
-"SYM","SYMPHONY NEW 125 SR AB","Castellón/Castelló","Comunidad Valenciana","125",1
-"SYM","SYMPHONY NEW 125 SR AB","Gipuzkoa","País Vasco","125",5
-"SYM","SYMPHONY NEW 125 SR AB","Girona","Cataluña","125",10
-"SYM","SYMPHONY NEW 125 SR AB","Granada","Andalucía","125",2
-"SYM","SYMPHONY NEW 125 SR AB","Illes Balears","Illes Balears","125",4
-"SYM","SYMPHONY NEW 125 SR AB","Madrid","Comunidad de Madrid","125",5
-"SYM","SYMPHONY NEW 125 SR AB","Málaga","Andalucía","125",7
-"SYM","SYMPHONY NEW 125 SR AB","Murcia","Región de Murcia","125",1
-"SYM","SYMPHONY NEW 125 SR AB","Palmas (Las)","Canarias","125",1
-"SYM","SYMPHONY NEW 125 SR AB","Sevilla","Andalucía","125",1
-"SYM","SYMPHONY NEW 125 SR AB","Tarragona","Cataluña","125",2
-"SYM","SYMPHONY NEW 125 SR AB","Valencia/València","Comunidad Valenciana","125",1
-"SYM","SYMPHONY NEW 125 SR AB","Zaragoza","Aragón","125",1
+"SYM","SYMPHONY 125","Zamora","Castilla y León","125",1
+"SYM","SYMPHONY 125","Zaragoza","Aragón","125",5
 "TM MOTO","---","Lugo","Galicia","449",1
 "TNT MOTOR","XCS","Alicante/Alacant","Comunidad Valenciana","125",1
 "TRIUMPH","BONNEVILLE BOBBER","Almería","Andalucía","1200",1
