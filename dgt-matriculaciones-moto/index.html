@@ -1,205 +1,243 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matriculaciones de Motos en España · DGT</title>
-  
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNNWTXM1E7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XNNWTXM1E7');
-  </script>
-  
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriculaciones de Motos en España · DGT</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNNWTXM1E7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-XNNWTXM1E7');
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 <body>
-  <header>
+<header>
     <h1>Matriculaciones de Motos en España</h1>
     <p>Datos oficiales de la DGT · Motos nuevas matriculadas por marca, modelo y provincia</p>
-  </header>
+</header>
 
-  <div class="main">
+<div class="main">
     <input type="radio" class="tab-radio" name="main-tab" id="tab-datos" checked>
     <input type="radio" class="tab-radio" name="main-tab" id="tab-evolucion">
     <input type="radio" class="tab-radio" name="main-tab" id="tab-info">
 
     <nav class="tab-nav">
-      <label for="tab-datos">Datos Mensuales</label>
-      <label for="tab-evolucion">Evolución Histórica</label>
-      <label for="tab-info">Información</label>
+        <label for="tab-datos">Datos Mensuales</label>
+        <label for="tab-evolucion">Evolución Histórica</label>
+        <label for="tab-info">Información</label>
     </nav>
 
     <div class="tabs-wrapper">
-      <!-- Tab 1: Datos -->
-      <div class="tab-content tab-datos-content">
-        <div class="period-selector glass-panel">
-          <div class="filter-group">
-            <label>Año</label>
-            <select id="sel-year"></select>
-          </div>
-          <div class="filter-group">
-            <label>Mes</label>
-            <select id="sel-month"></select>
-          </div>
-        </div>
-
-        <div class="filters glass-panel">
-          <div class="filter-group">
-            <label>Marca</label>
-            <select id="sel-brand">
-              <option value="">Todas las marcas</option>
-            </select>
-          </div>
-          <div class="filter-group">
-            <label>Comunidad</label>
-            <select id="sel-comunidad">
-              <option value="">Todas las comunidades</option>
-            </select>
-          </div>
-          <div class="filter-group">
-            <label>Provincia</label>
-            <select id="sel-province">
-              <option value="">Todas las provincias</option>
-            </select>
-          </div>
-          <div class="filter-group">
-            <label>Cilindrada (cc)</label>
-            <div class="filter-inline">
-              <input type="number" id="inp-cc-min" placeholder="Mín" min="0">
-              <span>—</span>
-              <input type="number" id="inp-cc-max" placeholder="Máx" min="0">
-            </div>
-          </div>
-          <button class="btn-reset" id="btn-reset">Limpiar filtros</button>
-        </div>
-
-        <div class="content">
-          <div class="table-section">
-            <div class="table-wrap glass-panel">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Marca</th>
-                    <th>Modelo</th>
-                    <th class="num hide-mobile">cc</th>
-                    <th class="num">Total</th>
-                  </tr>
-                </thead>
-                <tbody id="table-body">
-                  <tr class="empty-row"><td colspan="4">Selecciona un mes para cargar datos</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="pagination">
-              <span id="pagination-info"></span>
-              <div class="pagination-controls">
-                <button class="btn-page" id="btn-prev" disabled>← Anterior</button>
-                <span class="page-info" id="page-display"></span>
-                <button class="btn-page" id="btn-next" disabled>Siguiente →</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="chart-section">
-            <div class="chart-card glass-panel">
-              <div class="chart-title">Cuota de Mercado</div>
-              <div class="chart-wrap" id="chart-wrap">
-                <canvas id="pie-chart"></canvas>
-              </div>
-              <div class="chart-empty" id="chart-empty">Sin datos para<br>los filtros seleccionados</div>
-              <div class="chart-total" id="chart-total"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tab 2: Evolución -->
-      <div class="tab-content tab-evolucion-content">
-        <div class="evolution-loading glass-panel" id="evolution-loading" style="display:none">
-          <div class="spinner"></div> Cargando datos históricos...
-        </div>
-
-        <div class="evolution-chart-section glass-panel">
-          <h2>Evolución Anual por Rango de Potencia</h2>
-          <div class="chart-mode-toggle">
-            <label><input type="radio" name="power-mode" value="absolute" checked> Unidades matriculadas</label>
-            <label><input type="radio" name="power-mode" value="percent"> Porcentaje</label>
-          </div>
-          <div class="evolution-canvas-wrap">
-            <canvas id="powerChart"></canvas>
-          </div>
-        </div>
-
-        <div class="evolution-chart-section glass-panel">
-          <h2>Evolución Anual por Marca (Top 30)</h2>
-          <div class="chart-mode-toggle">
-            <label><input type="radio" name="brand-mode" value="absolute" checked> Unidades matriculadas</label>
-            <label><input type="radio" name="brand-mode" value="percent"> Porcentaje</label>
-          </div>
-          <div class="evolution-canvas-wrap evolution-canvas-wrap--tall">
-            <canvas id="brandChart"></canvas>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tab 3: Info -->
-      <div class="tab-content tab-info-content">
-        <div class="glass-panel" style="padding: 2.5rem;">
-          <section class="disclaimer">
-            <h2>Descargo de responsabilidad</h2>
-            <p>
-              Los datos formativos de esta interfaz provienen de los <strong>microdatos oficiales de la Dirección General de Tráfico (DGT)</strong>,
-              publicados periódicamente de forma abierta. Esta herramienta visual no custodia, procesa oficialmente, ni se encuentra afilada a ninguno de los organismos del gobierno.
-            </p>
-            <p>
-              Las cifras podrían contener discordancias, retrasos o datos nulos si estos así fueron codificados u omitidos por DGT. Recomendamos su uso con propósitos estadísticos meramente experimentales o informativos.
-            </p>
-          </section>
-
-          <section class="release-notes">
-            <h2>Actualizaciones</h2>
-            <ul class="release-list">
-              <li>
-                <div class="release-date">Mayo / Junio 2026 - Corrección de normalización</div>
-                <div class="release-desc">
-                  Corregida la normalización de los modelos SYM SYMPHONY 125, SYMPHONY NEW 125 SR *. Se simplifican todos las variaciones a una única denominación SYM SYMPHONY 125
+        <!-- Tab 1: Datos -->
+        <div class="tab-content tab-datos-content">
+            <div class="period-selector glass-panel">
+                <div class="filter-group">
+                    <label>Año</label>
+                    <select id="sel-year"></select>
                 </div>
-              </li>
-              <li>
-                <div class="release-date">Abril 2026 - Corrección de normalización</div>
-                <div class="release-desc">
-                  Corregida la normalización del modelo Yamaha MTM-125: ahora se mapea correctamente a XSR-125 en lugar de MT-125.
+                <div class="filter-group">
+                    <label>Mes</label>
+                    <select id="sel-month"></select>
                 </div>
-              </li>
-              <li>
-                <div class="release-date">Marzo 2026 - Modern UI Upgrade</div>
-                <div class="release-desc">
-                  Rediseño completo de la interfaz ("Frontend Facelift") hacia un aspecto creativo, formal y elegante bajo la filosofía Glassmorphism de un solo esquema de color "Slate/Indigo", segregación de clases estáticas a CSS independiente, logrando optimización pura y sin requerir sistemas de renderizado complejos externos.
+            </div>
+
+            <div class="filters glass-panel">
+                <div class="filter-group">
+                    <label>Marca</label>
+                    <select id="sel-brand">
+                        <option value="">Todas las marcas</option>
+                    </select>
                 </div>
-              </li>
-              <li>
-                <div class="release-date">Despliegue Anterior</div>
-                <div class="release-desc">
-                  Añadidos dos gráficos de línea base para histórico. Agregación analítica por ETL automatizado.
+                <div class="filter-group">
+                    <label>Comunidad</label>
+                    <select id="sel-comunidad">
+                        <option value="">Todas las comunidades</option>
+                    </select>
                 </div>
-              </li>
-            </ul>
-          </section>
+                <div class="filter-group">
+                    <label>Provincia</label>
+                    <select id="sel-province">
+                        <option value="">Todas las provincias</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Cilindrada (cc)</label>
+                    <div class="filter-inline">
+                        <input type="number" id="inp-cc-min" placeholder="Mín" min="0">
+                        <span>—</span>
+                        <input type="number" id="inp-cc-max" placeholder="Máx" min="0">
+                    </div>
+                </div>
+                <button class="btn-reset" id="btn-reset">Limpiar filtros</button>
+            </div>
+
+            <div class="content">
+                <div class="table-section">
+                    <div class="table-wrap glass-panel">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Marca</th>
+                                <th>Modelo</th>
+                                <th class="num hide-mobile">cc</th>
+                                <th class="num">Total</th>
+                            </tr>
+                            </thead>
+                            <tbody id="table-body">
+                            <tr class="empty-row">
+                                <td colspan="4">Selecciona un mes para cargar datos</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination">
+                        <span id="pagination-info"></span>
+                        <div class="pagination-controls">
+                            <button class="btn-page" id="btn-prev" disabled>← Anterior</button>
+                            <span class="page-info" id="page-display"></span>
+                            <button class="btn-page" id="btn-next" disabled>Siguiente →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-section">
+                    <div class="chart-card glass-panel">
+                        <div class="chart-title">Cuota de Mercado</div>
+                        <div class="chart-wrap" id="chart-wrap">
+                            <canvas id="pie-chart"></canvas>
+                        </div>
+                        <div class="chart-empty" id="chart-empty">Sin datos para<br>los filtros seleccionados</div>
+                        <div class="chart-total" id="chart-total"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <!-- Tab 2: Evolución -->
+        <div class="tab-content tab-evolucion-content">
+            <div class="evolution-loading glass-panel" id="evolution-loading" style="display:none">
+                <div class="spinner"></div>
+                Cargando datos históricos...
+            </div>
+
+            <div class="evolution-chart-section glass-panel">
+                <h2>Evolución Anual por Rango de Potencia</h2>
+                <div class="chart-mode-toggle">
+                    <label><input type="radio" name="power-mode" value="absolute" checked> Unidades matriculadas</label>
+                    <label><input type="radio" name="power-mode" value="percent"> Porcentaje</label>
+                </div>
+                <div class="evolution-canvas-wrap">
+                    <canvas id="powerChart"></canvas>
+                </div>
+            </div>
+
+            <div class="evolution-chart-section glass-panel">
+                <h2>Evolución Anual por Marca (Top 30)</h2>
+                <div class="chart-mode-toggle">
+                    <label><input type="radio" name="brand-mode" value="absolute" checked> Unidades matriculadas</label>
+                    <label><input type="radio" name="brand-mode" value="percent"> Porcentaje</label>
+                </div>
+                <div class="evolution-canvas-wrap evolution-canvas-wrap--tall">
+                    <canvas id="brandChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 3: Info -->
+        <div class="tab-content tab-info-content">
+            <div class="glass-panel" style="padding: 2.5rem;">
+                <section class="disclaimer">
+                    <h2>Descargo de responsabilidad</h2>
+                    <p>
+                        Los datos formativos de esta interfaz provienen de los <strong>microdatos oficiales de la
+                        Dirección General de Tráfico (DGT)</strong>,
+                        publicados periódicamente de forma abierta. Esta herramienta visual no custodia, procesa
+                        oficialmente, ni se encuentra afilada a ninguno de los organismos del gobierno.
+                    </p>
+                    <p>
+                        Las cifras podrían contener discordancias, retrasos o datos nulos si estos así fueron
+                        codificados u omitidos por DGT. Recomendamos su uso con propósitos estadísticos meramente
+                        experimentales o informativos.
+                    </p>
+                </section>
+
+                <section class="release-notes">
+                    <h2>Actualizaciones</h2>
+                    <ul class="release-list">
+                        <li>
+                            <div class="release-date">Mayo / Junio 2026 - Corrección de normalización SYM</div>
+                            <div class="release-desc">
+                                Corregida la normalización de los modelos SYM SYMPHONY 125, SYMPHONY NEW 125 SR *. Se
+                                simplifican todos las variaciones a una única denominación SYM SYMPHONY 125.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="release-date">Mayo / Junio 2026 - Corrección de normalización NX500</div>
+                            <div class="release-desc">
+                                Corregida la normalización de los modelos HONDA CB500X, HONDA CB500XA, HONDA CB500XAC.
+                                Se simplifican todos las variaciones a una única denominación HONDA NX500.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="release-desc">
+                                <div class="release-date">Mayo / Junio 2026 - Corrección de normalización Transalp 750</div>
+                                Corregida la normalización de los modelos HONDA XL750C, XL750. Se simplifican todos las
+                                variaciones a una única denominación HONDA XL750 Transalp.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="release-desc">
+                                <div class="release-date">Mayo / Junio 2026 - Corrección de normalización Hornet 750</div>
+                                Corregida la normalización de los modelos HONDA CB750A, CB750AC. Se simplifican todos las
+                                variaciones a una única denominación HONDA CB750 Hornet.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="release-date">Abril 2026 - Corrección de normalización</div>
+                            <div class="release-desc">
+                                Corregida la normalización del modelo Yamaha MTM-125: ahora se mapea correctamente a
+                                XSR-125 en lugar de MT-125.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="release-date">Marzo 2026 - Modern UI Upgrade</div>
+                            <div class="release-desc">
+                                Rediseño completo de la interfaz ("Frontend Facelift") hacia un aspecto creativo, formal
+                                y elegante bajo la filosofía Glassmorphism de un solo esquema de color "Slate/Indigo",
+                                segregación de clases estáticas a CSS independiente, logrando optimización pura y sin
+                                requerir sistemas de renderizado complejos externos.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="release-date">Despliegue Anterior</div>
+                            <div class="release-desc">
+                                Añadidos dos gráficos de línea base para histórico. Agregación analítica por ETL
+                                automatizado.
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
 
-  <footer>
+<footer>
     <span><span class="label">Última actualización:</span> <span id="footer-last-run">—</span></span>
     <span><span class="label">Matrícula más reciente:</span> <span id="footer-last-date">—</span></span>
-  </footer>
+</footer>
 
-  <script src="app.js" defer></script>
+<script src="app.js" defer></script>
 </body>
 </html>

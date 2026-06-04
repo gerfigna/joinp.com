@@ -1560,24 +1560,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","CB 500 F","Tarragona","Cataluña","471",2
 "HONDA","CB 500 F","Valladolid","Castilla y León","471",2
 "HONDA","CB 500 F","Zaragoza","Aragón","471",2
-"HONDA","CB 500 X","Alicante/Alacant","Comunidad Valenciana","471",2
-"HONDA","CB 500 X","Barcelona","Cataluña","471",7
-"HONDA","CB 500 X","Bizkaia","País Vasco","471",1
-"HONDA","CB 500 X","Cádiz","Andalucía","471",1
-"HONDA","CB 500 X","Cantabria","Cantabria","471",1
-"HONDA","CB 500 X","Castellón/Castelló","Comunidad Valenciana","471",1
-"HONDA","CB 500 X","Córdoba","Andalucía","471",1
-"HONDA","CB 500 X","Cuenca","Castilla-La Mancha","471",1
-"HONDA","CB 500 X","Granada","Andalucía","471",1
-"HONDA","CB 500 X","Huesca","Aragón","471",1
-"HONDA","CB 500 X","Madrid","Comunidad de Madrid","471",6
-"HONDA","CB 500 X","Málaga","Andalucía","471",3
-"HONDA","CB 500 X","Murcia","Región de Murcia","471",2
-"HONDA","CB 500 X","Palmas (Las)","Canarias","471",5
-"HONDA","CB 500 X","Rioja (La)","La Rioja","471",1
-"HONDA","CB 500 X","Tarragona","Cataluña","471",1
-"HONDA","CB 500 X","Toledo","Castilla-La Mancha","471",1
-"HONDA","CB 500 X","Valencia/València","Comunidad Valenciana","471",1
 "HONDA","CB1000","Barcelona","Cataluña","1000",1
 "HONDA","CB1000","Granada","Andalucía","1000",1
 "HONDA","CB1000","Illes Balears","Illes Balears","1000",1
@@ -1590,38 +1572,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","CB500FAC","Málaga","Andalucía","471",4
 "HONDA","CB500FAC","Tarragona","Cataluña","471",1
 "HONDA","CB500FAC","Valencia/València","Comunidad Valenciana","471",2
-"HONDA","CB500XAC","Álava/Araba","País Vasco","471",1
-"HONDA","CB500XAC","Albacete","Castilla-La Mancha","471",1
-"HONDA","CB500XAC","Alicante/Alacant","Comunidad Valenciana","471",7
-"HONDA","CB500XAC","Almería","Andalucía","471",2
-"HONDA","CB500XAC","Asturias","Principado de Asturias","471",1
-"HONDA","CB500XAC","Badajoz","Extremadura","471",1
-"HONDA","CB500XAC","Barcelona","Cataluña","471",25
-"HONDA","CB500XAC","Bizkaia","País Vasco","471",5
-"HONDA","CB500XAC","Cáceres","Extremadura","471",1
-"HONDA","CB500XAC","Cádiz","Andalucía","471",5
-"HONDA","CB500XAC","Cantabria","Cantabria","471",3
-"HONDA","CB500XAC","Castellón/Castelló","Comunidad Valenciana","471",2
-"HONDA","CB500XAC","Coruña (A)","Galicia","471",4
-"HONDA","CB500XAC","Gipuzkoa","País Vasco","471",3
-"HONDA","CB500XAC","Girona","Cataluña","471",6
-"HONDA","CB500XAC","Granada","Andalucía","471",2
-"HONDA","CB500XAC","Huelva","Andalucía","471",2
-"HONDA","CB500XAC","Illes Balears","Illes Balears","471",9
-"HONDA","CB500XAC","Jaén","Andalucía","471",1
-"HONDA","CB500XAC","León","Castilla y León","471",1
-"HONDA","CB500XAC","Lleida","Cataluña","471",3
-"HONDA","CB500XAC","Madrid","Comunidad de Madrid","471",17
-"HONDA","CB500XAC","Málaga","Andalucía","471",10
-"HONDA","CB500XAC","Murcia","Región de Murcia","471",7
-"HONDA","CB500XAC","Navarra","Comunidad Foral de Navarra","471",3
-"HONDA","CB500XAC","Ourense","Galicia","471",1
-"HONDA","CB500XAC","Rioja (La)","La Rioja","471",3
-"HONDA","CB500XAC","Sevilla","Andalucía","471",2
-"HONDA","CB500XAC","Tarragona","Cataluña","471",3
-"HONDA","CB500XAC","Valencia/València","Comunidad Valenciana","471",11
-"HONDA","CB500XAC","Valladolid","Castilla y León","471",2
-"HONDA","CB500XAC","Zaragoza","Aragón","471",2
 "HONDA","CB650RA","Álava/Araba","País Vasco","649",1
 "HONDA","CB650RA","Albacete","Castilla-La Mancha","649",1
 "HONDA","CB650RA","Alicante/Alacant","Comunidad Valenciana","649",6
@@ -1653,64 +1603,43 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","CB650RA","Valencia/València","Comunidad Valenciana","649",9
 "HONDA","CB650RA","Valladolid","Castilla y León","649",1
 "HONDA","CB650RA","Zaragoza","Aragón","649",2
-"HONDA","CB750 Hornet","Alicante/Alacant","Comunidad Valenciana","755",3
-"HONDA","CB750 Hornet","Almería","Andalucía","755",1
-"HONDA","CB750 Hornet","Barcelona","Cataluña","755",4
-"HONDA","CB750 Hornet","Bizkaia","País Vasco","755",2
-"HONDA","CB750 Hornet","Cádiz","Andalucía","755",3
-"HONDA","CB750 Hornet","Castellón/Castelló","Comunidad Valenciana","755",1
-"HONDA","CB750 Hornet","Córdoba","Andalucía","755",1
-"HONDA","CB750 Hornet","Coruña (A)","Galicia","755",1
+"HONDA","CB750 Hornet","Álava/Araba","País Vasco","755",1
+"HONDA","CB750 Hornet","Albacete","Castilla-La Mancha","755",1
+"HONDA","CB750 Hornet","Alicante/Alacant","Comunidad Valenciana","755",10
+"HONDA","CB750 Hornet","Almería","Andalucía","755",2
+"HONDA","CB750 Hornet","Asturias","Principado de Asturias","755",2
+"HONDA","CB750 Hornet","Badajoz","Extremadura","755",1
+"HONDA","CB750 Hornet","Barcelona","Cataluña","755",39
+"HONDA","CB750 Hornet","Bizkaia","País Vasco","755",5
+"HONDA","CB750 Hornet","Cádiz","Andalucía","755",4
+"HONDA","CB750 Hornet","Cantabria","Cantabria","755",2
+"HONDA","CB750 Hornet","Castellón/Castelló","Comunidad Valenciana","755",2
+"HONDA","CB750 Hornet","Córdoba","Andalucía","755",2
+"HONDA","CB750 Hornet","Coruña (A)","Galicia","755",2
 "HONDA","CB750 Hornet","Gipuzkoa","País Vasco","755",1
+"HONDA","CB750 Hornet","Girona","Cataluña","755",1
 "HONDA","CB750 Hornet","Huelva","Andalucía","755",1
-"HONDA","CB750 Hornet","Jaén","Andalucía","755",1
-"HONDA","CB750 Hornet","León","Castilla y León","755",1
-"HONDA","CB750 Hornet","Lugo","Galicia","755",1
-"HONDA","CB750 Hornet","Madrid","Comunidad de Madrid","755",3
-"HONDA","CB750 Hornet","Málaga","Andalucía","755",1
-"HONDA","CB750 Hornet","Murcia","Región de Murcia","755",2
-"HONDA","CB750 Hornet","Palmas (Las)","Canarias","755",1
-"HONDA","CB750 Hornet","Pontevedra","Galicia","755",2
-"HONDA","CB750 Hornet","Santa Cruz de Tenerife","Canarias","755",1
-"HONDA","CB750 Hornet","Sevilla","Andalucía","755",2
-"HONDA","CB750 Hornet","Tarragona","Cataluña","755",1
+"HONDA","CB750 Hornet","Illes Balears","Illes Balears","755",5
+"HONDA","CB750 Hornet","Jaén","Andalucía","755",2
+"HONDA","CB750 Hornet","León","Castilla y León","755",2
+"HONDA","CB750 Hornet","Lleida","Cataluña","755",2
+"HONDA","CB750 Hornet","Lugo","Galicia","755",2
+"HONDA","CB750 Hornet","Madrid","Comunidad de Madrid","755",12
+"HONDA","CB750 Hornet","Málaga","Andalucía","755",6
+"HONDA","CB750 Hornet","Murcia","Región de Murcia","755",7
+"HONDA","CB750 Hornet","Navarra","Comunidad Foral de Navarra","755",3
+"HONDA","CB750 Hornet","Ourense","Galicia","755",1
+"HONDA","CB750 Hornet","Palmas (Las)","Canarias","755",2
+"HONDA","CB750 Hornet","Pontevedra","Galicia","755",4
+"HONDA","CB750 Hornet","Rioja (La)","La Rioja","755",1
+"HONDA","CB750 Hornet","Salamanca","Castilla y León","755",2
+"HONDA","CB750 Hornet","Santa Cruz de Tenerife","Canarias","755",2
+"HONDA","CB750 Hornet","Sevilla","Andalucía","755",3
+"HONDA","CB750 Hornet","Tarragona","Cataluña","755",3
 "HONDA","CB750 Hornet","Toledo","Castilla-La Mancha","755",1
-"HONDA","CB750 Hornet","Valencia/València","Comunidad Valenciana","755",4
+"HONDA","CB750 Hornet","Valencia/València","Comunidad Valenciana","755",10
 "HONDA","CB750 Hornet","Valladolid","Castilla y León","755",1
-"HONDA","CB750 Hornet","Zaragoza","Aragón","755",1
-"HONDA","CB750AC","Álava/Araba","País Vasco","755",1
-"HONDA","CB750AC","Albacete","Castilla-La Mancha","755",1
-"HONDA","CB750AC","Alicante/Alacant","Comunidad Valenciana","755",7
-"HONDA","CB750AC","Almería","Andalucía","755",1
-"HONDA","CB750AC","Asturias","Principado de Asturias","755",2
-"HONDA","CB750AC","Badajoz","Extremadura","755",1
-"HONDA","CB750AC","Barcelona","Cataluña","755",35
-"HONDA","CB750AC","Bizkaia","País Vasco","755",3
-"HONDA","CB750AC","Cádiz","Andalucía","755",1
-"HONDA","CB750AC","Cantabria","Cantabria","755",2
-"HONDA","CB750AC","Castellón/Castelló","Comunidad Valenciana","755",1
-"HONDA","CB750AC","Córdoba","Andalucía","755",1
-"HONDA","CB750AC","Coruña (A)","Galicia","755",1
-"HONDA","CB750AC","Girona","Cataluña","755",1
-"HONDA","CB750AC","Illes Balears","Illes Balears","755",5
-"HONDA","CB750AC","Jaén","Andalucía","755",1
-"HONDA","CB750AC","León","Castilla y León","755",1
-"HONDA","CB750AC","Lleida","Cataluña","755",2
-"HONDA","CB750AC","Lugo","Galicia","755",1
-"HONDA","CB750AC","Madrid","Comunidad de Madrid","755",9
-"HONDA","CB750AC","Málaga","Andalucía","755",5
-"HONDA","CB750AC","Murcia","Región de Murcia","755",5
-"HONDA","CB750AC","Navarra","Comunidad Foral de Navarra","755",3
-"HONDA","CB750AC","Ourense","Galicia","755",1
-"HONDA","CB750AC","Palmas (Las)","Canarias","755",1
-"HONDA","CB750AC","Pontevedra","Galicia","755",2
-"HONDA","CB750AC","Rioja (La)","La Rioja","755",1
-"HONDA","CB750AC","Salamanca","Castilla y León","755",2
-"HONDA","CB750AC","Santa Cruz de Tenerife","Canarias","755",1
-"HONDA","CB750AC","Sevilla","Andalucía","755",1
-"HONDA","CB750AC","Tarragona","Cataluña","755",2
-"HONDA","CB750AC","Valencia/València","Comunidad Valenciana","755",6
-"HONDA","CB750AC","Zaragoza","Aragón","755",2
+"HONDA","CB750 Hornet","Zaragoza","Aragón","755",3
 "HONDA","CBF 125","Álava/Araba","País Vasco","125",1
 "HONDA","CBF 125","Albacete","Castilla-La Mancha","125",2
 "HONDA","CBF 125","Alicante/Alacant","Comunidad Valenciana","125",4
@@ -2074,6 +2003,43 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","NT1100","Valencia/València","Comunidad Valenciana","1084",6
 "HONDA","NT1100","Valladolid","Castilla y León","1084",1
 "HONDA","NT1100","Zamora","Castilla y León","1084",2
+"HONDA","NX500","Álava/Araba","País Vasco","471",1
+"HONDA","NX500","Albacete","Castilla-La Mancha","471",1
+"HONDA","NX500","Alicante/Alacant","Comunidad Valenciana","471",9
+"HONDA","NX500","Almería","Andalucía","471",2
+"HONDA","NX500","Asturias","Principado de Asturias","471",1
+"HONDA","NX500","Badajoz","Extremadura","471",1
+"HONDA","NX500","Barcelona","Cataluña","471",32
+"HONDA","NX500","Bizkaia","País Vasco","471",6
+"HONDA","NX500","Cáceres","Extremadura","471",1
+"HONDA","NX500","Cádiz","Andalucía","471",6
+"HONDA","NX500","Cantabria","Cantabria","471",4
+"HONDA","NX500","Castellón/Castelló","Comunidad Valenciana","471",3
+"HONDA","NX500","Córdoba","Andalucía","471",1
+"HONDA","NX500","Coruña (A)","Galicia","471",4
+"HONDA","NX500","Cuenca","Castilla-La Mancha","471",1
+"HONDA","NX500","Gipuzkoa","País Vasco","471",3
+"HONDA","NX500","Girona","Cataluña","471",6
+"HONDA","NX500","Granada","Andalucía","471",3
+"HONDA","NX500","Huelva","Andalucía","471",2
+"HONDA","NX500","Huesca","Aragón","471",1
+"HONDA","NX500","Illes Balears","Illes Balears","471",9
+"HONDA","NX500","Jaén","Andalucía","471",1
+"HONDA","NX500","León","Castilla y León","471",1
+"HONDA","NX500","Lleida","Cataluña","471",3
+"HONDA","NX500","Madrid","Comunidad de Madrid","471",23
+"HONDA","NX500","Málaga","Andalucía","471",13
+"HONDA","NX500","Murcia","Región de Murcia","471",9
+"HONDA","NX500","Navarra","Comunidad Foral de Navarra","471",3
+"HONDA","NX500","Ourense","Galicia","471",1
+"HONDA","NX500","Palmas (Las)","Canarias","471",5
+"HONDA","NX500","Rioja (La)","La Rioja","471",4
+"HONDA","NX500","Sevilla","Andalucía","471",2
+"HONDA","NX500","Tarragona","Cataluña","471",4
+"HONDA","NX500","Toledo","Castilla-La Mancha","471",1
+"HONDA","NX500","Valencia/València","Comunidad Valenciana","471",12
+"HONDA","NX500","Valladolid","Castilla y León","471",2
+"HONDA","NX500","Zaragoza","Aragón","471",2
 "HONDA","PCX125","Álava/Araba","País Vasco","125",2
 "HONDA","PCX125","Albacete","Castilla-La Mancha","125",9
 "HONDA","PCX125","Alicante/Alacant","Comunidad Valenciana","125",60
@@ -2273,58 +2239,44 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","VISION 110","Valladolid","Castilla y León","109",2
 "HONDA","VISION 110","Zaragoza","Aragón","109",3
 "HONDA","XL600LM","Valladolid","Castilla y León","591",1
-"HONDA","XL750 Transalp","Alicante/Alacant","Comunidad Valenciana","755",1
-"HONDA","XL750 Transalp","Asturias","Principado de Asturias","755",1
+"HONDA","XL750 Transalp","Álava/Araba","País Vasco","755",1
+"HONDA","XL750 Transalp","Albacete","Castilla-La Mancha","755",1
+"HONDA","XL750 Transalp","Alicante/Alacant","Comunidad Valenciana","755",13
+"HONDA","XL750 Transalp","Almería","Andalucía","755",3
+"HONDA","XL750 Transalp","Asturias","Principado de Asturias","755",3
 "HONDA","XL750 Transalp","Badajoz","Extremadura","755",1
-"HONDA","XL750 Transalp","Barcelona","Cataluña","755",9
-"HONDA","XL750 Transalp","Castellón/Castelló","Comunidad Valenciana","755",1
-"HONDA","XL750 Transalp","Girona","Cataluña","755",3
-"HONDA","XL750 Transalp","Illes Balears","Illes Balears","755",3
-"HONDA","XL750 Transalp","Madrid","Comunidad de Madrid","755",3
-"HONDA","XL750 Transalp","Málaga","Andalucía","755",2
-"HONDA","XL750 Transalp","Murcia","Región de Murcia","755",1
-"HONDA","XL750 Transalp","Ourense","Galicia","755",1
-"HONDA","XL750 Transalp","Palmas (Las)","Canarias","755",2
-"HONDA","XL750 Transalp","Santa Cruz de Tenerife","Canarias","755",1
+"HONDA","XL750 Transalp","Barcelona","Cataluña","755",51
+"HONDA","XL750 Transalp","Bizkaia","País Vasco","755",4
+"HONDA","XL750 Transalp","Cádiz","Andalucía","755",4
+"HONDA","XL750 Transalp","Cantabria","Cantabria","755",1
+"HONDA","XL750 Transalp","Castellón/Castelló","Comunidad Valenciana","755",5
+"HONDA","XL750 Transalp","Córdoba","Andalucía","755",4
+"HONDA","XL750 Transalp","Coruña (A)","Galicia","755",6
+"HONDA","XL750 Transalp","Gipuzkoa","País Vasco","755",3
+"HONDA","XL750 Transalp","Girona","Cataluña","755",8
+"HONDA","XL750 Transalp","Granada","Andalucía","755",8
+"HONDA","XL750 Transalp","Guadalajara","Castilla-La Mancha","755",2
+"HONDA","XL750 Transalp","Huelva","Andalucía","755",1
+"HONDA","XL750 Transalp","Huesca","Aragón","755",1
+"HONDA","XL750 Transalp","Illes Balears","Illes Balears","755",14
+"HONDA","XL750 Transalp","Jaén","Andalucía","755",2
+"HONDA","XL750 Transalp","Lleida","Cataluña","755",3
+"HONDA","XL750 Transalp","Madrid","Comunidad de Madrid","755",15
+"HONDA","XL750 Transalp","Málaga","Andalucía","755",12
+"HONDA","XL750 Transalp","Murcia","Región de Murcia","755",6
+"HONDA","XL750 Transalp","Navarra","Comunidad Foral de Navarra","755",2
+"HONDA","XL750 Transalp","Ourense","Galicia","755",3
+"HONDA","XL750 Transalp","Palmas (Las)","Canarias","755",6
+"HONDA","XL750 Transalp","Rioja (La)","La Rioja","755",1
+"HONDA","XL750 Transalp","Salamanca","Castilla y León","755",2
+"HONDA","XL750 Transalp","Santa Cruz de Tenerife","Canarias","755",6
 "HONDA","XL750 Transalp","Segovia","Castilla y León","755",1
-"HONDA","XL750 Transalp","Tarragona","Cataluña","755",1
-"HONDA","XL750 Transalp","Zaragoza","Aragón","755",3
-"HONDA","XL750C","Álava/Araba","País Vasco","755",1
-"HONDA","XL750C","Albacete","Castilla-La Mancha","755",1
-"HONDA","XL750C","Alicante/Alacant","Comunidad Valenciana","755",12
-"HONDA","XL750C","Almería","Andalucía","755",3
-"HONDA","XL750C","Asturias","Principado de Asturias","755",2
-"HONDA","XL750C","Barcelona","Cataluña","755",42
-"HONDA","XL750C","Bizkaia","País Vasco","755",4
-"HONDA","XL750C","Cádiz","Andalucía","755",4
-"HONDA","XL750C","Cantabria","Cantabria","755",1
-"HONDA","XL750C","Castellón/Castelló","Comunidad Valenciana","755",4
-"HONDA","XL750C","Córdoba","Andalucía","755",4
-"HONDA","XL750C","Coruña (A)","Galicia","755",6
-"HONDA","XL750C","Gipuzkoa","País Vasco","755",3
-"HONDA","XL750C","Girona","Cataluña","755",5
-"HONDA","XL750C","Granada","Andalucía","755",8
-"HONDA","XL750C","Guadalajara","Castilla-La Mancha","755",2
-"HONDA","XL750C","Huelva","Andalucía","755",1
-"HONDA","XL750C","Huesca","Aragón","755",1
-"HONDA","XL750C","Illes Balears","Illes Balears","755",11
-"HONDA","XL750C","Jaén","Andalucía","755",2
-"HONDA","XL750C","Lleida","Cataluña","755",3
-"HONDA","XL750C","Madrid","Comunidad de Madrid","755",12
-"HONDA","XL750C","Málaga","Andalucía","755",10
-"HONDA","XL750C","Murcia","Región de Murcia","755",5
-"HONDA","XL750C","Navarra","Comunidad Foral de Navarra","755",2
-"HONDA","XL750C","Ourense","Galicia","755",2
-"HONDA","XL750C","Palmas (Las)","Canarias","755",4
-"HONDA","XL750C","Rioja (La)","La Rioja","755",1
-"HONDA","XL750C","Salamanca","Castilla y León","755",2
-"HONDA","XL750C","Santa Cruz de Tenerife","Canarias","755",5
-"HONDA","XL750C","Sevilla","Andalucía","755",8
-"HONDA","XL750C","Tarragona","Cataluña","755",3
-"HONDA","XL750C","Toledo","Castilla-La Mancha","755",1
-"HONDA","XL750C","Valencia/València","Comunidad Valenciana","755",13
-"HONDA","XL750C","Valladolid","Castilla y León","755",3
-"HONDA","XL750C","Zaragoza","Aragón","755",2
+"HONDA","XL750 Transalp","Sevilla","Andalucía","755",8
+"HONDA","XL750 Transalp","Tarragona","Cataluña","755",4
+"HONDA","XL750 Transalp","Toledo","Castilla-La Mancha","755",1
+"HONDA","XL750 Transalp","Valencia/València","Comunidad Valenciana","755",13
+"HONDA","XL750 Transalp","Valladolid","Castilla y León","755",3
+"HONDA","XL750 Transalp","Zaragoza","Aragón","755",5
 "HONDA","Z125MA","Alicante/Alacant","Comunidad Valenciana","124",1
 "HONDA","Z125MA","Granada","Andalucía","124",2
 "HONDA","Z125MA","Madrid","Comunidad de Madrid","124",3
