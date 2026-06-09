@@ -8,7 +8,7 @@ Normalization applies two types of rules, evaluated in order: exact match first,
 **Exact rules** (full model string match → canonical):
 
 - For `YAMAHA`:
-  `GPD125D-A -> NMAX125`, `GPD125-A -> NMAX125`, `YP125R-DA -> XMAX125`, `YP125RA -> XMAX125`, `WR125-A -> WR125`, `LCG125 -> RayZR 125`
+  `GPD125D-A -> NMAX 125`, `GPD125-A -> NMAX 125`, `YP125R-DA -> XMAX 125`, `YP125RA -> XMAX 125`, `WR125-A -> WR125`, `LCG125 -> RayZR 125`
 - For `HONDA`:
   `WW125A -> PCX125`, `WW125S -> PCX125`, `FSH125 -> SH125`, `SH125AD -> SH125`, `NSS125AD -> FORZA125`, `XL750  -> XL750 Transalp`
 - For `APRILIA`:
