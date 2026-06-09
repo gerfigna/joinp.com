@@ -105,7 +105,7 @@ Normalization applies two types of rules, evaluated in order: exact match first,
 **Exact rules** (full model string match → canonical):
 
 - For `YAMAHA`:
-  `GPD125D-A -> NMAX125`, `GPD125-A -> NMAX125`, `YP125R-DA -> XMAX125`, `YP125RA -> XMAX125`, `WR125-A -> WR125`, `LCG125 -> RayZR 125`,
+  `GPD125D-A -> NMAX 125`, `GPD125-A -> NMAX 125`, `YP125R-DA -> XMAX 125`, `YP125RA -> XMAX 125`, `WR125-A -> WR125`, `LCG125 -> RayZR 125`,
   `MTN320-A -> MT-03`
 - For `HONDA`:
   `WW125A -> PCX125`, `WW125S -> PCX125`, `FSH125 -> SH Mode 125`, `SH125AD -> SH125i`, `NSS125AD -> FORZA125`, `NSC110 -> VISION 110`, `XL750 -> XL750 Transalp`,
@@ -131,7 +131,7 @@ Normalization applies two types of rules, evaluated in order: exact match first,
   prefix `YZF125` → `R125`,
   prefix `MTN890` → `MT-09`,
   prefix `MTT690` → `TRACER 700`,
-  prefix `MTM690` → `XSR700`,
+  prefix `MTM690` → `XSR-700`,
   prefix `YZF890` → `YZF-R9`,
   prefix `MTN1000` → `MT-10`,
   prefix `MTM890` → `XSR-900`,
@@ -266,11 +266,11 @@ Normalization applies two types of rules, evaluated in order: exact match first,
 - WHEN `MODELO_ITV` starts with `MTT690`
 - THEN `MODELO_ITV` is replaced with `TRACER 700`
 
-#### Scenario: Yamaha XSR700 prefix rule — MTM690
+#### Scenario: Yamaha XSR-700 prefix rule — MTM690
 
 - GIVEN `MARCA_ITV` = `YAMAHA`
 - WHEN `MODELO_ITV` starts with `MTM690`
-- THEN `MODELO_ITV` is replaced with `XSR700`
+- THEN `MODELO_ITV` is replaced with `XSR-700`
 
 #### Scenario: Yamaha prefix rules have no shadowing conflicts
 
