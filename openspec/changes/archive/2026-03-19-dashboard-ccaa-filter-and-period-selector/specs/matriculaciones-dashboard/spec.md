@@ -22,7 +22,7 @@ The dashboard CSV parser SHALL correctly read the column order produced by the c
 Each parsed row object SHALL have properties: `MARCA_ITV`, `MODELO_ITV`, `PROVINCIA_VEH`, `COMUNIDAD_AUTONOMA`, `CILINDRADA_ITV`, `COUNT`.
 
 #### Scenario: COMUNIDAD_AUTONOMA parsed correctly
-- **WHEN** a CSV row is `"HONDA","PCX125","Madrid","Comunidad de Madrid","125",42`
+- **WHEN** a CSV row is `"HONDA","PCX 125","Madrid","Comunidad de Madrid","125",42`
 - **THEN** the parsed row has `COMUNIDAD_AUTONOMA === "Comunidad de Madrid"` and `CILINDRADA_ITV === "125"` and `COUNT === 42`
 
 #### Scenario: Old positional access replaced
