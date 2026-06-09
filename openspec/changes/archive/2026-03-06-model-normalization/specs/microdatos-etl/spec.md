@@ -10,7 +10,7 @@ Normalization applies two types of rules, evaluated in order: exact match first,
 - For `YAMAHA`:
   `GPD125D-A -> NMAX 125`, `GPD125-A -> NMAX 125`, `YP125R-DA -> XMAX 125`, `YP125RA -> XMAX 125`, `WR125-A -> WR125`, `LCG125 -> RayZR 125`
 - For `HONDA`:
-  `WW125A -> PCX125`, `WW125S -> PCX125`, `FSH125 -> SH125`, `SH125AD -> SH125`, `NSS125AD -> FORZA125`, `XL750  -> XL750 Transalp`
+  `WW125A -> PCX 125`, `WW125S -> PCX 125`, `FSH125 -> SH125`, `SH125AD -> SH125`, `NSS125AD -> FORZA125`, `XL750  -> XL750 Transalp`
 - For `APRILIA`:
   `RS 660 FACTORY -> RS 660`, `RSV4 FACTORY -> RSV4`, `TUONO V4 FACTORY -> TUONO V4`, `TUAREG 660 RALLY -> TUAREG 660`
 - For `BENELLI`:

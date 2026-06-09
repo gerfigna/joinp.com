@@ -18,7 +18,7 @@ Normalization applies two types of rules, evaluated in order: exact match first,
   `MTN320-A -> MT-03`
 
 - For `HONDA` (existing rules retained):
-  `WW125A -> PCX125`, `WW125S -> PCX125`, `FSH125 -> SH Mode 125`, `SH125AD -> SH125i`, `NSS125AD -> FORZA125`, `NSC110 -> VISION 110`, `XL750 -> XL750 Transalp`
+  `WW125A -> PCX 125`, `WW125S -> PCX 125`, `FSH125 -> SH Mode 125`, `SH125AD -> SH125i`, `NSS125AD -> FORZA125`, `NSC110 -> VISION 110`, `XL750 -> XL750 Transalp`
 
 - For `HONDA` (added):
   `ADV350A -> ADV 350`, `ADV750 -> ADV 750`, `NSS350A -> FORZA 350`, `NSS750 -> FORZA 750`, `SH350A -> SH350i`, `CB750A -> CB750 Hornet`, `CB500XA -> CB 500 X`, `CB500FA -> CB 500 F`, `CBR650RAC -> CBR 650 R`, `GB350S -> GB350S`, `CBF125NA -> CBF 125`, `CB125F -> CB 125 F`, `CL500A -> CL500`, `CRF300LA -> CRF 300 L`, `CMX500A -> Rebel 500`, `CMX500A2 -> Rebel 500`
