@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriculaciones de Motos Eléctricas en España · DGT</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNNWTXM1E7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XNNWTXM1E7');
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header>
+    <h1>Matriculaciones de Motos Eléctricas en España</h1>
+    <p>Datos oficiales de la DGT · Motos eléctricas nuevas matriculadas por marca y potencia · Desde 2025</p>
+</header>
+
+<div class="main">
+    <input type="radio" class="tab-radio" name="main-tab" id="tab-datos" checked>
+    <input type="radio" class="tab-radio" name="main-tab" id="tab-evolucion">
+    <input type="radio" class="tab-radio" name="main-tab" id="tab-info">
+
+    <nav class="tab-nav">
+        <label for="tab-datos">Datos Mensuales</label>
+        <label for="tab-evolucion">Evolución Histórica</label>
+        <label for="tab-info">Información</label>
+        <a href="../dgt-matriculaciones-moto/" target="_blank" rel="noopener" class="tab-nav-link">🏍 Motos de verdad</a>
+    </nav>
+
+    <div class="tabs-wrapper">
+        <!-- Tab 1: Datos Mensuales -->
+        <div class="tab-content tab-datos-content">
+            <div class="period-selector glass-panel">
+                <div class="filter-group">
+                    <label>Año</label>
+                    <select id="sel-year"></select>
+                </div>
+                <div class="filter-group">
+                    <label>Mes</label>
+                    <select id="sel-month"></select>
+                </div>
+            </div>
+
+            <div class="filters glass-panel">
+                <div class="filter-group">
+                    <label>Marca</label>
+                    <select id="sel-brand">
+                        <option value="">Todas las marcas</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Carnet</label>
+                    <select id="sel-carnet">
+                        <option value="">Todos</option>
+                        <option value="A1">A1 (≤11 kW)</option>
+                        <option value="A2">A2 (11–35 kW)</option>
+                        <option value="A">A (&gt;35 kW)</option>
+                    </select>
+                </div>
+<button class="btn-reset" id="btn-reset">Limpiar filtros</button>
+            </div>
+
+            <div class="content">
+                <div class="table-section">
+                    <div class="table-wrap glass-panel">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Marca</th>
+                                <th>Modelo</th>
+                                <th class="num">Potencia</th>
+                                <th class="num">Unidades</th>
+                            </tr>
+                            </thead>
+                            <tbody id="table-body">
+                            <tr class="empty-row">
+                                <td colspan="5">Selecciona un mes para cargar datos</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination">
+                        <span id="pagination-info"></span>
+                        <div class="pagination-controls">
+                            <button class="btn-page" id="btn-prev" disabled>← Anterior</button>
+                            <span class="page-info" id="page-display"></span>
+                            <button class="btn-page" id="btn-next" disabled>Siguiente →</button>
+                        </div>
+                    </div>
+                    <div class="table-summary" id="table-summary"></div>
+                </div>
+
+                <div class="chart-section">
+                    <div class="chart-card glass-panel">
+                        <div class="chart-title">Distribución por Marca</div>
+                        <div class="chart-wrap" id="chart-wrap">
+                            <canvas id="brand-pie-chart"></canvas>
+                        </div>
+                        <div class="chart-empty" id="chart-empty">Sin datos para<br>el mes seleccionado</div>
+                        <div class="chart-total" id="chart-total"></div>
+                    </div>
+                    <div class="chart-card glass-panel" style="margin-top: 1rem;">
+                        <div class="chart-title">Distribución por Carnet</div>
+                        <div class="chart-wrap" id="carnet-chart-wrap">
+                            <canvas id="carnet-chart"></canvas>
+                        </div>
+                        <div class="chart-empty" id="carnet-chart-empty">Sin datos para<br>el mes seleccionado</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 2: Evolución -->
+        <div class="tab-content tab-evolucion-content">
+            <div class="evolution-loading glass-panel" id="evolution-loading" style="display:none">
+                <div class="spinner"></div>
+                Cargando datos históricos...
+            </div>
+
+            <div class="evolution-chart-section glass-panel">
+                <h2>Evolución Anual por Potencia</h2>
+                <div class="evolution-canvas-wrap">
+                    <canvas id="powerEvolutionChart"></canvas>
+                </div>
+            </div>
+
+            <div class="evolution-chart-section glass-panel">
+                <h2>Evolución Anual por Marca (Top 15)</h2>
+                <div class="evolution-canvas-wrap evolution-canvas-wrap--tall">
+                    <canvas id="brandEvolutionChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 3: Información -->
+        <div class="tab-content tab-info-content">
+            <div class="glass-panel" style="padding: 2.5rem;">
+                <section class="disclaimer">
+                    <h2>Descargo de responsabilidad</h2>
+                    <p>
+                        Los datos de esta interfaz provienen de los <strong>microdatos oficiales de la
+                        Dirección General de Tráfico (DGT)</strong>, publicados periódicamente de forma abierta.
+                        Esta herramienta no está afiliada a ningún organismo del gobierno.
+                    </p>
+                    <p>
+                        Se muestran exclusivamente matriculaciones de <strong>motocicletas de 2 ruedas nuevas,
+                        de propulsión eléctrica y categoría BEV</strong> (vehículo eléctrico de batería puro),
+                        a partir de enero de 2025. Los criterios de filtrado aplicados sobre los microdatos son:
+                        <code>COD_TIPO = 50</code> · <code>CLAVE_TRAMITE = 1</code> ·
+                        <code>IND_NUEVO_USADO = N</code> · <code>COD_PROPULSION_ITV = 2</code> ·
+                        <code>COD_CLASE_MAT = 0</code> · <code>CATEGORIA_VEHICULO_ELECTRICO = BEV</code>.
+                        Se excluyen híbridos (HEV), híbridos enchufables (PHEV) y eléctricos de autonomía
+                        extendida (REEV).
+                    </p>
+                    <p>
+                        Las cifras pueden contener discordancias o datos nulos si así fueron codificados
+                        por la DGT. Uso recomendado: estadístico e informativo.
+                    </p>
+                </section>
+
+                <section style="margin-top: 2rem;">
+                    <h2>Exclusiones editoriales</h2>
+                    <ul class="release-list">
+                        <li>
+                            <div class="release-date">TALARIA — datos incongruentes</div>
+                            <div class="release-desc">
+                                Los registros de la marca TALARIA presentan inconsistencias en los campos
+                                de propulsión y categoría eléctrica que hacen sus datos no fiables para
+                                el análisis. Se excluyen de forma permanente de esta interfaz.
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="release-notes" style="margin-top: 2rem;">
+                    <h2>Fuente de datos</h2>
+                    <ul class="release-list">
+                        <li>
+                            <div class="release-date">Microdatos DGT — ficheros diarios y mensuales</div>
+                            <div class="release-desc">
+                                Los datos se extraen de los ZIPs publicados en el portal de microdatos de la DGT.
+                                El ETL descarga primero el fichero diario; si no está disponible (fin de semana,
+                                festivo) recurre al fichero mensual acumulado.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="release-date">Rangos de potencia</div>
+                            <div class="release-desc">
+                                Hasta 11 kW · 11–35 kW · Más de 35 kW.
+                                Corresponden aproximadamente a los carnets A1, A2 y A respectivamente.
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <span><span class="label">Última actualización:</span> <span id="footer-last-run">—</span></span>
+    <span><span class="label">Datos desde:</span> <span>enero 2025</span></span>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
