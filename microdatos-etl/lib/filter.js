@@ -62,4 +62,97 @@ function extractPowerFields(line) {
   return { marca, kw };
 }
 
-module.exports = { isMotorcycleRow, extractRowFields, extractPowerFields };
+/**
+ * Returns true if the line represents a new electric motorcycle registration
+ * (COD_PROPULSION_ITV = '2', COD_CLASE_MAT = '0').
+ * @param {string} line
+ * @returns {boolean}
+ */
+function isElectricMotorcycleRow(line) {
+  if (line.length < 200) return false;
+  if (getField(line, 'COD_TIPO')          !== '50') return false;
+  if (getField(line, 'CLAVE_TRAMITE')     !== '1')  return false;
+  if (getField(line, 'IND_NUEVO_USADO')   !== 'N')  return false;
+  if (getField(line, 'FABRICANTE_ITV')    === 'ND') return false;
+  if (getField(line, 'COD_PROPULSION_ITV')          !== '2')   return false;
+  if (getField(line, 'COD_CLASE_MAT')               !== '0')   return false;
+  if (getField(line, 'CATEGORIA_VEHICULO_ELECTRICO') !== 'BEV') return false;
+  const kw = getField(line, 'KW_ITV');
+  const kwNum = parseFloat(kw);
+  if (!kw || kw.trim() === '*******' || isNaN(kwNum) || kwNum <= 0) return false;
+  if (normalizeBrand(getField(line, 'MARCA_ITV')) === 'TALARIA') return false;
+  return true;
+}
+
+/**
+ * Derives the license category from a kW string.
+ * @param {string} kw
+ * @returns {'A1'|'A2'|'A'|''}
+ */
+function tipoCarnet(kw) {
+  const n = parseFloat(kw);
+  if (!kw || kw.trim() === '*******' || isNaN(n) || n <= 0) return '';
+  if (n <= 11) return 'A1';
+  if (n <= 35) return 'A2';
+  return 'A';
+}
+
+function normalizeCategoria(cat, clasificacion) {
+  const c  = (cat         || '').trim();
+  const cl = (clasificacion || '').trim();
+  if (/^L3E/i.test(c)) return 'L3e';
+  if ((c === '' || c.includes('*')) && cl.startsWith('04')) return 'L3e';
+  return c;
+}
+
+/**
+ * Extracts 35 source fields + calculated TIPO_CARNET from a line that has
+ * already passed `isElectricMotorcycleRow`.
+ * @param {string} line
+ * @returns {Object}
+ */
+function extractElectricFields(line) {
+  const kw           = getField(line, 'KW_ITV');
+  const catRaw       = getField(line, 'CATEGORIA_HOMOLOGACION_EUROPEA_ITV');
+  const clasificacion = getField(line, 'CLASIFICACION_REGLAMENTO_VEHICULOS_ITV');
+  return {
+    FEC_MATRICULA:                          getField(line, 'FEC_MATRICULA'),
+    COD_CLASE_MAT:                          getField(line, 'COD_CLASE_MAT'),
+    FEC_TRAMITACION:                        getField(line, 'FEC_TRAMITACION'),
+    MARCA_ITV:                              normalizeBrand(getField(line, 'MARCA_ITV')),
+    MODELO_ITV:                             getField(line, 'MODELO_ITV'),
+    CILINDRADA_ITV:                         getField(line, 'CILINDRADA_ITV'),
+    POTENCIA_ITV:                           getField(line, 'POTENCIA_ITV'),
+    NUM_PLAZAS:                             getField(line, 'NUM_PLAZAS'),
+    LOCALIDAD_VEHICULO:                     getField(line, 'LOCALIDAD_VEHICULO'),
+    COD_PROVINCIA_VEH:                      getField(line, 'COD_PROVINCIA_VEH'),
+    COD_PROVINCIA_MAT:                      getField(line, 'COD_PROVINCIA_MAT'),
+    FEC_TRAMITE:                            getField(line, 'FEC_TRAMITE'),
+    CODIGO_POSTAL:                          getField(line, 'CODIGO_POSTAL'),
+    PERSONA_FISICA_JURIDICA:                getField(line, 'PERSONA_FISICA_JURIDICA'),
+    CODIGO_ITV:                             getField(line, 'CODIGO_ITV'),
+    SERVICIO:                               getField(line, 'SERVICIO'),
+    COD_MUNICIPIO_INE_VEH:                  getField(line, 'COD_MUNICIPIO_INE_VEH'),
+    MUNICIPIO:                              getField(line, 'MUNICIPIO'),
+    KW_ITV:                                 kw,
+    TIPO_CARNET:                            tipoCarnet(kw),
+    TIPO_ITV:                               getField(line, 'TIPO_ITV'),
+    VARIANTE_ITV:                           getField(line, 'VARIANTE_ITV'),
+    VERSION_ITV:                            getField(line, 'VERSION_ITV'),
+    MASA_ORDEN_MARCHA_ITV:                  getField(line, 'MASA_ORDEN_MARCHA_ITV'),
+    MASA_MAXIMA_TECNICA_ITV:                getField(line, 'MASA_MAXIMA_TECNICA_ITV'),
+    CATEGORIA_HOMOLOGACION_EUROPEA_ITV:     normalizeCategoria(catRaw, clasificacion),
+    CARROCERIA:                             getField(line, 'CARROCERIA'),
+    CONSUMO_WH_KM_ITV:                      getField(line, 'CONSUMO_WH_KM_ITV'),
+    CLASIFICACION_REGLAMENTO_VEHICULOS_ITV: clasificacion,
+    CATEGORIA_VEHICULO_ELECTRICO:           getField(line, 'CATEGORIA_VEHICULO_ELECTRICO'),
+    AUTONOMIA_VEHICULO_ELECTRICO:           getField(line, 'AUTONOMIA_VEHICULO_ELECTRICO'),
+    MARCA_VEHICULO_BASE:                    getField(line, 'MARCA_VEHICULO_BASE'),
+    FABRICANTE_VEHICULO_BASE:               getField(line, 'FABRICANTE_VEHICULO_BASE'),
+    TIPO_VEHICULO_BASE:                     getField(line, 'TIPO_VEHICULO_BASE'),
+    VARIANTE_VEHICULO_BASE:                 getField(line, 'VARIANTE_VEHICULO_BASE'),
+    VERSION_VEHICULO_BASE:                  getField(line, 'VERSION_VEHICULO_BASE'),
+  };
+}
+
+module.exports = { isMotorcycleRow, extractRowFields, extractPowerFields, isElectricMotorcycleRow, extractElectricFields };
