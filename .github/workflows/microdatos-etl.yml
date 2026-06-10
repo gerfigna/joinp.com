@@ -26,11 +26,15 @@ jobs:
         run: node download-microdatos.js
         working-directory: microdatos-etl
 
+      - name: Run e-ETL
+        run: node download-microdatos-electrica.js
+        working-directory: microdatos-etl
+
       - name: Commit data changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add microdatos-etl/data/
+          git add microdatos-etl/
           if git diff --cached --quiet; then
             echo "No data changes to commit"
           else
