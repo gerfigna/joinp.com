@@ -467,6 +467,8 @@
     ];
 
     let evolutionData = null;
+    let monthlyBrandData = null;
+    let lastCompleteMonth = null;
     let powerChart = null;
     let brandChart = null;
 
@@ -476,38 +478,123 @@
       document.getElementById('evolution-loading').style.display = 'block';
 
       const currentYear = new Date().getFullYear();
+      const prevYear = currentYear - 1;
       const years = [];
       for (let y = 2015; y <= currentYear; y++) years.push(y);
 
-      const results = await Promise.all(years.map(async (year) => {
-        try {
-          const [powerRes, brandRes] = await Promise.all([
-            fetch(`/microdatos-etl/data/${year}/acumulado-potencia-anual.csv`),
-            fetch(`/microdatos-etl/data/${year}/acumulado-marca-anual.csv`)
-          ]);
-          if (!powerRes.ok || !brandRes.ok) return null;
-          const [powerText, brandText] = await Promise.all([powerRes.text(), brandRes.text()]);
-          return {
-            year,
-            power: parseCSV(powerText),
-            brands: parseCSV(brandText)
-          };
-        } catch (_) { return null; }
-      }));
+      let lastCompleteMonthNum = 5;
+      try {
+        const metaRes = await fetch('/microdatos-etl/data/metadata.json');
+        if (metaRes.ok) {
+          const meta = await metaRes.json();
+          const d = new Date(meta.lastDataDate + 'T00:00:00');
+          lastCompleteMonthNum = Math.max(1, d.getMonth()); // getMonth() 0-indexed: June=5 → last complete = May=5 (1-indexed)
+        }
+      } catch { }
+      lastCompleteMonth = lastCompleteMonthNum;
 
-      evolutionData = results.filter(r => r !== null);
+      const allMonths = ['01','02','03','04','05','06','07','08','09','10','11','12'];
+      const currentMonths = allMonths.slice(0, lastCompleteMonth);
+
+      const [annualResults, prevYearMonthly, currentYearMonthly] = await Promise.all([
+        Promise.all(years.map(async (year) => {
+          try {
+            const [powerRes, brandRes] = await Promise.all([
+              fetch(`/microdatos-etl/data/${year}/acumulado-potencia-anual.csv`),
+              fetch(`/microdatos-etl/data/${year}/acumulado-marca-anual.csv`)
+            ]);
+            if (!powerRes.ok || !brandRes.ok) return null;
+            const [powerText, brandText] = await Promise.all([powerRes.text(), brandRes.text()]);
+            return { year, power: parseCSV(powerText), brands: parseCSV(brandText) };
+          } catch { return null; }
+        })),
+        Promise.all(allMonths.map(async (m) => {
+          try {
+            const res = await fetch(`/microdatos-etl/data/${prevYear}/${m}/acumulado-marca-mensual.csv`);
+            return [m, res.ok ? parseCSV(await res.text()) : []];
+          } catch { return [m, []]; }
+        })),
+        Promise.all(currentMonths.map(async (m) => {
+          try {
+            const res = await fetch(`/microdatos-etl/data/${currentYear}/${m}/acumulado-marca-mensual.csv`);
+            return [m, res.ok ? parseCSV(await res.text()) : []];
+          } catch { return [m, []]; }
+        }))
+      ]);
+
+      evolutionData = annualResults.filter(r => r !== null);
+      monthlyBrandData = {
+        [prevYear]: Object.fromEntries(prevYearMonthly),
+        [currentYear]: Object.fromEntries(currentYearMonthly)
+      };
+
       document.getElementById('evolution-loading').style.display = 'none';
-
       renderEvolutionCharts();
     }
 
+    function getEligibleBrands() {
+      const currentYear = new Date().getFullYear();
+      const prevYear = currentYear - 1;
+      const allMonths = ['01','02','03','04','05','06','07','08','09','10','11','12'];
+      const currentMonths = allMonths.slice(0, lastCompleteMonth);
+      const allBrands = new Set();
+      Object.values(monthlyBrandData[prevYear] || {}).forEach(rows =>
+        rows.forEach(r => allBrands.add(r.MARCA_ITV))
+      );
+      const eligible = new Set();
+      allBrands.forEach(brand => {
+        const prevOk = allMonths.every(m => {
+          const row = (monthlyBrandData[prevYear]?.[m] || []).find(r => r.MARCA_ITV === brand);
+          return row && row.COUNT > 0;
+        });
+        const currOk = currentMonths.every(m => {
+          const row = (monthlyBrandData[currentYear]?.[m] || []).find(r => r.MARCA_ITV === brand);
+          return row && row.COUNT > 0;
+        });
+        if (prevOk && currOk) eligible.add(brand);
+      });
+      return eligible;
+    }
+
+    function computeAvgRatio(brand) {
+      const currentYear = new Date().getFullYear();
+      const prevYear = currentYear - 1;
+      const allMonths = ['01','02','03','04','05','06','07','08','09','10','11','12'];
+      const currentMonths = allMonths.slice(0, lastCompleteMonth);
+      const ratios = currentMonths.map(m => {
+        const prev = (monthlyBrandData[prevYear]?.[m] || []).find(r => r.MARCA_ITV === brand);
+        const curr = (monthlyBrandData[currentYear]?.[m] || []).find(r => r.MARCA_ITV === brand);
+        const p = prev?.COUNT || 0;
+        const c = curr?.COUNT || 0;
+        return p > 0 ? c / p : null;
+      }).filter(r => r !== null);
+      return ratios.length ? ratios.reduce((s, r) => s + r, 0) / ratios.length : 1;
+    }
+
+    function projectBrand(brand) {
+      const currentYear = new Date().getFullYear();
+      const prevYear = currentYear - 1;
+      const allMonths = ['01','02','03','04','05','06','07','08','09','10','11','12'];
+      const remainingMonths = allMonths.slice(lastCompleteMonth);
+      const yearData = evolutionData.find(d => d.year === currentYear);
+      const actualYtd = yearData?.brands.find(r => r.MARCA_ITV === brand)?.COUNT || 0;
+      const avgRatio = computeAvgRatio(brand);
+      const restPrevYear = remainingMonths.reduce((sum, m) => {
+        const row = (monthlyBrandData[prevYear]?.[m] || []).find(r => r.MARCA_ITV === brand);
+        return sum + (row?.COUNT || 0);
+      }, 0);
+      return Math.round(actualYtd + restPrevYear * avgRatio);
+    }
+
     function getTopBrands(n = 30) {
+      const eligible = getEligibleBrands();
       const totals = {};
       const maxYear = Math.max(...evolutionData.map(d => d.year));
       evolutionData
         .filter(d => d.year >= maxYear - 2)
         .forEach(({ brands }) => {
           brands.forEach(row => {
+            if (!eligible.has(row.MARCA_ITV)) return;
             totals[row.MARCA_ITV] = (totals[row.MARCA_ITV] || 0) + row.COUNT;
           });
         });
@@ -535,19 +622,28 @@
 
     function buildBrandsChartData(topBrands, mode) {
       const currentYear = new Date().getFullYear();
-      const visibleData = mode === 'percent'
-        ? evolutionData
-        : evolutionData.filter(d => d.year < currentYear);
-      const topBrandsSet = new Set(topBrands);
-      const datasets = topBrands.map((brand, i) => ({
+      const lastIdx = evolutionData.length - 1;
+      const color = i => BRAND_COLORS[i % BRAND_COLORS.length];
+      return topBrands.map((brand, i) => ({
         label: brand,
-        borderColor: BRAND_COLORS[i % BRAND_COLORS.length],
-        backgroundColor: BRAND_COLORS[i % BRAND_COLORS.length],
+        borderColor: color(i),
+        backgroundColor: color(i),
         fill: false,
         tension: 0.3,
-        pointRadius: 3,
+        pointRadius: evolutionData.map((_, j) =>
+          mode === 'absolute' && j === lastIdx ? 5 : 3
+        ),
+        pointBackgroundColor: evolutionData.map((_, j) =>
+          mode === 'absolute' && j === lastIdx ? 'transparent' : color(i)
+        ),
+        ...(mode === 'absolute' ? {
+          segment: {
+            borderDash: ctx => ctx.p0DataIndex === lastIdx - 1 ? [6, 4] : undefined
+          }
+        } : {}),
         ...(i >= 15 ? { hidden: true } : {}),
-        data: visibleData.map(({ brands }) => {
+        data: evolutionData.map(({ year, brands }) => {
+          if (mode === 'absolute' && year === currentYear) return projectBrand(brand);
           const row = brands.find(r => r.MARCA_ITV === brand);
           const val = row ? row.COUNT : 0;
           if (mode === 'percent') {
@@ -557,15 +653,10 @@
           return val;
         })
       }));
-
-      return datasets;
     }
 
-    function brandYears(mode) {
-      const currentYear = new Date().getFullYear();
-      return evolutionData
-        .filter(d => mode === 'percent' || d.year < currentYear)
-        .map(d => d.year);
+    function brandYears() {
+      return evolutionData.map(d => d.year);
     }
 
     function renderEvolutionCharts() {
@@ -623,7 +714,20 @@
               boxWidth: 12,
               padding: 10,
             }
-          }
+          },
+          ...(mode === 'absolute' ? {
+            tooltip: {
+              callbacks: {
+                label: ctx => {
+                  const isProjected = ctx.dataIndex === ctx.chart.data.labels.length - 1;
+                  const val = ctx.parsed.y !== null && ctx.parsed.y !== undefined ? ctx.parsed.y.toLocaleString('es') : '—';
+                  return isProjected
+                    ? `${ctx.dataset.label}: ~${val} (proyección)`
+                    : `${ctx.dataset.label}: ${val}`;
+                }
+              }
+            }
+          } : {})
         },
         scales: {
           x: {
@@ -674,6 +778,17 @@
         brandChart.data.labels = brandYears(mode);
         brandChart.data.datasets = buildBrandsChartData(topBrands, mode);
         brandChart.options.scales.y.title.text = mode === 'percent' ? '%' : 'Matrículas';
+        brandChart.options.plugins.tooltip = mode === 'absolute' ? {
+          callbacks: {
+            label: ctx => {
+              const isProjected = ctx.dataIndex === ctx.chart.data.labels.length - 1;
+              const val = ctx.parsed.y !== null && ctx.parsed.y !== undefined ? ctx.parsed.y.toLocaleString('es') : '—';
+              return isProjected
+                ? `${ctx.dataset.label}: ~${val} (proyección)`
+                : `${ctx.dataset.label}: ${val}`;
+            }
+          }
+        } : {};
         brandChart.update();
       });
     });
