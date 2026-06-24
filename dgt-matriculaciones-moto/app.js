@@ -798,7 +798,20 @@
       loadEvolutionData();
     });
 
+    // Tab hash persistence
+    ['tab-datos', 'tab-evolucion', 'tab-info'].forEach(id => {
+      document.getElementById(id).addEventListener('change', function () {
+        if (this.checked) location.hash = id.replace('tab-', '');
+      });
+    });
+
     // ── Init ──────────────────────────────────────────────────────────────────
+
+    const savedTab = 'tab-' + location.hash.slice(1);
+    if (['tab-datos', 'tab-evolucion', 'tab-info'].includes(savedTab)) {
+      document.getElementById(savedTab).checked = true;
+      if (savedTab === 'tab-evolucion') loadEvolutionData();
+    }
 
     buildSelectors();
     updateMonthOptions();

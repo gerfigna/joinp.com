@@ -27,6 +27,7 @@
     <input type="radio" class="tab-radio" name="main-tab" id="tab-datos" checked>
     <input type="radio" class="tab-radio" name="main-tab" id="tab-evolucion">
     <input type="radio" class="tab-radio" name="main-tab" id="tab-info">
+    <script>(function(){const h=location.hash.slice(1);if(h==='evolucion'||h==='info'){document.getElementById('tab-'+h).checked=true;}})();</script>
 
     <nav class="tab-nav">
         <label for="tab-datos">Datos Mensuales</label>
