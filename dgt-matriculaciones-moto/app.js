@@ -517,15 +517,24 @@
         Promise.all(currentMonths.map(async (m) => {
           try {
             const res = await fetch(`/microdatos-etl/data/${currentYear}/${m}/acumulado-marca-mensual.csv`);
-            return [m, res.ok ? parseCSV(await res.text()) : []];
-          } catch { return [m, []]; }
+            return [m, res.ok ? parseCSV(await res.text()) : null];
+          } catch { return [m, null]; }
         }))
       ]);
+
+      // If trailing months have no monthly CSV yet (DGT ZIP not published),
+      // shrink lastCompleteMonth to the last month that actually returned data.
+      // This prevents including an incomplete month in ratio and projection calculations.
+      const lastValidIdx = [...currentYearMonthly].reverse().findIndex(([, d]) => d !== null);
+      if (lastValidIdx !== 0) {
+        const lastValidMonth = lastValidIdx === -1 ? null : currentYearMonthly[currentYearMonthly.length - 1 - lastValidIdx];
+        lastCompleteMonth = lastValidMonth ? parseInt(lastValidMonth[0], 10) : 0;
+      }
 
       evolutionData = annualResults.filter(r => r !== null);
       monthlyBrandData = {
         [prevYear]: Object.fromEntries(prevYearMonthly),
-        [currentYear]: Object.fromEntries(currentYearMonthly)
+        [currentYear]: Object.fromEntries(currentYearMonthly.map(([m, d]) => [m, d ?? []]))
       };
 
       document.getElementById('evolution-loading').style.display = 'none';
