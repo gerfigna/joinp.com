@@ -1,6 +1,6 @@
 ## Context
 
-The existing ETL (`download-microdatos.js`) filters out electric motorcycles by requiring `CILINDRADA_ITV ≠ 0`. The `download-microdatos-potencia.js` ETL also applies `isMotorcycleRow()`, inheriting the same exclusion. Electric registration data exists in the DGT daily ZIPs but has never been extracted.
+The existing ETL (`download-microdatos.js`) filters out electric motorcycles by requiring `CILINDRADA_ITV ≠ 0`. The `download-microdatos-mes.js` ETL also applies `isMotorcycleRow()`, inheriting the same exclusion. Electric registration data exists in the DGT daily ZIPs but has never been extracted.
 
 The new ETL follows the same download-and-parse pattern as the existing scripts, reusing all of `lib/` without modification (except adding two functions to `filter.js` and one constant to `constants.js`).
 

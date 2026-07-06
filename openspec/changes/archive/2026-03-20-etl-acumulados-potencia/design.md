@@ -1,6 +1,6 @@
 ## Technical Approach
 
-Nuevo script `download-microdatos-potencia.js` que replica el patrón del ETL mensual existente (`download-microdatos-mensual.js`): descarga ZIPs mensuales de la DGT, filtra filas de moto con `isMotorcycleRow` (reusado), extrae `MARCA_ITV` + `KW_ITV`, y escribe 4 ficheros CSV agregados por mes/año. Sin modificar ningún código existente.
+Nuevo script `download-microdatos-mes.js` que replica el patrón del ETL mensual existente (`download-microdatos-mensual.js`): descarga ZIPs mensuales de la DGT, filtra filas de moto con `isMotorcycleRow` (reusado), extrae `MARCA_ITV` + `KW_ITV`, y escribe 4 ficheros CSV agregados por mes/año. Sin modificar ningún código existente.
 
 ## Architecture Decisions
 
@@ -30,7 +30,7 @@ Nuevo script `download-microdatos-potencia.js` que replica el patrón del ETL me
 DGT monthly ZIP (YYYYMM)
     │
     ▼
-download-microdatos-potencia.js
+download-microdatos-mes.js
     │  ① download (httpGet)
     │  ② extract .txt (extractTxtFromZip)
     │  ③ filter lines (isMotorcycleRow)
@@ -53,8 +53,8 @@ readAllMonthly(year) ──► writeMarcaAnnual / writePotenciaAnnual  ──►
 |------|--------|-------------|
 | `microdatos-etl/lib/filter.js` | Modify | Añadir `extractPowerFields(line)` que devuelve `{ marca, kw }` |
 | `microdatos-etl/lib/power-aggregate.js` | Create | Clase `PowerAggregator`, `getPowerRange(kw)`, funciones de escritura CSV |
-| `microdatos-etl/download-microdatos-potencia.js` | Create | Script principal |
-| `.github/workflows/microdatos-etl.yml` | Modify | Añadir step para `node download-microdatos-potencia.js` |
+| `microdatos-etl/download-microdatos-mes.js` | Create | Script principal |
+| `.github/workflows/microdatos-etl.yml` | Modify | Añadir step para `node download-microdatos-mes.js` |
 
 ## Interfaces / Contracts
 
@@ -108,5 +108,5 @@ RANGO_POTENCIA,COUNT
 ## Open Questions
 
 - [ ] ¿Qué URL usa la DGT para los ZIPs mensuales? ¿Es la misma que `download-microdatos-mensual.js`?
-- [ ] ¿Queremos que el workflow corra `download-microdatos-potencia.js` cada 6h o con schedule separado (ej. daily)?
+- [ ] ¿Queremos que el workflow corra `download-microdatos-mes.js` cada 6h o con schedule separado (ej. daily)?
 - [ ] ¿KW_ITV puede contener valores decimales o solo enteros?

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Nuevo script ETL (`download-microdatos-potencia.js`) que descarga ZIPs mensuales de la DGT, extrae `KW_ITV` + `MARCA_ITV`, y genera acumulados mensuales y anuales por marca y por rangos de potencia. Opera de forma independiente del ETL diario existente.
+Nuevo script ETL (`download-microdatos-mes.js`) que descarga ZIPs mensuales de la DGT, extrae `KW_ITV` + `MARCA_ITV`, y genera acumulados mensuales y anuales por marca y por rangos de potencia. Opera de forma independiente del ETL diario existente.
 
 ## Requirements
 
