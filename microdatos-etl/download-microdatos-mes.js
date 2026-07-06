@@ -2,7 +2,7 @@
 'use strict';
 
 /**
- * download-microdatos-potencia.js
+ * download-microdatos-mes.js
  *
  * Downloads DGT monthly ZIPs, filters motorcycle rows (via isMotorcycleRow),
  * extracts MARCA_ITV + KW_ITV (via extractPowerFields), and aggregates

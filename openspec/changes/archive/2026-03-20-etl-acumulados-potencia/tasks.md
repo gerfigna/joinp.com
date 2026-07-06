@@ -10,7 +10,7 @@
 
 ## Phase 2: Core Implementation — ETL Script
 
-- [x] 2.1 Create `microdatos-etl/download-microdatos-potencia.js` — main script mirroring `download-microdatos-mensual.js` pattern: `httpGet` → `extractTxtFromZip` → line-by-line processing
+- [x] 2.1 Create `microdatos-etl/download-microdatos-mes.js` — main script mirroring `download-microdatos-mensual.js` pattern: `httpGet` → `extractTxtFromZip` → line-by-line processing
 
 - [x] 2.2 Implement month detection: scan `data/` for `YYYY/MM/` directories containing at least one `DD.csv`, check if `acumulado-potencia-mensual.csv` exists (skip if present) — independent skip per output file
 
@@ -20,11 +20,11 @@
 
 ## Phase 3: Integration / CI-CD
 
-- [ ] 3.1 Add job/step to `.github/workflows/microdatos-etl.yml` to run `node download-microdatos-potencia.js` after the daily ETL job (sequential `needs:` dependency)
+- [ ] 3.1 Add job/step to `.github/workflows/microdatos-etl.yml` to run `node download-microdatos-mes.js` after the daily ETL job (sequential `needs:` dependency)
 
 ## Phase 4: Verification
 
-- [x] 4.1 Run `node download-microdatos-potencia.js` locally and verify `data/YYYY/MM/acumulado-marca-mensual.csv` and `data/YYYY/MM/acumulado-potencia-mensual.csv` are created with correct columns and counts
+- [x] 4.1 Run `node download-microdatos-mes.js` locally and verify `data/YYYY/MM/acumulado-marca-mensual.csv` and `data/YYYY/MM/acumulado-potencia-mensual.csv` are created with correct columns and counts
 
 - [x] 4.2 Verify `data/YYYY/acumulado-marca-anual.csv` and `data/YYYY/acumulado-potencia-anual.csv` are regenerated after a new month is processed
 

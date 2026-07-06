@@ -2,12 +2,12 @@
 
 ## Intent
 
-Crear un nuevo script de ETL (`download-microdatos-potencia.js`) que genera acumulados mensuales y anuales por marca y por rangos de potencia (KW_ITV) a partir de los ficheros ZIP mensuales de la DGT. Los datos actuales (acumulado-marca-modelo-provincia) no se tocan.
+Crear un nuevo script de ETL (`download-microdatos-mes.js`) que genera acumulados mensuales y anuales por marca y por rangos de potencia (KW_ITV) a partir de los ficheros ZIP mensuales de la DGT. Los datos actuales (acumulado-marca-modelo-provincia) no se tocan.
 
 ## Scope
 
 ### In Scope
-- Nuevo script `download-microdatos-potencia.js` que descarga ZIPs mensuales de la DGT
+- Nuevo script `download-microdatos-mes.js` que descarga ZIPs mensuales de la DGT
 - Extracción del campo `KW_ITV` (posición 227 en fields.js)
 - 4 nuevos ficheros CSV por mes/año:
   - `data/YYYY/MM/acumulado-marca-mensual.csv` → `MARCA_ITV,COUNT`
@@ -29,7 +29,7 @@ Crear un nuevo script de ETL (`download-microdatos-potencia.js`) que genera acum
 
 1. `lib/filter.js` — nueva función `extractPowerFields()` para extraer MARCA_ITV + KW_ITV
 2. `lib/power-aggregate.js` — nuevo módulo con clase `PowerAggregator` y funciones de escritura
-3. `download-microdatos-potencia.js` — script principal, sigue el mismo patrón que `download-microdatos-mensual.js` (mismas URLs, mismo httpGet, misma extracción ZIP)
+3. `download-microdatos-mes.js` — script principal, sigue el mismo patrón que `download-microdatos-mensual.js` (mismas URLs, mismo httpGet, misma extracción ZIP)
 4. KW_ITV vacío/inválido → se omite la fila del agregado (no se incluye en ningún rango)
 
 ## Affected Areas
@@ -38,7 +38,7 @@ Crear un nuevo script de ETL (`download-microdatos-potencia.js`) que genera acum
 |------|--------|-------------|
 | `microdatos-etl/lib/filter.js` | Modified | Nueva función extractPowerFields() |
 | `microdatos-etl/lib/power-aggregate.js` | New | PowerAggregator + writeMarcaMonthly/Annual, writePotenciaMonthly/Annual |
-| `microdatos-etl/download-microdatos-potencia.js` | New | Script principal, copia patrón de download-microdatos-mensual.js |
+| `microdatos-etl/download-microdatos-mes.js` | New | Script principal, copia patrón de download-microdatos-mensual.js |
 | `microdatos-etl/package.json` | No change | No nuevas dependencias |
 | `.github/workflows/microdatos-etl.yml` | Modified | Añadir nuevo script al workflow |
 
@@ -52,7 +52,7 @@ Crear un nuevo script de ETL (`download-microdatos-potencia.js`) que genera acum
 
 ## Rollback Plan
 
-Eliminar `download-microdatos-potencia.js` y `lib/power-aggregate.js`. Regenerar `acumulado-marca-modelo-provincia.csv` corriendo `download-microdatos-mensual.js`. Los 4 nuevos ficheros CSV pueden borrarse sin impacto en datos existentes.
+Eliminar `download-microdatos-mes.js` y `lib/power-aggregate.js`. Regenerar `acumulado-marca-modelo-provincia.csv` corriendo `download-microdatos-mensual.js`. Los 4 nuevos ficheros CSV pueden borrarse sin impacto en datos existentes.
 
 ## Dependencies
 
@@ -62,7 +62,7 @@ Eliminar `download-microdatos-potencia.js` y `lib/power-aggregate.js`. Regenerar
 
 ## Success Criteria
 
-- [ ] `download-microdatos-potencia.js` genera los 4 ficheros CSV correctos para un mes dado
+- [ ] `download-microdatos-mes.js` genera los 4 ficheros CSV correctos para un mes dado
 - [ ] KW_ITV vacío/inválido se omite sin romper el script
 - [ ] Al procesar un mes nuevo, los ficheros anuales se recalculan con todos los meses disponibles
 - [ ] Si el fichero de salida mensual ya existe, el script lo omite
