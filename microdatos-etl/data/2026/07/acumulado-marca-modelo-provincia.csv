@@ -1,46 +1,66 @@
 MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "AJP","AJP PR7","Málaga","Andalucía","600",1
 "AJP","AJP PR7","Zaragoza","Aragón","600",1
+"APRILIA","RS 125","Santa Cruz de Tenerife","Canarias","124",1
 "APRILIA","RS 125","Sevilla","Andalucía","124",1
 "APRILIA","RS 457","Barcelona","Cataluña","457",1
+"APRILIA","RS 457","Murcia","Región de Murcia","457",1
 "APRILIA","RS 660","Álava/Araba","País Vasco","659",1
+"APRILIA","RS 660","Cádiz","Andalucía","659",1
 "APRILIA","RS 660","Ciudad Real","Castilla-La Mancha","659",1
 "APRILIA","RS 660","Coruña (A)","Galicia","659",1
+"APRILIA","RS 660","Málaga","Andalucía","659",1
 "APRILIA","RS 660","Zaragoza","Aragón","659",1
 "APRILIA","RX 125","Almería","Andalucía","124",1
+"APRILIA","RX 125","Cádiz","Andalucía","124",1
 "APRILIA","RX 125","Castellón/Castelló","Comunidad Valenciana","124",1
+"APRILIA","RX 125","Coruña (A)","Galicia","124",1
 "APRILIA","RX 125","Lleida","Cataluña","124",2
 "APRILIA","RX 125","Málaga","Andalucía","124",1
+"APRILIA","RX 125","Rioja (La)","La Rioja","124",1
 "APRILIA","RX 125","Sevilla","Andalucía","124",1
 "APRILIA","RX 125","Soria","Castilla y León","124",1
-"APRILIA","SR GT 125","Alicante/Alacant","Comunidad Valenciana","125",2
+"APRILIA","SR GT 125","Alicante/Alacant","Comunidad Valenciana","125",4
 "APRILIA","SR GT 125","Almería","Andalucía","125",1
 "APRILIA","SR GT 125","Ávila","Castilla y León","125",1
 "APRILIA","SR GT 125","Badajoz","Extremadura","125",1
-"APRILIA","SR GT 125","Cádiz","Andalucía","125",2
+"APRILIA","SR GT 125","Barcelona","Cataluña","125",1
+"APRILIA","SR GT 125","Cádiz","Andalucía","125",3
 "APRILIA","SR GT 125","Cantabria","Cantabria","125",1
+"APRILIA","SR GT 125","Castellón/Castelló","Comunidad Valenciana","125",1
+"APRILIA","SR GT 125","Granada","Andalucía","125",1
 "APRILIA","SR GT 125","Huelva","Andalucía","125",2
+"APRILIA","SR GT 125","Illes Balears","Illes Balears","125",1
+"APRILIA","SR GT 125","Málaga","Andalucía","125",1
 "APRILIA","SR GT 125","Murcia","Región de Murcia","125",2
+"APRILIA","SR GT 125","Santa Cruz de Tenerife","Canarias","125",1
 "APRILIA","SR GT 125","Toledo","Castilla-La Mancha","125",1
 "APRILIA","SR GT 125","Valencia/València","Comunidad Valenciana","125",3
 "APRILIA","SR GT 200","Girona","Cataluña","174",1
 "APRILIA","SR GT 400","Alicante/Alacant","Comunidad Valenciana","399",3
+"APRILIA","SR GT 400","Cádiz","Andalucía","399",2
+"APRILIA","SR GT 400","Madrid","Comunidad de Madrid","399",1
 "APRILIA","SR GT 400","Murcia","Región de Murcia","399",2
 "APRILIA","SR GT 400","Navarra","Comunidad Foral de Navarra","399",2
+"APRILIA","SR GT 400","Valencia/València","Comunidad Valenciana","399",1
 "APRILIA","SX 125","Cádiz","Andalucía","124",1
 "APRILIA","SX 125","Huelva","Andalucía","124",1
 "APRILIA","SX 125","Málaga","Andalucía","124",1
 "APRILIA","TUAREG 660","Murcia","Región de Murcia","659",1
+"APRILIA","TUONO 125","Cádiz","Andalucía","124",1
 "APRILIA","TUONO V4","Cádiz","Andalucía","1077",1
+"APRILIA","TUONO V4","Madrid","Comunidad de Madrid","1077",1
 "BAJAJ","DOMINAR D 400","Alicante/Alacant","Comunidad Valenciana","373",1
 "BAJAJ","DOMINAR D 400","Barcelona","Cataluña","373",1
+"BAJAJ","DOMINAR D 400","Illes Balears","Illes Balears","373",1
 "BAJAJ","DOMINAR D 400","Sevilla","Andalucía","373",1
 "BAJAJ","DOMINAR D 400","Valencia/València","Comunidad Valenciana","373",1
-"BAJAJ","PULSAR NS 125","Alicante/Alacant","Comunidad Valenciana","124",3
-"BAJAJ","PULSAR NS 125","Barcelona","Cataluña","124",3
+"BAJAJ","PULSAR NS 125","Alicante/Alacant","Comunidad Valenciana","124",4
+"BAJAJ","PULSAR NS 125","Barcelona","Cataluña","124",4
 "BAJAJ","PULSAR NS 125","Granada","Andalucía","124",1
 "BAJAJ","PULSAR NS 125","Illes Balears","Illes Balears","124",5
 "BAJAJ","PULSAR NS 125","Lleida","Cataluña","124",1
+"BAJAJ","PULSAR NS 125","Madrid","Comunidad de Madrid","124",1
 "BAJAJ","PULSAR NS 125","Navarra","Comunidad Foral de Navarra","124",1
 "BAJAJ","PULSAR NS 125","Tarragona","Cataluña","124",1
 "BAJAJ","PULSAR NS 125","Valencia/València","Comunidad Valenciana","124",3
@@ -48,27 +68,38 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "BAJAJ","PULSAR NS 400 Z","Girona","Cataluña","373",1
 "BAJAJ","PULSAR NS 400 Z","Illes Balears","Illes Balears","373",1
 "BAJAJ","PULSAR NS 400 Z","Madrid","Comunidad de Madrid","373",2
+"BAJAJ","PULSAR NS 400 Z","Murcia","Región de Murcia","373",1
 "BENDA","CHINCHILLA","Murcia","Región de Murcia","476",1
 "BENDA","LFC700","Almería","Andalucía","680",1
 "BENDA","LFC700","Burgos","Castilla y León","680",1
+"BENDA","LFC700","Sevilla","Andalucía","680",1
 "BENDA","LFC700","Tarragona","Cataluña","680",1
 "BENDA","NAPOLEON 125","Barcelona","Cataluña","125",1
 "BENDA","NAPOLEON 125","Gipuzkoa","País Vasco","125",1
-"BENDA","NAPOLEON 125","Madrid","Comunidad de Madrid","125",1
+"BENDA","NAPOLEON 125","Madrid","Comunidad de Madrid","125",2
+"BENDA","NAPOLEON 125","Málaga","Andalucía","125",1
 "BENDA","NAPOLEON 125","Toledo","Castilla-La Mancha","125",2
 "BENDA","NAPOLEON 250","Cantabria","Cantabria","249",1
 "BENDA","NAPOLEON 250","Girona","Cataluña","249",1
 "BENDA","NAPOLEON 500","Almería","Andalucía","476",1
+"BENDA","NAPOLEON 500","Valencia/València","Comunidad Valenciana","476",1
 "BENELLI","BKX 125","Álava/Araba","País Vasco","125",1
 "BENELLI","BKX 125","Gipuzkoa","País Vasco","125",1
 "BENELLI","BKX 125","Málaga","Andalucía","125",1
 "BENELLI","BN125","Castellón/Castelló","Comunidad Valenciana","125",1
+"BENELLI","BN125","Málaga","Andalucía","125",2
+"BENELLI","BN125","Santa Cruz de Tenerife","Canarias","125",1
 "BENELLI","BN125","Valencia/València","Comunidad Valenciana","125",1
+"BENELLI","LEONCINO 250","Barcelona","Cataluña","249",1
 "BENELLI","LEONCINO 500 TRAIL","Cádiz","Andalucía","500",1
+"BENELLI","LEONCINO 800 TRAIL","Alicante/Alacant","Comunidad Valenciana","754",1
 "BENELLI","TRK 702","Asturias","Principado de Asturias","698",1
 "BENELLI","TRK 702","León","Castilla y León","698",1
 "BENELLI","TRK 702","Pontevedra","Galicia","698",1
+"BENELLI","TRK 702","Toledo","Castilla-La Mancha","698",1
+"BENELLI","TRK 702","Valencia/València","Comunidad Valenciana","698",1
 "BETA","N/A","Cáceres","Extremadura","293",1
+"BETA","N/A","Granada","Andalucía","293",1
 "BETA","N/A","Huesca","Aragón","293",1
 "BETA","N/A","Madrid","Comunidad de Madrid","293",1
 "BETA","N/A","Murcia","Región de Murcia","293",2
@@ -84,6 +115,7 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "BMW","F 450 GS","Girona","Cataluña","420",1
 "BMW","F 450 GS","Jaén","Andalucía","420",1
 "BMW","F 450 GS","Valencia/València","Comunidad Valenciana","420",1
+"BMW","F 800 GS","Alicante/Alacant","Comunidad Valenciana","895",1
 "BMW","F 800 GS","Barcelona","Cataluña","895",1
 "BMW","F 800 GS","Palencia","Castilla y León","895",1
 "BMW","F 900 GS","Illes Balears","Illes Balears","895",1
@@ -97,32 +129,40 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "BMW","F 900 R","Madrid","Comunidad de Madrid","895",1
 "BMW","F 900 R","Valencia/València","Comunidad Valenciana","895",1
 "BMW","F 900 R A2","Cantabria","Cantabria","895",1
+"BMW","F 900 XR","Alicante/Alacant","Comunidad Valenciana","895",1
 "BMW","F 900 XR","Barcelona","Cataluña","895",2
 "BMW","F 900 XR","Cádiz","Andalucía","895",1
+"BMW","F 900 XR","Guadalajara","Castilla-La Mancha","895",1
 "BMW","F 900 XR","Madrid","Comunidad de Madrid","895",1
 "BMW","M 1000 XR","Castellón/Castelló","Comunidad Valenciana","999",1
 "BMW","M 1000 XR","Jaén","Andalucía","999",1
-"BMW","M 1000 XR","Madrid","Comunidad de Madrid","999",1
+"BMW","M 1000 XR","Madrid","Comunidad de Madrid","999",2
+"BMW","M 1000 XR","Palencia","Castilla y León","999",1
 "BMW","R 12","Valencia/València","Comunidad Valenciana","1170",1
 "BMW","R 12 G/S","Cantabria","Cantabria","1170",1
+"BMW","R 12 G/S","Madrid","Comunidad de Madrid","1170",1
 "BMW","R 12 NINET","Barcelona","Cataluña","1170",1
 "BMW","R 12 NINET","Murcia","Región de Murcia","1170",1
+"BMW","R 1300 GS","Álava/Araba","País Vasco","1300",1
 "BMW","R 1300 GS","Barcelona","Cataluña","1300",5
 "BMW","R 1300 GS","Cantabria","Cantabria","1300",1
 "BMW","R 1300 GS","Girona","Cataluña","1300",1
 "BMW","R 1300 GS","Granada","Andalucía","1300",1
 "BMW","R 1300 GS","Illes Balears","Illes Balears","1300",1
 "BMW","R 1300 GS","Madrid","Comunidad de Madrid","1300",1
+"BMW","R 1300 GS","Murcia","Región de Murcia","1300",1
 "BMW","R 1300 GS","Pontevedra","Galicia","1300",1
 "BMW","R 1300 GS","Salamanca","Castilla y León","1300",1
-"BMW","R 1300 GS","Valencia/València","Comunidad Valenciana","1300",1
+"BMW","R 1300 GS","Valencia/València","Comunidad Valenciana","1300",2
+"BMW","R 1300 GS ADVENTURE","Albacete","Castilla-La Mancha","1300",1
 "BMW","R 1300 GS ADVENTURE","Alicante/Alacant","Comunidad Valenciana","1300",3
 "BMW","R 1300 GS ADVENTURE","Castellón/Castelló","Comunidad Valenciana","1300",1
+"BMW","R 1300 GS ADVENTURE","Madrid","Comunidad de Madrid","1300",1
 "BMW","R 1300 GS ADVENTURE","Zaragoza","Aragón","1300",1
 "BMW","R 1300 RS","Barcelona","Cataluña","1300",3
 "BMW","R 1300 RS","León","Castilla y León","1300",1
 "BMW","R 1300 RT","Madrid","Comunidad de Madrid","1300",1
-"BMW","R 1300 RT","Valencia/València","Comunidad Valenciana","1300",1
+"BMW","R 1300 RT","Valencia/València","Comunidad Valenciana","1300",2
 "BMW","S 1000 R","Illes Balears","Illes Balears","999",1
 "BMW","S 1000 R","Palmas (Las)","Canarias","999",1
 "BMW","S 1000 R","Tarragona","Cataluña","999",1
@@ -130,16 +170,23 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "BMW","S 1000 RR","Gipuzkoa","País Vasco","999",1
 "BMW","S 1000 RR","Jaén","Andalucía","999",1
 "BMW","S 1000 RR","Madrid","Comunidad de Madrid","999",1
+"BMW","S 1000 RR","Santa Cruz de Tenerife","Canarias","999",1
+"BRIXTON","CROSSFIRE 125XS","Pontevedra","Galicia","125",1
 "BRIXTON","CROSSFIRE 500","Granada","Andalucía","486",1
+"BRIXTON","FELSBERG 125 ABS","Illes Balears","Illes Balears","125",1
 "BSA","BANTAM","Badajoz","Extremadura","334",1
+"BSA","BANTAM","Barcelona","Cataluña","334",1
 "BSA","BANTAM","Murcia","Región de Murcia","334",1
 "BSA","BANTAM","Valladolid","Castilla y León","334",1
 "CFMOTO","1000MT-X","Albacete","Castilla-La Mancha","946",1
-"CFMOTO","1000MT-X","Barcelona","Cataluña","946",2
-"CFMOTO","1000MT-X","Bizkaia","País Vasco","946",1
-"CFMOTO","1000MT-X","Cádiz","Andalucía","946",1
+"CFMOTO","1000MT-X","Almería","Andalucía","946",2
+"CFMOTO","1000MT-X","Asturias","Principado de Asturias","946",1
+"CFMOTO","1000MT-X","Barcelona","Cataluña","946",3
+"CFMOTO","1000MT-X","Bizkaia","País Vasco","946",2
+"CFMOTO","1000MT-X","Cádiz","Andalucía","946",2
 "CFMOTO","1000MT-X","Ciudad Real","Castilla-La Mancha","946",1
 "CFMOTO","1000MT-X","Córdoba","Andalucía","946",1
+"CFMOTO","1000MT-X","Girona","Cataluña","946",1
 "CFMOTO","1000MT-X","Illes Balears","Illes Balears","946",1
 "CFMOTO","1000MT-X","Madrid","Comunidad de Madrid","946",6
 "CFMOTO","1000MT-X","Málaga","Andalucía","946",2
@@ -147,18 +194,22 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "CFMOTO","1000MT-X","Palencia","Castilla y León","946",1
 "CFMOTO","1000MT-X","Santa Cruz de Tenerife","Canarias","946",1
 "CFMOTO","1000MT-X","Toledo","Castilla-La Mancha","946",1
+"CFMOTO","1000MT-X","Zaragoza","Aragón","946",1
 "CFMOTO","125 NK","Almería","Andalucía","124",1
 "CFMOTO","125 NK","Burgos","Castilla y León","124",1
 "CFMOTO","125 NK","Madrid","Comunidad de Madrid","124",1
+"CFMOTO","450MT","Barcelona","Cataluña","449",1
 "CFMOTO","450MT","Bizkaia","País Vasco","449",2
 "CFMOTO","450MT","Cádiz","Andalucía","449",1
-"CFMOTO","450MT","Cantabria","Cantabria","449",1
+"CFMOTO","450MT","Cantabria","Cantabria","449",2
+"CFMOTO","450MT","Girona","Cataluña","449",1
 "CFMOTO","450MT","Granada","Andalucía","449",1
-"CFMOTO","450MT","Huelva","Andalucía","449",1
+"CFMOTO","450MT","Huelva","Andalucía","449",4
 "CFMOTO","450MT","León","Castilla y León","449",2
 "CFMOTO","450MT","Madrid","Comunidad de Madrid","449",2
 "CFMOTO","450MT","Málaga","Andalucía","449",1
 "CFMOTO","450MT","Murcia","Región de Murcia","449",1
+"CFMOTO","450MT","Salamanca","Castilla y León","449",1
 "CFMOTO","450MT","Sevilla","Andalucía","449",2
 "CFMOTO","450MT","Toledo","Castilla-La Mancha","449",1
 "CFMOTO","450MT","Valencia/València","Comunidad Valenciana","449",2
@@ -169,20 +220,22 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "CFMOTO","675NK","Santa Cruz de Tenerife","Canarias","674",2
 "CFMOTO","675SR-R","Álava/Araba","País Vasco","674",1
 "CFMOTO","675SR-R","Asturias","Principado de Asturias","674",1
-"CFMOTO","675SR-R","Barcelona","Cataluña","674",1
+"CFMOTO","675SR-R","Barcelona","Cataluña","674",2
 "CFMOTO","675SR-R","Girona","Cataluña","674",1
-"CFMOTO","675SR-R","Madrid","Comunidad de Madrid","674",1
+"CFMOTO","675SR-R","Madrid","Comunidad de Madrid","674",2
 "CFMOTO","675SR-R","Navarra","Comunidad Foral de Navarra","674",1
-"CFMOTO","675SR-R","Santa Cruz de Tenerife","Canarias","674",1
+"CFMOTO","675SR-R","Santa Cruz de Tenerife","Canarias","674",2
 "CFMOTO","675SR-R","Valladolid","Castilla y León","674",1
-"CFMOTO","675SR-R","Zaragoza","Aragón","674",1
+"CFMOTO","675SR-R","Zaragoza","Aragón","674",2
 "CFMOTO","700MT","Asturias","Principado de Asturias","693",1
 "CFMOTO","700MT","Barcelona","Cataluña","693",1
 "CFMOTO","700MT","Navarra","Comunidad Foral de Navarra","693",1
 "CFMOTO","700MT","Sevilla","Andalucía","693",1
+"CFMOTO","800MT","Santa Cruz de Tenerife","Canarias","799",1
 "CFMOTO","800MT-X","Albacete","Castilla-La Mancha","799",1
 "CFMOTO","800MT-X","Barcelona","Cataluña","799",1
-"CFMOTO","800MT-X","Burgos","Castilla y León","799",1
+"CFMOTO","800MT-X","Bizkaia","País Vasco","799",1
+"CFMOTO","800MT-X","Burgos","Castilla y León","799",2
 "CFMOTO","800MT-X","Castellón/Castelló","Comunidad Valenciana","799",3
 "CFMOTO","800MT-X","Madrid","Comunidad de Madrid","799",2
 "CFMOTO","800MT-X","Navarra","Comunidad Foral de Navarra","799",1
@@ -190,11 +243,14 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "CFMOTO","800MT-X","Tarragona","Cataluña","799",1
 "CFMOTO","800MT-X","Valencia/València","Comunidad Valenciana","799",1
 "CFMOTO","DUAL250","Alicante/Alacant","Comunidad Valenciana","249",1
+"CFMOTO","DUAL250","Asturias","Principado de Asturias","249",1
 "CFMOTO","DUAL250","Barcelona","Cataluña","249",1
+"CFMOTO","DUAL250","Jaén","Andalucía","249",1
 "CFMOTO","DUAL250","Valladolid","Castilla y León","249",1
 "CYCLONE","CARRERA","Murcia","Región de Murcia","125",1
 "CYCLONE","CARRERA","Navarra","Comunidad Foral de Navarra","125",1
 "CYCLONE","CARRERA 125","Badajoz","Extremadura","125",1
+"CYCLONE","LS-Z","Córdoba","Andalucía","124",1
 "CYCLONE","LS-Z","Granada","Andalucía","124",1
 "CYCLONE","LS-Z","Lugo","Galicia","124",1
 "CYCLONE","LS-Z","Tarragona","Cataluña","124",1
@@ -207,6 +263,7 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "CYCLONE","RT1","Burgos","Castilla y León","125",1
 "CYCLONE","RT1","Girona","Cataluña","125",1
 "CYCLONE","RT1","Huesca","Aragón","125",1
+"CYCLONE","RT2","Asturias","Principado de Asturias","289",1
 "CYCLONE","RT2","Zaragoza","Aragón","289",1
 "CYCLONE","RT3S","Málaga","Andalucía","289",1
 "CYCLONE","RX1 PRO","Almería","Andalucía","124",1
@@ -216,29 +273,35 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "CYCLONE","RX2","Badajoz","Extremadura","124",1
 "CYCLONE","RX2","Barcelona","Cataluña","124",1
 "CYCLONE","RX2","Cáceres","Extremadura","124",1
+"CYCLONE","RX2","Córdoba","Andalucía","124",1
 "CYCLONE","RX2","Cuenca","Castilla-La Mancha","124",1
 "CYCLONE","RX2","Gipuzkoa","País Vasco","124",1
-"CYCLONE","RX2","Jaén","Andalucía","124",2
+"CYCLONE","RX2","Illes Balears","Illes Balears","124",1
+"CYCLONE","RX2","Jaén","Andalucía","124",3
 "CYCLONE","RX2","Lugo","Galicia","124",1
 "CYCLONE","RX2","Madrid","Comunidad de Madrid","124",1
-"CYCLONE","RX2","Málaga","Andalucía","124",5
+"CYCLONE","RX2","Málaga","Andalucía","124",7
 "CYCLONE","RX2","Ourense","Galicia","124",1
 "CYCLONE","RX2","Tarragona","Cataluña","124",1
 "CYCLONE","RX2","Toledo","Castilla-La Mancha","124",1
 "CYCLONE","RX2","Valencia/València","Comunidad Valenciana","124",3
 "CYCLONE","RX2","Zaragoza","Aragón","124",1
 "CYCLONE","RX600","Valladolid","Castilla y León","550",1
+"CYCLONE","SR600-3A","Madrid","Comunidad de Madrid","549",1
 "CYCLONE","SR600-3A","Zaragoza","Aragón","549",1
 "DUCATI","DESERT X","Girona","Cataluña","890",1
 "DUCATI","FORMULA 73","Alicante/Alacant","Comunidad Valenciana","803",1
 "DUCATI","FORMULA 73","Illes Balears","Illes Balears","803",1
 "DUCATI","FORMULA 73","Murcia","Región de Murcia","803",1
 "DUCATI","HYPERMOTARD 950 RVE LI","Cuenca","Castilla-La Mancha","937",1
+"DUCATI","HYPERMOTARD V2","Madrid","Comunidad de Madrid","890",1
 "DUCATI","MONSTER","Barcelona","Cataluña","890",1
 "DUCATI","MONSTER DUCATI RED LIM","Barcelona","Cataluña","890",1
+"DUCATI","MONSTER DUCATI RED LIM","Valencia/València","Comunidad Valenciana","890",1
 "DUCATI","MONSTER LIMITADA","Barcelona","Cataluña","890",1
 "DUCATI","MONSTER RED","Pontevedra","Galicia","890",1
 "DUCATI","MULTISTRADA V2","Granada","Andalucía","890",1
+"DUCATI","MULTISTRADA V2","Madrid","Comunidad de Madrid","890",1
 "DUCATI","MULTISTRADA V4","Barcelona","Cataluña","1158",1
 "DUCATI","MULTISTRADA V4","Granada","Andalucía","1158",1
 "DUCATI","MULTISTRADA V4","Sevilla","Andalucía","1158",1
@@ -248,19 +311,24 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "DUCATI","SCRAMBLER ICON DARK","Valencia/València","Comunidad Valenciana","803",1
 "DUCATI","SCRAMBLER ICON YELLOW","Madrid","Comunidad de Madrid","803",1
 "DUCATI","SCRAMBLER NIGHTSHIFT N","Cantabria","Cantabria","803",1
-"DUCATI","STREETFIGHTER","Barcelona","Cataluña","1103",1
-"DUCATI","STREETFIGHTER","Bizkaia","País Vasco","1103",1
+"DUCATI","STREETFIGHTER","Barcelona","Cataluña","890",1
+"DUCATI","STREETFIGHTER","Bizkaia","País Vasco","890",1
+"DUCATI","STREETFIGHTER","Valencia/València","Comunidad Valenciana","890",1
 "FANTIC MOTOR","---","Barcelona","Cataluña","125",1
 "FANTIC MOTOR","---","Castellón/Castelló","Comunidad Valenciana","125",1
 "FANTIC MOTOR","---","Madrid","Comunidad de Madrid","125",1
+"FANTIC MOTOR","---","Málaga","Andalucía","125",1
 "FANTIC MOTOR","---","Santa Cruz de Tenerife","Canarias","125",1
 "HARLEY-DAVIDSON","LOW RIDER ST","Madrid","Comunidad de Madrid","1923",1
+"HARLEY-DAVIDSON","LOW RIDER ST","Santa Cruz de Tenerife","Canarias","1923",1
 "HARLEY-DAVIDSON","NIGHTSTER SPECIAL","Cantabria","Cantabria","975",1
+"HARLEY-DAVIDSON","NIGHTSTER SPECIAL","Madrid","Comunidad de Madrid","975",1
 "HARLEY-DAVIDSON","SPORTSTER S","Girona","Cataluña","1252",1
 "HARLEY-DAVIDSON","STREET BOB","Alicante/Alacant","Comunidad Valenciana","1923",1
 "HARLEY-DAVIDSON","STREET BOB","Madrid","Comunidad de Madrid","1923",1
 "HARLEY-DAVIDSON","STREET GLIDE","Murcia","Región de Murcia","1923",1
 "HERO MOTOCORP","HUNK 440","Málaga","Andalucía","440",1
+"HERO MOTOCORP","X PULSE 200 4V","Almería","Andalucía","200",1
 "HERO MOTOCORP","X PULSE 200 4V","Barcelona","Cataluña","200",1
 "HERO MOTOCORP","X PULSE 200 4V","Madrid","Comunidad de Madrid","200",3
 "HERO MOTOCORP","X PULSE 200 4V","Sevilla","Andalucía","200",1
@@ -268,28 +336,31 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HERO MOTOCORP","XOOM 125R ZX","Valencia/València","Comunidad Valenciana","125",1
 "HONDA","ADV 350","Alicante/Alacant","Comunidad Valenciana","330",2
 "HONDA","ADV 350","Asturias","Principado de Asturias","330",1
-"HONDA","ADV 350","Barcelona","Cataluña","330",7
+"HONDA","ADV 350","Barcelona","Cataluña","330",13
+"HONDA","ADV 350","Bizkaia","País Vasco","330",1
 "HONDA","ADV 350","Cádiz","Andalucía","330",1
 "HONDA","ADV 350","Cantabria","Cantabria","330",1
 "HONDA","ADV 350","Castellón/Castelló","Comunidad Valenciana","330",1
-"HONDA","ADV 350","Coruña (A)","Galicia","330",1
+"HONDA","ADV 350","Córdoba","Andalucía","330",1
+"HONDA","ADV 350","Coruña (A)","Galicia","330",2
 "HONDA","ADV 350","Gipuzkoa","País Vasco","330",2
 "HONDA","ADV 350","Girona","Cataluña","330",1
 "HONDA","ADV 350","Granada","Andalucía","330",3
 "HONDA","ADV 350","Guadalajara","Castilla-La Mancha","330",1
-"HONDA","ADV 350","Illes Balears","Illes Balears","330",2
+"HONDA","ADV 350","Illes Balears","Illes Balears","330",3
 "HONDA","ADV 350","Jaén","Andalucía","330",1
-"HONDA","ADV 350","Madrid","Comunidad de Madrid","330",4
-"HONDA","ADV 350","Málaga","Andalucía","330",8
+"HONDA","ADV 350","Lleida","Cataluña","330",2
+"HONDA","ADV 350","Madrid","Comunidad de Madrid","330",7
+"HONDA","ADV 350","Málaga","Andalucía","330",9
 "HONDA","ADV 350","Murcia","Región de Murcia","330",1
 "HONDA","ADV 350","Navarra","Comunidad Foral de Navarra","330",2
-"HONDA","ADV 350","Palmas (Las)","Canarias","330",2
+"HONDA","ADV 350","Palmas (Las)","Canarias","330",4
 "HONDA","ADV 350","Santa Cruz de Tenerife","Canarias","330",2
 "HONDA","ADV 350","Sevilla","Andalucía","330",3
 "HONDA","ADV 350","Tarragona","Cataluña","330",2
 "HONDA","ADV 350","Valencia/València","Comunidad Valenciana","330",5
 "HONDA","ADV 750","Alicante/Alacant","Comunidad Valenciana","745",1
-"HONDA","ADV 750","Barcelona","Cataluña","745",2
+"HONDA","ADV 750","Barcelona","Cataluña","745",3
 "HONDA","ADV 750","Cáceres","Extremadura","745",1
 "HONDA","ADV 750","Cádiz","Andalucía","745",2
 "HONDA","ADV 750","Ceuta","Ceuta","745",3
@@ -297,10 +368,10 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","ADV 750","Huelva","Andalucía","745",2
 "HONDA","ADV 750","Jaén","Andalucía","745",2
 "HONDA","ADV 750","Madrid","Comunidad de Madrid","745",1
-"HONDA","ADV 750","Málaga","Andalucía","745",6
+"HONDA","ADV 750","Málaga","Andalucía","745",8
 "HONDA","ADV 750","Palmas (Las)","Canarias","745",2
-"HONDA","ADV 750","Santa Cruz de Tenerife","Canarias","745",2
-"HONDA","ADV 750","Sevilla","Andalucía","745",1
+"HONDA","ADV 750","Santa Cruz de Tenerife","Canarias","745",3
+"HONDA","ADV 750","Sevilla","Andalucía","745",2
 "HONDA","ADV 750","Valencia/València","Comunidad Valenciana","745",1
 "HONDA","CB 125 F","Barcelona","Cataluña","124",1
 "HONDA","CB 125 F","Illes Balears","Illes Balears","124",1
@@ -308,7 +379,10 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","CB 125 F","Rioja (La)","La Rioja","124",1
 "HONDA","CB 125 F","Salamanca","Castilla y León","124",1
 "HONDA","CB 125 F","Santa Cruz de Tenerife","Canarias","124",1
+"HONDA","CB 125 F","Sevilla","Andalucía","124",1
+"HONDA","CB 500 F","Barcelona","Cataluña","471",1
 "HONDA","CB 500 F","Bizkaia","País Vasco","471",1
+"HONDA","CB 500 F","Madrid","Comunidad de Madrid","471",1
 "HONDA","CB 500 F","Valladolid","Castilla y León","471",1
 "HONDA","CB500FAC","Jaén","Andalucía","471",1
 "HONDA","CB650RA","Alicante/Alacant","Comunidad Valenciana","649",1
@@ -321,7 +395,8 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","CB650RA","Santa Cruz de Tenerife","Canarias","649",1
 "HONDA","CB650RA","Sevilla","Andalucía","649",1
 "HONDA","CB650RA","Valencia/València","Comunidad Valenciana","649",1
-"HONDA","CB750 Hornet","Barcelona","Cataluña","755",2
+"HONDA","CB650RA","Zaragoza","Aragón","649",1
+"HONDA","CB750 Hornet","Barcelona","Cataluña","755",3
 "HONDA","CB750 Hornet","Castellón/Castelló","Comunidad Valenciana","755",1
 "HONDA","CB750 Hornet","Málaga","Andalucía","755",1
 "HONDA","CB750 Hornet","Ourense","Galicia","755",1
@@ -329,7 +404,9 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","CB750 Hornet","Pontevedra","Galicia","755",1
 "HONDA","CB750 Hornet","Valladolid","Castilla y León","755",1
 "HONDA","CBF 125","Barcelona","Cataluña","125",1
+"HONDA","CBF 125","Bizkaia","País Vasco","125",1
 "HONDA","CBF 125","Cádiz","Andalucía","125",1
+"HONDA","CBF 125","Lugo","Galicia","125",1
 "HONDA","CBF 125","Madrid","Comunidad de Madrid","125",2
 "HONDA","CBF 125","Málaga","Andalucía","125",2
 "HONDA","CBF 125","Navarra","Comunidad Foral de Navarra","125",1
@@ -340,6 +417,7 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","CBR 650 R","Illes Balears","Illes Balears","649",2
 "HONDA","CBR 650 R","Madrid","Comunidad de Madrid","649",4
 "HONDA","CBR 650 R","Málaga","Andalucía","649",1
+"HONDA","CBR 650 R","Valencia/València","Comunidad Valenciana","649",1
 "HONDA","CBR1000","Sevilla","Andalucía","1000",1
 "HONDA","CBR500","Albacete","Castilla-La Mancha","471",1
 "HONDA","CBR500","Cáceres","Extremadura","471",1
@@ -351,13 +429,14 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","CL500","Santa Cruz de Tenerife","Canarias","471",1
 "HONDA","CL500","Tarragona","Cataluña","471",1
 "HONDA","CL500","Zamora","Castilla y León","471",1
+"HONDA","CMX1100","Alicante/Alacant","Comunidad Valenciana","1084",1
 "HONDA","CMX1100","Barcelona","Cataluña","1084",1
 "HONDA","CMX1100","Murcia","Región de Murcia","1084",1
 "HONDA","CRF 300 L","Barcelona","Cataluña","286",1
 "HONDA","CRF 300 L","Jaén","Andalucía","286",1
 "HONDA","CRF 300 L","Madrid","Comunidad de Madrid","286",1
 "HONDA","CRF1100L Africa Twin","Barcelona","Cataluña","1084",1
-"HONDA","CRF1100L Africa Twin","Córdoba","Andalucía","1084",1
+"HONDA","CRF1100L Africa Twin","Córdoba","Andalucía","1084",2
 "HONDA","CRF1100L Africa Twin","Illes Balears","Illes Balears","1084",1
 "HONDA","CRF1100L Africa Twin","León","Castilla y León","1084",1
 "HONDA","CRF1100L Africa Twin","Málaga","Andalucía","1084",1
@@ -365,63 +444,70 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","CRF1100L Africa Twin","Valencia/València","Comunidad Valenciana","1084",1
 "HONDA","CRF1100L Africa Twin","Valladolid","Castilla y León","1084",1
 "HONDA","FORZA 350","Alicante/Alacant","Comunidad Valenciana","330",1
-"HONDA","FORZA 350","Barcelona","Cataluña","330",3
+"HONDA","FORZA 350","Barcelona","Cataluña","330",4
 "HONDA","FORZA 350","Girona","Cataluña","330",2
 "HONDA","FORZA 350","Illes Balears","Illes Balears","330",2
 "HONDA","FORZA 350","Madrid","Comunidad de Madrid","330",1
-"HONDA","FORZA 350","Málaga","Andalucía","330",2
+"HONDA","FORZA 350","Málaga","Andalucía","330",3
 "HONDA","FORZA 350","Tarragona","Cataluña","330",1
-"HONDA","FORZA 350","Valencia/València","Comunidad Valenciana","330",2
+"HONDA","FORZA 350","Valencia/València","Comunidad Valenciana","330",3
 "HONDA","FORZA 350","Zaragoza","Aragón","330",1
 "HONDA","FORZA 750","Álava/Araba","País Vasco","745",1
-"HONDA","FORZA 750","Barcelona","Cataluña","745",2
-"HONDA","FORZA 750","Cádiz","Andalucía","745",1
+"HONDA","FORZA 750","Barcelona","Cataluña","745",3
+"HONDA","FORZA 750","Cádiz","Andalucía","745",2
 "HONDA","FORZA 750","Gipuzkoa","País Vasco","745",1
+"HONDA","FORZA 750","Girona","Cataluña","745",1
 "HONDA","FORZA 750","Granada","Andalucía","745",2
 "HONDA","FORZA 750","Illes Balears","Illes Balears","745",2
-"HONDA","FORZA 750","Madrid","Comunidad de Madrid","745",1
+"HONDA","FORZA 750","Madrid","Comunidad de Madrid","745",2
 "HONDA","FORZA 750","Málaga","Andalucía","745",2
 "HONDA","FORZA 750","Navarra","Comunidad Foral de Navarra","745",1
+"HONDA","FORZA 750","Palmas (Las)","Canarias","745",1
 "HONDA","FORZA 750","Sevilla","Andalucía","745",1
 "HONDA","FORZA 750","Zaragoza","Aragón","745",2
-"HONDA","FORZA125","Alicante/Alacant","Comunidad Valenciana","125",1
-"HONDA","FORZA125","Almería","Andalucía","125",2
-"HONDA","FORZA125","Barcelona","Cataluña","125",7
-"HONDA","FORZA125","Bizkaia","País Vasco","125",2
-"HONDA","FORZA125","Cantabria","Cantabria","125",3
-"HONDA","FORZA125","Castellón/Castelló","Comunidad Valenciana","125",1
+"HONDA","FORZA125","Alicante/Alacant","Comunidad Valenciana","125",3
+"HONDA","FORZA125","Almería","Andalucía","125",4
+"HONDA","FORZA125","Barcelona","Cataluña","125",14
+"HONDA","FORZA125","Bizkaia","País Vasco","125",5
+"HONDA","FORZA125","Cádiz","Andalucía","125",2
+"HONDA","FORZA125","Cantabria","Cantabria","125",4
+"HONDA","FORZA125","Castellón/Castelló","Comunidad Valenciana","125",3
 "HONDA","FORZA125","Coruña (A)","Galicia","125",1
 "HONDA","FORZA125","Gipuzkoa","País Vasco","125",1
 "HONDA","FORZA125","Girona","Cataluña","125",1
-"HONDA","FORZA125","Huelva","Andalucía","125",4
+"HONDA","FORZA125","Huelva","Andalucía","125",5
 "HONDA","FORZA125","Illes Balears","Illes Balears","125",2
-"HONDA","FORZA125","Madrid","Comunidad de Madrid","125",5
+"HONDA","FORZA125","Madrid","Comunidad de Madrid","125",8
 "HONDA","FORZA125","Málaga","Andalucía","125",11
 "HONDA","FORZA125","Murcia","Región de Murcia","125",2
 "HONDA","FORZA125","Ourense","Galicia","125",2
 "HONDA","FORZA125","Palmas (Las)","Canarias","125",1
-"HONDA","FORZA125","Pontevedra","Galicia","125",1
-"HONDA","FORZA125","Santa Cruz de Tenerife","Canarias","125",1
+"HONDA","FORZA125","Pontevedra","Galicia","125",4
+"HONDA","FORZA125","Santa Cruz de Tenerife","Canarias","125",2
 "HONDA","FORZA125","Sevilla","Andalucía","125",4
 "HONDA","FORZA125","Tarragona","Cataluña","125",3
 "HONDA","FORZA125","Toledo","Castilla-La Mancha","125",1
 "HONDA","FORZA125","Valencia/València","Comunidad Valenciana","125",6
 "HONDA","GB350S","Asturias","Principado de Asturias","348",1
-"HONDA","GB350S","Barcelona","Cataluña","348",1
+"HONDA","GB350S","Barcelona","Cataluña","348",2
+"HONDA","GB350S","Cádiz","Andalucía","348",1
 "HONDA","GB350S","Cantabria","Cantabria","348",1
 "HONDA","GB350S","Gipuzkoa","País Vasco","348",1
 "HONDA","GB350S","Girona","Cataluña","348",1
+"HONDA","GB350S","Madrid","Comunidad de Madrid","348",1
+"HONDA","GB350S","Murcia","Región de Murcia","348",1
 "HONDA","GB350S","Palmas (Las)","Canarias","348",1
 "HONDA","GB350S","Teruel","Aragón","348",1
 "HONDA","GB350S","Toledo","Castilla-La Mancha","348",1
 "HONDA","GL1800BD","Málaga","Andalucía","1833",1
 "HONDA","MSX125A","Cádiz","Andalucía","124",1
-"HONDA","MSX125A","Palmas (Las)","Canarias","124",1
+"HONDA","MSX125A","Palmas (Las)","Canarias","124",2
 "HONDA","MSX125A","Santa Cruz de Tenerife","Canarias","124",1
-"HONDA","NC 750 X","Barcelona","Cataluña","745",1
+"HONDA","NC 750 X","Barcelona","Cataluña","745",2
 "HONDA","NC 750 X","Ceuta","Ceuta","745",1
 "HONDA","NC 750 X","Madrid","Comunidad de Madrid","745",2
 "HONDA","NC 750 X","Málaga","Andalucía","745",2
+"HONDA","NC 750 X","Murcia","Región de Murcia","745",1
 "HONDA","NC 750 X","Santa Cruz de Tenerife","Canarias","745",3
 "HONDA","NC 750 X","Valencia/València","Comunidad Valenciana","745",1
 "HONDA","NT1100","Bizkaia","País Vasco","1084",1
@@ -435,90 +521,102 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","NX500","Rioja (La)","La Rioja","471",1
 "HONDA","NX500","Sevilla","Andalucía","471",1
 "HONDA","NX500","Valencia/València","Comunidad Valenciana","471",2
-"HONDA","PCX 125","Albacete","Castilla-La Mancha","125",1
-"HONDA","PCX 125","Alicante/Alacant","Comunidad Valenciana","125",7
-"HONDA","PCX 125","Almería","Andalucía","125",2
+"HONDA","PCX 125","Albacete","Castilla-La Mancha","125",3
+"HONDA","PCX 125","Alicante/Alacant","Comunidad Valenciana","125",8
+"HONDA","PCX 125","Almería","Andalucía","125",3
 "HONDA","PCX 125","Asturias","Principado de Asturias","125",1
 "HONDA","PCX 125","Ávila","Castilla y León","125",1
-"HONDA","PCX 125","Barcelona","Cataluña","125",11
-"HONDA","PCX 125","Bizkaia","País Vasco","125",5
+"HONDA","PCX 125","Barcelona","Cataluña","125",14
+"HONDA","PCX 125","Bizkaia","País Vasco","125",6
 "HONDA","PCX 125","Burgos","Castilla y León","125",1
 "HONDA","PCX 125","Cáceres","Extremadura","125",1
-"HONDA","PCX 125","Cádiz","Andalucía","125",2
+"HONDA","PCX 125","Cádiz","Andalucía","125",9
 "HONDA","PCX 125","Cantabria","Cantabria","125",1
-"HONDA","PCX 125","Castellón/Castelló","Comunidad Valenciana","125",3
+"HONDA","PCX 125","Castellón/Castelló","Comunidad Valenciana","125",4
 "HONDA","PCX 125","Ceuta","Ceuta","125",1
-"HONDA","PCX 125","Ciudad Real","Castilla-La Mancha","125",1
-"HONDA","PCX 125","Córdoba","Andalucía","125",3
+"HONDA","PCX 125","Ciudad Real","Castilla-La Mancha","125",2
+"HONDA","PCX 125","Córdoba","Andalucía","125",7
 "HONDA","PCX 125","Coruña (A)","Galicia","125",2
-"HONDA","PCX 125","Gipuzkoa","País Vasco","125",1
+"HONDA","PCX 125","Gipuzkoa","País Vasco","125",2
 "HONDA","PCX 125","Girona","Cataluña","125",5
-"HONDA","PCX 125","Granada","Andalucía","125",6
-"HONDA","PCX 125","Huelva","Andalucía","125",2
+"HONDA","PCX 125","Granada","Andalucía","125",7
+"HONDA","PCX 125","Huelva","Andalucía","125",3
 "HONDA","PCX 125","Illes Balears","Illes Balears","125",3
 "HONDA","PCX 125","Jaén","Andalucía","125",3
 "HONDA","PCX 125","León","Castilla y León","125",3
-"HONDA","PCX 125","Madrid","Comunidad de Madrid","125",4
-"HONDA","PCX 125","Málaga","Andalucía","125",11
-"HONDA","PCX 125","Murcia","Región de Murcia","125",5
+"HONDA","PCX 125","Lleida","Cataluña","125",2
+"HONDA","PCX 125","Madrid","Comunidad de Madrid","125",9
+"HONDA","PCX 125","Málaga","Andalucía","125",14
+"HONDA","PCX 125","Murcia","Región de Murcia","125",8
 "HONDA","PCX 125","Navarra","Comunidad Foral de Navarra","125",2
 "HONDA","PCX 125","Palmas (Las)","Canarias","125",3
 "HONDA","PCX 125","Rioja (La)","La Rioja","125",2
-"HONDA","PCX 125","Santa Cruz de Tenerife","Canarias","125",3
+"HONDA","PCX 125","Salamanca","Castilla y León","125",1
+"HONDA","PCX 125","Santa Cruz de Tenerife","Canarias","125",8
 "HONDA","PCX 125","Sevilla","Andalucía","125",1
 "HONDA","PCX 125","Tarragona","Cataluña","125",4
 "HONDA","PCX 125","Teruel","Aragón","125",1
 "HONDA","PCX 125","Toledo","Castilla-La Mancha","125",1
 "HONDA","PCX 125","Valencia/València","Comunidad Valenciana","125",1
 "HONDA","PCX 125","Valladolid","Castilla y León","125",3
-"HONDA","PCX 125","Zaragoza","Aragón","125",1
+"HONDA","PCX 125","Zaragoza","Aragón","125",2
 "HONDA","Rebel 500","Barcelona","Cataluña","471",2
+"HONDA","Rebel 500","Bizkaia","País Vasco","471",1
+"HONDA","Rebel 500","Cádiz","Andalucía","471",1
 "HONDA","Rebel 500","Lleida","Cataluña","471",1
 "HONDA","Rebel 500","Ourense","Galicia","471",1
 "HONDA","Rebel 500","Pontevedra","Galicia","471",1
 "HONDA","Rebel 500","Valladolid","Castilla y León","471",1
 "HONDA","SH Mode 125","Alicante/Alacant","Comunidad Valenciana","125",1
-"HONDA","SH Mode 125","Barcelona","Cataluña","125",10
+"HONDA","SH Mode 125","Barcelona","Cataluña","125",11
 "HONDA","SH Mode 125","Castellón/Castelló","Comunidad Valenciana","125",1
+"HONDA","SH Mode 125","Ceuta","Ceuta","125",1
 "HONDA","SH Mode 125","Ciudad Real","Castilla-La Mancha","125",1
 "HONDA","SH Mode 125","Gipuzkoa","País Vasco","125",1
-"HONDA","SH Mode 125","Granada","Andalucía","125",1
-"HONDA","SH Mode 125","Illes Balears","Illes Balears","125",2
-"HONDA","SH125i","Alicante/Alacant","Comunidad Valenciana","125",5
-"HONDA","SH125i","Barcelona","Cataluña","125",20
+"HONDA","SH Mode 125","Granada","Andalucía","125",2
+"HONDA","SH Mode 125","Illes Balears","Illes Balears","125",3
+"HONDA","SH125i","Alicante/Alacant","Comunidad Valenciana","125",6
+"HONDA","SH125i","Barcelona","Cataluña","125",27
 "HONDA","SH125i","Cádiz","Andalucía","125",2
 "HONDA","SH125i","Ceuta","Ceuta","125",1
-"HONDA","SH125i","Gipuzkoa","País Vasco","125",8
-"HONDA","SH125i","Girona","Cataluña","125",11
+"HONDA","SH125i","Córdoba","Andalucía","125",1
+"HONDA","SH125i","Gipuzkoa","País Vasco","125",10
+"HONDA","SH125i","Girona","Cataluña","125",12
 "HONDA","SH125i","Granada","Andalucía","125",1
-"HONDA","SH125i","Illes Balears","Illes Balears","125",6
+"HONDA","SH125i","Illes Balears","Illes Balears","125",7
+"HONDA","SH125i","Jaén","Andalucía","125",1
 "HONDA","SH125i","Madrid","Comunidad de Madrid","125",2
-"HONDA","SH125i","Málaga","Andalucía","125",21
+"HONDA","SH125i","Málaga","Andalucía","125",29
 "HONDA","SH125i","Murcia","Región de Murcia","125",2
+"HONDA","SH125i","Navarra","Comunidad Foral de Navarra","125",1
 "HONDA","SH125i","Tarragona","Cataluña","125",1
 "HONDA","SH125i","Valencia/València","Comunidad Valenciana","125",3
 "HONDA","SH350i","Alicante/Alacant","Comunidad Valenciana","330",1
-"HONDA","SH350i","Barcelona","Cataluña","330",2
+"HONDA","SH350i","Barcelona","Cataluña","330",5
 "HONDA","SH350i","Ceuta","Ceuta","330",1
 "HONDA","SH350i","Gipuzkoa","País Vasco","330",1
 "HONDA","SH350i","Girona","Cataluña","330",2
 "HONDA","SH350i","Málaga","Andalucía","330",3
+"HONDA","SH350i","Tarragona","Cataluña","330",1
 "HONDA","ST125A","Gipuzkoa","País Vasco","124",1
 "HONDA","ST125A","Illes Balears","Illes Balears","124",1
+"HONDA","ST125A","Palmas (Las)","Canarias","124",1
 "HONDA","ST125A","Santa Cruz de Tenerife","Canarias","124",1
 "HONDA","VISION 110","Alicante/Alacant","Comunidad Valenciana","109",2
 "HONDA","VISION 110","Almería","Andalucía","109",1
-"HONDA","VISION 110","Barcelona","Cataluña","109",9
+"HONDA","VISION 110","Barcelona","Cataluña","109",13
 "HONDA","VISION 110","Castellón/Castelló","Comunidad Valenciana","109",1
-"HONDA","VISION 110","Coruña (A)","Galicia","109",1
+"HONDA","VISION 110","Córdoba","Andalucía","109",1
+"HONDA","VISION 110","Coruña (A)","Galicia","109",2
 "HONDA","VISION 110","Gipuzkoa","País Vasco","109",2
-"HONDA","VISION 110","Girona","Cataluña","109",9
+"HONDA","VISION 110","Girona","Cataluña","109",11
 "HONDA","VISION 110","Granada","Andalucía","109",1
 "HONDA","VISION 110","Huelva","Andalucía","109",1
 "HONDA","VISION 110","Illes Balears","Illes Balears","109",4
+"HONDA","VISION 110","Lleida","Cataluña","109",2
 "HONDA","VISION 110","Lugo","Galicia","109",1
 "HONDA","VISION 110","Madrid","Comunidad de Madrid","109",2
-"HONDA","VISION 110","Málaga","Andalucía","109",2
+"HONDA","VISION 110","Málaga","Andalucía","109",5
 "HONDA","VISION 110","Sevilla","Andalucía","109",1
 "HONDA","VISION 110","Tarragona","Cataluña","109",1
 "HONDA","VISION 110","Valencia/València","Comunidad Valenciana","109",1
@@ -529,12 +627,16 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","XL750 Transalp","Málaga","Andalucía","755",2
 "HONDA","XL750 Transalp","Santa Cruz de Tenerife","Canarias","755",1
 "HONDA","XL750 Transalp","Valencia/València","Comunidad Valenciana","755",1
+"HONDA","Z125MA","Cádiz","Andalucía","124",1
 "HUSQVARNA","HUSQVARNA 701 SUPERMOT","Bizkaia","País Vasco","693",1
-"HUSQVARNA","HUSQVARNA 801 SVARTPIL","Madrid","Comunidad de Madrid","799",1
+"HUSQVARNA","HUSQVARNA 701 SUPERMOT","Castellón/Castelló","Comunidad Valenciana","693",1
+"HUSQVARNA","HUSQVARNA 701 SUPERMOT","Valencia/València","Comunidad Valenciana","693",1
+"HUSQVARNA","HUSQVARNA 801 SVARTPIL","Madrid","Comunidad de Madrid","799",2
 "HUSQVARNA","HUSQVARNA 801 SVARTPIL","Pontevedra","Galicia","799",1
 "HUSQVARNA","HUSQVARNA 801 SVARTPIL","Valencia/València","Comunidad Valenciana","799",1
 "HUSQVARNA","HUSQVARNA 901 NORDEN E","Cáceres","Extremadura","889",1
 "HUSQVARNA","HUSQVARNA 901 NORDEN E","Santa Cruz de Tenerife","Canarias","889",1
+"HUSQVARNA","HUSQVARNA FE 450","Valencia/València","Comunidad Valenciana","450",1
 "HUSQVARNA","HUSQVARNA SVARTPILEN 4","Valencia/València","Comunidad Valenciana","399",1
 "HUSQVARNA","HUSQVARNA SVARTPILEN12","Barcelona","Cataluña","125",1
 "HUSQVARNA","HUSQVARNA TE 300","Cáceres","Extremadura","293",1
@@ -548,25 +650,38 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "INDIAN","INDIAN PURSUIT LIMITED","Madrid","Comunidad de Madrid","1768",1
 "INDIAN","SUPER CHIEF LIMITED","Madrid","Comunidad de Madrid","1890",1
 "INDIAN","SUPER SCOUT LIMITED +","Barcelona","Cataluña","1250",1
+"JIAJUE","ROCKET 125","Barcelona","Cataluña","125",1
 "JYMOTO","JY125T","Almería","Andalucía","125",1
 "KAWASAKI","ELIMINATOR","Barcelona","Cataluña","451",1
 "KAWASAKI","ELIMINATOR","Madrid","Comunidad de Madrid","451",1
 "KAWASAKI","ELIMINATOR","Navarra","Comunidad Foral de Navarra","451",1
 "KAWASAKI","ELIMINATOR","Teruel","Aragón","451",1
+"KAWASAKI","ELIMINATOR","Valencia/València","Comunidad Valenciana","451",1
 "KAWASAKI","KLE500","Córdoba","Andalucía","451",1
-"KAWASAKI","KLE500","Girona","Cataluña","451",1
+"KAWASAKI","KLE500","Girona","Cataluña","451",2
 "KAWASAKI","KLE500","León","Castilla y León","451",1
-"KAWASAKI","KLE500","Madrid","Comunidad de Madrid","451",1
+"KAWASAKI","KLE500","Madrid","Comunidad de Madrid","451",2
 "KAWASAKI","KZ550G/G6/P.NAC.","Valladolid","Castilla y León","553",1
+"KAWASAKI","NINJA 1100SX","Gipuzkoa","País Vasco","1099",1
+"KAWASAKI","NINJA 125","Bizkaia","País Vasco","125",1
+"KAWASAKI","NINJA 125","Girona","Cataluña","125",1
+"KAWASAKI","NINJA 125","Pontevedra","Galicia","125",1
 "KAWASAKI","NINJA 125","Salamanca","Castilla y León","125",1
 "KAWASAKI","NINJA 125","Zaragoza","Aragón","125",2
 "KAWASAKI","NINJA 500","Asturias","Principado de Asturias","451",1
-"KAWASAKI","NINJA 500","Madrid","Comunidad de Madrid","451",1
+"KAWASAKI","NINJA 500","Madrid","Comunidad de Madrid","451",2
 "KAWASAKI","NINJA 500","Málaga","Andalucía","451",1
 "KAWASAKI","NINJA 500","Ourense","Galicia","451",1
+"KAWASAKI","NINJA 650","Alicante/Alacant","Comunidad Valenciana","649",1
+"KAWASAKI","NINJA 650","Barcelona","Cataluña","649",1
+"KAWASAKI","NINJA 650","Girona","Cataluña","649",1
 "KAWASAKI","NINJA 650","Illes Balears","Illes Balears","649",1
+"KAWASAKI","NINJA 650","Madrid","Comunidad de Madrid","649",1
 "KAWASAKI","NINJA 650","Málaga","Andalucía","649",1
+"KAWASAKI","NINJA 650","Navarra","Comunidad Foral de Navarra","649",1
 "KAWASAKI","NINJA 7 HYBRID","Cantabria","Cantabria","451",1
+"KAWASAKI","NINJA 7 HYBRID","Castellón/Castelló","Comunidad Valenciana","451",1
+"KAWASAKI","NINJA 7 HYBRID","Madrid","Comunidad de Madrid","451",1
 "KAWASAKI","NINJA ZX-4R","Bizkaia","País Vasco","399",1
 "KAWASAKI","NINJA ZX-4R","Cádiz","Andalucía","399",1
 "KAWASAKI","NINJA ZX-4R","Coruña (A)","Galicia","399",1
@@ -580,7 +695,7 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "KAWASAKI","NINJA ZX-6R","Murcia","Región de Murcia","636",1
 "KAWASAKI","NINJA ZX-6R","Segovia","Castilla y León","636",1
 "KAWASAKI","NINJA ZX-6R","Toledo","Castilla-La Mancha","636",1
-"KAWASAKI","VERSYS 1100","Barcelona","Cataluña","1099",1
+"KAWASAKI","VERSYS 1100","Barcelona","Cataluña","1099",3
 "KAWASAKI","VERSYS 1100","Cantabria","Cantabria","1099",1
 "KAWASAKI","VERSYS 1100","Jaén","Andalucía","1099",1
 "KAWASAKI","VERSYS 1100","León","Castilla y León","1099",1
@@ -588,58 +703,73 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "KAWASAKI","VERSYS 1100","Murcia","Región de Murcia","1099",1
 "KAWASAKI","VERSYS 1100","Rioja (La)","La Rioja","1099",1
 "KAWASAKI","VERSYS 650","Barcelona","Cataluña","649",1
-"KAWASAKI","VERSYS 650","Girona","Cataluña","649",1
+"KAWASAKI","VERSYS 650","Girona","Cataluña","649",2
 "KAWASAKI","VERSYS 650","Murcia","Región de Murcia","649",1
 "KAWASAKI","VERSYS 650","Ourense","Galicia","649",1
 "KAWASAKI","VERSYS 650","Palmas (Las)","Canarias","649",1
+"KAWASAKI","VERSYS 650","Sevilla","Andalucía","649",1
+"KAWASAKI","VERSYS 650","Tarragona","Cataluña","649",1
 "KAWASAKI","VULCAN S","Madrid","Comunidad de Madrid","649",1
 "KAWASAKI","VULCAN S","Málaga","Andalucía","649",1
 "KAWASAKI","W230","Álava/Araba","País Vasco","233",1
 "KAWASAKI","W230","Zaragoza","Aragón","233",1
+"KAWASAKI","Z H2","Barcelona","Cataluña","998",1
 "KAWASAKI","Z1100","Alicante/Alacant","Comunidad Valenciana","1099",1
 "KAWASAKI","Z1100","Barcelona","Cataluña","1099",2
 "KAWASAKI","Z1100","Lleida","Cataluña","1099",1
 "KAWASAKI","Z1100","Murcia","Región de Murcia","1099",1
 "KAWASAKI","Z1100","Sevilla","Andalucía","1099",1
-"KAWASAKI","Z125","Almería","Andalucía","125",1
+"KAWASAKI","Z125","Almería","Andalucía","125",2
 "KAWASAKI","Z125","Barcelona","Cataluña","125",3
 "KAWASAKI","Z125","Cuenca","Castilla-La Mancha","125",1
 "KAWASAKI","Z125","Ourense","Galicia","125",1
 "KAWASAKI","Z500","Barcelona","Cataluña","451",2
-"KAWASAKI","Z650","Barcelona","Cataluña","649",1
+"KAWASAKI","Z500","Cuenca","Castilla-La Mancha","451",1
+"KAWASAKI","Z500","Gipuzkoa","País Vasco","451",1
+"KAWASAKI","Z500","Madrid","Comunidad de Madrid","451",1
+"KAWASAKI","Z650","Barcelona","Cataluña","649",2
 "KAWASAKI","Z650","Córdoba","Andalucía","649",1
 "KAWASAKI","Z650","Girona","Cataluña","649",1
-"KAWASAKI","Z650","Madrid","Comunidad de Madrid","649",1
+"KAWASAKI","Z650","Madrid","Comunidad de Madrid","649",2
 "KAWASAKI","Z650","Navarra","Comunidad Foral de Navarra","649",1
+"KAWASAKI","Z650","Palmas (Las)","Canarias","649",1
 "KAWASAKI","Z650","Valencia/València","Comunidad Valenciana","649",1
 "KAWASAKI","Z650RS","Barcelona","Cataluña","649",1
 "KAWASAKI","Z650RS","Valladolid","Castilla y León","649",1
 "KAWASAKI","Z650RS","Zaragoza","Aragón","649",1
 "KAWASAKI","Z900","Albacete","Castilla-La Mancha","948",1
-"KAWASAKI","Z900","Barcelona","Cataluña","948",2
+"KAWASAKI","Z900","Alicante/Alacant","Comunidad Valenciana","948",2
+"KAWASAKI","Z900","Barcelona","Cataluña","948",3
 "KAWASAKI","Z900","Bizkaia","País Vasco","948",1
 "KAWASAKI","Z900","Cáceres","Extremadura","948",2
 "KAWASAKI","Z900","Castellón/Castelló","Comunidad Valenciana","948",3
 "KAWASAKI","Z900","Córdoba","Andalucía","948",1
 "KAWASAKI","Z900","Coruña (A)","Galicia","948",1
 "KAWASAKI","Z900","Granada","Andalucía","948",1
+"KAWASAKI","Z900","Madrid","Comunidad de Madrid","948",1
 "KAWASAKI","Z900","Málaga","Andalucía","948",1
 "KAWASAKI","Z900","Murcia","Región de Murcia","948",2
 "KAWASAKI","Z900","Navarra","Comunidad Foral de Navarra","948",1
 "KAWASAKI","Z900","Palmas (Las)","Canarias","948",1
 "KAWASAKI","Z900","Pontevedra","Galicia","948",1
+"KAWASAKI","Z900","Sevilla","Andalucía","948",1
 "KAWASAKI","Z900","Toledo","Castilla-La Mancha","948",1
 "KAWASAKI","Z900","Valencia/València","Comunidad Valenciana","948",2
 "KAWASAKI","Z900","Valladolid","Castilla y León","948",1
 "KAWASAKI","Z900RS","Barcelona","Cataluña","948",1
+"KAWASAKI","Z900RS","León","Castilla y León","948",1
 "KEEWAY","ARIIC 125","Barcelona","Cataluña","125",2
 "KEEWAY","GEMMA","Barcelona","Cataluña","117",1
 "KEEWAY","GEMMA","Burgos","Castilla y León","117",2
+"KEEWAY","GEMMA","Cádiz","Andalucía","117",1
 "KEEWAY","GEMMA","Ceuta","Ceuta","117",1
 "KEEWAY","GEMMA","Málaga","Andalucía","117",1
 "KEEWAY","GEMMA","Sevilla","Andalucía","117",1
 "KEEWAY","ICON 125 S","Bizkaia","País Vasco","124",1
 "KEEWAY","ICON 125 S","Castellón/Castelló","Comunidad Valenciana","124",1
+"KEEWAY","ICON 125 S","Córdoba","Andalucía","124",1
+"KEEWAY","ICON 125 S","Girona","Cataluña","124",1
+"KEEWAY","ICON 125 S","Huelva","Andalucía","124",1
 "KEEWAY","ICON 125 S","Murcia","Región de Murcia","124",1
 "KEEWAY","ICON 125 S","Navarra","Comunidad Foral de Navarra","124",3
 "KEEWAY","ICON 125 S","Tarragona","Cataluña","124",1
@@ -648,20 +778,26 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "KEEWAY","RKF 125 ABS","Lugo","Galicia","125",1
 "KEEWAY","RKF 125 ABS","Madrid","Comunidad de Madrid","125",2
 "KEEWAY","RKF 125 ABS","Tarragona","Cataluña","125",1
+"KEEWAY","RKS 125","Alicante/Alacant","Comunidad Valenciana","124",2
 "KEEWAY","RKS 125","Asturias","Principado de Asturias","124",1
 "KEEWAY","RKS 125","Badajoz","Extremadura","124",1
+"KEEWAY","RKS 125","Bizkaia","País Vasco","124",1
 "KEEWAY","RKS 125","Girona","Cataluña","124",1
 "KEEWAY","RKS 125","Huesca","Aragón","124",1
 "KEEWAY","RKS 125","Madrid","Comunidad de Madrid","124",3
 "KEEWAY","RKS 125","Navarra","Comunidad Foral de Navarra","124",1
 "KEEWAY","RKS 125","Ourense","Galicia","124",1
 "KEEWAY","RKS 125","Pontevedra","Galicia","124",1
+"KEEWAY","RKS 125","Valencia/València","Comunidad Valenciana","124",1
 "KEEWAY","RKS 125","Zaragoza","Aragón","124",2
+"KEEWAY","V-CRUISE","Alicante/Alacant","Comunidad Valenciana","125",1
 "KEEWAY","V-CRUISE","Madrid","Comunidad de Madrid","125",1
 "KEEWAY","VERSILIA 125","Barcelona","Cataluña","125",1
 "KEEWAY","VERSILIA 125","Castellón/Castelló","Comunidad Valenciana","125",1
+"KEEWAY","VERSILIA 125","Coruña (A)","Galicia","125",1
 "KEEWAY","VERSILIA 125","Illes Balears","Illes Balears","125",1
 "KEEWAY","VERSILIA 125","Murcia","Región de Murcia","125",1
+"KEEWAY","VERSILIA 125","Salamanca","Castilla y León","125",1
 "KEEWAY","VIESTE 125","Alicante/Alacant","Comunidad Valenciana","125",1
 "KEEWAY","VIESTE 125","Almería","Andalucía","125",1
 "KEEWAY","VIESTE 125","Cádiz","Andalucía","125",1
@@ -673,12 +809,14 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "KEEWAY","VIESTE 125","Palmas (Las)","Canarias","125",1
 "KEEWAY","VIESTE 125","Pontevedra","Galicia","125",1
 "KEEWAY","VIESTE 125LX","Alicante/Alacant","Comunidad Valenciana","125",1
+"KEEWAY","VIESTE 125LX","Cádiz","Andalucía","125",1
 "KEEWAY","VIESTE 125LX","Murcia","Región de Murcia","125",1
 "KEEWAY","VIESTE 125LX","Sevilla","Andalucía","125",1
 "KEEWAY","VIESTE 125XDV","Córdoba","Andalucía","125",1
 "KEEWAY","VIESTE 125XDV","Tarragona","Cataluña","125",1
 "KEEWAY","VIESTE 300","Asturias","Principado de Asturias","278",1
 "KEEWAY","XDV 125 EVO PRO","Alicante/Alacant","Comunidad Valenciana","125",1
+"KEEWAY","XDV 125 EVO PRO","Asturias","Principado de Asturias","125",1
 "KEEWAY","XDV 125 EVO PRO","Barcelona","Cataluña","125",4
 "KEEWAY","XDV 125 EVO PRO","Cáceres","Extremadura","125",3
 "KEEWAY","XDV 125 EVO PRO","Cádiz","Andalucía","125",1
@@ -686,14 +824,16 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "KEEWAY","XDV 125 EVO PRO","Córdoba","Andalucía","125",2
 "KEEWAY","XDV 125 EVO PRO","Illes Balears","Illes Balears","125",2
 "KEEWAY","XDV 125 EVO PRO","Madrid","Comunidad de Madrid","125",2
-"KEEWAY","XDV 125 EVO PRO","Málaga","Andalucía","125",4
+"KEEWAY","XDV 125 EVO PRO","Málaga","Andalucía","125",5
 "KEEWAY","XDV 125 EVO PRO","Murcia","Región de Murcia","125",2
+"KEEWAY","XDV 125 EVO PRO","Santa Cruz de Tenerife","Canarias","125",1
+"KEEWAY","XDV 125 EVO PRO","Sevilla","Andalucía","125",1
 "KEEWAY","XDV 125 EVO PRO","Tarragona","Cataluña","125",1
 "KEEWAY","XDV 125 EVO PRO","Toledo","Castilla-La Mancha","125",1
 "KOVE","450 RALLY 2026","Sevilla","Andalucía","449",1
 "KOVE","KOVE 350 RR","Barcelona","Cataluña","344",1
 "KOVE","KOVE 625 X","Asturias","Principado de Asturias","581",1
-"KOVE","KOVE 625 X","Barcelona","Cataluña","581",1
+"KOVE","KOVE 625 X","Barcelona","Cataluña","581",2
 "KOVE","KOVE 625 X","Cádiz","Andalucía","581",1
 "KOVE","KOVE 625 X","Córdoba","Andalucía","581",1
 "KOVE","KOVE 625 X","Girona","Cataluña","581",1
@@ -704,17 +844,21 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "KOVE","KOVE 625 X","Pontevedra","Galicia","581",1
 "KOVE","KOVE 625 X","Valencia/València","Comunidad Valenciana","581",1
 "KOVE","KOVE 800 X GT","Asturias","Principado de Asturias","799",4
+"KOVE","KOVE 800 X GT","Barcelona","Cataluña","799",1
 "KOVE","KOVE 800 X GT","Castellón/Castelló","Comunidad Valenciana","799",1
 "KOVE","KOVE 800 X GT","Girona","Cataluña","799",2
 "KOVE","KOVE 800 X GT","Guadalajara","Castilla-La Mancha","799",1
 "KOVE","KOVE 800 X GT","Huelva","Andalucía","799",1
 "KOVE","KOVE 800 X GT","Illes Balears","Illes Balears","799",3
-"KOVE","KOVE 800 X GT","Madrid","Comunidad de Madrid","799",4
+"KOVE","KOVE 800 X GT","Madrid","Comunidad de Madrid","799",5
+"KOVE","KOVE 800 X GT","Navarra","Comunidad Foral de Navarra","799",1
 "KOVE","KOVE 800 X GT","Tarragona","Cataluña","799",1
 "KOVE","KOVE 800 X GT","Valencia/València","Comunidad Valenciana","799",2
 "KOVE","KOVE 800 X PRO 2026","Asturias","Principado de Asturias","799",2
+"KOVE","KOVE 800 X PRO 2026","Barcelona","Cataluña","799",1
 "KOVE","KOVE 800 X PRO 2026","Burgos","Castilla y León","799",1
-"KOVE","KOVE 800 X PRO 2026","Madrid","Comunidad de Madrid","799",1
+"KOVE","KOVE 800 X PRO 2026","Illes Balears","Illes Balears","799",1
+"KOVE","KOVE 800 X PRO 2026","Madrid","Comunidad de Madrid","799",6
 "KOVE","KOVE 800 X PRO 2026","Navarra","Comunidad Foral de Navarra","799",1
 "KOVE","KOVE 800 X PRO 2026","Tarragona","Cataluña","799",1
 "KOVE","KOVE 800 X PRO 2026","Valencia/València","Comunidad Valenciana","799",1
@@ -722,11 +866,13 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "KOVE","KOVE 800 X RALLY","Lleida","Cataluña","799",1
 "KOVE","KOVE 800 X RALLY","Sevilla","Andalucía","799",2
 "KOVE","KOVE 800 X RALLY","Tarragona","Cataluña","799",1
+"KOVE","NK 125 R","Pontevedra","Galicia","125",1
 "KTM","KTM 120 SUPER ADVENTUR","Toledo","Castilla-La Mancha","1301",1
 "KTM","KTM 125 DUKE","Barcelona","Cataluña","125",1
 "KTM","KTM 125 DUKE","Illes Balears","Illes Balears","125",1
 "KTM","KTM 125 DUKE","León","Castilla y León","125",1
 "KTM","KTM 125 DUKE","Madrid","Comunidad de Madrid","125",1
+"KTM","KTM 125 DUKE","Pontevedra","Galicia","125",1
 "KTM","KTM 125 ENDURO","Alicante/Alacant","Comunidad Valenciana","125",1
 "KTM","KTM 125 ENDURO","Cádiz","Andalucía","125",1
 "KTM","KTM 125 ENDURO","Córdoba","Andalucía","125",1
@@ -740,10 +886,13 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "KTM","KTM 1390 SUPER ADVENTU","Barcelona","Cataluña","1350",1
 "KTM","KTM 1390 SUPER ADVENTU","Gipuzkoa","País Vasco","1350",1
 "KTM","KTM 1390 SUPER ADVENTU","Illes Balears","Illes Balears","1350",1
+"KTM","KTM 1390 SUPER ADVENTU","Málaga","Andalucía","1350",1
 "KTM","KTM 1390 SUPER ADVENTU","Soria","Castilla y León","1350",1
 "KTM","KTM 1390 SUPER DUKE R","Castellón/Castelló","Comunidad Valenciana","1350",1
+"KTM","KTM 300 EXC","Cantabria","Cantabria","293",1
 "KTM","KTM 350 EXC-F","Albacete","Castilla-La Mancha","350",1
 "KTM","KTM 390 ADVENTURE","Valencia/València","Comunidad Valenciana","373",1
+"KTM","KTM 390 ADVENTURE R","Asturias","Principado de Asturias","399",1
 "KTM","KTM 390 ADVENTURE R","Badajoz","Extremadura","399",1
 "KTM","KTM 390 ADVENTURE R","Barcelona","Cataluña","399",3
 "KTM","KTM 390 ADVENTURE R","Córdoba","Andalucía","399",1
@@ -753,9 +902,10 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "KTM","KTM 390 ADVENTURE R","Málaga","Andalucía","399",1
 "KTM","KTM 390 ADVENTURE R","Tarragona","Cataluña","399",1
 "KTM","KTM 390 ADVENTURE R","Valencia/València","Comunidad Valenciana","399",2
-"KTM","KTM 390 ADVENTURE X","Barcelona","Cataluña","399",1
+"KTM","KTM 390 ADVENTURE X","Barcelona","Cataluña","399",3
 "KTM","KTM 390 ADVENTURE X","Valencia/València","Comunidad Valenciana","399",1
 "KTM","KTM 390 DUKE","Almería","Andalucía","399",1
+"KTM","KTM 390 DUKE","Córdoba","Andalucía","399",1
 "KTM","KTM 390 DUKE","Madrid","Comunidad de Madrid","399",1
 "KTM","KTM 390 DUKE","Sevilla","Andalucía","399",1
 "KTM","KTM 390 ENDURO R","Lleida","Cataluña","399",1
@@ -769,6 +919,8 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "KTM","KTM 790 DUKE","Sevilla","Andalucía","799",1
 "KTM","KTM 790 DUKE L","Ávila","Castilla y León","799",1
 "KTM","KTM 890 ADVENTURE","Barcelona","Cataluña","889",1
+"KTM","KTM 890 ADVENTURE","Pontevedra","Galicia","889",1
+"KTM","KTM 890 ADVENTURE R","Cantabria","Cantabria","889",1
 "KTM","KTM 890 ADVENTURE R","Palmas (Las)","Canarias","889",1
 "KTM","KTM 990 DUKE R","Madrid","Comunidad de Madrid","947",1
 "KTM","KTM 990 DUKE R","Valencia/València","Comunidad Valenciana","947",1
@@ -779,110 +931,129 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "KTM","KTM 990 RC R","Valencia/València","Comunidad Valenciana","947",1
 "KYMCO","AGILITY CITY 125","Barcelona","Cataluña","125",1
 "KYMCO","AGILITY CITY 125","Lugo","Galicia","125",1
+"KYMCO","AGILITY S","Álava/Araba","País Vasco","125",1
 "KYMCO","AGILITY S","Albacete","Castilla-La Mancha","125",1
-"KYMCO","AGILITY S","Alicante/Alacant","Comunidad Valenciana","125",9
+"KYMCO","AGILITY S","Alicante/Alacant","Comunidad Valenciana","125",12
 "KYMCO","AGILITY S","Almería","Andalucía","125",2
-"KYMCO","AGILITY S","Asturias","Principado de Asturias","125",7
+"KYMCO","AGILITY S","Asturias","Principado de Asturias","125",8
 "KYMCO","AGILITY S","Badajoz","Extremadura","125",2
-"KYMCO","AGILITY S","Barcelona","Cataluña","125",8
-"KYMCO","AGILITY S","Bizkaia","País Vasco","125",5
+"KYMCO","AGILITY S","Barcelona","Cataluña","125",9
+"KYMCO","AGILITY S","Bizkaia","País Vasco","125",6
 "KYMCO","AGILITY S","Cáceres","Extremadura","125",1
-"KYMCO","AGILITY S","Cádiz","Andalucía","125",8
+"KYMCO","AGILITY S","Cádiz","Andalucía","125",12
 "KYMCO","AGILITY S","Cantabria","Cantabria","125",3
 "KYMCO","AGILITY S","Castellón/Castelló","Comunidad Valenciana","125",1
 "KYMCO","AGILITY S","Ceuta","Ceuta","125",5
 "KYMCO","AGILITY S","Coruña (A)","Galicia","125",2
-"KYMCO","AGILITY S","Gipuzkoa","País Vasco","125",1
+"KYMCO","AGILITY S","Gipuzkoa","País Vasco","125",2
 "KYMCO","AGILITY S","Granada","Andalucía","125",2
 "KYMCO","AGILITY S","Huelva","Andalucía","125",2
 "KYMCO","AGILITY S","Illes Balears","Illes Balears","125",7
-"KYMCO","AGILITY S","Jaén","Andalucía","125",1
-"KYMCO","AGILITY S","Lleida","Cataluña","125",1
-"KYMCO","AGILITY S","Madrid","Comunidad de Madrid","125",8
-"KYMCO","AGILITY S","Málaga","Andalucía","125",6
+"KYMCO","AGILITY S","Jaén","Andalucía","125",2
+"KYMCO","AGILITY S","Lleida","Cataluña","125",2
+"KYMCO","AGILITY S","Madrid","Comunidad de Madrid","125",9
+"KYMCO","AGILITY S","Málaga","Andalucía","125",9
 "KYMCO","AGILITY S","Murcia","Región de Murcia","125",6
 "KYMCO","AGILITY S","Ourense","Galicia","125",1
 "KYMCO","AGILITY S","Pontevedra","Galicia","125",2
 "KYMCO","AGILITY S","Salamanca","Castilla y León","125",1
 "KYMCO","AGILITY S","Sevilla","Andalucía","125",2
-"KYMCO","AGILITY S","Tarragona","Cataluña","125",1
-"KYMCO","AGILITY S","Valencia/València","Comunidad Valenciana","125",2
+"KYMCO","AGILITY S","Tarragona","Cataluña","125",2
+"KYMCO","AGILITY S","Valencia/València","Comunidad Valenciana","125",4
 "KYMCO","AGILITY S","Valladolid","Castilla y León","125",1
 "KYMCO","AGILITY S","Zaragoza","Aragón","125",3
 "KYMCO","DTX","Albacete","Castilla-La Mancha","124",3
 "KYMCO","DTX","Alicante/Alacant","Comunidad Valenciana","124",1
-"KYMCO","DTX","Almería","Andalucía","124",1
+"KYMCO","DTX","Almería","Andalucía","124",2
+"KYMCO","DTX","Asturias","Principado de Asturias","124",1
 "KYMCO","DTX","Badajoz","Extremadura","124",1
-"KYMCO","DTX","Barcelona","Cataluña","124",1
-"KYMCO","DTX","Bizkaia","País Vasco","124",3
+"KYMCO","DTX","Barcelona","Cataluña","124",3
+"KYMCO","DTX","Bizkaia","País Vasco","124",5
 "KYMCO","DTX","Cáceres","Extremadura","124",1
-"KYMCO","DTX","Cádiz","Andalucía","124",5
+"KYMCO","DTX","Cádiz","Andalucía","124",6
 "KYMCO","DTX","Cantabria","Cantabria","124",3
+"KYMCO","DTX","Castellón/Castelló","Comunidad Valenciana","124",1
+"KYMCO","DTX","Córdoba","Andalucía","124",1
 "KYMCO","DTX","Coruña (A)","Galicia","124",2
+"KYMCO","DTX","Gipuzkoa","País Vasco","124",2
 "KYMCO","DTX","Girona","Cataluña","124",1
+"KYMCO","DTX","Granada","Andalucía","124",1
 "KYMCO","DTX","Huelva","Andalucía","124",1
 "KYMCO","DTX","Illes Balears","Illes Balears","124",5
-"KYMCO","DTX","Jaén","Andalucía","124",1
-"KYMCO","DTX","Madrid","Comunidad de Madrid","124",6
-"KYMCO","DTX","Málaga","Andalucía","124",5
-"KYMCO","DTX","Murcia","Región de Murcia","124",3
-"KYMCO","DTX","Pontevedra","Galicia","124",3
+"KYMCO","DTX","Jaén","Andalucía","124",2
+"KYMCO","DTX","Madrid","Comunidad de Madrid","124",8
+"KYMCO","DTX","Málaga","Andalucía","124",6
+"KYMCO","DTX","Murcia","Región de Murcia","124",4
+"KYMCO","DTX","Palmas (Las)","Canarias","124",2
+"KYMCO","DTX","Pontevedra","Galicia","124",4
 "KYMCO","DTX","Sevilla","Andalucía","124",5
 "KYMCO","DTX","Tarragona","Cataluña","124",3
 "KYMCO","DTX","Toledo","Castilla-La Mancha","124",3
 "KYMCO","DTX","Valencia/València","Comunidad Valenciana","124",2
 "KYMCO","DTX 125","Valencia/València","Comunidad Valenciana","124",1
+"KYMCO","PEOPLE S 125 E5+","Alicante/Alacant","Comunidad Valenciana","125",1
 "KYMCO","PEOPLE S 125 E5+","Barcelona","Cataluña","125",4
 "KYMCO","PEOPLE S 125 E5+","Cádiz","Andalucía","125",1
-"KYMCO","PEOPLE S 125 E5+","Gipuzkoa","País Vasco","125",2
+"KYMCO","PEOPLE S 125 E5+","Gipuzkoa","País Vasco","125",3
 "KYMCO","PEOPLE S 125 E5+","Granada","Andalucía","125",1
+"KYMCO","PEOPLE S 125 E5+","Madrid","Comunidad de Madrid","125",1
 "KYMCO","PEOPLE S 125 E5+","Málaga","Andalucía","125",3
-"KYMCO","PEOPLE S 125 E5+","Murcia","Región de Murcia","125",1
+"KYMCO","PEOPLE S 125 E5+","Murcia","Región de Murcia","125",2
 "KYMCO","PEOPLE S 125 E5+","Tarragona","Cataluña","125",2
 "KYMCO","PEOPLE S 125 E5+","Valencia/València","Comunidad Valenciana","125",1
 "KYMCO","SKYTOWN 125","Alicante/Alacant","Comunidad Valenciana","125",3
 "KYMCO","SKYTOWN 125","Almería","Andalucía","125",1
 "KYMCO","SKYTOWN 125","Asturias","Principado de Asturias","125",2
-"KYMCO","SKYTOWN 125","Barcelona","Cataluña","125",5
+"KYMCO","SKYTOWN 125","Badajoz","Extremadura","125",1
+"KYMCO","SKYTOWN 125","Barcelona","Cataluña","125",6
 "KYMCO","SKYTOWN 125","Bizkaia","País Vasco","125",1
 "KYMCO","SKYTOWN 125","Cádiz","Andalucía","125",2
 "KYMCO","SKYTOWN 125","Cantabria","Cantabria","125",1
-"KYMCO","SKYTOWN 125","Gipuzkoa","País Vasco","125",1
+"KYMCO","SKYTOWN 125","Ciudad Real","Castilla-La Mancha","125",1
+"KYMCO","SKYTOWN 125","Gipuzkoa","País Vasco","125",3
+"KYMCO","SKYTOWN 125","Girona","Cataluña","125",1
 "KYMCO","SKYTOWN 125","Granada","Andalucía","125",2
 "KYMCO","SKYTOWN 125","Huelva","Andalucía","125",1
 "KYMCO","SKYTOWN 125","Huesca","Aragón","125",1
-"KYMCO","SKYTOWN 125","Illes Balears","Illes Balears","125",4
+"KYMCO","SKYTOWN 125","Illes Balears","Illes Balears","125",5
 "KYMCO","SKYTOWN 125","Jaén","Andalucía","125",1
-"KYMCO","SKYTOWN 125","Madrid","Comunidad de Madrid","125",2
+"KYMCO","SKYTOWN 125","Madrid","Comunidad de Madrid","125",3
 "KYMCO","SKYTOWN 125","Málaga","Andalucía","125",2
 "KYMCO","SKYTOWN 125","Navarra","Comunidad Foral de Navarra","125",1
 "KYMCO","SKYTOWN 125","Pontevedra","Galicia","125",2
 "KYMCO","SKYTOWN 125","Segovia","Castilla y León","125",1
-"KYMCO","SKYTOWN 125","Sevilla","Andalucía","125",1
+"KYMCO","SKYTOWN 125","Sevilla","Andalucía","125",2
 "KYMCO","SKYTOWN 125","Toledo","Castilla-La Mancha","125",1
+"KYMCO","SKYTOWN 125","Valladolid","Castilla y León","125",1
 "KYMCO","SUPER DINK GT","Barcelona","Cataluña","321",2
 "KYMCO","SUPER DINK GT","Coruña (A)","Galicia","321",1
 "KYMCO","SUPER DINK GT","Girona","Cataluña","321",1
-"KYMCO","SUPER DINK GT","Granada","Andalucía","321",1
-"KYMCO","SUPER DINK GT","Málaga","Andalucía","321",1
+"KYMCO","SUPER DINK GT","Granada","Andalucía","321",2
+"KYMCO","SUPER DINK GT","Huelva","Andalucía","321",1
+"KYMCO","SUPER DINK GT","Málaga","Andalucía","321",2
 "KYMCO","SUPER DINK GT","Tarragona","Cataluña","321",1
 "KYMCO","SUPER DINK GT","Zaragoza","Aragón","321",1
 "KYMCO","SUPER DINK GT 125 E5+","Albacete","Castilla-La Mancha","124",1
-"KYMCO","SUPER DINK GT 125 E5+","Barcelona","Cataluña","124",4
-"KYMCO","SUPER DINK GT 125 E5+","Cádiz","Andalucía","124",1
-"KYMCO","SUPER DINK GT 125 E5+","Coruña (A)","Galicia","124",1
+"KYMCO","SUPER DINK GT 125 E5+","Barcelona","Cataluña","124",5
+"KYMCO","SUPER DINK GT 125 E5+","Cádiz","Andalucía","124",3
+"KYMCO","SUPER DINK GT 125 E5+","Ciudad Real","Castilla-La Mancha","124",1
+"KYMCO","SUPER DINK GT 125 E5+","Coruña (A)","Galicia","124",2
+"KYMCO","SUPER DINK GT 125 E5+","Gipuzkoa","País Vasco","124",1
 "KYMCO","SUPER DINK GT 125 E5+","Girona","Cataluña","124",1
 "KYMCO","SUPER DINK GT 125 E5+","Madrid","Comunidad de Madrid","124",3
 "KYMCO","SUPER DINK GT 125 E5+","Murcia","Región de Murcia","124",1
-"KYMCO","SUPER DINK GT 125 E5+","Pontevedra","Galicia","124",1
-"KYMCO","SUPER DINK GT 125 E5+","Sevilla","Andalucía","124",1
+"KYMCO","SUPER DINK GT 125 E5+","Pontevedra","Galicia","124",2
+"KYMCO","SUPER DINK GT 125 E5+","Sevilla","Andalucía","124",2
 "KYMCO","SUPER DINK GT 125 E5+","Tarragona","Cataluña","124",2
 "KYMCO","SUPER DINK GT 125 E5+","Valencia/València","Comunidad Valenciana","124",3
-"KYMCO","XCITING VS 400","Madrid","Comunidad de Madrid","400",1
+"KYMCO","SUPER DINK GT 125 E5+","Zaragoza","Aragón","124",1
+"KYMCO","XCITING VS 400","Cádiz","Andalucía","400",1
+"KYMCO","XCITING VS 400","Madrid","Comunidad de Madrid","400",7
 "KYMCO","XCITING VS 400","Murcia","Región de Murcia","400",1
 "LAMBRETTA","V125 SPECIAL FLEX","Alicante/Alacant","Comunidad Valenciana","125",1
+"LAMBRETTA","V125 SPECIAL FLEX","Burgos","Castilla y León","125",1
 "LAMBRETTA","V125 SPECIAL FLEX","Cantabria","Cantabria","125",1
-"LAMBRETTA","V125 SPECIAL FLEX","Illes Balears","Illes Balears","125",1
+"LAMBRETTA","V125 SPECIAL FLEX","Illes Balears","Illes Balears","125",4
 "LAMBRETTA","V125 SPECIAL FLEX","Madrid","Comunidad de Madrid","125",1
 "LAMBRETTA","V125 SPECIAL FLEX","Murcia","Región de Murcia","125",1
 "LAMBRETTA","V125 SPECIAL FLEX","Tarragona","Cataluña","125",1
@@ -894,11 +1065,13 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "LETBE","FLYGON","Cádiz","Andalucía","125",2
 "LETBE","FLYGON","Murcia","Región de Murcia","125",1
 "LETBE","HJ125T-5B","Alicante/Alacant","Comunidad Valenciana","125",1
-"LETBE","HJ125T-5B","Cádiz","Andalucía","125",1
-"LETBE","HJ125T-5B","Illes Balears","Illes Balears","125",2
+"LETBE","HJ125T-5B","Cádiz","Andalucía","125",2
+"LETBE","HJ125T-5B","Illes Balears","Illes Balears","125",3
 "LETBE","ISLAND","Alicante/Alacant","Comunidad Valenciana","125",1
-"LETBE","ISLAND","Illes Balears","Illes Balears","125",1
+"LETBE","ISLAND","Illes Balears","Illes Balears","125",2
+"LETBE","ISLAND","Madrid","Comunidad de Madrid","125",1
 "LETBE","ISLAND","Pontevedra","Galicia","125",1
+"LETBE","MECHA","Barcelona","Cataluña","125",1
 "LETBE","MECHA","Coruña (A)","Galicia","125",1
 "LETBE","MECHA","Málaga","Andalucía","125",1
 "LETBE","MECHA","Pontevedra","Galicia","125",1
@@ -906,6 +1079,7 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "LETBE","S125","Alicante/Alacant","Comunidad Valenciana","125",1
 "LETBE","S125","Badajoz","Extremadura","125",1
 "LETBE","S125","Barcelona","Cataluña","125",1
+"LETBE","S125","Coruña (A)","Galicia","125",1
 "LETBE","S125","Madrid","Comunidad de Madrid","125",1
 "LETBE","S125","Melilla","Melilla","125",2
 "LETBE","VELOCITY","Bizkaia","País Vasco","125",1
@@ -913,7 +1087,11 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "LINHAI","BUCK ADV","Almería","Andalucía","124",1
 "LINHAI","BUCK ADV","Zaragoza","Aragón","124",1
 "MACBOR","EIGHT MILE 125 LC","Almería","Andalucía","124",2
+"MACBOR","EIGHT MILE 125 LC","Cáceres","Extremadura","124",1
+"MACBOR","EIGHT MILE 125 LC","Málaga","Andalucía","124",1
+"MACBOR","EIGHT MILE 125 LC","Palmas (Las)","Canarias","124",1
 "MACBOR","EIGHT MILE 125 LC","Sevilla","Andalucía","124",1
+"MACBOR","MONTANA XR1 125 EVO","Barcelona","Cataluña","124",1
 "MACBOR","MONTANA XR1 125 EVO","Coruña (A)","Galicia","124",1
 "MACBOR","MONTANA XR1 125 EVO","Gipuzkoa","País Vasco","124",1
 "MACBOR","MONTANA XR1 125 EVO","Girona","Cataluña","124",1
@@ -921,6 +1099,7 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "MACBOR","MONTANA XR1 125 EVO","Lleida","Cataluña","124",1
 "MACBOR","MONTANA XR1 125 EVO","Madrid","Comunidad de Madrid","124",1
 "MACBOR","MONTANA XR1 125 EVO","Málaga","Andalucía","124",1
+"MACBOR","MONTANA XR1 125 EVO","Murcia","Región de Murcia","124",1
 "MACBOR","MONTANA XR1 125 EVO","Tarragona","Cataluña","124",1
 "MACBOR","MONTANA XR5 510 E5+","Barcelona","Cataluña","498",1
 "MACBOR","MONTANA XR5 510 E5+","Cantabria","Cantabria","498",1
@@ -928,49 +1107,62 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "MACBOR","MONTANA XR5 510 E5+","Murcia","Región de Murcia","498",1
 "MACBOR","MONTANA XR5 510 E5+","Zaragoza","Aragón","498",1
 "MACBOR","ROCKSTER 125 EVO E5+","Álava/Araba","País Vasco","125",1
+"MACBOR","ROCKSTER 125 EVO E5+","Barcelona","Cataluña","125",1
 "MACBOR","ROCKSTER 125 EVO E5+","Pontevedra","Galicia","125",1
 "MACBOR","ROCKSTER 125 EVO E5+","Segovia","Castilla y León","125",1
 "MACBOR","ROCKSTER 125 EVO E5+","Sevilla","Andalucía","125",1
 "MACBOR","ROCKSTER 410","Granada","Andalucía","401",1
 "MACBOR","ROCKSTER 410 E5+","Albacete","Castilla-La Mancha","401",1
 "MACBOR","ROCKSTER 410 E5+","Huesca","Aragón","401",1
-"MACBOR","ROCKSTER FLAT 125 EVO","Barcelona","Cataluña","125",2
+"MACBOR","ROCKSTER FLAT 125 EVO","Alicante/Alacant","Comunidad Valenciana","125",1
+"MACBOR","ROCKSTER FLAT 125 EVO","Barcelona","Cataluña","125",3
 "MACBOR","ROCKSTER FLAT 125 EVO","Cantabria","Cantabria","125",1
 "MACBOR","ROCKSTER FLAT 125 EVO","Castellón/Castelló","Comunidad Valenciana","125",1
 "MACBOR","ROCKSTER FLAT 125 EVO","Lleida","Cataluña","125",1
 "MACBOR","ROCKSTER FLAT 125 EVO","Málaga","Andalucía","125",1
 "MACBOR","SHIFTER 125 EVO","Albacete","Castilla-La Mancha","125",1
+"MACBOR","SHIFTER 125 EVO","Barcelona","Cataluña","125",1
+"MACBOR","SHIFTER 125 EVO","Madrid","Comunidad de Madrid","125",2
 "MACBOR","SHIFTER 125 EVO","Santa Cruz de Tenerife","Canarias","125",1
 "MACBOR","SHIFTER 125 EVO","Valencia/València","Comunidad Valenciana","125",1
 "MACBOR","SHIFTER 125 EVO","Zaragoza","Aragón","125",1
 "MH MOTORCYCLES","TRAY","Alicante/Alacant","Comunidad Valenciana","125",1
-"MH MOTORCYCLES","TRAY","Córdoba","Andalucía","125",1
+"MH MOTORCYCLES","TRAY","Córdoba","Andalucía","125",2
 "MH MOTORCYCLES","TRAY","Granada","Andalucía","125",2
+"MH MOTORCYCLES","TRAY","Huelva","Andalucía","125",1
 "MH MOTORCYCLES","TRAY","León","Castilla y León","125",1
 "MH MOTORCYCLES","TRAY","Santa Cruz de Tenerife","Canarias","125",1
 "MH MOTORCYCLES","TRAY","Sevilla","Andalucía","125",1
+"MH MOTORCYCLES","VR10","Alicante/Alacant","Comunidad Valenciana","124",1
 "MH MOTORCYCLES","VR10","Barcelona","Cataluña","124",1
 "MH MOTORCYCLES","VR10","Córdoba","Andalucía","124",2
 "MH MOTORCYCLES","VR10","Granada","Andalucía","124",1
 "MH MOTORCYCLES","VR10","Madrid","Comunidad de Madrid","124",1
-"MH MOTORCYCLES","VR10","Sevilla","Andalucía","124",2
+"MH MOTORCYCLES","VR10","Santa Cruz de Tenerife","Canarias","124",1
+"MH MOTORCYCLES","VR10","Sevilla","Andalucía","124",4
+"MH MOTORCYCLES","VRS","Barcelona","Cataluña","124",1
 "MH MOTORCYCLES","VRS","Cantabria","Cantabria","124",1
 "MH MOTORCYCLES","VRS","Granada","Andalucía","124",2
 "MH MOTORCYCLES","VRS","Palencia","Castilla y León","124",1
 "MH MOTORCYCLES","VRT","Alicante/Alacant","Comunidad Valenciana","124",1
-"MH MOTORCYCLES","VRT","Cádiz","Andalucía","124",1
+"MH MOTORCYCLES","VRT","Cádiz","Andalucía","124",2
 "MH MOTORCYCLES","VRT","Girona","Cataluña","124",1
 "MH MOTORCYCLES","VRT","Granada","Andalucía","124",1
 "MH MOTORCYCLES","VRT","Madrid","Comunidad de Madrid","124",1
 "MH MOTORCYCLES","VRT","Málaga","Andalucía","124",1
+"MH MOTORCYCLES","XRT","Almería","Andalucía","125",1
 "MITT","125 DESERT","Asturias","Principado de Asturias","125",1
 "MITT","125 DESERT","Bizkaia","País Vasco","125",2
 "MITT","125 DESERT","Castellón/Castelló","Comunidad Valenciana","125",1
+"MITT","125 DESERT","Ciudad Real","Castilla-La Mancha","125",1
 "MITT","125 DESERT","Córdoba","Andalucía","125",1
 "MITT","125 DESERT","Granada","Andalucía","125",1
 "MITT","125 DESERT","Illes Balears","Illes Balears","125",1
+"MITT","125 DESERT","Madrid","Comunidad de Madrid","125",1
 "MITT","125 NK","Bizkaia","País Vasco","124",1
 "MITT","125 NK","Jaén","Andalucía","124",1
+"MITT","125 NK","Lleida","Cataluña","124",1
+"MITT","125 NK","Madrid","Comunidad de Madrid","124",1
 "MITT","125GP","Asturias","Principado de Asturias","124",1
 "MITT","125GP","Barcelona","Cataluña","124",1
 "MITT","125GTS","Almería","Andalucía","125",1
@@ -978,14 +1170,17 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "MITT","125GTS","Sevilla","Andalucía","125",1
 "MITT","ALTO 125","Barcelona","Cataluña","125",1
 "MITT","ALTO 125","Granada","Andalucía","125",1
+"MITT","ALTO 125","Madrid","Comunidad de Madrid","125",1
 "MITT","ALTO 125","Málaga","Andalucía","125",1
 "MITT","ALTO 125","Tarragona","Cataluña","125",1
 "MITT","CPX 125 LIQUID","Sevilla","Andalucía","125",1
 "MITT","EMPEROR","Alicante/Alacant","Comunidad Valenciana","125",1
 "MITT","EMPEROR","Asturias","Principado de Asturias","125",1
+"MITT","EMPEROR","Valladolid","Castilla y León","125",1
 "MITT","GT-S","Alicante/Alacant","Comunidad Valenciana","125",1
 "MITT","GT-S","Asturias","Principado de Asturias","125",2
 "MITT","GT-S","Huelva","Andalucía","125",1
+"MITT","GT-S","Madrid","Comunidad de Madrid","125",1
 "MITT","GT-S","Pontevedra","Galicia","125",1
 "MITT","GT-S","Sevilla","Andalucía","125",1
 "MITT","IBIZA","Bizkaia","País Vasco","125",1
@@ -1012,12 +1207,13 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "MORBIDELLI","NR125X","Barcelona","Cataluña","125",1
 "MORBIDELLI","NR125X","Murcia","Región de Murcia","125",1
 "MORBIDELLI","SC 125","Cádiz","Andalucía","125",1
+"MORBIDELLI","SC 125","Valencia/València","Comunidad Valenciana","125",1
 "MORBIDELLI","SC125 RE","Asturias","Principado de Asturias","125",1
 "MORBIDELLI","SC125 RE","Cantabria","Cantabria","125",1
 "MORBIDELLI","SC125 RE","Girona","Cataluña","125",1
 "MORBIDELLI","SC125 RE","Madrid","Comunidad de Madrid","125",1
 "MORBIDELLI","SC125 RE","Zaragoza","Aragón","125",1
-"MORBIDELLI","SC125LX","Barcelona","Cataluña","125",1
+"MORBIDELLI","SC125LX","Barcelona","Cataluña","125",2
 "MORBIDELLI","SC125LX","Ceuta","Ceuta","125",1
 "MORBIDELLI","SC125LX","Girona","Cataluña","125",1
 "MORBIDELLI","SC125LX","Huelva","Andalucía","125",1
@@ -1028,47 +1224,62 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "MORBIDELLI","T352X","Granada","Andalucía","349",1
 "MORBIDELLI","T352X","Madrid","Comunidad de Madrid","349",1
 "MORBIDELLI","T352X","Málaga","Andalucía","349",1
+"MORBIDELLI","T502X","Asturias","Principado de Asturias","486",1
 "MORBIDELLI","T502X","Girona","Cataluña","486",1
 "MORBIDELLI","T502X","Guadalajara","Castilla-La Mancha","486",1
 "MORBIDELLI","T502X","Illes Balears","Illes Balears","486",1
 "MORBIDELLI","T502X","Santa Cruz de Tenerife","Canarias","486",1
 "MORBIDELLI","T502X","Zamora","Castilla y León","486",1
 "MOTO GUZZI","STELVIO "DUECENTO TRIB","Tarragona","Cataluña","1042",1
+"MOTO GUZZI","STELVIO (A.R.A.S.)","Cádiz","Andalucía","1042",1
 "MOTO GUZZI","V7 SPORT","Barcelona","Cataluña","853",1
 "MOTO GUZZI","V85 TT","Coruña (A)","Galicia","853",1
 "MOTO GUZZI","V85 TT","Valencia/València","Comunidad Valenciana","853",1
+"MOTO GUZZI","V85 TT TRAVEL","Cádiz","Andalucía","853",1
 "MOTO GUZZI","V85 TT TRAVEL","Pontevedra","Galicia","853",1
+"MOTO MORINI","CALIBRO","Santa Cruz de Tenerife","Canarias","693",1
 "MOTO MORINI","SEIEMMEZZO","Asturias","Principado de Asturias","649",1
 "MOTO MORINI","X-CAPE","Santa Cruz de Tenerife","Canarias","649",1
 "MOTO MORINI","X-CAPE 1200","Alicante/Alacant","Comunidad Valenciana","1187",1
 "MOTO MORINI","X-CAPE 1200","Barcelona","Cataluña","1187",1
 "MOTO MORINI","X-CAPE 1200","Cáceres","Extremadura","1187",1
 "MOTO MORINI","X-CAPE 1200","Madrid","Comunidad de Madrid","1187",1
+"MOTO MORINI","X-CAPE 1200","Málaga","Andalucía","1187",1
 "MOTO MORINI","X-CAPE 1200","Navarra","Comunidad Foral de Navarra","1187",1
 "MOTO MORINI","X-CAPE 1200","Salamanca","Castilla y León","1187",1
 "MOTO MORINI","X-CAPE 1200","Sevilla","Andalucía","1187",1
 "MOTO MORINI","X-CAPE 1200","Valencia/València","Comunidad Valenciana","1187",1
 "MOTO MORINI","X-CAPE 700","Almería","Andalucía","693",1
 "MOTO MORINI","X-CAPE 700","Pontevedra","Galicia","693",1
+"MOTO MORINI","X-CAPE 700","Tarragona","Cataluña","693",1
 "MOTO MORINI","X-CAPE 700","Zaragoza","Aragón","693",1
+"MV AGUSTA","BRUTALE 1000 RS","Barcelona","Cataluña","998",1
 "NEXT","NX CROSS 125I","Sevilla","Andalucía","125",1
+"NEXT","NX2 125I","Navarra","Comunidad Foral de Navarra","125",1
+"PEUGEOT","DJANGO","Alicante/Alacant","Comunidad Valenciana","125",1
+"PEUGEOT","DJANGO","Asturias","Principado de Asturias","125",1
 "PEUGEOT","DJANGO","Cádiz","Andalucía","125",1
 "PEUGEOT","DJANGO","Ciudad Real","Castilla-La Mancha","125",1
 "PEUGEOT","DJANGO","Jaén","Andalucía","125",1
 "PEUGEOT","DJANGO","Lleida","Cataluña","125",1
 "PEUGEOT","DJANGO","Madrid","Comunidad de Madrid","125",1
-"PEUGEOT","DJANGO","Murcia","Región de Murcia","125",2
+"PEUGEOT","DJANGO","Murcia","Región de Murcia","125",3
 "PEUGEOT","DJANGO","Navarra","Comunidad Foral de Navarra","125",1
+"PEUGEOT","DJANGO","Pontevedra","Galicia","125",1
 "PEUGEOT","DJANGO","Valencia/València","Comunidad Valenciana","125",1
 "PEUGEOT","KISBEE M","Alicante/Alacant","Comunidad Valenciana","125",3
 "PEUGEOT","KISBEE M","Barcelona","Cataluña","125",2
 "PEUGEOT","KISBEE M","Cantabria","Cantabria","125",1
 "PEUGEOT","KISBEE M","Cuenca","Castilla-La Mancha","125",1
 "PEUGEOT","KISBEE M","Granada","Andalucía","125",2
-"PEUGEOT","KISBEE M","Madrid","Comunidad de Madrid","125",1
+"PEUGEOT","KISBEE M","Madrid","Comunidad de Madrid","125",2
 "PEUGEOT","KISBEE M","Málaga","Andalucía","125",4
-"PEUGEOT","KISBEE M","Murcia","Región de Murcia","125",3
+"PEUGEOT","KISBEE M","Murcia","Región de Murcia","125",4
+"PEUGEOT","KISBEE M","Santa Cruz de Tenerife","Canarias","125",1
+"PEUGEOT","KISBEE M","Valencia/València","Comunidad Valenciana","125",1
+"PEUGEOT","PM-03","Pontevedra","Galicia","292",1
 "PEUGEOT","PULSION EVO","Albacete","Castilla-La Mancha","125",1
+"PEUGEOT","PULSION EVO","Asturias","Principado de Asturias","125",1
 "PEUGEOT","PULSION EVO","Barcelona","Cataluña","125",1
 "PEUGEOT","PULSION EVO","Bizkaia","País Vasco","125",1
 "PEUGEOT","PULSION EVO","Cádiz","Andalucía","125",1
@@ -1083,37 +1294,48 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "PEUGEOT","TWEET FL 125 CC","Girona","Cataluña","125",1
 "PEUGEOT","TWEET FL 125 CC","Málaga","Andalucía","125",1
 "PEUGEOT","TWEET FL 125 CC","Valencia/València","Comunidad Valenciana","125",1
+"PIAGGIO","BEVERLY 310 HPE","Illes Balears","Illes Balears","310",1
+"PIAGGIO","BEVERLY 400 HPE","Granada","Andalucía","399",1
 "PIAGGIO","BEVERLY 400 HPE","Palmas (Las)","Canarias","399",1
 "PIAGGIO","BEVERLY 400 HPE","Pontevedra","Galicia","399",1
 "PIAGGIO","LIBERTY 125 ABS","Alicante/Alacant","Comunidad Valenciana","124",2
 "PIAGGIO","LIBERTY 125 ABS","Badajoz","Extremadura","124",1
-"PIAGGIO","LIBERTY 125 ABS","Barcelona","Cataluña","124",1
+"PIAGGIO","LIBERTY 125 ABS","Barcelona","Cataluña","124",2
+"PIAGGIO","LIBERTY 125 ABS","Bizkaia","País Vasco","124",2
 "PIAGGIO","LIBERTY 125 ABS","Cáceres","Extremadura","124",1
-"PIAGGIO","LIBERTY 125 ABS","Cádiz","Andalucía","124",4
+"PIAGGIO","LIBERTY 125 ABS","Cádiz","Andalucía","124",10
 "PIAGGIO","LIBERTY 125 ABS","Castellón/Castelló","Comunidad Valenciana","124",1
 "PIAGGIO","LIBERTY 125 ABS","Córdoba","Andalucía","124",1
 "PIAGGIO","LIBERTY 125 ABS","Gipuzkoa","País Vasco","124",1
 "PIAGGIO","LIBERTY 125 ABS","Granada","Andalucía","124",2
 "PIAGGIO","LIBERTY 125 ABS","Madrid","Comunidad de Madrid","124",2
-"PIAGGIO","LIBERTY 125 ABS","Málaga","Andalucía","124",2
+"PIAGGIO","LIBERTY 125 ABS","Málaga","Andalucía","124",3
 "PIAGGIO","LIBERTY 125 ABS","Murcia","Región de Murcia","124",1
+"PIAGGIO","LIBERTY 125 ABS","Palmas (Las)","Canarias","124",1
 "PIAGGIO","LIBERTY 125 ABS","Pontevedra","Galicia","124",1
-"PIAGGIO","LIBERTY 125 ABS","Sevilla","Andalucía","124",1
+"PIAGGIO","LIBERTY 125 ABS","Sevilla","Andalucía","124",2
 "PIAGGIO","LIBERTY 125 ABS","Valencia/València","Comunidad Valenciana","124",1
 "PIAGGIO","LIBERTY 125 ABS","Zaragoza","Aragón","124",1
-"PIAGGIO","MEDLEY 125","Alicante/Alacant","Comunidad Valenciana","125",3
-"PIAGGIO","MEDLEY 125","Barcelona","Cataluña","125",3
+"PIAGGIO","MEDLEY 125","Alicante/Alacant","Comunidad Valenciana","125",4
+"PIAGGIO","MEDLEY 125","Barcelona","Cataluña","125",4
 "PIAGGIO","MEDLEY 125","Cádiz","Andalucía","125",1
 "PIAGGIO","MEDLEY 125","Castellón/Castelló","Comunidad Valenciana","125",1
+"PIAGGIO","MEDLEY 125","Córdoba","Andalucía","125",1
 "PIAGGIO","MEDLEY 125","Granada","Andalucía","125",6
+"PIAGGIO","MEDLEY 125","Illes Balears","Illes Balears","125",1
+"PIAGGIO","MEDLEY 125","Málaga","Andalucía","125",1
 "PIAGGIO","MEDLEY 125","Pontevedra","Galicia","125",1
 "PIAGGIO","MEDLEY 125","Sevilla","Andalucía","125",2
 "PIAGGIO","MEDLEY 200","Barcelona","Cataluña","174",2
+"PIAGGIO","VESPA 946","Valencia/València","Comunidad Valenciana","124",1
 "PIAGGIO","VESPA GTS","Alicante/Alacant","Comunidad Valenciana","310",1
+"PIAGGIO","VESPA GTS","Barcelona","Cataluña","310",1
 "PIAGGIO","VESPA GTS","Córdoba","Andalucía","310",1
-"PIAGGIO","VESPA GTS","Illes Balears","Illes Balears","310",3
+"PIAGGIO","VESPA GTS","Illes Balears","Illes Balears","310",4
 "PIAGGIO","VESPA GTS","Madrid","Comunidad de Madrid","310",1
 "PIAGGIO","VESPA GTS","Málaga","Andalucía","310",1
+"PIAGGIO","VESPA GTS","Pontevedra","Galicia","310",1
+"PIAGGIO","VESPA GTS","Toledo","Castilla-La Mancha","310",1
 "PIAGGIO","VESPA GTS","Valencia/València","Comunidad Valenciana","310",1
 "PIAGGIO","VESPA GTS 125","Alicante/Alacant","Comunidad Valenciana","125",2
 "PIAGGIO","VESPA GTS 125","Córdoba","Andalucía","125",1
@@ -1122,12 +1344,19 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "PIAGGIO","VESPA GTS 125","Murcia","Región de Murcia","125",1
 "PIAGGIO","VESPA GTS 125","Santa Cruz de Tenerife","Canarias","125",2
 "PIAGGIO","VESPA GTS 125","Sevilla","Andalucía","125",1
-"PIAGGIO","VESPA PRIMAVERA 125","Alicante/Alacant","Comunidad Valenciana","124",1
-"PIAGGIO","VESPA PRIMAVERA 125","Barcelona","Cataluña","124",1
+"PIAGGIO","VESPA GTV","Melilla","Melilla","310",1
+"PIAGGIO","VESPA PRIMAVERA 125","Alicante/Alacant","Comunidad Valenciana","124",2
+"PIAGGIO","VESPA PRIMAVERA 125","Barcelona","Cataluña","124",2
+"PIAGGIO","VESPA PRIMAVERA 125","Cádiz","Andalucía","124",6
+"PIAGGIO","VESPA PRIMAVERA 125","Castellón/Castelló","Comunidad Valenciana","124",1
+"PIAGGIO","VESPA PRIMAVERA 125","Ciudad Real","Castilla-La Mancha","124",1
 "PIAGGIO","VESPA PRIMAVERA 125","Coruña (A)","Galicia","124",1
+"PIAGGIO","VESPA PRIMAVERA 125","Cuenca","Castilla-La Mancha","124",1
 "PIAGGIO","VESPA PRIMAVERA 125","Granada","Andalucía","124",1
 "PIAGGIO","VESPA PRIMAVERA 125","Huelva","Andalucía","124",1
 "PIAGGIO","VESPA PRIMAVERA 125","Illes Balears","Illes Balears","124",5
+"PIAGGIO","VESPA PRIMAVERA 125","Madrid","Comunidad de Madrid","124",2
+"PIAGGIO","VESPA PRIMAVERA 125","Málaga","Andalucía","124",2
 "PIAGGIO","VESPA PRIMAVERA 125","Pontevedra","Galicia","124",1
 "PIAGGIO","VESPA PRIMAVERA 125","Santa Cruz de Tenerife","Canarias","124",1
 "PIAGGIO","VESPA PRIMAVERA 125","Segovia","Castilla y León","124",1
@@ -1136,46 +1365,57 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "QJMOTOR","ATR 125 E5+","Alicante/Alacant","Comunidad Valenciana","125",2
 "QJMOTOR","ATR 125 E5+","Barcelona","Cataluña","125",1
 "QJMOTOR","ATR 125 E5+","Castellón/Castelló","Comunidad Valenciana","125",1
+"QJMOTOR","ATR 125 E5+","Gipuzkoa","País Vasco","125",1
 "QJMOTOR","ATR 125 E5+","Huelva","Andalucía","125",1
 "QJMOTOR","ATR 125 E5+","Illes Balears","Illes Balears","125",1
 "QJMOTOR","ATR 125 E5+","Madrid","Comunidad de Madrid","125",1
 "QJMOTOR","ATR 125 E5+","Málaga","Andalucía","125",1
-"QJMOTOR","ATR 125 E5+","Pontevedra","Galicia","125",2
-"QJMOTOR","ATR 125 E5+","Santa Cruz de Tenerife","Canarias","125",3
+"QJMOTOR","ATR 125 E5+","Palmas (Las)","Canarias","125",1
+"QJMOTOR","ATR 125 E5+","Pontevedra","Galicia","125",3
+"QJMOTOR","ATR 125 E5+","Santa Cruz de Tenerife","Canarias","125",4
 "QJMOTOR","ATR 125 E5+","Sevilla","Andalucía","125",1
-"QJMOTOR","FORT 125 N E5+","Alicante/Alacant","Comunidad Valenciana","125",2
+"QJMOTOR","FORT 125 N E5+","Alicante/Alacant","Comunidad Valenciana","125",4
 "QJMOTOR","FORT 125 N E5+","Barcelona","Cataluña","125",4
+"QJMOTOR","FORT 125 N E5+","Cádiz","Andalucía","125",1
 "QJMOTOR","FORT 125 N E5+","Castellón/Castelló","Comunidad Valenciana","125",1
+"QJMOTOR","FORT 125 N E5+","Coruña (A)","Galicia","125",1
 "QJMOTOR","FORT 125 N E5+","Gipuzkoa","País Vasco","125",1
-"QJMOTOR","FORT 125 N E5+","Madrid","Comunidad de Madrid","125",1
+"QJMOTOR","FORT 125 N E5+","Madrid","Comunidad de Madrid","125",2
 "QJMOTOR","FORT 125 N E5+","Murcia","Región de Murcia","125",1
+"QJMOTOR","FORT 125 N E5+","Palmas (Las)","Canarias","125",1
 "QJMOTOR","FORT 125 N E5+","Santa Cruz de Tenerife","Canarias","125",1
 "QJMOTOR","FORT 125 N E5+","Sevilla","Andalucía","125",1
-"QJMOTOR","LTR 125 E5+","Álava/Araba","País Vasco","125",1
+"QJMOTOR","FORT 4.0 E5+","Sevilla","Andalucía","350",1
+"QJMOTOR","LTR 125 E5+","Álava/Araba","País Vasco","125",2
 "QJMOTOR","LTR 125 E5+","Coruña (A)","Galicia","125",1
 "QJMOTOR","LTR 125 E5+","Girona","Cataluña","125",1
-"QJMOTOR","LTR 125 E5+","Illes Balears","Illes Balears","125",1
+"QJMOTOR","LTR 125 E5+","Illes Balears","Illes Balears","125",2
+"QJMOTOR","LTR 125 E5+","Lleida","Cataluña","125",1
 "QJMOTOR","MTX 125","Alicante/Alacant","Comunidad Valenciana","125",1
 "QJMOTOR","MTX 125","Barcelona","Cataluña","125",2
-"QJMOTOR","MTX 125 E5+","Barcelona","Cataluña","125",3
+"QJMOTOR","MTX 125 E5+","Barcelona","Cataluña","125",4
 "QJMOTOR","MTX 125 E5+","Cantabria","Cantabria","125",1
 "QJMOTOR","MTX 125 E5+","Córdoba","Andalucía","125",1
 "QJMOTOR","MTX 125 E5+","Coruña (A)","Galicia","125",1
-"QJMOTOR","MTX 125 E5+","Huelva","Andalucía","125",1
+"QJMOTOR","MTX 125 E5+","Huelva","Andalucía","125",2
 "QJMOTOR","MTX 125 E5+","Madrid","Comunidad de Madrid","125",1
 "QJMOTOR","MTX 125 E5+","Málaga","Andalucía","125",3
 "QJMOTOR","MTX 125 E5+","Murcia","Región de Murcia","125",1
 "QJMOTOR","MTX 125 E5+","Santa Cruz de Tenerife","Canarias","125",1
+"QJMOTOR","MTX 125 E5+","Sevilla","Andalucía","125",1
 "QJMOTOR","MTX 125 E5+","Teruel","Aragón","125",1
 "QJMOTOR","MTX 125 E5+","Valencia/València","Comunidad Valenciana","125",4
 "QJMOTOR","MTX 125 E5+","Valladolid","Castilla y León","125",1
 "QJMOTOR","MTX 125 E5+","Zaragoza","Aragón","125",1
 "QJMOTOR","SQ 16 E5+","Barcelona","Cataluña","125",8
+"QJMOTOR","SQ 16 E5+","Huelva","Andalucía","125",1
 "QJMOTOR","SQ 16 E5+","Illes Balears","Illes Balears","125",1
 "QJMOTOR","SRK 125 R E5+","Madrid","Comunidad de Madrid","125",1
 "QJMOTOR","SRK 125 S E5+","Almería","Andalucía","125",1
 "QJMOTOR","SRK 125 S E5+","Barcelona","Cataluña","125",1
+"QJMOTOR","SRK 125 S E5+","Cantabria","Cantabria","125",1
 "QJMOTOR","SRK 125 S E5+","Córdoba","Andalucía","125",1
+"QJMOTOR","SRK 125 S E5+","Girona","Cataluña","125",1
 "QJMOTOR","SRK 125 S E5+","Granada","Andalucía","125",1
 "QJMOTOR","SRK 125 S E5+","Huesca","Aragón","125",1
 "QJMOTOR","SRK 125 S E5+","Madrid","Comunidad de Madrid","125",2
@@ -1186,6 +1426,7 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "QJMOTOR","SRK 800","Murcia","Región de Murcia","778",1
 "QJMOTOR","SRK 800","Valladolid","Castilla y León","778",1
 "QJMOTOR","SRT 300 DX","Barcelona","Cataluña","292",1
+"QJMOTOR","SRT 300 DX","Cádiz","Andalucía","292",1
 "QJMOTOR","SRT 300 DX","Córdoba","Andalucía","292",1
 "QJMOTOR","SRT 300 DX","León","Castilla y León","292",1
 "QJMOTOR","SRT 300 DX","Murcia","Región de Murcia","292",1
@@ -1196,38 +1437,47 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "QJMOTOR","SRT 450 RX","Ceuta","Ceuta","450",1
 "QJMOTOR","SRT 450 RX","Huelva","Andalucía","450",1
 "QJMOTOR","SRT 600 SX E5+","Córdoba","Andalucía","554",1
+"QJMOTOR","SRT 600 SX E5+","Cuenca","Castilla-La Mancha","554",1
 "QJMOTOR","SRT 600 SX E5+","Girona","Cataluña","554",1
 "QJMOTOR","SRT 600 SX E5+","Granada","Andalucía","554",1
 "QJMOTOR","SRT 600 SX E5+","León","Castilla y León","554",1
 "QJMOTOR","SRT 600 SX E5+","Madrid","Comunidad de Madrid","554",2
 "QJMOTOR","SRT 600 SX E5+","Sevilla","Andalucía","554",1
+"QJMOTOR","SRT 600 SX E5+","Tarragona","Cataluña","554",1
 "QJMOTOR","SRT 700 X E5+","Lleida","Cataluña","698",1
 "QJMOTOR","SRT 700 X E5+","Málaga","Andalucía","698",1
 "QJMOTOR","SRT 900 S","Almería","Andalucía","904",1
-"QJMOTOR","SRT 900 S","Barcelona","Cataluña","904",1
+"QJMOTOR","SRT 900 S","Barcelona","Cataluña","904",2
 "QJMOTOR","SRT 900 S","Castellón/Castelló","Comunidad Valenciana","904",1
 "QJMOTOR","SRT 900 S","Madrid","Comunidad de Madrid","904",1
 "QJMOTOR","SRT 900 S","Málaga","Andalucía","904",1
+"QJMOTOR","SRT 900 SX","Barcelona","Cataluña","904",2
 "QJMOTOR","SRT 900 SX","Córdoba","Andalucía","904",1
 "QJMOTOR","SRT 900 SX","Lleida","Cataluña","904",1
 "QJMOTOR","SRT 900 SX","Madrid","Comunidad de Madrid","904",2
 "QJMOTOR","SRV 12 E5+","Alicante/Alacant","Comunidad Valenciana","125",1
 "QJMOTOR","SRV 12 E5+","Madrid","Comunidad de Madrid","125",1
 "QJMOTOR","SRV 125 E5+","Asturias","Principado de Asturias","125",2
-"QJMOTOR","SRV 125 E5+","Barcelona","Cataluña","125",2
+"QJMOTOR","SRV 125 E5+","Barcelona","Cataluña","125",3
 "QJMOTOR","SRV 125 E5+","Burgos","Castilla y León","125",1
+"QJMOTOR","SRV 125 E5+","Cádiz","Andalucía","125",1
 "QJMOTOR","SRV 125 E5+","Castellón/Castelló","Comunidad Valenciana","125",1
+"QJMOTOR","SRV 125 E5+","Palmas (Las)","Canarias","125",1
 "QJMOTOR","SRV 125 E5+","Santa Cruz de Tenerife","Canarias","125",1
 "QJMOTOR","SRV 125 E5+","Valencia/València","Comunidad Valenciana","125",1
 "QJMOTOR","SRV 550","Santa Cruz de Tenerife","Canarias","554",1
+"RIEJU","AVENTURA 500","Rioja (La)","La Rioja","471",1
 "RIEJU","N/A","Badajoz","Extremadura","125",1
+"RIEJU","N/A","Barcelona","Cataluña","125",1
 "RIEJU","N/A","Burgos","Castilla y León","125",1
 "RIEJU","N/A","Granada","Andalucía","125",1
+"RIEJU","N/A","Madrid","Comunidad de Madrid","125",1
 "RIEJU","N/A","Málaga","Andalucía","125",1
 "RIEJU","N/A","Soria","Castilla y León","125",1
 "RIEJU","N/A","Valencia/València","Comunidad Valenciana","125",1
-"RIEJU","N/A","Zamora","Castilla y León","125",1
-"RIEJU","NKD 125","Alicante/Alacant","Comunidad Valenciana","124",1
+"RIEJU","N/A","Zamora","Castilla y León","125",2
+"RIEJU","N/A","Zaragoza","Aragón","125",1
+"RIEJU","NKD 125","Alicante/Alacant","Comunidad Valenciana","124",2
 "RIEJU","NKD 125","Almería","Andalucía","124",1
 "RIEJU","NKD 125","Badajoz","Extremadura","124",1
 "RIEJU","NKD 125","Barcelona","Cataluña","124",1
@@ -1240,6 +1490,7 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "RIEJU","NKD 125","Madrid","Comunidad de Madrid","124",4
 "RIEJU","NKD 125","Murcia","Región de Murcia","124",4
 "RIEJU","NKD 125","Pontevedra","Galicia","124",1
+"RIEJU","NKD 125","Soria","Castilla y León","124",1
 "RIEJU","NKD 125","Tarragona","Cataluña","124",1
 "RIEJU","NKD 125","Valencia/València","Comunidad Valenciana","124",1
 "RIEJU","NOT APPLICABLE","Almería","Andalucía","124",1
@@ -1253,17 +1504,19 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "RIEJU","NOT APPLICABLE","Cuenca","Castilla-La Mancha","124",1
 "RIEJU","NOT APPLICABLE","Girona","Cataluña","124",1
 "RIEJU","NOT APPLICABLE","Granada","Andalucía","124",1
-"RIEJU","NOT APPLICABLE","Huesca","Aragón","124",1
+"RIEJU","NOT APPLICABLE","Huesca","Aragón","124",2
 "RIEJU","NOT APPLICABLE","Jaén","Andalucía","124",1
-"RIEJU","NOT APPLICABLE","Madrid","Comunidad de Madrid","124",1
+"RIEJU","NOT APPLICABLE","Madrid","Comunidad de Madrid","124",2
 "RIEJU","NOT APPLICABLE","Ourense","Galicia","124",1
 "RIEJU","NOT APPLICABLE","Pontevedra","Galicia","124",1
 "RIEJU","NOT APPLICABLE","Toledo","Castilla-La Mancha","124",1
-"RIEJU","RALLY 307","Barcelona","Cataluña","292",3
+"RIEJU","RALLY 307","Barcelona","Cataluña","292",4
+"RIEJU","RALLY 307","Cantabria","Cantabria","292",1
 "RIEJU","RALLY 307","Girona","Cataluña","292",1
 "RIEJU","RALLY 307","Madrid","Comunidad de Madrid","292",3
 "RIEJU","RALLY 307","Málaga","Andalucía","292",2
 "RIEJU","RALLY 307","Murcia","Región de Murcia","292",1
+"RIEJU","RALLY 307","Tarragona","Cataluña","292",1
 "RIEJU","RALLY 307","Teruel","Aragón","292",1
 "RIEJU","RALLY 307","Valencia/València","Comunidad Valenciana","292",1
 "RIEJU","X-OVER 357","Girona","Cataluña","330",1
@@ -1277,20 +1530,25 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "ROYAL ENFIELD","CLASSIC 650 TWIN","Salamanca","Castilla y León","648",1
 "ROYAL ENFIELD","CONTINENTAL GT 650","Illes Balears","Illes Balears","648",1
 "ROYAL ENFIELD","GUERRILLA 450","Barcelona","Cataluña","452",1
+"ROYAL ENFIELD","HIMALAYAN 452","Asturias","Principado de Asturias","452",1
 "ROYAL ENFIELD","HIMALAYAN 452","Barcelona","Cataluña","452",6
 "ROYAL ENFIELD","HIMALAYAN 452","Granada","Andalucía","452",1
 "ROYAL ENFIELD","HIMALAYAN 452","Navarra","Comunidad Foral de Navarra","452",2
 "ROYAL ENFIELD","HIMALAYAN 452","Valencia/València","Comunidad Valenciana","452",1
 "ROYAL ENFIELD","HNTR 350","Pontevedra","Galicia","349",1
 "ROYAL ENFIELD","HNTR 350","Valencia/València","Comunidad Valenciana","349",1
+"ROYAL ENFIELD","INTERCEPTOR BEAR 650","Valencia/València","Comunidad Valenciana","648",1
 "ROYAL ENFIELD","METEOR 350","Valencia/València","Comunidad Valenciana","349",1
 "ROYAL ENFIELD","SUPER METEOR 650","Asturias","Principado de Asturias","648",1
 "SCORPA","CITY CORP 125","Huelva","Andalucía","125",1
 "SCORPA","CITY CORP 125","Málaga","Andalucía","125",1
-"SCORPA","CITY CORP 125","Pontevedra","Galicia","125",1
+"SCORPA","CITY CORP 125","Pontevedra","Galicia","125",2
 "SCORPA","CITY CORP 125","Sevilla","Andalucía","125",1
+"SHARMAX","FX125 ADV","Barcelona","Cataluña","125",1
+"SHARMAX","FX125 ADV","Lugo","Galicia","125",1
 "SHERCO","__","Barcelona","Cataluña","124",1
 "SHERCO","125 SE-R","Almería","Andalucía","125",1
+"SHERCO","125 SE-R","Barcelona","Cataluña","125",1
 "SHERCO","300 SE-R","Málaga","Andalucía","293",1
 "SHERCO","300 SE-R","Murcia","Región de Murcia","293",1
 "SHERCO","300 SEF-R","Lleida","Cataluña","304",1
@@ -1305,14 +1563,18 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "SUZUKI","AVENIS 125","Pontevedra","Galicia","124",1
 "SUZUKI","AVENIS 125","Tarragona","Cataluña","124",1
 "SUZUKI","AVENIS 125","Valladolid","Castilla y León","124",1
-"SUZUKI","BURGMAN 400","Alicante/Alacant","Comunidad Valenciana","400",1
+"SUZUKI","AVENIS 125","Zaragoza","Aragón","124",1
+"SUZUKI","BURGMAN 400","Alicante/Alacant","Comunidad Valenciana","400",4
+"SUZUKI","BURGMAN 400","Barcelona","Cataluña","400",1
+"SUZUKI","BURGMAN 400","Cádiz","Andalucía","400",1
 "SUZUKI","BURGMAN 400","Illes Balears","Illes Balears","400",2
+"SUZUKI","BURGMAN 400","Tarragona","Cataluña","400",1
 "SUZUKI","BURGMAN 400","Valladolid","Castilla y León","400",1
 "SUZUKI","DR-Z400","Bizkaia","País Vasco","398",1
 "SUZUKI","DR-Z400","Ceuta","Ceuta","398",1
 "SUZUKI","DR-Z400","Málaga","Andalucía","398",3
 "SUZUKI","GSX-8S","Alicante/Alacant","Comunidad Valenciana","776",3
-"SUZUKI","GSX-8S","Barcelona","Cataluña","776",2
+"SUZUKI","GSX-8S","Barcelona","Cataluña","776",4
 "SUZUKI","GSX-8S","Bizkaia","País Vasco","776",4
 "SUZUKI","GSX-8S","Cádiz","Andalucía","776",3
 "SUZUKI","GSX-8S","Girona","Cataluña","776",1
@@ -1321,17 +1583,19 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "SUZUKI","GSX-8S","Málaga","Andalucía","776",2
 "SUZUKI","GSX-8S","Murcia","Región de Murcia","776",6
 "SUZUKI","GSX-8S","Pontevedra","Galicia","776",1
+"SUZUKI","GSX-8S","Rioja (La)","La Rioja","776",1
 "SUZUKI","GSX-8S","Sevilla","Andalucía","776",2
 "SUZUKI","GSX-8S","Tarragona","Cataluña","776",3
 "SUZUKI","GSX-8S","Toledo","Castilla-La Mancha","776",1
-"SUZUKI","GSX-8S","Valencia/València","Comunidad Valenciana","776",2
+"SUZUKI","GSX-8S","Valencia/València","Comunidad Valenciana","776",3
 "SUZUKI","GSX-8S","Valladolid","Castilla y León","776",1
 "SUZUKI","GSX-8S","Zamora","Castilla y León","776",1
-"SUZUKI","GSX-8S","Zaragoza","Aragón","776",1
+"SUZUKI","GSX-8S","Zaragoza","Aragón","776",2
+"SUZUKI","GSX-R125","Barcelona","Cataluña","124",1
 "SUZUKI","GSX-R125","Bizkaia","País Vasco","124",1
 "SUZUKI","GSX-R125","Girona","Cataluña","124",1
 "SUZUKI","GSX-R125","León","Castilla y León","124",1
-"SUZUKI","GSX-R125","Madrid","Comunidad de Madrid","124",1
+"SUZUKI","GSX-R125","Madrid","Comunidad de Madrid","124",2
 "SUZUKI","GSX-R125","Pontevedra","Galicia","124",1
 "SUZUKI","GSX-R125","Tarragona","Cataluña","124",1
 "SUZUKI","GSX-R125","Zaragoza","Aragón","124",2
@@ -1339,7 +1603,7 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "SUZUKI","GSX-S 1000","Barcelona","Cataluña","999",1
 "SUZUKI","GSX-S 1000","Burgos","Castilla y León","999",1
 "SUZUKI","GSX-S 1000","Málaga","Andalucía","999",1
-"SUZUKI","GSX-S 1000","Valencia/València","Comunidad Valenciana","999",1
+"SUZUKI","GSX-S 1000","Valencia/València","Comunidad Valenciana","999",3
 "SUZUKI","GSX-S125","Alicante/Alacant","Comunidad Valenciana","124",1
 "SUZUKI","GSX-S125","Badajoz","Extremadura","124",1
 "SUZUKI","GSX-S125","Barcelona","Cataluña","124",1
@@ -1348,8 +1612,10 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "SUZUKI","GSX-S125","Girona","Cataluña","124",1
 "SUZUKI","GSX-S125","Illes Balears","Illes Balears","124",2
 "SUZUKI","GSX-S125","Madrid","Comunidad de Madrid","124",2
+"SUZUKI","GSX-S125","Murcia","Región de Murcia","124",2
 "SUZUKI","GSX-S125","Salamanca","Castilla y León","124",1
 "SUZUKI","GSX-S125","Sevilla","Andalucía","124",1
+"SUZUKI","GSX-S125","Tarragona","Cataluña","124",1
 "SUZUKI","V-Strom 1050","Barcelona","Cataluña","1037",1
 "SUZUKI","V-Strom 1050","Gipuzkoa","País Vasco","1037",1
 "SUZUKI","V-Strom 1050","Illes Balears","Illes Balears","1037",1
@@ -1367,9 +1633,10 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "SUZUKI","V-Strom 800","Sevilla","Andalucía","776",1
 "SUZUKI","V-Strom 800","Toledo","Castilla-La Mancha","776",1
 "SWM","HOKU 125","Alicante/Alacant","Comunidad Valenciana","125",1
+"SWM","SUPERDUAL T","Alicante/Alacant","Comunidad Valenciana","600",1
 "SYM","ADX 125 LC TCS E5+","Alicante/Alacant","Comunidad Valenciana","125",1
 "SYM","ADX 125 LC TCS E5+","Almería","Andalucía","125",1
-"SYM","ADX 125 LC TCS E5+","Barcelona","Cataluña","125",2
+"SYM","ADX 125 LC TCS E5+","Barcelona","Cataluña","125",3
 "SYM","ADX 125 LC TCS E5+","Burgos","Castilla y León","125",1
 "SYM","ADX 125 LC TCS E5+","Cádiz","Andalucía","125",1
 "SYM","ADX 125 LC TCS E5+","Guadalajara","Castilla-La Mancha","125",1
@@ -1381,97 +1648,118 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "SYM","ADX 300 TCS","Burgos","Castilla y León","278",1
 "SYM","ADX 300 TCS","Córdoba","Andalucía","278",1
 "SYM","ADX 300 TCS","Coruña (A)","Galicia","278",1
-"SYM","ADX 300 TCS","Girona","Cataluña","278",2
+"SYM","ADX 300 TCS","Girona","Cataluña","278",3
 "SYM","ADX 300 TCS","Granada","Andalucía","278",1
 "SYM","ADX 300 TCS","Huesca","Aragón","278",1
 "SYM","ADX 300 TCS","Málaga","Andalucía","278",1
+"SYM","ADX 300 TCS","Murcia","Región de Murcia","278",1
 "SYM","ADX 300 TCS","Santa Cruz de Tenerife","Canarias","278",1
 "SYM","ADX 300 TCS","Valencia/València","Comunidad Valenciana","278",1
-"SYM","ADXTG 400","Girona","Cataluña","399",1
+"SYM","ADXTG 400","Girona","Cataluña","399",2
+"SYM","ADXTG 400","Valencia/València","Comunidad Valenciana","399",1
+"SYM","CRUISYM 125 TCS E5+","Barcelona","Cataluña","124",1
+"SYM","CRUISYM 125 TCS E5+","Burgos","Castilla y León","124",1
 "SYM","CRUISYM 125 TCS E5+","Cádiz","Andalucía","124",1
 "SYM","CRUISYM 125 TCS E5+","Huelva","Andalucía","124",1
+"SYM","CRUISYM 125 TCS E5+","Illes Balears","Illes Balears","124",1
 "SYM","CRUISYM 125 TCS E5+","Madrid","Comunidad de Madrid","124",2
 "SYM","CRUISYM 125 TCS E5+","Rioja (La)","La Rioja","124",1
 "SYM","CRUISYM 125 TCS E5+","Sevilla","Andalucía","124",1
 "SYM","FUGUE 125 ABS TOP CASE","Illes Balears","Illes Balears","124",1
-"SYM","FUGUE 125 ABS TOP CASE","Murcia","Región de Murcia","124",2
+"SYM","FUGUE 125 ABS TOP CASE","Murcia","Región de Murcia","124",3
+"SYM","FUGUE 125 ABS TOP CASE","Sevilla","Andalucía","124",1
 "SYM","FUGUE 125 ABS TOP CASE","Tarragona","Cataluña","124",1
-"SYM","JET 14","Alicante/Alacant","Comunidad Valenciana","125",5
-"SYM","JET 14","Barcelona","Cataluña","125",6
-"SYM","JET 14","Cádiz","Andalucía","125",1
-"SYM","JET 14","Cantabria","Cantabria","125",2
-"SYM","JET 14","Córdoba","Andalucía","125",1
+"SYM","JET 14","Alicante/Alacant","Comunidad Valenciana","125",7
+"SYM","JET 14","Barcelona","Cataluña","125",7
+"SYM","JET 14","Cádiz","Andalucía","125",3
+"SYM","JET 14","Cantabria","Cantabria","125",3
+"SYM","JET 14","Córdoba","Andalucía","125",2
 "SYM","JET 14","Coruña (A)","Galicia","125",2
-"SYM","JET 14","Gipuzkoa","País Vasco","125",1
-"SYM","JET 14","Girona","Cataluña","125",3
+"SYM","JET 14","Gipuzkoa","País Vasco","125",2
+"SYM","JET 14","Girona","Cataluña","125",7
 "SYM","JET 14","Granada","Andalucía","125",1
-"SYM","JET 14","Illes Balears","Illes Balears","125",4
+"SYM","JET 14","Huelva","Andalucía","125",1
+"SYM","JET 14","Illes Balears","Illes Balears","125",6
 "SYM","JET 14","Jaén","Andalucía","125",1
-"SYM","JET 14","Madrid","Comunidad de Madrid","125",1
-"SYM","JET 14","Málaga","Andalucía","125",7
+"SYM","JET 14","Madrid","Comunidad de Madrid","125",2
+"SYM","JET 14","Málaga","Andalucía","125",11
 "SYM","JET 14","Murcia","Región de Murcia","125",2
 "SYM","JET 14","Navarra","Comunidad Foral de Navarra","125",2
 "SYM","JET 14","Palmas (Las)","Canarias","125",1
-"SYM","JET 14","Pontevedra","Galicia","125",1
+"SYM","JET 14","Pontevedra","Galicia","125",2
 "SYM","JET 14","Santa Cruz de Tenerife","Canarias","125",1
 "SYM","JET 14","Sevilla","Andalucía","125",3
 "SYM","JET 14","Tarragona","Cataluña","125",3
-"SYM","JET 14","Valencia/València","Comunidad Valenciana","125",1
-"SYM","JET X","Barcelona","Cataluña","125",2
-"SYM","JET X","Cádiz","Andalucía","125",1
+"SYM","JET 14","Valencia/València","Comunidad Valenciana","125",2
+"SYM","JET 14","Valladolid","Castilla y León","125",1
+"SYM","JET X","Alicante/Alacant","Comunidad Valenciana","125",2
+"SYM","JET X","Barcelona","Cataluña","125",3
+"SYM","JET X","Cádiz","Andalucía","125",2
 "SYM","JET X","Castellón/Castelló","Comunidad Valenciana","125",2
-"SYM","JET X","Girona","Cataluña","125",2
-"SYM","JET X","Illes Balears","Illes Balears","125",1
+"SYM","JET X","Girona","Cataluña","125",3
+"SYM","JET X","Illes Balears","Illes Balears","125",2
 "SYM","JET X","Madrid","Comunidad de Madrid","125",2
-"SYM","JET X","Málaga","Andalucía","125",2
+"SYM","JET X","Málaga","Andalucía","125",3
 "SYM","JET X","Murcia","Región de Murcia","125",1
-"SYM","JET X","Sevilla","Andalucía","125",1
-"SYM","JET X","Tarragona","Cataluña","125",1
+"SYM","JET X","Sevilla","Andalucía","125",2
+"SYM","JET X","Tarragona","Cataluña","125",3
 "SYM","JET X","Valencia/València","Comunidad Valenciana","125",1
 "SYM","JOYMAX Z 125 TCS","Barcelona","Cataluña","124",1
 "SYM","JOYMAX Z 300 E5+","Alicante/Alacant","Comunidad Valenciana","278",1
 "SYM","JOYMAX Z 300 E5+","Barcelona","Cataluña","278",3
-"SYM","JOYMAX Z 300 E5+","Illes Balears","Illes Balears","278",1
+"SYM","JOYMAX Z 300 E5+","Illes Balears","Illes Balears","278",3
 "SYM","JOYMAX Z 300 E5+","Málaga","Andalucía","278",1
+"SYM","JOYMAX Z 300 E5+","Santa Cruz de Tenerife","Canarias","278",1
 "SYM","JOYMAX Z 300 E5+","Sevilla","Andalucía","278",1
 "SYM","JOYMAX Z 300 E5+","Tarragona","Cataluña","278",2
 "SYM","JOYMAX Z 300 E5+","Valencia/València","Comunidad Valenciana","278",1
 "SYM","MAXSYM 400I GT","Illes Balears","Illes Balears","399",1
+"SYM","MAXSYM 400I GT","Madrid","Comunidad de Madrid","399",1
 "SYM","SYMPHONY 125","Alicante/Alacant","Comunidad Valenciana","125",4
 "SYM","SYMPHONY 125","Asturias","Principado de Asturias","125",1
-"SYM","SYMPHONY 125","Barcelona","Cataluña","125",43
-"SYM","SYMPHONY 125","Cádiz","Andalucía","125",1
+"SYM","SYMPHONY 125","Barcelona","Cataluña","125",60
+"SYM","SYMPHONY 125","Cádiz","Andalucía","125",2
+"SYM","SYMPHONY 125","Cantabria","Cantabria","125",1
 "SYM","SYMPHONY 125","Castellón/Castelló","Comunidad Valenciana","125",2
 "SYM","SYMPHONY 125","Ciudad Real","Castilla-La Mancha","125",1
-"SYM","SYMPHONY 125","Córdoba","Andalucía","125",1
+"SYM","SYMPHONY 125","Córdoba","Andalucía","125",3
 "SYM","SYMPHONY 125","Cuenca","Castilla-La Mancha","125",2
-"SYM","SYMPHONY 125","Gipuzkoa","País Vasco","125",2
-"SYM","SYMPHONY 125","Girona","Cataluña","125",23
+"SYM","SYMPHONY 125","Gipuzkoa","País Vasco","125",3
+"SYM","SYMPHONY 125","Girona","Cataluña","125",24
 "SYM","SYMPHONY 125","Granada","Andalucía","125",8
-"SYM","SYMPHONY 125","Illes Balears","Illes Balears","125",24
+"SYM","SYMPHONY 125","Illes Balears","Illes Balears","125",29
 "SYM","SYMPHONY 125","Jaén","Andalucía","125",2
-"SYM","SYMPHONY 125","Madrid","Comunidad de Madrid","125",3
-"SYM","SYMPHONY 125","Málaga","Andalucía","125",8
-"SYM","SYMPHONY 125","Murcia","Región de Murcia","125",2
+"SYM","SYMPHONY 125","Madrid","Comunidad de Madrid","125",4
+"SYM","SYMPHONY 125","Málaga","Andalucía","125",11
+"SYM","SYMPHONY 125","Murcia","Región de Murcia","125",3
 "SYM","SYMPHONY 125","Navarra","Comunidad Foral de Navarra","125",1
 "SYM","SYMPHONY 125","Ourense","Galicia","125",1
+"SYM","SYMPHONY 125","Palmas (Las)","Canarias","125",1
+"SYM","SYMPHONY 125","Rioja (La)","La Rioja","125",1
 "SYM","SYMPHONY 125","Santa Cruz de Tenerife","Canarias","125",3
-"SYM","SYMPHONY 125","Sevilla","Andalucía","125",5
-"SYM","SYMPHONY 125","Tarragona","Cataluña","125",2
-"SYM","SYMPHONY 125","Valencia/València","Comunidad Valenciana","125",1
+"SYM","SYMPHONY 125","Sevilla","Andalucía","125",6
+"SYM","SYMPHONY 125","Tarragona","Cataluña","125",3
+"SYM","SYMPHONY 125","Valencia/València","Comunidad Valenciana","125",2
 "SYM","SYMPHONY 125","Zamora","Castilla y León","125",1
 "SYM","SYMPHONY 125","Zaragoza","Aragón","125",1
 "TRIUMPH","BONNEVILLE SPEEDMASTER","Alicante/Alacant","Comunidad Valenciana","1200",1
 "TRIUMPH","BONNEVILLE SPEEDMASTER","Barcelona","Cataluña","1200",1
+"TRIUMPH","BONNEVILLE T100","Barcelona","Cataluña","900",1
 "TRIUMPH","BONNEVILLE T100","Tarragona","Cataluña","900",1
 "TRIUMPH","BONNEVILLE T120","Madrid","Comunidad de Madrid","1200",1
 "TRIUMPH","DAYTONA 660","Huelva","Andalucía","660",1
 "TRIUMPH","DAYTONA 660","Valencia/València","Comunidad Valenciana","660",1
+"TRIUMPH","ROCKET 3 STORM GT","Zaragoza","Aragón","2458",1
+"TRIUMPH","SCRAMBLER 1200 XE","Málaga","Andalucía","1200",1
+"TRIUMPH","SCRAMBLER 1200 XE","Valencia/València","Comunidad Valenciana","1200",1
 "TRIUMPH","SCRAMBLER 1200 XE","Zaragoza","Aragón","1200",1
 "TRIUMPH","SCRAMBLER 400 X","Asturias","Principado de Asturias","398",1
 "TRIUMPH","SCRAMBLER 400 X","Barcelona","Cataluña","398",1
+"TRIUMPH","SCRAMBLER 400 X","Huelva","Andalucía","398",1
+"TRIUMPH","SCRAMBLER 400 X","Madrid","Comunidad de Madrid","398",1
 "TRIUMPH","SCRAMBLER 400 X","Sevilla","Andalucía","398",1
 "TRIUMPH","SCRAMBLER 400 X","Zaragoza","Aragón","398",1
+"TRIUMPH","SCRAMBLER 400 XC","Zaragoza","Aragón","398",1
 "TRIUMPH","SCRAMBLER 400XC","Navarra","Comunidad Foral de Navarra","398",1
 "TRIUMPH","SCRAMBLER 900","Alicante/Alacant","Comunidad Valenciana","900",1
 "TRIUMPH","SCRAMBLER 900","Barcelona","Cataluña","900",2
@@ -1485,10 +1773,13 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "TRIUMPH","SPEED 400","Madrid","Comunidad de Madrid","398",2
 "TRIUMPH","SPEED TWIN","Huelva","Andalucía","1200",1
 "TRIUMPH","SPEED TWIN 1200 RS","Alicante/Alacant","Comunidad Valenciana","1200",1
-"TRIUMPH","SPEED TWIN 900","Barcelona","Cataluña","900",1
+"TRIUMPH","SPEED TWIN 900","Barcelona","Cataluña","900",2
 "TRIUMPH","SPEED TWIN 900","Cantabria","Cantabria","900",1
+"TRIUMPH","SPEED TWIN 900","Illes Balears","Illes Balears","900",1
 "TRIUMPH","SPEED TWIN 900","Madrid","Comunidad de Madrid","900",2
+"TRIUMPH","STREET TRIPLE 765 RX","Toledo","Castilla-La Mancha","765",1
 "TRIUMPH","STREET TRIPLE MOTO2 TM","Madrid","Comunidad de Madrid","765",1
+"TRIUMPH","STREET TRIPLE RS","Sevilla","Andalucía","765",1
 "TRIUMPH","TIGER 1200 GT PRO","Madrid","Comunidad de Madrid","1160",1
 "TRIUMPH","TIGER 900 RALLY PRO","Barcelona","Cataluña","888",1
 "TRIUMPH","TIGER SPORT","Barcelona","Cataluña","660",1
@@ -1511,23 +1802,26 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "VOGE","300RALLY","Málaga","Andalucía","292",1
 "VOGE","625DSX","Álava/Araba","País Vasco","581",2
 "VOGE","625DSX","Alicante/Alacant","Comunidad Valenciana","581",2
-"VOGE","625DSX","Badajoz","Extremadura","581",1
-"VOGE","625DSX","Barcelona","Cataluña","581",3
+"VOGE","625DSX","Badajoz","Extremadura","581",2
+"VOGE","625DSX","Barcelona","Cataluña","581",7
 "VOGE","625DSX","Bizkaia","País Vasco","581",1
-"VOGE","625DSX","Cádiz","Andalucía","581",1
-"VOGE","625DSX","Córdoba","Andalucía","581",1
+"VOGE","625DSX","Cádiz","Andalucía","581",2
+"VOGE","625DSX","Castellón/Castelló","Comunidad Valenciana","581",1
+"VOGE","625DSX","Córdoba","Andalucía","581",2
 "VOGE","625DSX","Cuenca","Castilla-La Mancha","581",1
 "VOGE","625DSX","Granada","Andalucía","581",3
 "VOGE","625DSX","Illes Balears","Illes Balears","581",1
-"VOGE","625DSX","Jaén","Andalucía","581",1
+"VOGE","625DSX","Jaén","Andalucía","581",2
+"VOGE","625DSX","León","Castilla y León","581",1
 "VOGE","625DSX","Lleida","Cataluña","581",1
 "VOGE","625DSX","Madrid","Comunidad de Madrid","581",3
-"VOGE","625DSX","Málaga","Andalucía","581",3
+"VOGE","625DSX","Málaga","Andalucía","581",4
 "VOGE","625DSX","Navarra","Comunidad Foral de Navarra","581",1
+"VOGE","625DSX","Palmas (Las)","Canarias","581",1
 "VOGE","625DSX","Santa Cruz de Tenerife","Canarias","581",2
 "VOGE","625DSX","Sevilla","Andalucía","581",1
 "VOGE","625DSX","Tarragona","Cataluña","581",2
-"VOGE","625DSX","Valencia/València","Comunidad Valenciana","581",4
+"VOGE","625DSX","Valencia/València","Comunidad Valenciana","581",5
 "VOGE","625R","Barcelona","Cataluña","581",1
 "VOGE","625R","Cáceres","Extremadura","581",1
 "VOGE","625R","Ciudad Real","Castilla-La Mancha","581",1
@@ -1543,16 +1837,19 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "VOGE","DS525X","Barcelona","Cataluña","494",4
 "VOGE","DS525X","Bizkaia","País Vasco","494",1
 "VOGE","DS525X","Cáceres","Extremadura","494",1
-"VOGE","DS525X","Cádiz","Andalucía","494",2
+"VOGE","DS525X","Cádiz","Andalucía","494",3
+"VOGE","DS525X","Córdoba","Andalucía","494",1
 "VOGE","DS525X","Gipuzkoa","País Vasco","494",1
 "VOGE","DS525X","Granada","Andalucía","494",1
 "VOGE","DS525X","Guadalajara","Castilla-La Mancha","494",1
 "VOGE","DS525X","Illes Balears","Illes Balears","494",2
+"VOGE","DS525X","Jaén","Andalucía","494",1
 "VOGE","DS525X","Lleida","Cataluña","494",1
-"VOGE","DS525X","Madrid","Comunidad de Madrid","494",1
-"VOGE","DS525X","Málaga","Andalucía","494",3
+"VOGE","DS525X","Madrid","Comunidad de Madrid","494",2
+"VOGE","DS525X","Málaga","Andalucía","494",5
 "VOGE","DS525X","Murcia","Región de Murcia","494",1
 "VOGE","DS525X","Navarra","Comunidad Foral de Navarra","494",1
+"VOGE","DS525X","Palmas (Las)","Canarias","494",1
 "VOGE","DS525X","Sevilla","Andalucía","494",1
 "VOGE","DS525X","Tarragona","Cataluña","494",1
 "VOGE","DS525X","Valencia/València","Comunidad Valenciana","494",1
@@ -1560,16 +1857,16 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "VOGE","DS800X RALLY","Albacete","Castilla-La Mancha","798",1
 "VOGE","DS800X RALLY","Alicante/Alacant","Comunidad Valenciana","798",1
 "VOGE","DS800X RALLY","Almería","Andalucía","798",1
-"VOGE","DS800X RALLY","Asturias","Principado de Asturias","798",1
+"VOGE","DS800X RALLY","Asturias","Principado de Asturias","798",2
 "VOGE","DS800X RALLY","Badajoz","Extremadura","798",5
-"VOGE","DS800X RALLY","Barcelona","Cataluña","798",10
+"VOGE","DS800X RALLY","Barcelona","Cataluña","798",13
 "VOGE","DS800X RALLY","Bizkaia","País Vasco","798",2
 "VOGE","DS800X RALLY","Burgos","Castilla y León","798",1
 "VOGE","DS800X RALLY","Cádiz","Andalucía","798",1
 "VOGE","DS800X RALLY","Castellón/Castelló","Comunidad Valenciana","798",3
 "VOGE","DS800X RALLY","Córdoba","Andalucía","798",1
-"VOGE","DS800X RALLY","Coruña (A)","Galicia","798",2
-"VOGE","DS800X RALLY","Gipuzkoa","País Vasco","798",2
+"VOGE","DS800X RALLY","Coruña (A)","Galicia","798",3
+"VOGE","DS800X RALLY","Gipuzkoa","País Vasco","798",3
 "VOGE","DS800X RALLY","Granada","Andalucía","798",1
 "VOGE","DS800X RALLY","Guadalajara","Castilla-La Mancha","798",2
 "VOGE","DS800X RALLY","Huelva","Andalucía","798",2
@@ -1583,23 +1880,24 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "VOGE","DS800X RALLY","Navarra","Comunidad Foral de Navarra","798",1
 "VOGE","DS800X RALLY","Ourense","Galicia","798",1
 "VOGE","DS800X RALLY","Palencia","Castilla y León","798",1
+"VOGE","DS800X RALLY","Palmas (Las)","Canarias","798",1
 "VOGE","DS800X RALLY","Pontevedra","Galicia","798",1
 "VOGE","DS800X RALLY","Santa Cruz de Tenerife","Canarias","798",1
-"VOGE","DS800X RALLY","Sevilla","Andalucía","798",3
+"VOGE","DS800X RALLY","Sevilla","Andalucía","798",4
 "VOGE","DS800X RALLY","Tarragona","Cataluña","798",4
 "VOGE","DS800X RALLY","Teruel","Aragón","798",1
-"VOGE","DS800X RALLY","Valencia/València","Comunidad Valenciana","798",3
+"VOGE","DS800X RALLY","Valencia/València","Comunidad Valenciana","798",4
 "VOGE","DS800X RALLY","Zaragoza","Aragón","798",2
 "VOGE","DS900X","Albacete","Castilla-La Mancha","895",1
 "VOGE","DS900X","Alicante/Alacant","Comunidad Valenciana","895",2
 "VOGE","DS900X","Almería","Andalucía","895",1
 "VOGE","DS900X","Asturias","Principado de Asturias","895",2
-"VOGE","DS900X","Barcelona","Cataluña","895",11
+"VOGE","DS900X","Barcelona","Cataluña","895",13
 "VOGE","DS900X","Bizkaia","País Vasco","895",1
 "VOGE","DS900X","Burgos","Castilla y León","895",1
 "VOGE","DS900X","Cádiz","Andalucía","895",1
-"VOGE","DS900X","Castellón/Castelló","Comunidad Valenciana","895",2
-"VOGE","DS900X","Coruña (A)","Galicia","895",1
+"VOGE","DS900X","Castellón/Castelló","Comunidad Valenciana","895",3
+"VOGE","DS900X","Coruña (A)","Galicia","895",2
 "VOGE","DS900X","Girona","Cataluña","895",1
 "VOGE","DS900X","Granada","Andalucía","895",1
 "VOGE","DS900X","Guadalajara","Castilla-La Mancha","895",1
@@ -1608,7 +1906,7 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "VOGE","DS900X","León","Castilla y León","895",1
 "VOGE","DS900X","Lleida","Cataluña","895",1
 "VOGE","DS900X","Lugo","Galicia","895",1
-"VOGE","DS900X","Madrid","Comunidad de Madrid","895",6
+"VOGE","DS900X","Madrid","Comunidad de Madrid","895",9
 "VOGE","DS900X","Málaga","Andalucía","895",3
 "VOGE","DS900X","Murcia","Región de Murcia","895",3
 "VOGE","DS900X","Navarra","Comunidad Foral de Navarra","895",1
@@ -1616,31 +1914,36 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "VOGE","DS900X","Pontevedra","Galicia","895",1
 "VOGE","DS900X","Santa Cruz de Tenerife","Canarias","895",1
 "VOGE","DS900X","Sevilla","Andalucía","895",2
-"VOGE","DS900X","Toledo","Castilla-La Mancha","895",1
+"VOGE","DS900X","Toledo","Castilla-La Mancha","895",2
 "VOGE","DS900X","Valencia/València","Comunidad Valenciana","895",2
+"VOGE","R125","Alicante/Alacant","Comunidad Valenciana","125",1
 "VOGE","R125","Barcelona","Cataluña","125",1
 "VOGE","R125","Gipuzkoa","País Vasco","125",2
 "VOGE","R125","Illes Balears","Illes Balears","125",3
 "VOGE","R125","Lugo","Galicia","125",1
 "VOGE","R125","Madrid","Comunidad de Madrid","125",2
 "VOGE","R125","Pontevedra","Galicia","125",1
+"VOGE","R125","Santa Cruz de Tenerife","Canarias","125",1
 "VOGE","R125","Tarragona","Cataluña","125",1
+"VOGE","R125","Valencia/València","Comunidad Valenciana","125",1
 "VOGE","R125S","Alicante/Alacant","Comunidad Valenciana","125",3
 "VOGE","R125S","Almería","Andalucía","125",1
 "VOGE","R125S","Barcelona","Cataluña","125",3
 "VOGE","R125S","Cádiz","Andalucía","125",1
+"VOGE","R125S","Cantabria","Cantabria","125",1
 "VOGE","R125S","Castellón/Castelló","Comunidad Valenciana","125",1
 "VOGE","R125S","Huelva","Andalucía","125",1
 "VOGE","R125S","Madrid","Comunidad de Madrid","125",1
-"VOGE","R125S","Málaga","Andalucía","125",2
+"VOGE","R125S","Málaga","Andalucía","125",3
 "VOGE","R125S","Melilla","Melilla","125",1
-"VOGE","R125S","Santa Cruz de Tenerife","Canarias","125",1
+"VOGE","R125S","Santa Cruz de Tenerife","Canarias","125",2
 "VOGE","R125S","Valencia/València","Comunidad Valenciana","125",1
 "VOGE","R125S","Zamora","Castilla y León","125",1
 "VOGE","R125S","Zaragoza","Aragón","125",1
 "VOGE","SR1","Alicante/Alacant","Comunidad Valenciana","125",4
-"VOGE","SR1","Barcelona","Cataluña","125",2
+"VOGE","SR1","Barcelona","Cataluña","125",4
 "VOGE","SR1","Bizkaia","País Vasco","125",1
+"VOGE","SR1","Cáceres","Extremadura","125",1
 "VOGE","SR1","Cádiz","Andalucía","125",2
 "VOGE","SR1","Ceuta","Ceuta","125",1
 "VOGE","SR1","Córdoba","Andalucía","125",1
@@ -1648,19 +1951,24 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "VOGE","SR1","Illes Balears","Illes Balears","125",1
 "VOGE","SR1","Madrid","Comunidad de Madrid","125",2
 "VOGE","SR1","Málaga","Andalucía","125",2
+"VOGE","SR1","Melilla","Melilla","125",1
 "VOGE","SR1","Navarra","Comunidad Foral de Navarra","125",1
 "VOGE","SR1","Palencia","Castilla y León","125",1
 "VOGE","SR1","Santa Cruz de Tenerife","Canarias","125",1
 "VOGE","SR1","Tarragona","Cataluña","125",1
 "VOGE","SR1","Toledo","Castilla-La Mancha","125",1
 "VOGE","SR1","Valencia/València","Comunidad Valenciana","125",4
+"VOGE","SR1","Zamora","Castilla y León","125",1
 "VOGE","SR16","Alicante/Alacant","Comunidad Valenciana","125",2
 "VOGE","SR16","Barcelona","Cataluña","125",3
-"VOGE","SR16","Cádiz","Andalucía","125",1
-"VOGE","SR16","Cantabria","Cantabria","125",1
+"VOGE","SR16","Cádiz","Andalucía","125",2
+"VOGE","SR16","Cantabria","Cantabria","125",2
+"VOGE","SR16","Castellón/Castelló","Comunidad Valenciana","125",1
+"VOGE","SR16","Córdoba","Andalucía","125",1
 "VOGE","SR16","Gipuzkoa","País Vasco","125",1
 "VOGE","SR16","Illes Balears","Illes Balears","125",1
-"VOGE","SR16","Málaga","Andalucía","125",2
+"VOGE","SR16","Madrid","Comunidad de Madrid","125",2
+"VOGE","SR16","Málaga","Andalucía","125",3
 "VOGE","SR16","Tarragona","Cataluña","125",1
 "VOGE","SR16","Toledo","Castilla-La Mancha","125",1
 "VOGE","SR16","Valencia/València","Comunidad Valenciana","125",1
@@ -1670,17 +1978,19 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "VOGE","SR1ADV","Cádiz","Andalucía","125",2
 "VOGE","SR1ADV","Córdoba","Andalucía","125",1
 "VOGE","SR1ADV","Cuenca","Castilla-La Mancha","125",1
-"VOGE","SR1ADV","Gipuzkoa","País Vasco","125",1
+"VOGE","SR1ADV","Gipuzkoa","País Vasco","125",2
 "VOGE","SR1ADV","Granada","Andalucía","125",1
-"VOGE","SR1ADV","Jaén","Andalucía","125",3
+"VOGE","SR1ADV","Jaén","Andalucía","125",4
 "VOGE","SR1ADV","Madrid","Comunidad de Madrid","125",1
 "VOGE","SR1ADV","Málaga","Andalucía","125",6
 "VOGE","SR1ADV","Melilla","Melilla","125",2
 "VOGE","SR1ADV","Murcia","Región de Murcia","125",1
-"VOGE","SR1ADV","Santa Cruz de Tenerife","Canarias","125",3
+"VOGE","SR1ADV","Santa Cruz de Tenerife","Canarias","125",4
 "VOGE","SR1ADV","Valencia/València","Comunidad Valenciana","125",1
 "VOGE","SR1ADV","Zaragoza","Aragón","125",1
+"VOGE","SR3","Alicante/Alacant","Comunidad Valenciana","244",1
 "VOGE","SR3","Barcelona","Cataluña","244",2
+"VOGE","SR3","Illes Balears","Illes Balears","244",1
 "VOGE","SR3","Murcia","Región de Murcia","244",1
 "VOGE","SR3","Rioja (La)","La Rioja","244",1
 "VOGE","SR3","Valencia/València","Comunidad Valenciana","244",1
@@ -1688,6 +1998,7 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "VOGE","SR4 MAX","León","Castilla y León","350",1
 "VOGE","SR4 MAX","Málaga","Andalucía","350",1
 "VOGE","SR4 MAX","Pontevedra","Galicia","350",1
+"VOGE","SR4 MAX","Valencia/València","Comunidad Valenciana","350",1
 "WOTTAN","CIVIS-C","Barcelona","Cataluña","125",1
 "WOTTAN","GT2","Toledo","Castilla-La Mancha","278",1
 "WOTTAN","SIXTEEN","Alicante/Alacant","Comunidad Valenciana","125",1
@@ -1696,28 +2007,35 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "WOTTAN","SIXTEEN","Valencia/València","Comunidad Valenciana","125",1
 "WOTTAN","STORM","Alicante/Alacant","Comunidad Valenciana","125",1
 "YAMAHA","MT-03","Burgos","Castilla y León","321",1
-"YAMAHA","MT-07","Alicante/Alacant","Comunidad Valenciana","689",1
+"YAMAHA","MT-07","Alicante/Alacant","Comunidad Valenciana","689",2
+"YAMAHA","MT-07","Almería","Andalucía","689",1
 "YAMAHA","MT-07","Asturias","Principado de Asturias","689",1
 "YAMAHA","MT-07","Barcelona","Cataluña","689",9
 "YAMAHA","MT-07","Bizkaia","País Vasco","689",1
+"YAMAHA","MT-07","Cantabria","Cantabria","689",1
 "YAMAHA","MT-07","Castellón/Castelló","Comunidad Valenciana","689",1
+"YAMAHA","MT-07","Coruña (A)","Galicia","689",1
+"YAMAHA","MT-07","Gipuzkoa","País Vasco","689",1
 "YAMAHA","MT-07","Girona","Cataluña","689",1
 "YAMAHA","MT-07","Granada","Andalucía","689",1
 "YAMAHA","MT-07","León","Castilla y León","689",1
-"YAMAHA","MT-07","Madrid","Comunidad de Madrid","689",1
+"YAMAHA","MT-07","Madrid","Comunidad de Madrid","689",3
 "YAMAHA","MT-07","Málaga","Andalucía","689",2
 "YAMAHA","MT-07","Murcia","Región de Murcia","689",1
 "YAMAHA","MT-07","Ourense","Galicia","689",1
-"YAMAHA","MT-07","Pontevedra","Galicia","689",1
+"YAMAHA","MT-07","Pontevedra","Galicia","689",2
 "YAMAHA","MT-07","Santa Cruz de Tenerife","Canarias","689",2
+"YAMAHA","MT-07","Valencia/València","Comunidad Valenciana","689",1
 "YAMAHA","MT-07","Zaragoza","Aragón","689",1
-"YAMAHA","MT-09","Barcelona","Cataluña","890",7
+"YAMAHA","MT-09","Alicante/Alacant","Comunidad Valenciana","890",1
+"YAMAHA","MT-09","Barcelona","Cataluña","890",8
 "YAMAHA","MT-09","Cádiz","Andalucía","890",3
 "YAMAHA","MT-09","Cantabria","Cantabria","890",2
 "YAMAHA","MT-09","Ciudad Real","Castilla-La Mancha","890",1
+"YAMAHA","MT-09","Coruña (A)","Galicia","890",1
 "YAMAHA","MT-09","Granada","Andalucía","890",1
 "YAMAHA","MT-09","Huelva","Andalucía","890",1
-"YAMAHA","MT-09","Illes Balears","Illes Balears","890",5
+"YAMAHA","MT-09","Illes Balears","Illes Balears","890",7
 "YAMAHA","MT-09","Madrid","Comunidad de Madrid","890",2
 "YAMAHA","MT-09","Palmas (Las)","Canarias","890",1
 "YAMAHA","MT-09","Sevilla","Andalucía","890",1
@@ -1725,124 +2043,137 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "YAMAHA","MT-125","Alicante/Alacant","Comunidad Valenciana","125",2
 "YAMAHA","MT-125","Almería","Andalucía","125",2
 "YAMAHA","MT-125","Badajoz","Extremadura","125",1
-"YAMAHA","MT-125","Barcelona","Cataluña","125",4
+"YAMAHA","MT-125","Barcelona","Cataluña","125",6
 "YAMAHA","MT-125","Bizkaia","País Vasco","125",3
+"YAMAHA","MT-125","Cádiz","Andalucía","125",1
 "YAMAHA","MT-125","Cantabria","Cantabria","125",1
+"YAMAHA","MT-125","Coruña (A)","Galicia","125",1
 "YAMAHA","MT-125","Cuenca","Castilla-La Mancha","125",1
+"YAMAHA","MT-125","Gipuzkoa","País Vasco","125",1
 "YAMAHA","MT-125","Girona","Cataluña","125",1
 "YAMAHA","MT-125","Granada","Andalucía","125",1
+"YAMAHA","MT-125","Illes Balears","Illes Balears","125",1
 "YAMAHA","MT-125","Madrid","Comunidad de Madrid","125",2
 "YAMAHA","MT-125","Navarra","Comunidad Foral de Navarra","125",1
 "YAMAHA","MT-125","Santa Cruz de Tenerife","Canarias","125",1
-"YAMAHA","MT-125","Sevilla","Andalucía","125",1
+"YAMAHA","MT-125","Sevilla","Andalucía","125",2
 "YAMAHA","MT-125","Valencia/València","Comunidad Valenciana","125",3
 "YAMAHA","NMAX 125","Álava/Araba","País Vasco","125",2
 "YAMAHA","NMAX 125","Albacete","Castilla-La Mancha","125",1
-"YAMAHA","NMAX 125","Alicante/Alacant","Comunidad Valenciana","125",8
+"YAMAHA","NMAX 125","Alicante/Alacant","Comunidad Valenciana","125",12
 "YAMAHA","NMAX 125","Almería","Andalucía","125",2
 "YAMAHA","NMAX 125","Asturias","Principado de Asturias","125",2
 "YAMAHA","NMAX 125","Ávila","Castilla y León","125",1
-"YAMAHA","NMAX 125","Badajoz","Extremadura","125",4
-"YAMAHA","NMAX 125","Barcelona","Cataluña","125",26
+"YAMAHA","NMAX 125","Badajoz","Extremadura","125",5
+"YAMAHA","NMAX 125","Barcelona","Cataluña","125",35
 "YAMAHA","NMAX 125","Bizkaia","País Vasco","125",3
 "YAMAHA","NMAX 125","Cáceres","Extremadura","125",2
-"YAMAHA","NMAX 125","Cádiz","Andalucía","125",30
+"YAMAHA","NMAX 125","Cádiz","Andalucía","125",34
 "YAMAHA","NMAX 125","Cantabria","Cantabria","125",4
-"YAMAHA","NMAX 125","Castellón/Castelló","Comunidad Valenciana","125",1
+"YAMAHA","NMAX 125","Castellón/Castelló","Comunidad Valenciana","125",2
 "YAMAHA","NMAX 125","Ceuta","Ceuta","125",1
-"YAMAHA","NMAX 125","Córdoba","Andalucía","125",1
-"YAMAHA","NMAX 125","Coruña (A)","Galicia","125",3
+"YAMAHA","NMAX 125","Córdoba","Andalucía","125",2
+"YAMAHA","NMAX 125","Coruña (A)","Galicia","125",5
 "YAMAHA","NMAX 125","Cuenca","Castilla-La Mancha","125",1
 "YAMAHA","NMAX 125","Gipuzkoa","País Vasco","125",1
 "YAMAHA","NMAX 125","Girona","Cataluña","125",3
-"YAMAHA","NMAX 125","Granada","Andalucía","125",2
-"YAMAHA","NMAX 125","Huelva","Andalucía","125",7
-"YAMAHA","NMAX 125","Illes Balears","Illes Balears","125",13
-"YAMAHA","NMAX 125","León","Castilla y León","125",2
+"YAMAHA","NMAX 125","Granada","Andalucía","125",6
+"YAMAHA","NMAX 125","Huelva","Andalucía","125",8
+"YAMAHA","NMAX 125","Illes Balears","Illes Balears","125",17
+"YAMAHA","NMAX 125","León","Castilla y León","125",3
 "YAMAHA","NMAX 125","Lleida","Cataluña","125",1
 "YAMAHA","NMAX 125","Lugo","Galicia","125",1
-"YAMAHA","NMAX 125","Madrid","Comunidad de Madrid","125",14
-"YAMAHA","NMAX 125","Málaga","Andalucía","125",12
+"YAMAHA","NMAX 125","Madrid","Comunidad de Madrid","125",21
+"YAMAHA","NMAX 125","Málaga","Andalucía","125",18
 "YAMAHA","NMAX 125","Melilla","Melilla","125",5
-"YAMAHA","NMAX 125","Murcia","Región de Murcia","125",2
+"YAMAHA","NMAX 125","Murcia","Región de Murcia","125",3
 "YAMAHA","NMAX 125","Navarra","Comunidad Foral de Navarra","125",2
 "YAMAHA","NMAX 125","Ourense","Galicia","125",2
 "YAMAHA","NMAX 125","Palmas (Las)","Canarias","125",3
-"YAMAHA","NMAX 125","Pontevedra","Galicia","125",4
+"YAMAHA","NMAX 125","Pontevedra","Galicia","125",5
 "YAMAHA","NMAX 125","Rioja (La)","La Rioja","125",1
 "YAMAHA","NMAX 125","Salamanca","Castilla y León","125",1
-"YAMAHA","NMAX 125","Santa Cruz de Tenerife","Canarias","125",1
+"YAMAHA","NMAX 125","Santa Cruz de Tenerife","Canarias","125",4
 "YAMAHA","NMAX 125","Segovia","Castilla y León","125",1
-"YAMAHA","NMAX 125","Sevilla","Andalucía","125",11
+"YAMAHA","NMAX 125","Sevilla","Andalucía","125",12
 "YAMAHA","NMAX 125","Soria","Castilla y León","125",1
-"YAMAHA","NMAX 125","Tarragona","Cataluña","125",3
-"YAMAHA","NMAX 125","Valencia/València","Comunidad Valenciana","125",10
+"YAMAHA","NMAX 125","Tarragona","Cataluña","125",4
+"YAMAHA","NMAX 125","Valencia/València","Comunidad Valenciana","125",12
 "YAMAHA","NMAX 125","Valladolid","Castilla y León","125",3
 "YAMAHA","NMAX 125","Zaragoza","Aragón","125",3
 "YAMAHA","R125","Álava/Araba","País Vasco","125",1
-"YAMAHA","R125","Alicante/Alacant","Comunidad Valenciana","125",3
+"YAMAHA","R125","Alicante/Alacant","Comunidad Valenciana","125",4
 "YAMAHA","R125","Almería","Andalucía","125",1
+"YAMAHA","R125","Asturias","Principado de Asturias","125",1
 "YAMAHA","R125","Barcelona","Cataluña","125",4
 "YAMAHA","R125","Girona","Cataluña","125",2
 "YAMAHA","R125","Guadalajara","Castilla-La Mancha","125",1
 "YAMAHA","R125","Huelva","Andalucía","125",1
 "YAMAHA","R125","Madrid","Comunidad de Madrid","125",1
-"YAMAHA","R125","Málaga","Andalucía","125",1
+"YAMAHA","R125","Málaga","Andalucía","125",2
 "YAMAHA","R125","Murcia","Región de Murcia","125",2
 "YAMAHA","R125","Palmas (Las)","Canarias","125",2
-"YAMAHA","R125","Sevilla","Andalucía","125",1
-"YAMAHA","R7","Barcelona","Cataluña","689",2
+"YAMAHA","R125","Sevilla","Andalucía","125",2
+"YAMAHA","R7","Barcelona","Cataluña","689",3
+"YAMAHA","R7","Cádiz","Andalucía","689",1
 "YAMAHA","R7","Girona","Cataluña","689",1
 "YAMAHA","R7","Guadalajara","Castilla-La Mancha","689",1
 "YAMAHA","R7","Illes Balears","Illes Balears","689",1
+"YAMAHA","R7","Jaén","Andalucía","689",1
 "YAMAHA","R7","León","Castilla y León","689",1
-"YAMAHA","R7","Madrid","Comunidad de Madrid","689",3
+"YAMAHA","R7","Madrid","Comunidad de Madrid","689",5
 "YAMAHA","R7","Navarra","Comunidad Foral de Navarra","689",1
 "YAMAHA","R7","Valencia/València","Comunidad Valenciana","689",1
 "YAMAHA","RayZR 125","Álava/Araba","País Vasco","125",1
-"YAMAHA","RayZR 125","Alicante/Alacant","Comunidad Valenciana","125",3
-"YAMAHA","RayZR 125","Almería","Andalucía","125",1
+"YAMAHA","RayZR 125","Alicante/Alacant","Comunidad Valenciana","125",5
+"YAMAHA","RayZR 125","Almería","Andalucía","125",2
 "YAMAHA","RayZR 125","Asturias","Principado de Asturias","125",1
 "YAMAHA","RayZR 125","Badajoz","Extremadura","125",1
 "YAMAHA","RayZR 125","Barcelona","Cataluña","125",2
 "YAMAHA","RayZR 125","Burgos","Castilla y León","125",1
-"YAMAHA","RayZR 125","Cádiz","Andalucía","125",3
+"YAMAHA","RayZR 125","Cádiz","Andalucía","125",5
 "YAMAHA","RayZR 125","Cantabria","Cantabria","125",2
 "YAMAHA","RayZR 125","Gipuzkoa","País Vasco","125",1
-"YAMAHA","RayZR 125","Girona","Cataluña","125",2
+"YAMAHA","RayZR 125","Girona","Cataluña","125",4
 "YAMAHA","RayZR 125","Granada","Andalucía","125",1
 "YAMAHA","RayZR 125","Huelva","Andalucía","125",1
-"YAMAHA","RayZR 125","Illes Balears","Illes Balears","125",4
+"YAMAHA","RayZR 125","Illes Balears","Illes Balears","125",8
 "YAMAHA","RayZR 125","Madrid","Comunidad de Madrid","125",1
-"YAMAHA","RayZR 125","Málaga","Andalucía","125",1
+"YAMAHA","RayZR 125","Málaga","Andalucía","125",4
 "YAMAHA","RayZR 125","Pontevedra","Galicia","125",1
 "YAMAHA","RayZR 125","Rioja (La)","La Rioja","125",1
-"YAMAHA","RayZR 125","Sevilla","Andalucía","125",1
+"YAMAHA","RayZR 125","Sevilla","Andalucía","125",3
 "YAMAHA","RayZR 125","Tarragona","Cataluña","125",1
 "YAMAHA","RayZR 125","Valencia/València","Comunidad Valenciana","125",4
 "YAMAHA","TMAX 560","Alicante/Alacant","Comunidad Valenciana","562",1
 "YAMAHA","TMAX 560","Almería","Andalucía","562",1
+"YAMAHA","TMAX 560","Barcelona","Cataluña","562",3
 "YAMAHA","TMAX 560","Bizkaia","País Vasco","562",1
+"YAMAHA","TMAX 560","Coruña (A)","Galicia","562",3
 "YAMAHA","TMAX 560","Girona","Cataluña","562",1
 "YAMAHA","TMAX 560","Granada","Andalucía","562",1
-"YAMAHA","TMAX 560","Madrid","Comunidad de Madrid","562",1
+"YAMAHA","TMAX 560","Madrid","Comunidad de Madrid","562",2
 "YAMAHA","TMAX 560","Málaga","Andalucía","562",1
 "YAMAHA","TMAX 560","Murcia","Región de Murcia","562",2
 "YAMAHA","TMAX 560","Pontevedra","Galicia","562",2
+"YAMAHA","TMAX 560","Sevilla","Andalucía","562",1
 "YAMAHA","TMAX 560","Tarragona","Cataluña","562",1
 "YAMAHA","TMAX 560","Teruel","Aragón","562",1
-"YAMAHA","TMAX 560","Valencia/València","Comunidad Valenciana","562",1
+"YAMAHA","TMAX 560","Valencia/València","Comunidad Valenciana","562",2
 "YAMAHA","TRACER 700","Almería","Andalucía","689",1
 "YAMAHA","TRACER 700","Barcelona","Cataluña","689",6
+"YAMAHA","TRACER 700","Castellón/Castelló","Comunidad Valenciana","689",1
 "YAMAHA","TRACER 700","Girona","Cataluña","689",3
 "YAMAHA","TRACER 700","Illes Balears","Illes Balears","689",1
-"YAMAHA","TRACER 700","Madrid","Comunidad de Madrid","689",1
+"YAMAHA","TRACER 700","Madrid","Comunidad de Madrid","689",2
 "YAMAHA","TRACER 700","Rioja (La)","La Rioja","689",1
 "YAMAHA","TRACER 700","Santa Cruz de Tenerife","Canarias","689",2
+"YAMAHA","TRACER 700","Tarragona","Cataluña","689",1
 "YAMAHA","TRACER 700","Valladolid","Castilla y León","689",1
 "YAMAHA","Tracer 9 GT","Badajoz","Extremadura","890",1
-"YAMAHA","Tracer 9 GT","Barcelona","Cataluña","890",8
+"YAMAHA","Tracer 9 GT","Barcelona","Cataluña","890",9
 "YAMAHA","Tracer 9 GT","Cantabria","Cantabria","890",1
+"YAMAHA","Tracer 9 GT","Illes Balears","Illes Balears","890",1
 "YAMAHA","Tracer 9 GT","Madrid","Comunidad de Madrid","890",1
 "YAMAHA","Tracer 9 GT","Málaga","Andalucía","890",2
 "YAMAHA","Tracer 9 GT","Pontevedra","Galicia","890",2
@@ -1850,51 +2181,57 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "YAMAHA","Tracer 9 GT","Valencia/València","Comunidad Valenciana","890",1
 "YAMAHA","TRICITY 125","Alicante/Alacant","Comunidad Valenciana","125",1
 "YAMAHA","TRICITY 125","Almería","Andalucía","125",1
-"YAMAHA","TRICITY 125","Barcelona","Cataluña","125",1
+"YAMAHA","TRICITY 125","Barcelona","Cataluña","125",3
 "YAMAHA","TRICITY 125","Huelva","Andalucía","125",1
 "YAMAHA","TRICITY 125","Illes Balears","Illes Balears","125",1
 "YAMAHA","TRICITY 125","Madrid","Comunidad de Madrid","125",1
 "YAMAHA","WR125","Alicante/Alacant","Comunidad Valenciana","125",1
 "YAMAHA","WR125","Barcelona","Cataluña","125",1
-"YAMAHA","WR125","Cádiz","Andalucía","125",1
+"YAMAHA","WR125","Cádiz","Andalucía","125",3
 "YAMAHA","WR125","Huelva","Andalucía","125",1
 "YAMAHA","WR125","Madrid","Comunidad de Madrid","125",1
 "YAMAHA","WR125","Ourense","Galicia","125",1
 "YAMAHA","XMAX 125","Alicante/Alacant","Comunidad Valenciana","125",2
 "YAMAHA","XMAX 125","Asturias","Principado de Asturias","125",1
-"YAMAHA","XMAX 125","Barcelona","Cataluña","125",20
+"YAMAHA","XMAX 125","Barcelona","Cataluña","125",29
+"YAMAHA","XMAX 125","Bizkaia","País Vasco","125",1
 "YAMAHA","XMAX 125","Cáceres","Extremadura","125",1
-"YAMAHA","XMAX 125","Cádiz","Andalucía","125",4
+"YAMAHA","XMAX 125","Cádiz","Andalucía","125",6
 "YAMAHA","XMAX 125","Cantabria","Cantabria","125",1
 "YAMAHA","XMAX 125","Castellón/Castelló","Comunidad Valenciana","125",1
-"YAMAHA","XMAX 125","Coruña (A)","Galicia","125",1
+"YAMAHA","XMAX 125","Coruña (A)","Galicia","125",3
 "YAMAHA","XMAX 125","Cuenca","Castilla-La Mancha","125",1
 "YAMAHA","XMAX 125","Girona","Cataluña","125",3
 "YAMAHA","XMAX 125","Granada","Andalucía","125",2
 "YAMAHA","XMAX 125","Huelva","Andalucía","125",2
 "YAMAHA","XMAX 125","Illes Balears","Illes Balears","125",4
 "YAMAHA","XMAX 125","Jaén","Andalucía","125",1
-"YAMAHA","XMAX 125","Madrid","Comunidad de Madrid","125",1
+"YAMAHA","XMAX 125","Madrid","Comunidad de Madrid","125",3
 "YAMAHA","XMAX 125","Málaga","Andalucía","125",3
-"YAMAHA","XMAX 125","Murcia","Región de Murcia","125",1
-"YAMAHA","XMAX 125","Palmas (Las)","Canarias","125",3
+"YAMAHA","XMAX 125","Murcia","Región de Murcia","125",2
+"YAMAHA","XMAX 125","Palmas (Las)","Canarias","125",4
 "YAMAHA","XMAX 125","Pontevedra","Galicia","125",1
-"YAMAHA","XMAX 125","Sevilla","Andalucía","125",2
-"YAMAHA","XMAX 125","Valencia/València","Comunidad Valenciana","125",3
+"YAMAHA","XMAX 125","Santa Cruz de Tenerife","Canarias","125",2
+"YAMAHA","XMAX 125","Sevilla","Andalucía","125",3
+"YAMAHA","XMAX 125","Valencia/València","Comunidad Valenciana","125",5
 "YAMAHA","XMAX 300","Álava/Araba","País Vasco","292",1
 "YAMAHA","XMAX 300","Albacete","Castilla-La Mancha","292",1
+"YAMAHA","XMAX 300","Alicante/Alacant","Comunidad Valenciana","292",1
 "YAMAHA","XMAX 300","Asturias","Principado de Asturias","292",1
 "YAMAHA","XMAX 300","Badajoz","Extremadura","292",1
-"YAMAHA","XMAX 300","Barcelona","Cataluña","292",12
+"YAMAHA","XMAX 300","Barcelona","Cataluña","292",13
 "YAMAHA","XMAX 300","Cádiz","Andalucía","292",2
 "YAMAHA","XMAX 300","Castellón/Castelló","Comunidad Valenciana","292",2
-"YAMAHA","XMAX 300","Gipuzkoa","País Vasco","292",1
-"YAMAHA","XMAX 300","Girona","Cataluña","292",2
+"YAMAHA","XMAX 300","Ceuta","Ceuta","292",1
+"YAMAHA","XMAX 300","Coruña (A)","Galicia","292",1
+"YAMAHA","XMAX 300","Gipuzkoa","País Vasco","292",2
+"YAMAHA","XMAX 300","Girona","Cataluña","292",4
 "YAMAHA","XMAX 300","Granada","Andalucía","292",2
-"YAMAHA","XMAX 300","Illes Balears","Illes Balears","292",1
+"YAMAHA","XMAX 300","Illes Balears","Illes Balears","292",4
 "YAMAHA","XMAX 300","Jaén","Andalucía","292",1
-"YAMAHA","XMAX 300","Madrid","Comunidad de Madrid","292",4
-"YAMAHA","XMAX 300","Málaga","Andalucía","292",2
+"YAMAHA","XMAX 300","Lugo","Galicia","292",1
+"YAMAHA","XMAX 300","Madrid","Comunidad de Madrid","292",5
+"YAMAHA","XMAX 300","Málaga","Andalucía","292",3
 "YAMAHA","XMAX 300","Murcia","Región de Murcia","292",1
 "YAMAHA","XMAX 300","Navarra","Comunidad Foral de Navarra","292",1
 "YAMAHA","XMAX 300","Pontevedra","Galicia","292",1
@@ -1906,52 +2243,63 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "YAMAHA","XSR-125","Cádiz","Andalucía","125",1
 "YAMAHA","XSR-125","Illes Balears","Illes Balears","125",1
 "YAMAHA","XSR-125","Madrid","Comunidad de Madrid","125",1
-"YAMAHA","XSR-125","Murcia","Región de Murcia","125",1
+"YAMAHA","XSR-125","Murcia","Región de Murcia","125",2
 "YAMAHA","XSR-125","Tarragona","Cataluña","125",1
 "YAMAHA","XSR-700","Asturias","Principado de Asturias","689",1
 "YAMAHA","XSR-700","Murcia","Región de Murcia","689",1
-"YAMAHA","XTZ 700 Tenere","Alicante/Alacant","Comunidad Valenciana","689",1
+"YAMAHA","XSR-900","Asturias","Principado de Asturias","890",1
+"YAMAHA","XTZ 700 Tenere","Alicante/Alacant","Comunidad Valenciana","689",3
+"YAMAHA","XTZ 700 Tenere","Almería","Andalucía","689",1
 "YAMAHA","XTZ 700 Tenere","Asturias","Principado de Asturias","689",2
-"YAMAHA","XTZ 700 Tenere","Barcelona","Cataluña","689",7
+"YAMAHA","XTZ 700 Tenere","Barcelona","Cataluña","689",8
+"YAMAHA","XTZ 700 Tenere","Burgos","Castilla y León","689",1
 "YAMAHA","XTZ 700 Tenere","Cáceres","Extremadura","689",1
 "YAMAHA","XTZ 700 Tenere","Cádiz","Andalucía","689",2
 "YAMAHA","XTZ 700 Tenere","Cantabria","Cantabria","689",1
-"YAMAHA","XTZ 700 Tenere","Coruña (A)","Galicia","689",1
+"YAMAHA","XTZ 700 Tenere","Coruña (A)","Galicia","689",3
+"YAMAHA","XTZ 700 Tenere","Cuenca","Castilla-La Mancha","689",1
 "YAMAHA","XTZ 700 Tenere","Huelva","Andalucía","689",1
 "YAMAHA","XTZ 700 Tenere","Huesca","Aragón","689",1
+"YAMAHA","XTZ 700 Tenere","Illes Balears","Illes Balears","689",2
 "YAMAHA","XTZ 700 Tenere","Jaén","Andalucía","689",1
-"YAMAHA","XTZ 700 Tenere","Madrid","Comunidad de Madrid","689",1
+"YAMAHA","XTZ 700 Tenere","Madrid","Comunidad de Madrid","689",3
 "YAMAHA","XTZ 700 Tenere","Málaga","Andalucía","689",2
 "YAMAHA","XTZ 700 Tenere","Palmas (Las)","Canarias","689",1
 "YAMAHA","XTZ 700 Tenere","Pontevedra","Galicia","689",1
+"YAMAHA","XTZ 700 Tenere","Sevilla","Andalucía","689",1
 "YAMAHA","XTZ 700 Tenere","Toledo","Castilla-La Mancha","689",1
+"YAMAHA","XTZ 700 Tenere","Valencia/València","Comunidad Valenciana","689",1
 "YAMAHA","XTZ 700 Tenere","Valladolid","Castilla y León","689",1
 "YAMAHA","XTZ 700 Tenere","Zaragoza","Aragón","689",2
 "YAMAHA","YZF-R3","Barcelona","Cataluña","321",1
 "YAMAHA","YZF-R3","Pontevedra","Galicia","321",1
-"YAMAHA","YZF-R9","Barcelona","Cataluña","890",1
+"YAMAHA","YZF-R9","Almería","Andalucía","890",1
+"YAMAHA","YZF-R9","Barcelona","Cataluña","890",2
 "YAMAHA","YZF-R9","Huesca","Aragón","890",1
 "YAMAHA","YZF-R9","Valladolid","Castilla y León","890",1
 "ZONTES","125C","Alicante/Alacant","Comunidad Valenciana","125",2
 "ZONTES","125C","Almería","Andalucía","125",2
 "ZONTES","125C","Asturias","Principado de Asturias","125",1
 "ZONTES","125C","Barcelona","Cataluña","125",3
+"ZONTES","125C","Bizkaia","País Vasco","125",1
 "ZONTES","125C","Burgos","Castilla y León","125",2
 "ZONTES","125C","Cádiz","Andalucía","125",3
 "ZONTES","125C","Ciudad Real","Castilla-La Mancha","125",1
 "ZONTES","125C","Granada","Andalucía","125",1
 "ZONTES","125C","Guadalajara","Castilla-La Mancha","125",1
 "ZONTES","125C","Illes Balears","Illes Balears","125",3
+"ZONTES","125C","Jaén","Andalucía","125",1
 "ZONTES","125C","Madrid","Comunidad de Madrid","125",5
-"ZONTES","125C","Málaga","Andalucía","125",2
+"ZONTES","125C","Málaga","Andalucía","125",3
 "ZONTES","125C","Murcia","Región de Murcia","125",1
-"ZONTES","125C","Salamanca","Castilla y León","125",1
+"ZONTES","125C","Salamanca","Castilla y León","125",2
 "ZONTES","125C","Santa Cruz de Tenerife","Canarias","125",2
 "ZONTES","125C","Tarragona","Cataluña","125",3
 "ZONTES","125C","Teruel","Aragón","125",1
 "ZONTES","125C","Toledo","Castilla-La Mancha","125",1
-"ZONTES","125C","Valencia/València","Comunidad Valenciana","125",3
-"ZONTES","125C","Valladolid","Castilla y León","125",1
+"ZONTES","125C","Valencia/València","Comunidad Valenciana","125",6
+"ZONTES","125C","Valladolid","Castilla y León","125",2
+"ZONTES","125D","Álava/Araba","País Vasco","125",1
 "ZONTES","125D","Barcelona","Cataluña","125",2
 "ZONTES","125D","Cádiz","Andalucía","125",1
 "ZONTES","125D","Illes Balears","Illes Balears","125",1
@@ -1959,158 +2307,182 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "ZONTES","125D","Valencia/València","Comunidad Valenciana","125",3
 "ZONTES","125E","Álava/Araba","País Vasco","125",1
 "ZONTES","125E","Asturias","Principado de Asturias","125",1
-"ZONTES","125E","Barcelona","Cataluña","125",3
+"ZONTES","125E","Barcelona","Cataluña","125",6
 "ZONTES","125E","Cádiz","Andalucía","125",1
 "ZONTES","125E","Cantabria","Cantabria","125",2
 "ZONTES","125E","Coruña (A)","Galicia","125",1
 "ZONTES","125E","Gipuzkoa","País Vasco","125",2
+"ZONTES","125E","Granada","Andalucía","125",1
 "ZONTES","125E","Illes Balears","Illes Balears","125",1
 "ZONTES","125E","Jaén","Andalucía","125",1
 "ZONTES","125E","Madrid","Comunidad de Madrid","125",1
 "ZONTES","125E","Málaga","Andalucía","125",2
 "ZONTES","125E","Navarra","Comunidad Foral de Navarra","125",1
+"ZONTES","125E","Pontevedra","Galicia","125",1
 "ZONTES","125E","Salamanca","Castilla y León","125",1
+"ZONTES","125E","Tarragona","Cataluña","125",1
 "ZONTES","125E","Valencia/València","Comunidad Valenciana","125",1
 "ZONTES","125E","Valladolid","Castilla y León","125",1
-"ZONTES","125M","Barcelona","Cataluña","125",2
+"ZONTES","125M","Barcelona","Cataluña","125",3
 "ZONTES","125M","Madrid","Comunidad de Madrid","125",2
-"ZONTES","125M","Valencia/València","Comunidad Valenciana","125",1
-"ZONTES","125X","Albacete","Castilla-La Mancha","125",4
-"ZONTES","125X","Alicante/Alacant","Comunidad Valenciana","125",8
-"ZONTES","125X","Almería","Andalucía","125",4
+"ZONTES","125M","Valencia/València","Comunidad Valenciana","125",2
+"ZONTES","125X","Álava/Araba","País Vasco","125",1
+"ZONTES","125X","Albacete","Castilla-La Mancha","125",5
+"ZONTES","125X","Alicante/Alacant","Comunidad Valenciana","125",14
+"ZONTES","125X","Almería","Andalucía","125",5
 "ZONTES","125X","Asturias","Principado de Asturias","125",4
 "ZONTES","125X","Badajoz","Extremadura","125",3
-"ZONTES","125X","Barcelona","Cataluña","125",50
-"ZONTES","125X","Bizkaia","País Vasco","125",9
-"ZONTES","125X","Cádiz","Andalucía","125",21
+"ZONTES","125X","Barcelona","Cataluña","125",57
+"ZONTES","125X","Bizkaia","País Vasco","125",10
+"ZONTES","125X","Cáceres","Extremadura","125",1
+"ZONTES","125X","Cádiz","Andalucía","125",25
 "ZONTES","125X","Cantabria","Cantabria","125",1
 "ZONTES","125X","Castellón/Castelló","Comunidad Valenciana","125",3
 "ZONTES","125X","Ceuta","Ceuta","125",1
 "ZONTES","125X","Ciudad Real","Castilla-La Mancha","125",1
-"ZONTES","125X","Córdoba","Andalucía","125",2
+"ZONTES","125X","Córdoba","Andalucía","125",3
 "ZONTES","125X","Coruña (A)","Galicia","125",2
 "ZONTES","125X","Cuenca","Castilla-La Mancha","125",1
-"ZONTES","125X","Gipuzkoa","País Vasco","125",11
-"ZONTES","125X","Girona","Cataluña","125",4
-"ZONTES","125X","Granada","Andalucía","125",11
+"ZONTES","125X","Gipuzkoa","País Vasco","125",16
+"ZONTES","125X","Girona","Cataluña","125",5
+"ZONTES","125X","Granada","Andalucía","125",18
 "ZONTES","125X","Guadalajara","Castilla-La Mancha","125",2
 "ZONTES","125X","Huelva","Andalucía","125",7
 "ZONTES","125X","Huesca","Aragón","125",1
-"ZONTES","125X","Illes Balears","Illes Balears","125",10
-"ZONTES","125X","León","Castilla y León","125",1
+"ZONTES","125X","Illes Balears","Illes Balears","125",14
+"ZONTES","125X","León","Castilla y León","125",3
 "ZONTES","125X","Lleida","Cataluña","125",1
 "ZONTES","125X","Lugo","Galicia","125",1
-"ZONTES","125X","Madrid","Comunidad de Madrid","125",35
-"ZONTES","125X","Málaga","Andalucía","125",6
-"ZONTES","125X","Melilla","Melilla","125",3
+"ZONTES","125X","Madrid","Comunidad de Madrid","125",52
+"ZONTES","125X","Málaga","Andalucía","125",8
+"ZONTES","125X","Melilla","Melilla","125",4
 "ZONTES","125X","Murcia","Región de Murcia","125",1
 "ZONTES","125X","Navarra","Comunidad Foral de Navarra","125",1
 "ZONTES","125X","Ourense","Galicia","125",1
-"ZONTES","125X","Palmas (Las)","Canarias","125",9
-"ZONTES","125X","Pontevedra","Galicia","125",7
+"ZONTES","125X","Palmas (Las)","Canarias","125",11
+"ZONTES","125X","Pontevedra","Galicia","125",9
 "ZONTES","125X","Rioja (La)","La Rioja","125",1
 "ZONTES","125X","Santa Cruz de Tenerife","Canarias","125",1
 "ZONTES","125X","Segovia","Castilla y León","125",1
-"ZONTES","125X","Sevilla","Andalucía","125",6
+"ZONTES","125X","Sevilla","Andalucía","125",9
 "ZONTES","125X","Toledo","Castilla-La Mancha","125",4
-"ZONTES","125X","Valencia/València","Comunidad Valenciana","125",16
-"ZONTES","125X","Zaragoza","Aragón","125",13
-"ZONTES","350S","Málaga","Andalucía","348",1
+"ZONTES","125X","Valencia/València","Comunidad Valenciana","125",21
+"ZONTES","125X","Zaragoza","Aragón","125",16
+"ZONTES","350S","Málaga","Andalucía","348",2
 "ZONTES","368D","Asturias","Principado de Asturias","368",1
 "ZONTES","368D","Barcelona","Cataluña","368",1
+"ZONTES","368D","Bizkaia","País Vasco","368",1
 "ZONTES","368D","Cáceres","Extremadura","368",1
 "ZONTES","368D","Cádiz","Andalucía","368",1
-"ZONTES","368D","Granada","Andalucía","368",1
+"ZONTES","368D","Granada","Andalucía","368",2
 "ZONTES","368D","Guadalajara","Castilla-La Mancha","368",1
+"ZONTES","368D","Málaga","Andalucía","368",1
 "ZONTES","368D","Tarragona","Cataluña","368",1
-"ZONTES","368D","Valencia/València","Comunidad Valenciana","368",1
+"ZONTES","368D","Valencia/València","Comunidad Valenciana","368",2
 "ZONTES","368D","Valladolid","Castilla y León","368",1
 "ZONTES","368E","Albacete","Castilla-La Mancha","368",1
 "ZONTES","368E","Asturias","Principado de Asturias","368",1
-"ZONTES","368E","Barcelona","Cataluña","368",5
+"ZONTES","368E","Barcelona","Cataluña","368",6
 "ZONTES","368E","Cantabria","Cantabria","368",1
 "ZONTES","368E","Córdoba","Andalucía","368",1
 "ZONTES","368E","Coruña (A)","Galicia","368",2
 "ZONTES","368E","Gipuzkoa","País Vasco","368",3
-"ZONTES","368E","Madrid","Comunidad de Madrid","368",4
+"ZONTES","368E","Lleida","Cataluña","368",1
+"ZONTES","368E","Madrid","Comunidad de Madrid","368",5
 "ZONTES","368E","Málaga","Andalucía","368",2
-"ZONTES","368E","Pontevedra","Galicia","368",2
-"ZONTES","368E","Salamanca","Castilla y León","368",1
+"ZONTES","368E","Pontevedra","Galicia","368",3
+"ZONTES","368E","Salamanca","Castilla y León","368",2
 "ZONTES","368E","Sevilla","Andalucía","368",1
+"ZONTES","368E","Toledo","Castilla-La Mancha","368",1
 "ZONTES","368G","Álava/Araba","País Vasco","368",1
 "ZONTES","368G","Alicante/Alacant","Comunidad Valenciana","368",3
 "ZONTES","368G","Almería","Andalucía","368",1
-"ZONTES","368G","Asturias","Principado de Asturias","368",4
+"ZONTES","368G","Asturias","Principado de Asturias","368",5
 "ZONTES","368G","Ávila","Castilla y León","368",1
 "ZONTES","368G","Badajoz","Extremadura","368",2
-"ZONTES","368G","Barcelona","Cataluña","368",34
+"ZONTES","368G","Barcelona","Cataluña","368",42
 "ZONTES","368G","Bizkaia","País Vasco","368",3
-"ZONTES","368G","Burgos","Castilla y León","368",1
+"ZONTES","368G","Burgos","Castilla y León","368",2
 "ZONTES","368G","Cáceres","Extremadura","368",2
-"ZONTES","368G","Cádiz","Andalucía","368",12
-"ZONTES","368G","Cantabria","Cantabria","368",5
-"ZONTES","368G","Castellón/Castelló","Comunidad Valenciana","368",2
+"ZONTES","368G","Cádiz","Andalucía","368",15
+"ZONTES","368G","Cantabria","Cantabria","368",8
+"ZONTES","368G","Castellón/Castelló","Comunidad Valenciana","368",3
 "ZONTES","368G","Ciudad Real","Castilla-La Mancha","368",2
-"ZONTES","368G","Córdoba","Andalucía","368",4
-"ZONTES","368G","Coruña (A)","Galicia","368",2
-"ZONTES","368G","Gipuzkoa","País Vasco","368",2
-"ZONTES","368G","Granada","Andalucía","368",1
+"ZONTES","368G","Córdoba","Andalucía","368",5
+"ZONTES","368G","Coruña (A)","Galicia","368",3
+"ZONTES","368G","Gipuzkoa","País Vasco","368",4
+"ZONTES","368G","Girona","Cataluña","368",1
+"ZONTES","368G","Granada","Andalucía","368",3
 "ZONTES","368G","Guadalajara","Castilla-La Mancha","368",1
 "ZONTES","368G","Illes Balears","Illes Balears","368",5
+"ZONTES","368G","Jaén","Andalucía","368",1
+"ZONTES","368G","León","Castilla y León","368",1
 "ZONTES","368G","Lugo","Galicia","368",1
-"ZONTES","368G","Madrid","Comunidad de Madrid","368",12
-"ZONTES","368G","Málaga","Andalucía","368",15
-"ZONTES","368G","Melilla","Melilla","368",3
+"ZONTES","368G","Madrid","Comunidad de Madrid","368",18
+"ZONTES","368G","Málaga","Andalucía","368",19
+"ZONTES","368G","Melilla","Melilla","368",4
 "ZONTES","368G","Murcia","Región de Murcia","368",4
 "ZONTES","368G","Navarra","Comunidad Foral de Navarra","368",6
+"ZONTES","368G","Pontevedra","Galicia","368",1
 "ZONTES","368G","Rioja (La)","La Rioja","368",2
-"ZONTES","368G","Sevilla","Andalucía","368",5
-"ZONTES","368G","Tarragona","Cataluña","368",6
+"ZONTES","368G","Sevilla","Andalucía","368",7
+"ZONTES","368G","Tarragona","Cataluña","368",8
 "ZONTES","368G","Toledo","Castilla-La Mancha","368",4
-"ZONTES","368G","Valencia/València","Comunidad Valenciana","368",9
+"ZONTES","368G","Valencia/València","Comunidad Valenciana","368",11
 "ZONTES","368G","Zamora","Castilla y León","368",1
-"ZONTES","368G","Zaragoza","Aragón","368",1
+"ZONTES","368G","Zaragoza","Aragón","368",2
+"ZONTES","368K","Badajoz","Extremadura","368",1
 "ZONTES","368K","Barcelona","Cataluña","368",2
+"ZONTES","368K","Cantabria","Cantabria","368",1
 "ZONTES","368K","Toledo","Castilla-La Mancha","368",1
 "ZONTES","368K","Valencia/València","Comunidad Valenciana","368",1
 "ZONTES","368M","Albacete","Castilla-La Mancha","368",1
-"ZONTES","368M","Barcelona","Cataluña","368",2
+"ZONTES","368M","Barcelona","Cataluña","368",3
 "ZONTES","368M","Madrid","Comunidad de Madrid","368",1
-"ZONTES","368M","Valencia/València","Comunidad Valenciana","368",1
+"ZONTES","368M","Málaga","Andalucía","368",1
+"ZONTES","368M","Valencia/València","Comunidad Valenciana","368",2
 "ZONTES","703F","Alicante/Alacant","Comunidad Valenciana","699",1
 "ZONTES","703F","Asturias","Principado de Asturias","699",1
-"ZONTES","703F","Barcelona","Cataluña","699",1
+"ZONTES","703F","Barcelona","Cataluña","699",2
 "ZONTES","703F","Bizkaia","País Vasco","699",3
 "ZONTES","703F","Cádiz","Andalucía","699",1
 "ZONTES","703F","Cuenca","Castilla-La Mancha","699",1
 "ZONTES","703F","Guadalajara","Castilla-La Mancha","699",1
 "ZONTES","703F","Madrid","Comunidad de Madrid","699",1
 "ZONTES","703F","Murcia","Región de Murcia","699",1
-"ZONTES","703F","Ourense","Galicia","699",1
+"ZONTES","703F","Ourense","Galicia","699",2
 "ZONTES","703F","Sevilla","Andalucía","699",1
-"ZONTES","703F","Valencia/València","Comunidad Valenciana","699",2
+"ZONTES","703F","Valencia/València","Comunidad Valenciana","699",3
 "ZONTES","703F","Zaragoza","Aragón","699",1
+"ZONTES","703RR","Albacete","Castilla-La Mancha","699",1
+"ZONTES","703RR","Asturias","Principado de Asturias","699",1
 "ZONTES","703RR","Badajoz","Extremadura","699",2
 "ZONTES","703RR","Bizkaia","País Vasco","699",1
 "ZONTES","703RR","Cádiz","Andalucía","699",1
 "ZONTES","703RR","Cantabria","Cantabria","699",1
 "ZONTES","703RR","Ciudad Real","Castilla-La Mancha","699",1
 "ZONTES","703RR","Córdoba","Andalucía","699",2
+"ZONTES","703RR","Coruña (A)","Galicia","699",1
+"ZONTES","703RR","Granada","Andalucía","699",1
 "ZONTES","703RR","León","Castilla y León","699",1
 "ZONTES","703RR","Lleida","Cataluña","699",1
 "ZONTES","703RR","Lugo","Galicia","699",1
-"ZONTES","703RR","Madrid","Comunidad de Madrid","699",1
+"ZONTES","703RR","Madrid","Comunidad de Madrid","699",5
 "ZONTES","703RR","Murcia","Región de Murcia","699",1
 "ZONTES","703RR","Navarra","Comunidad Foral de Navarra","699",1
 "ZONTES","703RR","Salamanca","Castilla y León","699",2
+"ZONTES","703RR","Santa Cruz de Tenerife","Canarias","699",1
 "ZONTES","703RR","Valencia/València","Comunidad Valenciana","699",2
+"ZONTES","703RR","Valladolid","Castilla y León","699",1
 "ZONTES","ZT125-G1","Alicante/Alacant","Comunidad Valenciana","125",2
 "ZONTES","ZT125-G1","Badajoz","Extremadura","125",1
-"ZONTES","ZT125-G1","Barcelona","Cataluña","125",1
-"ZONTES","ZT125-G1","Cantabria","Cantabria","125",1
+"ZONTES","ZT125-G1","Barcelona","Cataluña","125",2
+"ZONTES","ZT125-G1","Bizkaia","País Vasco","125",1
+"ZONTES","ZT125-G1","Burgos","Castilla y León","125",1
+"ZONTES","ZT125-G1","Cantabria","Cantabria","125",2
 "ZONTES","ZT125-G1","Huelva","Andalucía","125",1
 "ZONTES","ZT125-G1","Illes Balears","Illes Balears","125",2
-"ZONTES","ZT125-G1","Madrid","Comunidad de Madrid","125",2
+"ZONTES","ZT125-G1","Madrid","Comunidad de Madrid","125",4
 "ZONTES","ZT125-G1","Málaga","Andalucía","125",2
 "ZONTES","ZT125-G1","Navarra","Comunidad Foral de Navarra","125",1
 "ZONTES","ZT125-G1","Pontevedra","Galicia","125",1
@@ -2118,24 +2490,32 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "ZONTES","ZT125-G1","Sevilla","Andalucía","125",1
 "ZONTES","ZT125-G1","Valencia/València","Comunidad Valenciana","125",1
 "ZONTES","ZT125-GK","Bizkaia","País Vasco","125",1
+"ZONTES","ZT125-GK","Madrid","Comunidad de Madrid","125",1
 "ZONTES","ZT125-GK","Navarra","Comunidad Foral de Navarra","125",1
 "ZONTES","ZT125-U","Asturias","Principado de Asturias","125",1
 "ZONTES","ZT125-U","Barcelona","Cataluña","125",2
 "ZONTES","ZT125-U","Córdoba","Andalucía","125",1
-"ZONTES","ZT125-U","Madrid","Comunidad de Madrid","125",1
+"ZONTES","ZT125-U","Madrid","Comunidad de Madrid","125",2
 "ZONTES","ZT125-U","Málaga","Andalucía","125",2
+"ZONTES","ZT125-U","Murcia","Región de Murcia","125",1
+"ZONTES","ZT125-U","Valencia/València","Comunidad Valenciana","125",1
+"ZONTES","ZT125-U1","Álava/Araba","País Vasco","125",1
 "ZONTES","ZT125-U1","Alicante/Alacant","Comunidad Valenciana","125",1
+"ZONTES","ZT125-U1","Barcelona","Cataluña","125",1
 "ZONTES","ZT125-U1","Cáceres","Extremadura","125",1
+"ZONTES","ZT125-U1","Granada","Andalucía","125",1
 "ZONTES","ZT125-U1","Guadalajara","Castilla-La Mancha","125",1
 "ZONTES","ZT125-U1","Madrid","Comunidad de Madrid","125",1
 "ZONTES","ZT125-U1","Tarragona","Cataluña","125",1
+"ZONTES","ZT125-U1","Valencia/València","Comunidad Valenciana","125",2
 "ZONTES","ZT125-U1","Zamora","Castilla y León","125",1
 "ZONTES","ZT125-Z2","Alicante/Alacant","Comunidad Valenciana","125",2
 "ZONTES","ZT125-Z2","Barcelona","Cataluña","125",1
 "ZONTES","ZT125-Z2","Bizkaia","País Vasco","125",1
 "ZONTES","ZT125-Z2","Cáceres","Extremadura","125",1
 "ZONTES","ZT125-Z2","Illes Balears","Illes Balears","125",1
-"ZONTES","ZT125-Z2","Málaga","Andalucía","125",1
+"ZONTES","ZT125-Z2","Madrid","Comunidad de Madrid","125",1
+"ZONTES","ZT125-Z2","Málaga","Andalucía","125",2
 "ZONTES","ZT125-Z2","Navarra","Comunidad Foral de Navarra","125",1
 "ZONTES","ZT125-Z2","Santa Cruz de Tenerife","Canarias","125",2
 "ZONTES","ZT125-Z2","Tarragona","Cataluña","125",1
