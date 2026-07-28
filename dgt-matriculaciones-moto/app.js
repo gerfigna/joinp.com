@@ -54,6 +54,11 @@
         selYear.appendChild(opt);
       }
 
+      const allOpt = document.createElement('option');
+      allOpt.value = 'all';
+      allOpt.textContent = 'Todos';
+      selMonth.appendChild(allOpt);
+
       for (let m = 1; m <= 12; m++) {
         const opt = document.createElement('option');
         opt.value = String(m).padStart(2, '0');
@@ -72,12 +77,14 @@
       const selectedYear = parseInt(selYear.value, 10);
       const currentMonth = selectedYear === curYear ? curMonth : 12;
 
-      Array.from(selMonth.options).forEach((opt, idx) => {
-        const month = idx + 1;
+      Array.from(selMonth.options).forEach((opt) => {
+        if (opt.value === 'all') { opt.disabled = false; return; }
+        const month = parseInt(opt.value, 10);
         opt.disabled = month > currentMonth;
       });
 
-      if (parseInt(selMonth.value, 10) > currentMonth) {
+      const selectedMonth = parseInt(selMonth.value, 10);
+      if (!isNaN(selectedMonth) && selectedMonth > currentMonth) {
         selMonth.value = String(currentMonth).padStart(2, '0');
       }
 
@@ -125,7 +132,9 @@
     async function fetchData() {
       const year = selYear.value;
       const month = selMonth.value;
-      const path = `/microdatos-etl/data/${year}/${month}/acumulado-marca-modelo-provincia.csv`;
+      const path = month === 'all'
+        ? `/microdatos-etl/data/${year}/acumulado-marca-modelo-provincia-anual.csv`
+        : `/microdatos-etl/data/${year}/${month}/acumulado-marca-modelo-provincia.csv`;
 
       rawData = [];
 
