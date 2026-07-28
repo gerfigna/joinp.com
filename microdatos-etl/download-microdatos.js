@@ -9,7 +9,7 @@ const LISTING_URL =
 
 const { DATA_DIR } = require('./lib/constants');
 const { normalizeProvince } = require('./lib/normalize');
-const { writeAggregates, monthDir } = require('./lib/aggregate');
+const { writeAggregates, writeAnnualAggregate, monthDir } = require('./lib/aggregate');
 const { httpGet } = require('./lib/http');
 const { extractTxtFromZip } = require('./lib/zip');
 const { isMotorcycleRow, extractRowFields } = require('./lib/filter');
@@ -161,6 +161,12 @@ async function main() {
   for (const ym of processedMonths) {
     const [year, month] = ym.split('/');
     recalculateMonthly(year, month);
+  }
+
+  const processedYears = new Set([...processedMonths].map((ym) => ym.split('/')[0]));
+  for (const year of processedYears) {
+    writeAnnualAggregate(year);
+    console.log(`  Recalculated annual: ${year}`);
   }
 
   writeMetadata();
