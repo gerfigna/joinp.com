@@ -16,7 +16,7 @@
 
 - [x] 3.1 Manually run `writeAnnualAggregate('2025')` and `writeAnnualAggregate('2026')` once (e.g. via a throwaway `node -e` invocation) to generate `acumulado-marca-modelo-provincia-anual.csv` for both years currently present under `microdatos-etl/data/`.
 - [x] 3.2 Verify the backfilled annual CSVs have plausible row counts and totals (spot-check a few brand/model/province combinations against the sum of their monthly `COUNT` values). Verified: 2025 annual total 233,580 = sum of 12 monthly totals; 2026 annual total 159,615 = sum of monthly totals to date.
-- [ ] 3.3 Commit the two backfilled annual CSV files under `microdatos-etl/data/2025/` and `microdatos-etl/data/2026/`.
+- [x] 3.3 Commit the two backfilled annual CSV files under `microdatos-etl/data/2025/` and `microdatos-etl/data/2026/`.
 
 ## 4. Frontend: month selector (`dgt-matriculaciones-moto/app.js`)
 
