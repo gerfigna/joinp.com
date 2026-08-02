@@ -594,8 +594,10 @@
       const prevYear = currentYear - 1;
       const allMonths = ['01','02','03','04','05','06','07','08','09','10','11','12'];
       const remainingMonths = allMonths.slice(lastCompleteMonth);
-      const yearData = evolutionData.find(d => d.year === currentYear);
-      const actualYtd = yearData?.brands.find(r => r.MARCA_ITV === brand)?.COUNT || 0;
+      const actualYtd = allMonths.slice(0, lastCompleteMonth).reduce((sum, m) => {
+        const row = (monthlyBrandData[currentYear]?.[m] || []).find(r => r.MARCA_ITV === brand);
+        return sum + (row?.COUNT || 0);
+      }, 0);
       const avgRatio = computeAvgRatio(brand);
       const restPrevYear = remainingMonths.reduce((sum, m) => {
         const row = (monthlyBrandData[prevYear]?.[m] || []).find(r => r.MARCA_ITV === brand);
