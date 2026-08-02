@@ -42,10 +42,22 @@
 
     // ── Year/Month selectors ──────────────────────────────────────────────────
 
+    function getDefaultYearMonth() {
+      // Data for a new month is typically not published until a few days in,
+      // so default to the previous month until day 5.
+      const now = new Date();
+      let year = now.getFullYear();
+      let month = now.getMonth() + 1;
+      if (now.getDate() < 5) {
+        month -= 1;
+        if (month < 1) { month = 12; year -= 1; }
+      }
+      return { year, month };
+    }
+
     function buildSelectors() {
       const now = new Date();
       const curYear = now.getFullYear();
-      const curMonth = now.getMonth() + 1;
 
       for (let y = START_YEAR; y <= curYear; y++) {
         const opt = document.createElement('option');
@@ -66,9 +78,10 @@
         selMonth.appendChild(opt);
       }
 
-      // Default to current month (or Dec of start year if before start)
-      selYear.value = curYear >= START_YEAR ? curYear : START_YEAR;
-      selMonth.value = String(curMonth).padStart(2, '0');
+      // Default to current month (previous month if day < 5), or Dec of start year if before start
+      const { year: defYear, month: defMonth } = getDefaultYearMonth();
+      selYear.value = defYear >= START_YEAR ? defYear : START_YEAR;
+      selMonth.value = String(defMonth).padStart(2, '0');
     }
 
     function updateMonthOptions() {
@@ -153,11 +166,13 @@
       };
 
       let loadError = false;
+      let notFound = false;
 
       const spinnerTimeout = setTimeout(showSpinner, 500);
 
       try {
         const res = await fetch(path);
+        if (res.status === 404) { notFound = true; throw new Error('Not found'); }
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const text = await res.text();
         rawData = parseCSV(text);
@@ -170,7 +185,9 @@
       }
 
       if (loadError) {
-        showEmpty('Error al cargar los datos. Inténtalo de nuevo.');
+        showEmpty(notFound ? 'Sin datos para el mes seleccionado' : 'Error al cargar los datos. Inténtalo de nuevo.');
+        filteredData = [];
+        renderChart();
         return;
       }
 
