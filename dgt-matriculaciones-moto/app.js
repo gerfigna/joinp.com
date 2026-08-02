@@ -497,7 +497,10 @@
         if (metaRes.ok) {
           const meta = await metaRes.json();
           const d = new Date(meta.lastDataDate + 'T00:00:00');
-          lastCompleteMonthNum = Math.max(1, d.getMonth()); // getMonth() 0-indexed: June=5 → last complete = May=5 (1-indexed)
+          const isLastDayOfMonth = new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate() === d.getDate();
+          // getMonth() is 0-indexed: mid-month date (e.g. June 19) → getMonth()=5 → last complete = May (5, 1-indexed).
+          // If lastDataDate IS the month's last day, that month itself is complete → getMonth()+1 (1-indexed).
+          lastCompleteMonthNum = Math.max(1, isLastDayOfMonth ? d.getMonth() + 1 : d.getMonth());
         }
       } catch { }
       lastCompleteMonth = lastCompleteMonthNum;
@@ -594,8 +597,10 @@
       const prevYear = currentYear - 1;
       const allMonths = ['01','02','03','04','05','06','07','08','09','10','11','12'];
       const remainingMonths = allMonths.slice(lastCompleteMonth);
-      const yearData = evolutionData.find(d => d.year === currentYear);
-      const actualYtd = yearData?.brands.find(r => r.MARCA_ITV === brand)?.COUNT || 0;
+      const actualYtd = allMonths.slice(0, lastCompleteMonth).reduce((sum, m) => {
+        const row = (monthlyBrandData[currentYear]?.[m] || []).find(r => r.MARCA_ITV === brand);
+        return sum + (row?.COUNT || 0);
+      }, 0);
       const avgRatio = computeAvgRatio(brand);
       const restPrevYear = remainingMonths.reduce((sum, m) => {
         const row = (monthlyBrandData[prevYear]?.[m] || []).find(r => r.MARCA_ITV === brand);
