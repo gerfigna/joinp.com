@@ -497,7 +497,10 @@
         if (metaRes.ok) {
           const meta = await metaRes.json();
           const d = new Date(meta.lastDataDate + 'T00:00:00');
-          lastCompleteMonthNum = Math.max(1, d.getMonth()); // getMonth() 0-indexed: June=5 → last complete = May=5 (1-indexed)
+          const isLastDayOfMonth = new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate() === d.getDate();
+          // getMonth() is 0-indexed: mid-month date (e.g. June 19) → getMonth()=5 → last complete = May (5, 1-indexed).
+          // If lastDataDate IS the month's last day, that month itself is complete → getMonth()+1 (1-indexed).
+          lastCompleteMonthNum = Math.max(1, isLastDayOfMonth ? d.getMonth() + 1 : d.getMonth());
         }
       } catch { }
       lastCompleteMonth = lastCompleteMonthNum;
