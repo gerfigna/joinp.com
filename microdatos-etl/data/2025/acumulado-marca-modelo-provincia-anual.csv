@@ -4443,58 +4443,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","CB 500 F","Toledo","Castilla-La Mancha","471",2
 "HONDA","CB 500 F","Valencia/València","Comunidad Valenciana","471",40
 "HONDA","CB 500 F","Zaragoza","Aragón","471",2
-"HONDA","CB 500 X","Álava/Araba","País Vasco","471",16
-"HONDA","CB 500 X","Albacete","Castilla-La Mancha","471",12
-"HONDA","CB 500 X","Alicante/Alacant","Comunidad Valenciana","471",95
-"HONDA","CB 500 X","Almería","Andalucía","471",25
-"HONDA","CB 500 X","Asturias","Principado de Asturias","471",28
-"HONDA","CB 500 X","Ávila","Castilla y León","471",4
-"HONDA","CB 500 X","Badajoz","Extremadura","471",17
-"HONDA","CB 500 X","Barcelona","Cataluña","471",459
-"HONDA","CB 500 X","Bizkaia","País Vasco","471",41
-"HONDA","CB 500 X","Burgos","Castilla y León","471",6
-"HONDA","CB 500 X","Cáceres","Extremadura","471",7
-"HONDA","CB 500 X","Cádiz","Andalucía","471",69
-"HONDA","CB 500 X","Cantabria","Cantabria","471",20
-"HONDA","CB 500 X","Castellón/Castelló","Comunidad Valenciana","471",31
-"HONDA","CB 500 X","Ceuta","Ceuta","471",10
-"HONDA","CB 500 X","Ciudad Real","Castilla-La Mancha","471",6
-"HONDA","CB 500 X","Córdoba","Andalucía","471",33
-"HONDA","CB 500 X","Coruña (A)","Galicia","471",33
-"HONDA","CB 500 X","Cuenca","Castilla-La Mancha","471",5
-"HONDA","CB 500 X","Gipuzkoa","País Vasco","471",27
-"HONDA","CB 500 X","Girona","Cataluña","471",40
-"HONDA","CB 500 X","Granada","Andalucía","471",49
-"HONDA","CB 500 X","Guadalajara","Castilla-La Mancha","471",4
-"HONDA","CB 500 X","Huelva","Andalucía","471",17
-"HONDA","CB 500 X","Huesca","Aragón","471",8
-"HONDA","CB 500 X","Illes Balears","Illes Balears","471",87
-"HONDA","CB 500 X","Jaén","Andalucía","471",25
-"HONDA","CB 500 X","León","Castilla y León","471",13
-"HONDA","CB 500 X","Lleida","Cataluña","471",20
-"HONDA","CB 500 X","Lugo","Galicia","471",5
-"HONDA","CB 500 X","Madrid","Comunidad de Madrid","471",246
-"HONDA","CB 500 X","Málaga","Andalucía","471",141
-"HONDA","CB 500 X","Melilla","Melilla","471",2
-"HONDA","CB 500 X","Murcia","Región de Murcia","471",74
-"HONDA","CB 500 X","Navarra","Comunidad Foral de Navarra","471",17
-"HONDA","CB 500 X","Ourense","Galicia","471",6
-"HONDA","CB 500 X","Palencia","Castilla y León","471",2
-"HONDA","CB 500 X","Palmas (Las)","Canarias","471",63
-"HONDA","CB 500 X","Pontevedra","Galicia","471",28
-"HONDA","CB 500 X","Rioja (La)","La Rioja","471",9
-"HONDA","CB 500 X","Salamanca","Castilla y León","471",9
-"HONDA","CB 500 X","Santa Cruz de Tenerife","Canarias","471",42
-"HONDA","CB 500 X","Segovia","Castilla y León","471",3
-"HONDA","CB 500 X","Sevilla","Andalucía","471",63
-"HONDA","CB 500 X","Soria","Castilla y León","471",5
-"HONDA","CB 500 X","Tarragona","Cataluña","471",52
-"HONDA","CB 500 X","Teruel","Aragón","471",1
-"HONDA","CB 500 X","Toledo","Castilla-La Mancha","471",6
-"HONDA","CB 500 X","Valencia/València","Comunidad Valenciana","471",141
-"HONDA","CB 500 X","Valladolid","Castilla y León","471",13
-"HONDA","CB 500 X","Zamora","Castilla y León","471",2
-"HONDA","CB 500 X","Zaragoza","Aragón","471",34
 "HONDA","CB1000","Álava/Araba","País Vasco","1000",1
 "HONDA","CB1000","Albacete","Castilla-La Mancha","1000",1
 "HONDA","CB1000","Alicante/Alacant","Comunidad Valenciana","1000",9
@@ -5489,6 +5437,58 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","NT1100","Valencia/València","Comunidad Valenciana","1084",55
 "HONDA","NT1100","Valladolid","Castilla y León","1084",8
 "HONDA","NT1100","Zaragoza","Aragón","1084",14
+"HONDA","NX500","Álava/Araba","País Vasco","471",16
+"HONDA","NX500","Albacete","Castilla-La Mancha","471",12
+"HONDA","NX500","Alicante/Alacant","Comunidad Valenciana","471",95
+"HONDA","NX500","Almería","Andalucía","471",25
+"HONDA","NX500","Asturias","Principado de Asturias","471",28
+"HONDA","NX500","Ávila","Castilla y León","471",4
+"HONDA","NX500","Badajoz","Extremadura","471",17
+"HONDA","NX500","Barcelona","Cataluña","471",459
+"HONDA","NX500","Bizkaia","País Vasco","471",41
+"HONDA","NX500","Burgos","Castilla y León","471",6
+"HONDA","NX500","Cáceres","Extremadura","471",7
+"HONDA","NX500","Cádiz","Andalucía","471",69
+"HONDA","NX500","Cantabria","Cantabria","471",20
+"HONDA","NX500","Castellón/Castelló","Comunidad Valenciana","471",31
+"HONDA","NX500","Ceuta","Ceuta","471",10
+"HONDA","NX500","Ciudad Real","Castilla-La Mancha","471",6
+"HONDA","NX500","Córdoba","Andalucía","471",33
+"HONDA","NX500","Coruña (A)","Galicia","471",33
+"HONDA","NX500","Cuenca","Castilla-La Mancha","471",5
+"HONDA","NX500","Gipuzkoa","País Vasco","471",27
+"HONDA","NX500","Girona","Cataluña","471",40
+"HONDA","NX500","Granada","Andalucía","471",49
+"HONDA","NX500","Guadalajara","Castilla-La Mancha","471",4
+"HONDA","NX500","Huelva","Andalucía","471",17
+"HONDA","NX500","Huesca","Aragón","471",8
+"HONDA","NX500","Illes Balears","Illes Balears","471",87
+"HONDA","NX500","Jaén","Andalucía","471",25
+"HONDA","NX500","León","Castilla y León","471",13
+"HONDA","NX500","Lleida","Cataluña","471",20
+"HONDA","NX500","Lugo","Galicia","471",5
+"HONDA","NX500","Madrid","Comunidad de Madrid","471",246
+"HONDA","NX500","Málaga","Andalucía","471",141
+"HONDA","NX500","Melilla","Melilla","471",2
+"HONDA","NX500","Murcia","Región de Murcia","471",74
+"HONDA","NX500","Navarra","Comunidad Foral de Navarra","471",17
+"HONDA","NX500","Ourense","Galicia","471",6
+"HONDA","NX500","Palencia","Castilla y León","471",2
+"HONDA","NX500","Palmas (Las)","Canarias","471",63
+"HONDA","NX500","Pontevedra","Galicia","471",28
+"HONDA","NX500","Rioja (La)","La Rioja","471",9
+"HONDA","NX500","Salamanca","Castilla y León","471",9
+"HONDA","NX500","Santa Cruz de Tenerife","Canarias","471",42
+"HONDA","NX500","Segovia","Castilla y León","471",3
+"HONDA","NX500","Sevilla","Andalucía","471",63
+"HONDA","NX500","Soria","Castilla y León","471",5
+"HONDA","NX500","Tarragona","Cataluña","471",52
+"HONDA","NX500","Teruel","Aragón","471",1
+"HONDA","NX500","Toledo","Castilla-La Mancha","471",6
+"HONDA","NX500","Valencia/València","Comunidad Valenciana","471",141
+"HONDA","NX500","Valladolid","Castilla y León","471",13
+"HONDA","NX500","Zamora","Castilla y León","471",2
+"HONDA","NX500","Zaragoza","Aragón","471",34
 "HONDA","PCX 125","Álava/Araba","País Vasco","125",25
 "HONDA","PCX 125","Albacete","Castilla-La Mancha","125",65
 "HONDA","PCX 125","Alicante/Alacant","Comunidad Valenciana","125",488
