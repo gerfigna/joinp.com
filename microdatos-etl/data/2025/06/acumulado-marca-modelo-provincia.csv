@@ -1359,43 +1359,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","CB 500 F","Sevilla","Andalucía","471",2
 "HONDA","CB 500 F","Valencia/València","Comunidad Valenciana","471",5
 "HONDA","CB 500 F","Zaragoza","Aragón","471",1
-"HONDA","NX500","Álava/Araba","País Vasco","471",1
-"HONDA","NX500","Alicante/Alacant","Comunidad Valenciana","471",9
-"HONDA","NX500","Almería","Andalucía","471",1
-"HONDA","NX500","Asturias","Principado de Asturias","471",1
-"HONDA","NX500","Badajoz","Extremadura","471",2
-"HONDA","NX500","Barcelona","Cataluña","471",34
-"HONDA","NX500","Bizkaia","País Vasco","471",2
-"HONDA","NX500","Cádiz","Andalucía","471",2
-"HONDA","NX500","Cantabria","Cantabria","471",1
-"HONDA","NX500","Castellón/Castelló","Comunidad Valenciana","471",2
-"HONDA","NX500","Ceuta","Ceuta","471",2
-"HONDA","NX500","Ciudad Real","Castilla-La Mancha","471",2
-"HONDA","NX500","Córdoba","Andalucía","471",4
-"HONDA","NX500","Coruña (A)","Galicia","471",2
-"HONDA","NX500","Gipuzkoa","País Vasco","471",1
-"HONDA","NX500","Girona","Cataluña","471",2
-"HONDA","NX500","Granada","Andalucía","471",1
-"HONDA","NX500","Huelva","Andalucía","471",1
-"HONDA","NX500","Illes Balears","Illes Balears","471",5
-"HONDA","NX500","Jaén","Andalucía","471",3
-"HONDA","NX500","Lleida","Cataluña","471",2
-"HONDA","NX500","Lugo","Galicia","471",2
-"HONDA","NX500","Madrid","Comunidad de Madrid","471",24
-"HONDA","NX500","Málaga","Andalucía","471",9
-"HONDA","NX500","Melilla","Melilla","471",1
-"HONDA","NX500","Navarra","Comunidad Foral de Navarra","471",5
-"HONDA","NX500","Palmas (Las)","Canarias","471",3
-"HONDA","NX500","Pontevedra","Galicia","471",1
-"HONDA","NX500","Rioja (La)","La Rioja","471",2
-"HONDA","NX500","Salamanca","Castilla y León","471",1
-"HONDA","NX500","Santa Cruz de Tenerife","Canarias","471",3
-"HONDA","NX500","Segovia","Castilla y León","471",1
-"HONDA","NX500","Sevilla","Andalucía","471",4
-"HONDA","NX500","Tarragona","Cataluña","471",8
-"HONDA","NX500","Toledo","Castilla-La Mancha","471",1
-"HONDA","NX500","Valencia/València","Comunidad Valenciana","471",10
-"HONDA","NX500","Zaragoza","Aragón","471",4
 "HONDA","CB1000","Alicante/Alacant","Comunidad Valenciana","1000",1
 "HONDA","CB1000","Barcelona","Cataluña","1000",4
 "HONDA","CB1000","Burgos","Castilla y León","1000",1
@@ -1891,6 +1854,43 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","NT1100","Valencia/València","Comunidad Valenciana","1084",4
 "HONDA","NT1100","Valladolid","Castilla y León","1084",3
 "HONDA","NT1100","Zaragoza","Aragón","1084",1
+"HONDA","NX500","Álava/Araba","País Vasco","471",1
+"HONDA","NX500","Alicante/Alacant","Comunidad Valenciana","471",9
+"HONDA","NX500","Almería","Andalucía","471",1
+"HONDA","NX500","Asturias","Principado de Asturias","471",1
+"HONDA","NX500","Badajoz","Extremadura","471",2
+"HONDA","NX500","Barcelona","Cataluña","471",34
+"HONDA","NX500","Bizkaia","País Vasco","471",2
+"HONDA","NX500","Cádiz","Andalucía","471",2
+"HONDA","NX500","Cantabria","Cantabria","471",1
+"HONDA","NX500","Castellón/Castelló","Comunidad Valenciana","471",2
+"HONDA","NX500","Ceuta","Ceuta","471",2
+"HONDA","NX500","Ciudad Real","Castilla-La Mancha","471",2
+"HONDA","NX500","Córdoba","Andalucía","471",4
+"HONDA","NX500","Coruña (A)","Galicia","471",2
+"HONDA","NX500","Gipuzkoa","País Vasco","471",1
+"HONDA","NX500","Girona","Cataluña","471",2
+"HONDA","NX500","Granada","Andalucía","471",1
+"HONDA","NX500","Huelva","Andalucía","471",1
+"HONDA","NX500","Illes Balears","Illes Balears","471",5
+"HONDA","NX500","Jaén","Andalucía","471",3
+"HONDA","NX500","Lleida","Cataluña","471",2
+"HONDA","NX500","Lugo","Galicia","471",2
+"HONDA","NX500","Madrid","Comunidad de Madrid","471",24
+"HONDA","NX500","Málaga","Andalucía","471",9
+"HONDA","NX500","Melilla","Melilla","471",1
+"HONDA","NX500","Navarra","Comunidad Foral de Navarra","471",5
+"HONDA","NX500","Palmas (Las)","Canarias","471",3
+"HONDA","NX500","Pontevedra","Galicia","471",1
+"HONDA","NX500","Rioja (La)","La Rioja","471",2
+"HONDA","NX500","Salamanca","Castilla y León","471",1
+"HONDA","NX500","Santa Cruz de Tenerife","Canarias","471",3
+"HONDA","NX500","Segovia","Castilla y León","471",1
+"HONDA","NX500","Sevilla","Andalucía","471",4
+"HONDA","NX500","Tarragona","Cataluña","471",8
+"HONDA","NX500","Toledo","Castilla-La Mancha","471",1
+"HONDA","NX500","Valencia/València","Comunidad Valenciana","471",10
+"HONDA","NX500","Zaragoza","Aragón","471",4
 "HONDA","PCX 125","Álava/Araba","País Vasco","125",1
 "HONDA","PCX 125","Albacete","Castilla-La Mancha","125",7
 "HONDA","PCX 125","Alicante/Alacant","Comunidad Valenciana","125",45
@@ -5837,6 +5837,11 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "YAMAHA","R125","Valencia/València","Comunidad Valenciana","125",8
 "YAMAHA","R125","Valladolid","Castilla y León","125",2
 "YAMAHA","R125","Zaragoza","Aragón","125",1
+"YAMAHA","R7","Barcelona","Cataluña","689",3
+"YAMAHA","R7","Cádiz","Andalucía","689",1
+"YAMAHA","R7","Córdoba","Andalucía","689",1
+"YAMAHA","R7","Málaga","Andalucía","689",1
+"YAMAHA","R7","Zaragoza","Aragón","689",1
 "YAMAHA","RayZR 125","Álava/Araba","País Vasco","125",2
 "YAMAHA","RayZR 125","Albacete","Castilla-La Mancha","125",4
 "YAMAHA","RayZR 125","Alicante/Alacant","Comunidad Valenciana","125",24
@@ -5962,45 +5967,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "YAMAHA","TRICITY 125","Murcia","Región de Murcia","125",1
 "YAMAHA","TRICITY 125","Pontevedra","Galicia","125",1
 "YAMAHA","TRICITY 125","Tarragona","Cataluña","125",1
-"YAMAHA","XMAX 300","Álava/Araba","País Vasco","292",1
-"YAMAHA","XMAX 300","Albacete","Castilla-La Mancha","292",3
-"YAMAHA","XMAX 300","Alicante/Alacant","Comunidad Valenciana","292",9
-"YAMAHA","XMAX 300","Almería","Andalucía","292",4
-"YAMAHA","XMAX 300","Asturias","Principado de Asturias","292",5
-"YAMAHA","XMAX 300","Badajoz","Extremadura","292",1
-"YAMAHA","XMAX 300","Barcelona","Cataluña","292",63
-"YAMAHA","XMAX 300","Bizkaia","País Vasco","292",1
-"YAMAHA","XMAX 300","Cádiz","Andalucía","292",5
-"YAMAHA","XMAX 300","Cantabria","Cantabria","292",2
-"YAMAHA","XMAX 300","Castellón/Castelló","Comunidad Valenciana","292",4
-"YAMAHA","XMAX 300","Ciudad Real","Castilla-La Mancha","292",1
-"YAMAHA","XMAX 300","Córdoba","Andalucía","292",2
-"YAMAHA","XMAX 300","Coruña (A)","Galicia","292",1
-"YAMAHA","XMAX 300","Cuenca","Castilla-La Mancha","292",1
-"YAMAHA","XMAX 300","Gipuzkoa","País Vasco","292",4
-"YAMAHA","XMAX 300","Girona","Cataluña","292",12
-"YAMAHA","XMAX 300","Granada","Andalucía","292",3
-"YAMAHA","XMAX 300","Guadalajara","Castilla-La Mancha","292",3
-"YAMAHA","XMAX 300","Huelva","Andalucía","292",4
-"YAMAHA","XMAX 300","Illes Balears","Illes Balears","292",27
-"YAMAHA","XMAX 300","Lleida","Cataluña","292",1
-"YAMAHA","XMAX 300","Lugo","Galicia","292",1
-"YAMAHA","XMAX 300","Madrid","Comunidad de Madrid","292",32
-"YAMAHA","XMAX 300","Málaga","Andalucía","292",21
-"YAMAHA","XMAX 300","Melilla","Melilla","292",2
-"YAMAHA","XMAX 300","Murcia","Región de Murcia","292",7
-"YAMAHA","XMAX 300","Navarra","Comunidad Foral de Navarra","292",4
-"YAMAHA","XMAX 300","Ourense","Galicia","292",1
-"YAMAHA","XMAX 300","Palmas (Las)","Canarias","292",10
-"YAMAHA","XMAX 300","Pontevedra","Galicia","292",7
-"YAMAHA","XMAX 300","Salamanca","Castilla y León","292",1
-"YAMAHA","XMAX 300","Santa Cruz de Tenerife","Canarias","292",4
-"YAMAHA","XMAX 300","Sevilla","Andalucía","292",7
-"YAMAHA","XMAX 300","Tarragona","Cataluña","292",7
-"YAMAHA","XMAX 300","Toledo","Castilla-La Mancha","292",2
-"YAMAHA","XMAX 300","Valencia/València","Comunidad Valenciana","292",26
-"YAMAHA","XMAX 300","Valladolid","Castilla y León","292",1
-"YAMAHA","XMAX 300","Zaragoza","Aragón","292",4
 "YAMAHA","XMAX 125","Álava/Araba","País Vasco","125",1
 "YAMAHA","XMAX 125","Albacete","Castilla-La Mancha","125",5
 "YAMAHA","XMAX 125","Alicante/Alacant","Comunidad Valenciana","125",21
@@ -6043,6 +6009,45 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "YAMAHA","XMAX 125","Valladolid","Castilla y León","125",1
 "YAMAHA","XMAX 125","Zamora","Castilla y León","125",2
 "YAMAHA","XMAX 125","Zaragoza","Aragón","125",8
+"YAMAHA","XMAX 300","Álava/Araba","País Vasco","292",1
+"YAMAHA","XMAX 300","Albacete","Castilla-La Mancha","292",3
+"YAMAHA","XMAX 300","Alicante/Alacant","Comunidad Valenciana","292",9
+"YAMAHA","XMAX 300","Almería","Andalucía","292",4
+"YAMAHA","XMAX 300","Asturias","Principado de Asturias","292",5
+"YAMAHA","XMAX 300","Badajoz","Extremadura","292",1
+"YAMAHA","XMAX 300","Barcelona","Cataluña","292",63
+"YAMAHA","XMAX 300","Bizkaia","País Vasco","292",1
+"YAMAHA","XMAX 300","Cádiz","Andalucía","292",5
+"YAMAHA","XMAX 300","Cantabria","Cantabria","292",2
+"YAMAHA","XMAX 300","Castellón/Castelló","Comunidad Valenciana","292",4
+"YAMAHA","XMAX 300","Ciudad Real","Castilla-La Mancha","292",1
+"YAMAHA","XMAX 300","Córdoba","Andalucía","292",2
+"YAMAHA","XMAX 300","Coruña (A)","Galicia","292",1
+"YAMAHA","XMAX 300","Cuenca","Castilla-La Mancha","292",1
+"YAMAHA","XMAX 300","Gipuzkoa","País Vasco","292",4
+"YAMAHA","XMAX 300","Girona","Cataluña","292",12
+"YAMAHA","XMAX 300","Granada","Andalucía","292",3
+"YAMAHA","XMAX 300","Guadalajara","Castilla-La Mancha","292",3
+"YAMAHA","XMAX 300","Huelva","Andalucía","292",4
+"YAMAHA","XMAX 300","Illes Balears","Illes Balears","292",27
+"YAMAHA","XMAX 300","Lleida","Cataluña","292",1
+"YAMAHA","XMAX 300","Lugo","Galicia","292",1
+"YAMAHA","XMAX 300","Madrid","Comunidad de Madrid","292",32
+"YAMAHA","XMAX 300","Málaga","Andalucía","292",21
+"YAMAHA","XMAX 300","Melilla","Melilla","292",2
+"YAMAHA","XMAX 300","Murcia","Región de Murcia","292",7
+"YAMAHA","XMAX 300","Navarra","Comunidad Foral de Navarra","292",4
+"YAMAHA","XMAX 300","Ourense","Galicia","292",1
+"YAMAHA","XMAX 300","Palmas (Las)","Canarias","292",10
+"YAMAHA","XMAX 300","Pontevedra","Galicia","292",7
+"YAMAHA","XMAX 300","Salamanca","Castilla y León","292",1
+"YAMAHA","XMAX 300","Santa Cruz de Tenerife","Canarias","292",4
+"YAMAHA","XMAX 300","Sevilla","Andalucía","292",7
+"YAMAHA","XMAX 300","Tarragona","Cataluña","292",7
+"YAMAHA","XMAX 300","Toledo","Castilla-La Mancha","292",2
+"YAMAHA","XMAX 300","Valencia/València","Comunidad Valenciana","292",26
+"YAMAHA","XMAX 300","Valladolid","Castilla y León","292",1
+"YAMAHA","XMAX 300","Zaragoza","Aragón","292",4
 "YAMAHA","XSR-125","Almería","Andalucía","125",1
 "YAMAHA","XSR-125","Asturias","Principado de Asturias","125",1
 "YAMAHA","XSR-125","Barcelona","Cataluña","125",6
@@ -6061,6 +6066,14 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "YAMAHA","XSR-125","Sevilla","Andalucía","125",2
 "YAMAHA","XSR-125","Tarragona","Cataluña","125",2
 "YAMAHA","XSR-125","Valencia/València","Comunidad Valenciana","125",5
+"YAMAHA","XSR-700","Alicante/Alacant","Comunidad Valenciana","689",1
+"YAMAHA","XSR-700","Barcelona","Cataluña","689",3
+"YAMAHA","XSR-700","Cantabria","Cantabria","689",1
+"YAMAHA","XSR-700","Illes Balears","Illes Balears","689",2
+"YAMAHA","XSR-700","Madrid","Comunidad de Madrid","689",2
+"YAMAHA","XSR-700","Pontevedra","Galicia","689",1
+"YAMAHA","XSR-700","Santa Cruz de Tenerife","Canarias","689",1
+"YAMAHA","XSR-700","Tarragona","Cataluña","689",1
 "YAMAHA","XSR-900","Álava/Araba","País Vasco","890",1
 "YAMAHA","XSR-900","Alicante/Alacant","Comunidad Valenciana","890",2
 "YAMAHA","XSR-900","Barcelona","Cataluña","890",4
@@ -6074,14 +6087,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "YAMAHA","XSR-900","Santa Cruz de Tenerife","Canarias","890",1
 "YAMAHA","XSR-900","Sevilla","Andalucía","890",1
 "YAMAHA","XSR-900","Zaragoza","Aragón","890",1
-"YAMAHA","XSR-700","Alicante/Alacant","Comunidad Valenciana","689",1
-"YAMAHA","XSR-700","Barcelona","Cataluña","689",3
-"YAMAHA","XSR-700","Cantabria","Cantabria","689",1
-"YAMAHA","XSR-700","Illes Balears","Illes Balears","689",2
-"YAMAHA","XSR-700","Madrid","Comunidad de Madrid","689",2
-"YAMAHA","XSR-700","Pontevedra","Galicia","689",1
-"YAMAHA","XSR-700","Santa Cruz de Tenerife","Canarias","689",1
-"YAMAHA","XSR-700","Tarragona","Cataluña","689",1
 "YAMAHA","XTZ 700 Tenere","Albacete","Castilla-La Mancha","689",2
 "YAMAHA","XTZ 700 Tenere","Alicante/Alacant","Comunidad Valenciana","689",4
 "YAMAHA","XTZ 700 Tenere","Almería","Andalucía","689",1
@@ -6137,12 +6142,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "YAMAHA","YZF-R3","Valencia/València","Comunidad Valenciana","321",1
 "YAMAHA","YZF-R3","Valladolid","Castilla y León","321",1
 "YAMAHA","YZF1000D","Madrid","Comunidad de Madrid","998",1
-"YAMAHA","YZF690","Barcelona","Cataluña","689",2
-"YAMAHA","YZF690","Málaga","Andalucía","689",1
-"YAMAHA","YZF690","Zaragoza","Aragón","689",1
-"YAMAHA","YZF690-U","Barcelona","Cataluña","689",1
-"YAMAHA","YZF690-U","Cádiz","Andalucía","689",1
-"YAMAHA","YZF690-U","Córdoba","Andalucía","689",1
 "ZONTES","125C","Álava/Araba","País Vasco","125",4
 "ZONTES","125C","Alicante/Alacant","Comunidad Valenciana","125",10
 "ZONTES","125C","Almería","Andalucía","125",2

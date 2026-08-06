@@ -17742,6 +17742,38 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "YAMAHA","R125","Valencia/València","Comunidad Valenciana","125",54
 "YAMAHA","R125","Valladolid","Castilla y León","125",6
 "YAMAHA","R125","Zaragoza","Aragón","125",11
+"YAMAHA","R7","Alicante/Alacant","Comunidad Valenciana","689",7
+"YAMAHA","R7","Asturias","Principado de Asturias","689",2
+"YAMAHA","R7","Barcelona","Cataluña","689",42
+"YAMAHA","R7","Burgos","Castilla y León","689",1
+"YAMAHA","R7","Cáceres","Extremadura","689",3
+"YAMAHA","R7","Cádiz","Andalucía","689",3
+"YAMAHA","R7","Cantabria","Cantabria","689",3
+"YAMAHA","R7","Córdoba","Andalucía","689",1
+"YAMAHA","R7","Coruña (A)","Galicia","689",2
+"YAMAHA","R7","Girona","Cataluña","689",1
+"YAMAHA","R7","Granada","Andalucía","689",3
+"YAMAHA","R7","Huesca","Aragón","689",1
+"YAMAHA","R7","Illes Balears","Illes Balears","689",6
+"YAMAHA","R7","León","Castilla y León","689",2
+"YAMAHA","R7","Lleida","Cataluña","689",1
+"YAMAHA","R7","Madrid","Comunidad de Madrid","689",17
+"YAMAHA","R7","Málaga","Andalucía","689",6
+"YAMAHA","R7","Murcia","Región de Murcia","689",4
+"YAMAHA","R7","Navarra","Comunidad Foral de Navarra","689",1
+"YAMAHA","R7","Ourense","Galicia","689",1
+"YAMAHA","R7","Palmas (Las)","Canarias","689",6
+"YAMAHA","R7","Pontevedra","Galicia","689",4
+"YAMAHA","R7","Salamanca","Castilla y León","689",2
+"YAMAHA","R7","Santa Cruz de Tenerife","Canarias","689",8
+"YAMAHA","R7","Sevilla","Andalucía","689",8
+"YAMAHA","R7","Tarragona","Cataluña","689",3
+"YAMAHA","R7","Teruel","Aragón","689",3
+"YAMAHA","R7","Toledo","Castilla-La Mancha","689",2
+"YAMAHA","R7","Valencia/València","Comunidad Valenciana","689",9
+"YAMAHA","R7","Valladolid","Castilla y León","689",1
+"YAMAHA","R7","Zamora","Castilla y León","689",1
+"YAMAHA","R7","Zaragoza","Aragón","689",4
 "YAMAHA","RayZR 125","Álava/Araba","País Vasco","125",11
 "YAMAHA","RayZR 125","Albacete","Castilla-La Mancha","125",27
 "YAMAHA","RayZR 125","Alicante/Alacant","Comunidad Valenciana","125",282
@@ -18348,57 +18380,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "YAMAHA","YZF1000D","Santa Cruz de Tenerife","Canarias","998",1
 "YAMAHA","YZF1000D","Tarragona","Cataluña","998",1
 "YAMAHA","YZF1000D","Teruel","Aragón","998",1
-"YAMAHA","YZF690","Alicante/Alacant","Comunidad Valenciana","689",5
-"YAMAHA","YZF690","Asturias","Principado de Asturias","689",1
-"YAMAHA","YZF690","Barcelona","Cataluña","689",14
-"YAMAHA","YZF690","Cádiz","Andalucía","689",1
-"YAMAHA","YZF690","Cantabria","Cantabria","689",2
-"YAMAHA","YZF690","Coruña (A)","Galicia","689",1
-"YAMAHA","YZF690","Girona","Cataluña","689",1
-"YAMAHA","YZF690","Granada","Andalucía","689",3
-"YAMAHA","YZF690","Illes Balears","Illes Balears","689",4
-"YAMAHA","YZF690","León","Castilla y León","689",1
-"YAMAHA","YZF690","Lleida","Cataluña","689",1
-"YAMAHA","YZF690","Madrid","Comunidad de Madrid","689",6
-"YAMAHA","YZF690","Málaga","Andalucía","689",4
-"YAMAHA","YZF690","Murcia","Región de Murcia","689",2
-"YAMAHA","YZF690","Navarra","Comunidad Foral de Navarra","689",1
-"YAMAHA","YZF690","Palmas (Las)","Canarias","689",3
-"YAMAHA","YZF690","Pontevedra","Galicia","689",1
-"YAMAHA","YZF690","Santa Cruz de Tenerife","Canarias","689",3
-"YAMAHA","YZF690","Sevilla","Andalucía","689",2
-"YAMAHA","YZF690","Tarragona","Cataluña","689",2
-"YAMAHA","YZF690","Teruel","Aragón","689",3
-"YAMAHA","YZF690","Toledo","Castilla-La Mancha","689",1
-"YAMAHA","YZF690","Valencia/València","Comunidad Valenciana","689",3
-"YAMAHA","YZF690","Zaragoza","Aragón","689",2
-"YAMAHA","YZF690-U","Alicante/Alacant","Comunidad Valenciana","689",2
-"YAMAHA","YZF690-U","Asturias","Principado de Asturias","689",1
-"YAMAHA","YZF690-U","Barcelona","Cataluña","689",28
-"YAMAHA","YZF690-U","Burgos","Castilla y León","689",1
-"YAMAHA","YZF690-U","Cáceres","Extremadura","689",3
-"YAMAHA","YZF690-U","Cádiz","Andalucía","689",2
-"YAMAHA","YZF690-U","Cantabria","Cantabria","689",1
-"YAMAHA","YZF690-U","Córdoba","Andalucía","689",1
-"YAMAHA","YZF690-U","Coruña (A)","Galicia","689",1
-"YAMAHA","YZF690-U","Huesca","Aragón","689",1
-"YAMAHA","YZF690-U","Illes Balears","Illes Balears","689",2
-"YAMAHA","YZF690-U","León","Castilla y León","689",1
-"YAMAHA","YZF690-U","Madrid","Comunidad de Madrid","689",11
-"YAMAHA","YZF690-U","Málaga","Andalucía","689",2
-"YAMAHA","YZF690-U","Murcia","Región de Murcia","689",2
-"YAMAHA","YZF690-U","Ourense","Galicia","689",1
-"YAMAHA","YZF690-U","Palmas (Las)","Canarias","689",3
-"YAMAHA","YZF690-U","Pontevedra","Galicia","689",3
-"YAMAHA","YZF690-U","Salamanca","Castilla y León","689",2
-"YAMAHA","YZF690-U","Santa Cruz de Tenerife","Canarias","689",5
-"YAMAHA","YZF690-U","Sevilla","Andalucía","689",6
-"YAMAHA","YZF690-U","Tarragona","Cataluña","689",1
-"YAMAHA","YZF690-U","Toledo","Castilla-La Mancha","689",1
-"YAMAHA","YZF690-U","Valencia/València","Comunidad Valenciana","689",6
-"YAMAHA","YZF690-U","Valladolid","Castilla y León","689",1
-"YAMAHA","YZF690-U","Zamora","Castilla y León","689",1
-"YAMAHA","YZF690-U","Zaragoza","Aragón","689",2
 "ZNEN","FALCON 125","Valencia/València","Comunidad Valenciana","125",4
 "ZNEN","NVH","Valencia/València","Comunidad Valenciana","125",9
 "ZNEN","P45","Valencia/València","Comunidad Valenciana","125",11
