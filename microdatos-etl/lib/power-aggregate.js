@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const { DATA_DIR } = require('./constants');
-const { monthDir } = require('./aggregate');
+const { monthDir, csvField } = require('./aggregate');
 
 // ─── Power Range Classification ────────────────────────────────────────────
 
@@ -105,7 +105,7 @@ class PowerAggregator {
 function _writeCsv(filePath, header, counts) {
   const lines = [header];
   for (const [key, count] of [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0]))) {
-    lines.push(`"${key}",${count}`);
+    lines.push(`${csvField(key)},${count}`);
   }
   fs.writeFileSync(filePath, lines.join('\n') + '\n');
 }

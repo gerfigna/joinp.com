@@ -21,6 +21,45 @@ function provinciaAnnualPath(year) {
 }
 
 /**
+ * Parse a CSV line (RFC 4180 style), respecting commas and doubled `""` quotes
+ * embedded inside quoted fields.
+ * @param {string} line
+ * @returns {string[]}
+ */
+function parseCsvLine(line) {
+  const fields = [];
+  let field = '';
+  let inQuotes = false;
+  for (let i = 0; i < line.length; i++) {
+    const c = line[i];
+    if (inQuotes) {
+      if (c === '"') {
+        if (line[i + 1] === '"') { field += '"'; i++; }
+        else inQuotes = false;
+      } else field += c;
+    } else if (c === '"') {
+      inQuotes = true;
+    } else if (c === ',') {
+      fields.push(field);
+      field = '';
+    } else {
+      field += c;
+    }
+  }
+  fields.push(field);
+  return fields;
+}
+
+/**
+ * Escape a value for a quoted CSV field, doubling any embedded quote characters.
+ * @param {string} value
+ * @returns {string}
+ */
+function csvField(value) {
+  return `"${String(value).replace(/"/g, '""')}"`;
+}
+
+/**
  * Write the monthly aggregate CSV for a given year/month.
  * @param {string} year
  * @param {string} month
@@ -54,7 +93,7 @@ function writeAggregates(year, month, data) {
   }
   provRows.sort((a, b) => a.marca.localeCompare(b.marca) || a.modelo.localeCompare(b.modelo) || a.provincia.localeCompare(b.provincia));
   const provLines = ['MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT'];
-  for (const r of provRows) provLines.push(`"${r.marca}","${r.modelo}","${r.provincia}","${r.comunidad}","${r.cilindrada}",${r.count}`);
+  for (const r of provRows) provLines.push(`${csvField(r.marca)},${csvField(r.modelo)},${csvField(r.provincia)},${csvField(r.comunidad)},${csvField(r.cilindrada)},${r.count}`);
   fs.writeFileSync(provinciaMonthlyPath(year, month), provLines.join('\n') + '\n');
 }
 
@@ -74,7 +113,7 @@ function writeAnnualAggregate(year) {
     const lines = fs.readFileSync(monthlyPath, 'utf8').trim().split('\n').slice(1);
     for (const line of lines) {
       if (!line.trim()) continue;
-      const parts = line.split(',').map((v) => v.replace(/^"|"$/g, ''));
+      const parts = parseCsvLine(line);
       if (parts.length < 6) continue;
       const [marca, modelo, provincia, comunidad, cilindrada, countStr] = parts;
       const count = parseInt(countStr, 10) || 0;
@@ -103,8 +142,8 @@ function writeAnnualAggregate(year) {
 
   fs.mkdirSync(yearDir(year), { recursive: true });
   const lines = ['MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT'];
-  for (const r of rows) lines.push(`"${r.marca}","${r.modelo}","${r.provincia}","${r.comunidad}","${r.cilindrada}",${r.count}`);
+  for (const r of rows) lines.push(`${csvField(r.marca)},${csvField(r.modelo)},${csvField(r.provincia)},${csvField(r.comunidad)},${csvField(r.cilindrada)},${r.count}`);
   fs.writeFileSync(provinciaAnnualPath(year), lines.join('\n') + '\n');
 }
 
-module.exports = { writeAggregates, writeAnnualAggregate, monthDir, provinciaMonthlyPath, provinciaAnnualPath };
+module.exports = { writeAggregates, writeAnnualAggregate, monthDir, provinciaMonthlyPath, provinciaAnnualPath, parseCsvLine, csvField };
