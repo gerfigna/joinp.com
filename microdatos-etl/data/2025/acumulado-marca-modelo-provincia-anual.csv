@@ -11008,7 +11008,7 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "MITT","XRS","Palmas (Las)","Canarias","124",2
 "MITT","XRS","Sevilla","Andalucía","125",8
 "MITT","XRS","Valencia/València","Comunidad Valenciana","125",3
-"MONDIAL","FLAT TRACK"," FT","Sevilla","Andalucía",124
+"MONDIAL","FLAT TRACK, FT","Sevilla","Andalucía","124",1
 "MONDIAL","HPS","Albacete","Castilla-La Mancha","124",2
 "MONDIAL","HPS","Alicante/Alacant","Comunidad Valenciana","124",7
 "MONDIAL","HPS","Almería","Andalucía","124",2
@@ -11470,13 +11470,13 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "MOTO GUZZI","STELVIO","Soria","Castilla y León","1042",1
 "MOTO GUZZI","STELVIO","Tarragona","Cataluña","1042",1
 "MOTO GUZZI","STELVIO","Valencia/València","Comunidad Valenciana","1042",2
-"MOTO GUZZI","STELVIO "DUECENTO TRIB","Barcelona","Cataluña","1042",4
-"MOTO GUZZI","STELVIO "DUECENTO TRIB","Cádiz","Andalucía","1042",1
-"MOTO GUZZI","STELVIO "DUECENTO TRIB","Gipuzkoa","País Vasco","1042",1
-"MOTO GUZZI","STELVIO "DUECENTO TRIB","Madrid","Comunidad de Madrid","1042",1
-"MOTO GUZZI","STELVIO "DUECENTO TRIB","Málaga","Andalucía","1042",1
-"MOTO GUZZI","STELVIO "DUECENTO TRIB","Murcia","Región de Murcia","1042",1
-"MOTO GUZZI","STELVIO "DUECENTO TRIB","Palmas (Las)","Canarias","1042",2
+"MOTO GUZZI","STELVIO ""DUECENTO TRIB","Barcelona","Cataluña","1042",4
+"MOTO GUZZI","STELVIO ""DUECENTO TRIB","Cádiz","Andalucía","1042",1
+"MOTO GUZZI","STELVIO ""DUECENTO TRIB","Gipuzkoa","País Vasco","1042",1
+"MOTO GUZZI","STELVIO ""DUECENTO TRIB","Madrid","Comunidad de Madrid","1042",1
+"MOTO GUZZI","STELVIO ""DUECENTO TRIB","Málaga","Andalucía","1042",1
+"MOTO GUZZI","STELVIO ""DUECENTO TRIB","Murcia","Región de Murcia","1042",1
+"MOTO GUZZI","STELVIO ""DUECENTO TRIB","Palmas (Las)","Canarias","1042",2
 "MOTO GUZZI","STELVIO (A.R.A.S.)","Álava/Araba","País Vasco","1042",1
 "MOTO GUZZI","STELVIO (A.R.A.S.)","Albacete","Castilla-La Mancha","1042",2
 "MOTO GUZZI","STELVIO (A.R.A.S.)","Barcelona","Cataluña","1042",4
@@ -11512,8 +11512,8 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "MOTO GUZZI","V100 MANDELLO","Tarragona","Cataluña","1042",1
 "MOTO GUZZI","V100 MANDELLO","Valencia/València","Comunidad Valenciana","1042",3
 "MOTO GUZZI","V100 MANDELLO","Valladolid","Castilla y León","1042",1
-"MOTO GUZZI","V100 MANDELLO "WIND TU","Cádiz","Andalucía","1042",1
-"MOTO GUZZI","V100 MANDELLO "WIND TU","Valencia/València","Comunidad Valenciana","1042",1
+"MOTO GUZZI","V100 MANDELLO ""WIND TU","Cádiz","Andalucía","1042",1
+"MOTO GUZZI","V100 MANDELLO ""WIND TU","Valencia/València","Comunidad Valenciana","1042",1
 "MOTO GUZZI","V100 MANDELLO S","Alicante/Alacant","Comunidad Valenciana","1042",2
 "MOTO GUZZI","V100 MANDELLO S","Barcelona","Cataluña","1042",3
 "MOTO GUZZI","V100 MANDELLO S","Bizkaia","País Vasco","1042",1
@@ -18383,7 +18383,7 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "ZNEN","FALCON 125","Valencia/València","Comunidad Valenciana","125",4
 "ZNEN","NVH","Valencia/València","Comunidad Valenciana","125",9
 "ZNEN","P45","Valencia/València","Comunidad Valenciana","125",11
-"ZNEN","ZN125T-12"," PIZZA SCOOT","Bizkaia","País Vasco",124
+"ZNEN","ZN125T-12, PIZZA SCOOT","Bizkaia","País Vasco","124",1
 "ZONTES","125C","Álava/Araba","País Vasco","125",17
 "ZONTES","125C","Albacete","Castilla-La Mancha","125",13
 "ZONTES","125C","Alicante/Alacant","Comunidad Valenciana","125",107

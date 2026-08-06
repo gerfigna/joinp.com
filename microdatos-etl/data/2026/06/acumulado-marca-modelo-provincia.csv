@@ -4363,9 +4363,9 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "MOTO GUZZI","STELVIO","Cádiz","Andalucía","1042",1
 "MOTO GUZZI","STELVIO","Palmas (Las)","Canarias","1042",1
 "MOTO GUZZI","STELVIO","Sevilla","Andalucía","1042",1
-"MOTO GUZZI","STELVIO "DUECENTO TRIB","Cuenca","Castilla-La Mancha","1042",1
-"MOTO GUZZI","STELVIO "DUECENTO TRIB","Madrid","Comunidad de Madrid","1042",1
-"MOTO GUZZI","STELVIO "DUECENTO TRIB","Sevilla","Andalucía","1042",1
+"MOTO GUZZI","STELVIO ""DUECENTO TRIB","Cuenca","Castilla-La Mancha","1042",1
+"MOTO GUZZI","STELVIO ""DUECENTO TRIB","Madrid","Comunidad de Madrid","1042",1
+"MOTO GUZZI","STELVIO ""DUECENTO TRIB","Sevilla","Andalucía","1042",1
 "MOTO GUZZI","STELVIO (A.R.A.S.)","Almería","Andalucía","1042",2
 "MOTO GUZZI","STELVIO (A.R.A.S.)","Barcelona","Cataluña","1042",1
 "MOTO GUZZI","STELVIO (A.R.A.S.)","Madrid","Comunidad de Madrid","1042",1
@@ -4374,7 +4374,7 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "MOTO GUZZI","V100 MANDELLO","Bizkaia","País Vasco","1042",2
 "MOTO GUZZI","V100 MANDELLO","Madrid","Comunidad de Madrid","1042",1
 "MOTO GUZZI","V100 MANDELLO","Palencia","Castilla y León","1042",1
-"MOTO GUZZI","V100 MANDELLO "WIND TU","Coruña (A)","Galicia","1042",1
+"MOTO GUZZI","V100 MANDELLO ""WIND TU","Coruña (A)","Galicia","1042",1
 "MOTO GUZZI","V100 MANDELLO S","Barcelona","Cataluña","1042",1
 "MOTO GUZZI","V100 MANDELLO S","Bizkaia","País Vasco","1042",1
 "MOTO GUZZI","V100 MANDELLO S","Cádiz","Andalucía","1042",1

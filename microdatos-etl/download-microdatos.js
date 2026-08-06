@@ -9,7 +9,7 @@ const LISTING_URL =
 
 const { DATA_DIR } = require('./lib/constants');
 const { normalizeProvince } = require('./lib/normalize');
-const { writeAggregates, writeAnnualAggregate, monthDir } = require('./lib/aggregate');
+const { writeAggregates, writeAnnualAggregate, monthDir, csvField, parseCsvLine } = require('./lib/aggregate');
 const { httpGet } = require('./lib/http');
 const { extractTxtFromZip } = require('./lib/zip');
 const { isMotorcycleRow, extractRowFields } = require('./lib/filter');
@@ -57,7 +57,7 @@ function processTxt(txt) {
 function writeDailyCsv(filePath, rows) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   const lines = ['FEC_MATRICULA,COD_CLASE_MAT,FEC_TRAMITACION,MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV'];
-  for (const r of rows) lines.push(r.map((v) => `"${v}"`).join(','));
+  for (const r of rows) lines.push(r.map(csvField).join(','));
   fs.writeFileSync(filePath, lines.join('\n') + '\n');
 }
 
@@ -74,7 +74,7 @@ function recalculateMonthly(year, month) {
     const lines = content.split('\n').slice(1); // skip header
     for (const line of lines) {
       if (!line.trim()) continue;
-      const parts = line.split(',').map((v) => v.replace(/^"|"$/g, ''));
+      const parts = parseCsvLine(line);
       if (parts.length < 5) continue;
       const marca = parts[3];
       const modelo = parts[4];
