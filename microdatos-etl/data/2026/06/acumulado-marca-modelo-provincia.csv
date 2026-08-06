@@ -6856,23 +6856,25 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "YAMAHA","R7","Alicante/Alacant","Comunidad Valenciana","689",1
 "YAMAHA","R7","Asturias","Principado de Asturias","689",2
 "YAMAHA","R7","Badajoz","Extremadura","689",1
-"YAMAHA","R7","Barcelona","Cataluña","689",18
-"YAMAHA","R7","Bizkaia","País Vasco","689",2
+"YAMAHA","R7","Barcelona","Cataluña","689",19
+"YAMAHA","R7","Bizkaia","País Vasco","689",3
 "YAMAHA","R7","Cádiz","Andalucía","689",1
 "YAMAHA","R7","Cantabria","Cantabria","689",2
 "YAMAHA","R7","Castellón/Castelló","Comunidad Valenciana","689",1
 "YAMAHA","R7","Ciudad Real","Castilla-La Mancha","689",1
 "YAMAHA","R7","Girona","Cataluña","689",2
 "YAMAHA","R7","Granada","Andalucía","689",4
+"YAMAHA","R7","Huesca","Aragón","689",1
 "YAMAHA","R7","Illes Balears","Illes Balears","689",2
 "YAMAHA","R7","León","Castilla y León","689",1
-"YAMAHA","R7","Madrid","Comunidad de Madrid","689",5
-"YAMAHA","R7","Málaga","Andalucía","689",2
-"YAMAHA","R7","Murcia","Región de Murcia","689",1
+"YAMAHA","R7","Madrid","Comunidad de Madrid","689",9
+"YAMAHA","R7","Málaga","Andalucía","689",3
+"YAMAHA","R7","Murcia","Región de Murcia","689",3
 "YAMAHA","R7","Navarra","Comunidad Foral de Navarra","689",1
+"YAMAHA","R7","Pontevedra","Galicia","689",1
 "YAMAHA","R7","Rioja (La)","La Rioja","689",1
 "YAMAHA","R7","Santa Cruz de Tenerife","Canarias","689",3
-"YAMAHA","R7","Sevilla","Andalucía","689",2
+"YAMAHA","R7","Sevilla","Andalucía","689",3
 "YAMAHA","R7","Tarragona","Cataluña","689",4
 "YAMAHA","R7","Valencia/València","Comunidad Valenciana","689",3
 "YAMAHA","RayZR 125","Álava/Araba","País Vasco","125",1
@@ -7233,14 +7235,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "YAMAHA","YZF-R9","Tarragona","Cataluña","890",3
 "YAMAHA","YZF-R9","Valencia/València","Comunidad Valenciana","890",4
 "YAMAHA","YZF-R9","Valladolid","Castilla y León","890",1
-"YAMAHA","YZF690","Huesca","Aragón","689",1
-"YAMAHA","YZF690","Málaga","Andalucía","689",1
-"YAMAHA","YZF690","Murcia","Región de Murcia","689",2
-"YAMAHA","YZF690-U","Barcelona","Cataluña","689",1
-"YAMAHA","YZF690-U","Bizkaia","País Vasco","689",1
-"YAMAHA","YZF690-U","Madrid","Comunidad de Madrid","689",4
-"YAMAHA","YZF690-U","Pontevedra","Galicia","689",1
-"YAMAHA","YZF690-U","Sevilla","Andalucía","689",1
 "ZNEN","FALCON 125","Valencia/València","Comunidad Valenciana","125",1
 "ZNEN","NVH","Madrid","Comunidad de Madrid","125",1
 "ZNEN","NVH","Valencia/València","Comunidad Valenciana","125",1
