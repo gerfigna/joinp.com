@@ -1,6 +1,6 @@
 'use strict';
 
-const { getField } = require('./fields');
+const { FIELDS, getField } = require('./fields');
 const { normalizeBrand, normalizeModel, normalizeProvince, normalizeComunidad } = require('./normalize');
 
 /**
@@ -155,4 +155,42 @@ function extractElectricFields(line) {
   };
 }
 
-module.exports = { isMotorcycleRow, extractRowFields, extractPowerFields, isElectricMotorcycleRow, extractElectricFields };
+/**
+ * Returns true if the line represents a new registration (motorcycle or
+ * moped, including electrics) of interest for the full-columns SQLite ETL.
+ * COD_TIPO: '50' = motocicleta 2 ruedas sin sidecar, '90' = ciclomotor 2 ruedas.
+ * @param {string} line
+ * @returns {boolean}
+ */
+function isMotoOrCiclomotorRow(line) {
+  if (line.length < 200) return false;
+  const codTipo = getField(line, 'COD_TIPO');
+  if (codTipo !== '50' && codTipo !== '90') return false;
+  if (getField(line, 'CLAVE_TRAMITE')   !== '1') return false;
+  if (getField(line, 'IND_NUEVO_USADO') !== 'N') return false;
+  if (getField(line, 'FABRICANTE_ITV')  === 'ND') return false;
+  return true;
+}
+
+/**
+ * Extracts every source field from a line (no columns discarded) plus a
+ * `<CAMPO>_NORMALIZADO` column for each field that has a normalization rule.
+ * @param {string} line
+ * @returns {Object}
+ */
+function extractFullRowFields(line) {
+  const row = {};
+  for (const [name] of FIELDS) row[name] = getField(line, name);
+
+  row.MARCA_ITV_NORMALIZADO = normalizeBrand(row.MARCA_ITV);
+  row.MODELO_ITV_NORMALIZADO = normalizeModel(row.MARCA_ITV_NORMALIZADO, row.MODELO_ITV);
+  row.COD_PROVINCIA_VEH_NORMALIZADO = normalizeProvince(row.COD_PROVINCIA_VEH);
+  row.COMUNIDAD_AUTONOMA_NORMALIZADO = normalizeComunidad(row.COD_PROVINCIA_VEH);
+
+  return row;
+}
+
+module.exports = {
+  isMotorcycleRow, extractRowFields, extractPowerFields, isElectricMotorcycleRow, extractElectricFields,
+  isMotoOrCiclomotorRow, extractFullRowFields,
+};
