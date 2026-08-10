@@ -6,9 +6,22 @@
  * clima, precio y etiquetas. Vuelca todos los agregados/correlaciones a un
  * único JSON que consume el generador de informe (build-informe-html.js).
  * Es de un solo uso para este informe — no forma parte del pipeline ETL.
+ *
+ * Ventana de análisis: 24 meses exactos, agosto 2024 a julio 2026, para que
+ * el periodo sea estable y completamente comparable (año 1 vs año 2, 12
+ * meses cada uno) en vez de años naturales con 2026 a medias.
  */
 
 const { openDatabase } = require('./lib/sqlite-store');
+
+const PERIODO_INI = '2024-08-01';
+const PERIODO_FIN = '2026-07-31';
+const ANIO1_FIN = '2025-07-31'; // Año 1: ago 2024 – jul 2025
+const ANIO2_INI = '2025-08-01'; // Año 2: ago 2025 – jul 2026
+const ANIO1_LABEL = 'Año 1 (ago 2024–jul 2025)';
+const ANIO2_LABEL = 'Año 2 (ago 2025–jul 2026)';
+const WHERE_PERIODO = `DIA_ORIGEN BETWEEN '${PERIODO_INI}' AND '${PERIODO_FIN}'`;
+const CASE_ANIO = `CASE WHEN DIA_ORIGEN <= '${ANIO1_FIN}' THEN '${ANIO1_LABEL}' ELSE '${ANIO2_LABEL}' END`;
 
 function pearson(pairs) {
   const n = pairs.length;
@@ -69,24 +82,28 @@ function main() {
   // ---------------------------------------------------------------
   out.resumen = db.prepare(`
     SELECT
-      (SELECT COUNT(*) FROM matriculaciones_moto) AS total_matriculaciones,
-      (SELECT MIN(dia) FROM dias_descargados) AS desde,
-      (SELECT MAX(dia) FROM dias_descargados) AS hasta,
+      (SELECT COUNT(*) FROM matriculaciones_moto WHERE ${WHERE_PERIODO}) AS total_matriculaciones,
       (SELECT COUNT(*) FROM vehiculos) AS total_modelos,
       (SELECT COUNT(*) FROM vehiculos WHERE PRECIO IS NOT NULL) AS modelos_con_precio,
-      (SELECT COUNT(DISTINCT MARCA_ITV_NORMALIZADO) FROM matriculaciones_moto) AS total_marcas
+      (SELECT COUNT(DISTINCT MARCA_ITV_NORMALIZADO) FROM matriculaciones_moto WHERE ${WHERE_PERIODO}) AS total_marcas
   `).get();
+  out.resumen.desde = PERIODO_INI;
+  out.resumen.hasta = PERIODO_FIN;
 
-  out.matriculaciones_por_anio = db.prepare(`
-    SELECT substr(DIA_ORIGEN,1,4) anio, COUNT(*) n
+  out.matriculaciones_por_periodo = db.prepare(`
+    SELECT ${CASE_ANIO} periodo, COUNT(*) n
     FROM matriculaciones_moto
-    GROUP BY anio ORDER BY anio
+    WHERE ${WHERE_PERIODO}
+    GROUP BY periodo ORDER BY periodo
   `).all();
 
+  // Cada mes natural aparece exactamente 2 veces dentro de la ventana de 24
+  // meses (p.ej. agosto: 2024 y 2025), lo que hace la estacionalidad
+  // directamente comparable mes a mes sin sesgo de años parciales.
   out.matriculaciones_por_mes = db.prepare(`
     SELECT substr(DIA_ORIGEN,6,2) mes, COUNT(*) n
     FROM matriculaciones_moto
-    WHERE substr(DIA_ORIGEN,1,4) IN ('2024','2025')
+    WHERE ${WHERE_PERIODO}
     GROUP BY mes ORDER BY mes
   `).all();
 
@@ -97,7 +114,7 @@ function main() {
     SELECT mu.id, mu.POBLACION_2023 pob, mu.RENTA_NETA_MEDIA_POR_PERSONA_2023 renta,
            COUNT(m.id) matriculaciones
     FROM municipios mu
-    LEFT JOIN matriculaciones_moto m ON m.MUNICIPIO_ID = mu.id
+    LEFT JOIN matriculaciones_moto m ON m.MUNICIPIO_ID = mu.id AND m.${WHERE_PERIODO}
     WHERE mu.POBLACION_2023 >= 500 AND mu.RENTA_NETA_MEDIA_POR_PERSONA_2023 IS NOT NULL
     GROUP BY mu.id
   `).all();
@@ -129,6 +146,7 @@ function main() {
     const matPorProvincia = Object.fromEntries(db.prepare(`
       SELECT mu.PROVINCIA_ID id, COUNT(*) n
       FROM matriculaciones_moto m JOIN municipios mu ON mu.id = m.MUNICIPIO_ID
+      WHERE m.${WHERE_PERIODO}
       GROUP BY mu.PROVINCIA_ID
     `).all().map((r) => [r.id, r.n]));
     return porMuni
@@ -145,7 +163,7 @@ function main() {
     FROM matriculaciones_moto m
     JOIN municipios mu ON mu.id = m.MUNICIPIO_ID
     JOIN vehiculos v ON v.id = m.VEHICULO_ID
-    WHERE mu.RENTA_NETA_MEDIA_POR_PERSONA_2023 IS NOT NULL AND v.PRECIO IS NOT NULL
+    WHERE mu.RENTA_NETA_MEDIA_POR_PERSONA_2023 IS NOT NULL AND v.PRECIO IS NOT NULL AND m.${WHERE_PERIODO}
   `).all();
   out.renta_vs_precio = {
     correlacion: pearson(precioRenta.map((r) => [r.renta, r.precio])),
@@ -159,7 +177,7 @@ function main() {
       FROM matriculaciones_moto m
       JOIN municipios mu ON mu.id = m.MUNICIPIO_ID
       JOIN vehiculos v ON v.id = m.VEHICULO_ID
-      WHERE mu.RENTA_NETA_MEDIA_POR_PERSONA_2023 IS NOT NULL AND v.PRECIO IS NOT NULL
+      WHERE mu.RENTA_NETA_MEDIA_POR_PERSONA_2023 IS NOT NULL AND v.PRECIO IS NOT NULL AND m.${WHERE_PERIODO}
       ORDER BY mu.RENTA_NETA_MEDIA_POR_PERSONA_2023
     `).all();
     const n = rows.length;
@@ -192,6 +210,7 @@ function main() {
       JOIN municipios mu ON mu.id = m.MUNICIPIO_ID
       JOIN vehiculos v ON v.id = m.VEHICULO_ID
       LEFT JOIN vehiculo_tags vt ON vt.VEHICULO_ID = v.id AND vt.TAG_ID = (SELECT id FROM tags WHERE NOMBRE = ?)
+      WHERE m.${WHERE_PERIODO}
       GROUP BY mu.PROVINCIA_ID
     `).all(tagName);
   }
@@ -266,6 +285,7 @@ function main() {
   out.top_marcas = db.prepare(`
     SELECT MARCA_ITV_NORMALIZADO marca, COUNT(*) n
     FROM matriculaciones_moto
+    WHERE ${WHERE_PERIODO}
     GROUP BY marca ORDER BY n DESC LIMIT 15
   `).all();
 
@@ -274,6 +294,7 @@ function main() {
     FROM matriculaciones_moto m
     JOIN municipios mu ON mu.id = m.MUNICIPIO_ID
     JOIN comunidad_autonoma ca ON ca.id = mu.COMUNIDAD_AUTONOMA_ID
+    WHERE m.${WHERE_PERIODO}
     GROUP BY ca.id, marca
   `).all();
   // Reduce a la marca líder por CCAA en JS (evita window functions en node:sqlite)
@@ -295,7 +316,7 @@ function main() {
       SELECT mu.RENTA_NETA_MEDIA_POR_PERSONA_2023 renta, m.COD_PROPULSION_ITV cod
       FROM matriculaciones_moto m
       JOIN municipios mu ON mu.id = m.MUNICIPIO_ID
-      WHERE mu.RENTA_NETA_MEDIA_POR_PERSONA_2023 IS NOT NULL
+      WHERE mu.RENTA_NETA_MEDIA_POR_PERSONA_2023 IS NOT NULL AND m.${WHERE_PERIODO}
     `).all();
     const n = rows.length;
     const sorted = rows.slice().sort((a, b) => a.renta - b.renta);
@@ -309,7 +330,8 @@ function main() {
   })();
 
   // ---------------------------------------------------------------
-  // 7. Precio vs potencia (POTENCIA_ITV en vehiculos, vía key)
+  // 7. Precio vs potencia (POTENCIA_ITV en vehiculos, vía key) — catálogo,
+  // no depende de la ventana temporal de matriculaciones.
   // ---------------------------------------------------------------
   out.precio_vs_potencia = (() => {
     const rows = db.prepare(`SELECT POTENCIA_ITV pot, PRECIO precio FROM vehiculos WHERE PRECIO IS NOT NULL`).all();
@@ -330,11 +352,12 @@ function main() {
     FROM vehiculo_tags vt
     JOIN tags t ON t.id = vt.TAG_ID
     JOIN matriculaciones_moto m ON m.VEHICULO_ID = vt.VEHICULO_ID
+    WHERE m.${WHERE_PERIODO}
     GROUP BY t.id
     ORDER BY n DESC
   `).all();
 
-  // Precio medio por tag (categoría Posicionamiento / Estilo)
+  // Precio medio por tag (catálogo — no depende de la ventana temporal)
   out.precio_medio_por_tag = db.prepare(`
     SELECT t.NOMBRE nombre, t.CATEGORIA categoria, ROUND(AVG(v.PRECIO)) precio_medio, COUNT(*) n
     FROM vehiculo_tags vt
@@ -359,6 +382,7 @@ function main() {
     const matPorCcaa = Object.fromEntries(db.prepare(`
       SELECT mu.COMUNIDAD_AUTONOMA_ID id, COUNT(*) n
       FROM matriculaciones_moto m JOIN municipios mu ON mu.id = m.MUNICIPIO_ID
+      WHERE m.${WHERE_PERIODO}
       GROUP BY mu.COMUNIDAD_AUTONOMA_ID
     `).all().map((r) => [r.id, r.n]));
     return porMuni
@@ -402,7 +426,7 @@ function main() {
       SELECT mu.POBLACION_2023 pob, m.COD_PROPULSION_ITV cod, m.VEHICULO_ID vehiculo_id
       FROM matriculaciones_moto m
       JOIN municipios mu ON mu.id = m.MUNICIPIO_ID
-      WHERE mu.POBLACION_2023 IS NOT NULL
+      WHERE mu.POBLACION_2023 IS NOT NULL AND m.${WHERE_PERIODO}
     `).all();
     const scooterTagId = db.prepare("SELECT id FROM tags WHERE NOMBRE = 'Scooter'").get().id;
     const trailTagId = db.prepare("SELECT id FROM tags WHERE NOMBRE = 'Trail'").get().id;
@@ -426,13 +450,13 @@ function main() {
   })();
 
   // ---------------------------------------------------------------
-  // 12. CO2 de las motos de combustión, ¿mejora con los años?
+  // 12. CO2 de las motos de combustión: año 1 vs año 2
   // ---------------------------------------------------------------
-  out.co2_por_anio = db.prepare(`
-    SELECT substr(DIA_ORIGEN,1,4) anio, ROUND(AVG(CAST(CO2_ITV AS REAL)), 1) co2_medio, COUNT(*) n
+  out.co2_por_periodo = db.prepare(`
+    SELECT ${CASE_ANIO} periodo, ROUND(AVG(CAST(CO2_ITV AS REAL)), 1) co2_medio, COUNT(*) n
     FROM matriculaciones_moto
-    WHERE CO2_ITV IS NOT NULL AND CO2_ITV != '' AND COD_PROPULSION_ITV = '0'
-    GROUP BY anio HAVING n > 1000 ORDER BY anio
+    WHERE CO2_ITV IS NOT NULL AND CO2_ITV != '' AND COD_PROPULSION_ITV = '0' AND ${WHERE_PERIODO}
+    GROUP BY periodo ORDER BY periodo
   `).all();
 
   // ---------------------------------------------------------------
@@ -445,7 +469,7 @@ function main() {
   out.persona_juridica = (() => {
     const totales = db.prepare(`
       SELECT PERSONA_FISICA_JURIDICA cod, COUNT(*) n
-      FROM matriculaciones_moto GROUP BY cod
+      FROM matriculaciones_moto WHERE ${WHERE_PERIODO} GROUP BY cod
     `).all();
     const total = totales.reduce((s, r) => s + r.n, 0);
     const nJuridica = totales.find((r) => r.cod === 'X')?.n || 0;
@@ -453,6 +477,7 @@ function main() {
     const precioMedio = db.prepare(`
       SELECT m.PERSONA_FISICA_JURIDICA cod, ROUND(AVG(v.PRECIO)) precio_medio, COUNT(*) n
       FROM matriculaciones_moto m JOIN vehiculos v ON v.id = m.VEHICULO_ID AND v.PRECIO IS NOT NULL
+      WHERE m.${WHERE_PERIODO}
       GROUP BY cod
     `).all();
 
@@ -462,6 +487,7 @@ function main() {
       FROM matriculaciones_moto m
       JOIN municipios mu ON mu.id = m.MUNICIPIO_ID
       JOIN comunidad_autonoma ca ON ca.id = mu.COMUNIDAD_AUTONOMA_ID
+      WHERE m.${WHERE_PERIODO}
       GROUP BY ca.id HAVING n > 1000
       ORDER BY (n_juridica * 1.0 / n) DESC
     `).all().map((r) => ({ ccaa: r.ccaa, n: r.n, pct_juridica: +((r.n_juridica / r.n) * 100).toFixed(1) }));
@@ -476,7 +502,7 @@ function main() {
       FROM matriculaciones_moto m
       JOIN municipios mu ON mu.id = m.MUNICIPIO_ID
       JOIN comunidad_autonoma ca ON ca.id = mu.COMUNIDAD_AUTONOMA_ID
-      WHERE ca.NOMBRE_COMUNIDAD_AUTONOMA = 'Madrid, Comunidad de'
+      WHERE ca.NOMBRE_COMUNIDAD_AUTONOMA = 'Madrid, Comunidad de' AND m.${WHERE_PERIODO}
         AND m.MARCA_ITV_NORMALIZADO IN ('HONDA','YAMAHA','BMW','PIAGGIO','ZONTES','KTM')
       GROUP BY marca
       ORDER BY (fisica + juridica) DESC
@@ -487,12 +513,12 @@ function main() {
       FROM matriculaciones_moto m
       JOIN municipios mu ON mu.id = m.MUNICIPIO_ID
       JOIN provincia p ON p.id = mu.PROVINCIA_ID
-      WHERE m.SERVICIO = 'A01'
+      WHERE m.SERVICIO = 'A01' AND m.${WHERE_PERIODO}
       GROUP BY p.id ORDER BY n DESC LIMIT 8
     `).all();
-    const totalAlquilerSinConductor = db.prepare(`SELECT COUNT(*) n FROM matriculaciones_moto WHERE SERVICIO = 'A01'`).get().n;
+    const totalAlquilerSinConductor = db.prepare(`SELECT COUNT(*) n FROM matriculaciones_moto WHERE SERVICIO = 'A01' AND ${WHERE_PERIODO}`).get().n;
 
-    const renting = db.prepare(`SELECT RENTING cod, COUNT(*) n FROM matriculaciones_moto WHERE RENTING IS NOT NULL GROUP BY cod`).all();
+    const renting = db.prepare(`SELECT RENTING cod, COUNT(*) n FROM matriculaciones_moto WHERE RENTING IS NOT NULL AND ${WHERE_PERIODO} GROUP BY cod`).all();
 
     return {
       total, n_fisica: total - nJuridica, n_juridica: nJuridica, pct_juridica: +((nJuridica / total) * 100).toFixed(1),
@@ -519,33 +545,34 @@ function main() {
         SUM(CASE WHEN MARCA_ITV_NORMALIZADO = 'VOGE' THEN 1 ELSE 0 END) voge,
         COUNT(*) total
       FROM matriculaciones_moto
-      WHERE substr(DIA_ORIGEN,1,4) IN ('2024','2025','2026')
+      WHERE ${WHERE_PERIODO}
       GROUP BY ym ORDER BY ym
     `).all();
 
-    const porAnio = db.prepare(`
-      SELECT substr(DIA_ORIGEN,1,4) anio,
+    // Año 1 vs año 2: dos periodos de 12 meses exactos, 100% comparables.
+    const porPeriodo = db.prepare(`
+      SELECT ${CASE_ANIO} periodo,
         SUM(CASE WHEN MARCA_ITV_NORMALIZADO = 'ZONTES' THEN 1 ELSE 0 END) zontes,
         SUM(CASE WHEN MARCA_ITV_NORMALIZADO = 'VOGE' THEN 1 ELSE 0 END) voge,
         SUM(CASE WHEN MARCA_ITV_NORMALIZADO IN (${placeholders}) THEN 1 ELSE 0 END) chinas,
         COUNT(*) total
       FROM matriculaciones_moto
-      WHERE substr(DIA_ORIGEN,1,4) IN ('2024','2025','2026') AND substr(DIA_ORIGEN,6,2) <= '07'
-      GROUP BY anio ORDER BY anio
+      WHERE ${WHERE_PERIODO}
+      GROUP BY periodo ORDER BY periodo
     `).all(...MARCAS_CHINAS).map((r) => ({
-      anio: r.anio, total: r.total,
+      periodo: r.periodo, total: r.total,
       zontes_pct: +((r.zontes / r.total) * 100).toFixed(2),
       voge_pct: +((r.voge / r.total) * 100).toFixed(2),
       chinas_pct: +((r.chinas / r.total) * 100).toFixed(2),
     }));
 
-    const ranking2026 = db.prepare(`
+    const rankingAnio2 = db.prepare(`
       SELECT MARCA_ITV_NORMALIZADO marca, COUNT(*) n
-      FROM matriculaciones_moto WHERE substr(DIA_ORIGEN,1,4) = '2026'
+      FROM matriculaciones_moto WHERE DIA_ORIGEN >= '${ANIO2_INI}' AND DIA_ORIGEN <= '${PERIODO_FIN}'
       GROUP BY marca ORDER BY n DESC LIMIT 8
     `).all();
 
-    return { serie_mensual: serieMensual, por_anio_comparable: porAnio, ranking_2026: ranking2026 };
+    return { serie_mensual: serieMensual, por_periodo_comparable: porPeriodo, ranking_anio2: rankingAnio2 };
   })();
 
   db.close();
