@@ -16,7 +16,8 @@
  *
  * Vehiculos omitidos por tener modelo no identificable en la DGT ("N.A.",
  * "N/A", "NOT APPLICABLE"): ids 19 (SHERCO), 59 (RIEJU), 62 (RIEJU), 63
- * (BETA), 247 (RIEJU).
+ * (BETA), 247 (RIEJU). También el id 40 (LETBE HJ125T-5B): código interno
+ * sin correspondencia comercial identificable con confianza.
  */
 
 const CURATED = [
@@ -220,6 +221,113 @@ const CURATED = [
   { id: 422, marca: 'VELCA', modelo: 'EON', precio: 7490, tags: ['Scooter', 'Urbana', 'City/Commuting', 'Premium', 'Gama alta', 'Scooter Urban'] },
   { id: 487, marca: 'MITT', modelo: 'TY125T-26G', precio: 3195, tags: ['Trail', 'Moto Adventure', 'Adventure', '125cc', 'Carné A1', 'Off-road/Aventura', 'Económica', 'Trail Deportiva'] },
   { id: 187, marca: 'KAWASAKI', modelo: 'NINJA 500', precio: 6985, tags: ['Moto Sport', 'Deportivo', 'Carné A2', 'Carretera', 'Gama media'] },
+
+  // --- 201-300 (parcial: sesión sin presupuesto de búsqueda para completar el resto) ---
+  { id: 201, marca: 'KTM', modelo: 'KTM 390 DUKE', precio: 6099, tags: ['Moto Naked', 'Deportivo', 'Carné A2', 'Carretera', 'Premium', 'Gama media', 'Con ABS', 'Conectividad'] },
+  { id: 397, marca: 'MITT', modelo: '125 DESERT', precio: 3495, tags: ['Trail', 'Moto Adventure', 'Adventure', '125cc', 'Carné A1', 'Off-road/Aventura', 'Económica', 'Trail Deportiva'] },
+  { id: 31, marca: 'BMW', modelo: 'M 1000 XR', precio: 28950, tags: ['Moto Sport', 'Moto Touring', 'Deportivo', 'Grande (600cc+)', '700cc+', 'Carné A', 'Carretera', 'Premium', 'Gama alta'] },
+  { id: 502, marca: 'BMW', modelo: 'F 900 R A2', precio: 9960, tags: ['Moto Naked', 'Deportivo', 'Grande (600cc+)', '700cc+', 'Carné A2', 'Carretera', 'Gama alta'] },
+  { id: 185, marca: 'KEEWAY', modelo: 'GEMMA', precio: 2190, tags: ['Scooter', 'Urbana', 'City/Commuting', 'Ligera (110-124cc)', 'Carné A1', 'Económica', 'Entry-level', 'Scooter Urban'] },
+  { id: 192, marca: 'SYM', modelo: 'FUGUE 125 ABS TOP CASE', precio: 2999, tags: ['Scooter', 'Clásico', 'Urbana', 'City/Commuting', '125cc', 'Carné A1', 'Con ABS', 'Gama media', 'Scooter Urban'] },
+  { id: 365, marca: 'KAWASAKI', modelo: 'Z500', precio: 6189, tags: ['Moto Naked', 'Deportivo', 'Carné A2', 'Carretera', 'Gama media', 'Con ABS'] },
+  { id: 363, marca: 'KAWASAKI', modelo: 'Z500', precio: 6189, tags: ['Moto Naked', 'Deportivo', 'Carné A2', 'Carretera', 'Gama media', 'Con ABS'] },
+  { id: 398, marca: 'BAJAJ', modelo: 'PULSAR NS 400 Z', precio: 4499, tags: ['Moto Naked', 'Deportivo', 'Media (300-400cc)', 'Carné A2', 'Carretera', 'Económica', 'Con ABS'] },
+  { id: 155, marca: 'PIAGGIO', modelo: 'LIBERTY 50', precio: 2499, tags: ['Scooter', 'Urbana', 'City/Commuting', 'Económica', 'Entry-level', 'Compacto', 'Scooter Urban'] },
+
+  // --- Resto de top 300 (completado agosto 2026) ---
+  { id: 131, marca: 'LETBE', modelo: 'S125', precio: null, tags: ['Scooter', 'Urbana', 'City/Commuting', '125cc', 'Carné A1', 'Económica', 'Entry-level', 'Scooter Urban'] }, // nota: no se encontró un modelo LETBE "S125" en catálogos; posible código interno DGT sin correspondencia comercial clara, tags estimados por tipo de gama
+  { id: 160, marca: 'MITT', modelo: 'GT-S', precio: 2695, tags: ['Scooter', 'Deportivo', 'Grand Turismo', 'City/Commuting', '125cc', 'Carné A1', 'Gama media', 'Scooter Sport'] },
+  { id: 622, marca: 'KTM', modelo: 'KTM 790 ADVENTURE', precio: 11299, tags: ['Trail', 'Moto Adventure', 'Adventure', 'Grande (600cc+)', '700cc+', 'Carné A2', 'Off-road/Aventura', 'Gama alta', 'Trail Deportiva'] },
+  { id: 139, marca: 'YAMAHA', modelo: 'ESS025', precio: 3599, tags: ['Scooter', 'Urbana', 'City/Commuting', 'Bajo consumo', 'Carné A1', 'Premium', 'Entry-level', 'Scooter Urban'] }, // nota: ESS025 es el código de modelo interno del Yamaha Neo's (scooter eléctrico), no un código comercial independiente
+  { id: 204, marca: 'APRILIA', modelo: 'RS 660', precio: 12310, tags: ['Moto Sport', 'Deportivo', 'Grande (600cc+)', 'Carné A2', 'Carretera', 'Gama alta', 'Premium', 'Pantalla TFT', 'Conectividad'] },
+  { id: 298, marca: 'PIAGGIO', modelo: 'VESPA PRIMAVERA', precio: 4199, tags: ['Scooter', 'Clásico', 'Urbana', 'City/Commuting', 'Carné A1', 'Premium', 'Compacto', 'Scooter Urban'] }, // nota: se asume versión 50cc (Primavera 125 ya está catalogada aparte como id 193); precio de referencia Primavera 50 E5
+  { id: 382, marca: 'CYCLONE', modelo: 'RA125 PLUS', precio: 3090, tags: ['Moto Custom', 'Clásico', '125cc', 'Carné A1', 'Con ABS', 'Control de tracción', 'Urbana', 'Carretera', 'Económica'] },
+  { id: 458, marca: 'MACBOR', modelo: 'ROCKSTER 125 EVO E5+', precio: 2499, tags: ['Trail', 'Moto Adventure', 'Adventure', '125cc', 'Carné A1', 'Off-road/Aventura', 'Económica', 'Con ABS', 'Trail Deportiva'] },
+  { id: 173, marca: 'LETBE', modelo: 'ISLAND', precio: 2890, tags: ['Scooter', 'Urbana', 'City/Commuting', '125cc', 'Carné A1', 'Económica', 'Con ABS', 'Entry-level', 'Scooter Urban'] },
+  { id: 263, marca: 'CYCLONE', modelo: 'RT1', precio: 2795, tags: ['Scooter', 'Deportivo', 'Grand Turismo', 'City/Commuting', '125cc', 'Carné A1', 'Con ABS', 'Control de tracción', 'Pantalla TFT', 'Start & Stop', 'Scooter Sport'] },
+  { id: 299, marca: 'KEEWAY', modelo: 'FACT EVO 50 X', precio: null, tags: ['Scooter', 'Urbana', 'City/Commuting', 'Económica', 'Entry-level', 'Compacto', 'Scooter Urban'] }, // nota: no se confirmó precio fiable específico de la variante "X"
+  { id: 189, marca: 'MORBIDELLI', modelo: 'F125', precio: 2790, tags: ['Moto Naked', 'Deportivo', '125cc', 'Carné A1', 'Con ABS', 'Pantalla TFT', 'Carretera', 'Económica'] },
+  { id: 107, marca: 'QJMOTOR', modelo: 'LTS 50 S', precio: 2199, tags: ['Scooter', 'Urbana', 'City/Commuting', 'Económica', 'Entry-level', 'Compacto', 'Pantalla TFT', 'Scooter Urban'] },
+  { id: 142, marca: 'SUZUKI', modelo: 'GSX-S125', precio: 3699, tags: ['Moto Naked', 'Deportivo', '125cc', 'Carné A1', 'Carretera', 'Mainstream', 'Con ABS'] },
+  { id: 158, marca: 'KAWASAKI', modelo: 'Z125', precio: 5125, tags: ['Moto Naked', 'Deportivo', '125cc', 'Carné A1', 'Carretera', 'Premium'] },
+  { id: 212, marca: 'CFMOTO', modelo: '125 NK', precio: 3395, tags: ['Moto Naked', 'Deportivo', '125cc', 'Carné A1', 'Carretera', 'Económica', 'Pantalla TFT'] },
+  { id: 245, marca: 'DUCATI', modelo: 'PANIGALE V2', precio: 17490, tags: ['Moto Sport', 'Deportivo', 'Grande (600cc+)', '700cc+', 'Carné A', 'Carretera', 'Premium', 'Gama alta', 'Pantalla TFT', 'Conectividad'] },
+  { id: 282, marca: 'HONDA', modelo: 'CB 500 F', precio: 6175, tags: ['Moto Naked', 'Deportivo', 'Carné A2', 'Carretera', 'Gama media', 'Mainstream', 'Con ABS'] },
+  { id: 323, marca: 'KAWASAKI', modelo: 'NINJA 125', precio: 5575, tags: ['Moto Sport', 'Deportivo', '125cc', 'Carné A1', 'Carretera', 'Premium', 'Con ABS'] },
+  { id: 54, marca: 'SYM', modelo: 'FIDDLE 50 E5+', precio: 2399, tags: ['Scooter', 'Clásico', 'Urbana', 'City/Commuting', 'Económica', 'Entry-level', 'Compacto', 'Scooter Urban'] },
+  { id: 86, marca: 'HUSQVARNA', modelo: 'HUSQVARNA TE 300', precio: 11395, tags: ['Trail', 'Off-road/Aventura', 'Carné A', '300cc', 'Premium', 'Gama alta'] },
+  { id: 281, marca: 'APRILIA', modelo: 'SR GT 400', precio: 6750, tags: ['Scooter', 'Crossover', 'Adventure', 'Media (300-400cc)', 'Carné A2', 'Gama media', 'Mixta', 'Scooter Adventure'] },
+  { id: 266, marca: 'SUZUKI', modelo: 'DR-Z400', precio: 8999, tags: ['Trail', 'Off-road/Aventura', 'Carné A2', 'Gama media'] }, // nota: nameplate ya no comercializado; sucesor actual DR-Z4S, precio usado como referencia
+  { id: 106, marca: 'MACBOR', modelo: 'ROCKSTER FLAT 125 EVO', precio: 2599, tags: ['Trail', 'Moto Adventure', 'Adventure', '125cc', 'Carné A1', 'Off-road/Aventura', 'Económica', 'Trail Deportiva'] },
+  { id: 2, marca: 'MITT', modelo: '125GTS', precio: 2695, tags: ['Scooter', 'Deportivo', 'Grand Turismo', 'City/Commuting', 'Carretera', '125cc', 'Carné A1', 'Económica', 'Entry-level', 'Scooter Sport'] },
+  { id: 319, marca: 'MACBOR', modelo: 'EIGHT MILE 125 LC', precio: 3299, tags: ['Moto Naked', 'Clásico', 'Urbana', '125cc', 'Carné A1', 'Económica', 'Carretera', 'Mainstream'] },
+  { id: 474, marca: 'KAWASAKI', modelo: 'ELIMINATOR', precio: 6699, tags: ['Moto Custom', 'Clásico', 'Carné A2', 'Urbana', 'Carretera', 'Gama media'] },
+  { id: 251, marca: 'APRILIA', modelo: 'SX 125', precio: 4550, tags: ['Trail', 'Off-road/Aventura', 'Adventure', '125cc', 'Carné A1', 'Deportivo', 'Mixta', 'Gama media'] },
+  { id: 224, marca: 'CYCLONE', modelo: 'LS-Z', precio: null, tags: ['Trail', 'Off-road/Aventura', '125cc', 'Carné A1', 'Económica'] }, // nota: modelo "LS-Z" no localizado en el catálogo Cyclone España (gama conocida: RX1/RX1 Pro/RX2/RX4/Carrera/Battlo); posible modelo no comercializado en España o nombre DGT distinto
+  { id: 374, marca: 'MOTO MORINI', modelo: 'X-CAPE', precio: 7190, tags: ['Trail', 'Moto Adventure', 'Adventure', 'Grande (600cc+)', 'Carné A2', 'Off-road/Aventura', 'Gama media', 'Mixta', 'Trail Deportiva'] },
+  { id: 246, marca: 'KTM', modelo: 'KTM 125 ENDURO', precio: 5499, tags: ['Trail', 'Off-road/Aventura', '125cc', 'Carné A1', 'Adventure', 'Premium', 'Gama alta'] },
+  { id: 283, marca: 'KTM', modelo: 'KTM 125 SMC R', precio: 5399, tags: ['Moto Sport', 'Deportivo', '125cc', 'Carné A1', 'Carretera', 'Premium', 'Con ABS'] },
+  { id: 256, marca: 'MORBIDELLI', modelo: 'T502X', precio: 5390, tags: ['Trail', 'Moto Adventure', 'Adventure', 'Carné A2', 'Off-road/Aventura', 'Gama media', 'Trail Deportiva', 'Económica'] },
+  { id: 305, marca: 'TRIUMPH', modelo: 'SCRAMBLER 400 X', precio: 6445, tags: ['Moto Naked', 'Clásico', 'Crossover', 'Carné A2', 'Mixta', 'Carretera', 'Off-road/Aventura', 'Gama media', 'Premium'] },
+  { id: 345, marca: 'SHERCO', modelo: '300 SE-R', precio: null, tags: ['Trail', 'Off-road/Aventura', 'Carné A2', 'Gama media', 'Premium'] }, // nota: modelo de 2021 aparentemente descontinuado, sustituido por gama "SE Racing"; sin PVP oficial vigente fiable
+  { id: 372, marca: 'HONDA', modelo: 'CMX1100', precio: 11450, tags: ['Moto Custom', 'Clásico', 'Grande (600cc+)', '700cc+', 'Carné A', 'Carretera', 'Gama alta', 'Premium'] },
+  { id: 983, marca: 'SILENCE', modelo: 'SEAT MÓ ESCOOTER 125', precio: 6250, tags: ['Scooter', 'Urbana', 'City/Commuting', 'Bajo consumo', 'Carné A1', 'Premium', 'Scooter Urban'] },
+  { id: 367, marca: 'NEXT', modelo: 'NX CROSS 125I', precio: 2999, tags: ['Trail', 'Moto Adventure', 'Adventure', '125cc', 'Carné A1', 'Off-road/Aventura', 'Económica', 'Entry-level'] },
+  { id: 418, marca: 'KAWASAKI', modelo: 'Z650RS', precio: 8399, tags: ['Moto Naked', 'Clásico', 'Grande (600cc+)', 'Carné A2', 'Carretera', 'Gama media', 'Mainstream'] },
+  { id: 186, marca: 'TRIUMPH', modelo: 'TRIDENT 660', precio: 8295, tags: ['Moto Naked', 'Deportivo', 'Grande (600cc+)', 'Carné A2', 'Carretera', 'Gama media', 'Premium'] },
+  { id: 337, marca: 'CYCLONE', modelo: 'RX1 PRO', precio: 3385, tags: ['Trail', 'Moto Adventure', 'Adventure', '125cc', 'Carné A1', 'Off-road/Aventura', 'Económica', 'Con ABS', 'Control de tracción'] },
+  { id: 524, marca: 'ROYAL ENFIELD', modelo: 'INTERCEPTOR BEAR 650', precio: 7287, tags: ['Moto Custom', 'Clásico', 'Grande (600cc+)', 'Carné A2', 'Carretera', 'Off-road/Aventura', 'Mixta', 'Gama media'] }, // nota: interpretado como Royal Enfield Bear 650 (scrambler sobre base Interceptor 650); nombre DGT no corresponde a un único modelo comercial
+  { id: 380, marca: 'HONDA', modelo: 'ST125A', precio: 4450, tags: ['Moto Custom', 'Clásico', '125cc', 'Carné A1', 'Urbana', 'Carretera', 'Compacto', 'Premium'] },
+  { id: 438, marca: 'BMW', modelo: 'R 12 G/S', precio: 18090, tags: ['Trail', 'Moto Adventure', 'Clásico', 'Adventure', 'Grande (600cc+)', 'Carné A', 'Off-road/Aventura', 'Premium', 'Gama alta', 'Trail Deportiva'] },
+  { id: 551, marca: 'YAMAHA', modelo: 'XSR-900', precio: 12299, tags: ['Moto Naked', 'Clásico', 'Grande (600cc+)', '700cc+', 'Carné A', 'Carretera', 'Premium', 'Gama alta', 'Pantalla TFT', 'Conectividad'] },
+  { id: 273, marca: 'KTM', modelo: 'KTM 790 DUKE', precio: 8799, tags: ['Moto Naked', 'Deportivo', 'Grande (600cc+)', '700cc+', 'Carné A2', 'Carretera', 'Gama media', 'Premium', 'Pantalla TFT'] },
+  { id: 443, marca: 'DUCATI', modelo: 'STREETFIGHTER', precio: 15090, tags: ['Moto Naked', 'Deportivo', 'Grande (600cc+)', 'Carné A', 'Carretera', 'Premium', 'Gama alta', 'Pantalla TFT', 'Conectividad'] },
+  { id: 642, marca: 'ITALJET', modelo: 'DRAGSTER 700 TWIN', precio: 12900, tags: ['Scooter', 'Deportivo', 'Grand Turismo', 'Grande (600cc+)', '700cc+', 'Carné A2', 'Carretera', 'Premium', 'Gama alta', 'Scooter Sport'] },
+  { id: 626, marca: 'ZONTES', modelo: '350R', precio: 4387, tags: ['Moto Naked', 'Deportivo', 'Media (300-400cc)', 'Carné A2', 'Carretera', 'Gama media', 'Económica'] },
+  { id: 239, marca: 'BENELLI', modelo: 'BKX 125', precio: 3790, tags: ['Trail', 'Moto Adventure', 'Adventure', '125cc', 'Carné A1', 'Off-road/Aventura', 'Económica', 'Trail Deportiva'] },
+  { id: 565, marca: 'QJMOTOR', modelo: 'SRT 700 E5+', precio: 7999, tags: ['Trail', 'Moto Adventure', 'Adventure', 'Grande (600cc+)', '700cc+', 'Carné A2', 'Off-road/Aventura', 'Mixta', 'Gama media', 'Trail Turismo'] },
+  { id: 236, marca: 'BAJAJ', modelo: 'DOMINAR D 400', precio: 4499, tags: ['Moto Naked', 'Deportivo', 'Carné A2', 'Carretera', 'Económica', 'Gama media', 'Touring'] }, // precio orientativo, hay promos puntuales según fuente
+  { id: 90, marca: 'KEEWAY', modelo: 'VIESTE 125XDV', precio: 2790, tags: ['Scooter', 'Crossover', 'Adventure', '125cc', 'Carné A1', 'Económica', 'City/Commuting', 'Scooter Adventure'] },
+  { id: 326, marca: 'MOTO MORINI', modelo: 'SEIEMMEZZO', precio: 4390, tags: ['Moto Naked', 'Clásico', 'Grande (600cc+)', 'Carné A2', 'Carretera', 'Gama media', 'Premium'] }, // asumida versión STR (naked, entrada)
+  { id: 393, marca: 'YAMAHA', modelo: 'MT-03', precio: 6399, tags: ['Moto Naked', 'Deportivo', 'Media (300-400cc)', 'Carné A2', 'Carretera', 'Gama media', 'Mainstream'] },
+  { id: 11, marca: 'BENDA', modelo: 'LFC700', precio: 11990, tags: ['Moto Custom', 'Clásico', 'Grande (600cc+)', '700cc+', 'Carné A2', 'Carretera', 'Premium', 'Gama alta'] },
+  { id: 274, marca: 'QJMOTOR', modelo: 'LTR 125 E5+', precio: 2999, tags: ['Scooter', 'Urbana', 'City/Commuting', '125cc', 'Carné A1', 'Económica', 'Con ABS', 'Scooter Urban'] },
+  { id: 491, marca: 'MORBIDELLI', modelo: 'SC 125', precio: 2690, tags: ['Scooter', 'Urbana', 'City/Commuting', '125cc', 'Carné A1', 'Económica', 'Entry-level', 'Scooter Urban'] },
+  { id: 834, marca: 'TRIUMPH', modelo: 'TIGER 900 GT PRO', precio: 15895, tags: ['Trail', 'Moto Adventure', 'Moto Touring', 'Adventure', 'Grande (600cc+)', '700cc+', 'Carné A2', 'Off-road/Aventura', 'Mixta', 'Premium', 'Gama alta', 'Trail Turismo'] },
+  { id: 177, marca: 'KYMCO', modelo: 'XCITING VS 400', precio: 6590, tags: ['Scooter', 'Deportivo', 'Grand Turismo', 'Media (300-400cc)', 'Carné A2', 'Premium', 'Gama alta', 'Con ABS', 'Scooter Sport'] },
+  { id: 309, marca: 'TRIUMPH', modelo: 'SPEED TWIN 900', precio: 9995, tags: ['Moto Naked', 'Clásico', 'Grande (600cc+)', '700cc+', 'Carné A2', 'Carretera', 'Premium', 'Gama alta'] },
+  { id: 343, marca: 'KTM', modelo: 'KTM 890 ADVENTURE R', precio: 14399, tags: ['Trail', 'Moto Adventure', 'Adventure', 'Grande (600cc+)', '700cc+', 'Carné A', 'Off-road/Aventura', 'Premium', 'Gama alta', 'Trail Deportiva'] },
+  { id: 295, marca: 'HONDA', modelo: 'CB500FAC', precio: 6175, tags: ['Moto Naked', 'Deportivo', 'Grande (600cc+)', 'Carné A2', 'Carretera', 'Gama media', 'Con ABS', 'Control de tracción'] },
+  { id: 644, marca: 'KAWASAKI', modelo: 'NINJA ZX-10R', precio: 20150, tags: ['Moto Sport', 'Deportivo', 'Grande (600cc+)', 'Carné A', 'Carretera', 'Gama alta', 'Premium', 'Pantalla TFT', 'Control de tracción'] },
+  { id: 132, marca: 'SILENCE', modelo: 'S02', precio: 2990, tags: ['Scooter', 'Urbana', 'City/Commuting', 'Carné A1', 'Bajo consumo', 'Económica', 'Entry-level', 'Scooter Urban'] },
+  { id: 154, marca: 'MH MOTORCYCLES', modelo: 'RAPTOR', precio: 1995, tags: ['Scooter', 'Urbana', 'City/Commuting', 'Compacto', 'Económica', 'Entry-level', 'Scooter Urban'] }, // asumido MH Raptor 50
+  { id: 170, marca: 'SUZUKI', modelo: 'BURGMAN 400', precio: 8875, tags: ['Scooter', 'Deportivo', 'Grand Turismo', 'Media (300-400cc)', 'Carné A2', 'Premium', 'Gama alta', 'Turismo', 'Scooter Sport'] },
+  { id: 333, marca: 'QJMOTOR', modelo: 'SRV 12 E5+', precio: 3899, tags: ['Moto Custom', 'Clásico', '125cc', 'Carné A1', 'Carretera', 'Con ABS', 'Económica', 'Urbana'] },
+  { id: 472, marca: 'BMW', modelo: 'R 12 NINET', precio: 18250, tags: ['Moto Custom', 'Clásico', 'Grande (600cc+)', 'Carné A', 'Carretera', 'Premium', 'Gama alta'] },
+  { id: 248, marca: 'SILENCE', modelo: 'S04', precio: 8839, tags: ['City/Commuting', 'Bajo consumo', 'Económica', 'Entry-level', 'Compacto'] }, // nota: el S04 es un cuadriciclo ligero eléctrico (L6e/L7e), no una moto propiamente dicha
+  { id: 505, marca: 'LETBE', modelo: 'VELOCITY', precio: 2490, tags: ['Scooter', 'Urbana', 'City/Commuting', '125cc', 'Carné A1', 'Económica', 'Con ABS', 'Control de tracción', 'Start & Stop', 'Scooter Urban'] },
+  { id: 208, marca: 'KTM', modelo: 'KTM 390 SMC R', precio: 6249, tags: ['Moto Naked', 'Deportivo', 'Media (300-400cc)', 'Carné A2', 'Carretera', 'Con ABS', 'Control de tracción', 'Pantalla TFT', 'Gama media'] },
+  { id: 311, marca: 'MORBIDELLI', modelo: 'SC125LX', precio: 2490, tags: ['Scooter', 'Urbana', 'City/Commuting', '125cc', 'Carné A1', 'Económica', 'Entry-level', 'Scooter Urban'] },
+  { id: 15, marca: 'BSA', modelo: 'BANTAM', precio: 3592, tags: ['Moto Clásica', 'Clásico', 'Media (300-400cc)', 'Carné A2', 'Carretera', 'Con ABS', 'Económica', 'Gama media', 'Urbana'] }, // BSA Bantam 350, precio promocional España
+  { id: 420, marca: 'KAWASAKI', modelo: 'Z900RS', precio: 14300, tags: ['Moto Clásica', 'Clásico', 'Grande (600cc+)', '700cc+', 'Carné A', 'Carretera', 'Gama alta', 'Premium'] },
+  { id: 481, marca: 'APRILIA', modelo: 'RS 457', precio: 6999, tags: ['Moto Sport', 'Deportivo', 'Carné A2', 'Carretera', 'Con ABS', 'Control de tracción', 'Pantalla TFT', 'Conectividad', 'Gama media'] },
+  { id: 407, marca: 'SHERCO', modelo: '125 SE-R', precio: 4899, tags: ['Trail', 'Adventure', 'Off-road/Aventura', '125cc', 'Carné A1', 'Gama media', 'Premium'] }, // precio de la variante 4T SE-RS Factory actualmente comercializada
+  { id: 774, marca: 'SUPER SOCO', modelo: 'CPX', precio: 4289, tags: ['Scooter', 'Urbana', 'City/Commuting', 'Bajo consumo', 'Carné A1', 'Premium', 'Scooter Urban'] },
+  { id: 486, marca: 'EFUN', modelo: 'PUSA90', precio: null, tags: ['Scooter', 'Urbana', 'City/Commuting', 'Bajo consumo', 'Económica', 'Entry-level'] }, // solo se encuentran anuncios de particulares/tiendas no oficiales, sin PVP oficial fiable
+  { id: 109, marca: 'KEEWAY', modelo: 'VERSILIA 125', precio: 2390, tags: ['Scooter', 'Urbana', 'City/Commuting', '125cc', 'Carné A1', 'Económica', 'Entry-level', 'Scooter Urban'] },
+  { id: 244, marca: 'CYCLONE', modelo: 'RX600', precio: 5290, tags: ['Trail', 'Moto Adventure', 'Adventure', 'Grande (600cc+)', 'Carné A2', 'Off-road/Aventura', 'Económica', 'Gama media', 'Trail Deportiva'] },
+  { id: 496, marca: 'QJMOTOR', modelo: 'SRK 125 R E5+', precio: 3799, tags: ['Moto Naked', 'Deportivo', '125cc', 'Carné A1', 'Carretera', 'Económica', 'Entry-level', 'Con ABS'] }, // precio con seguro incluido; base sin seguro 3.299€
+  { id: 744, marca: 'BMW', modelo: 'R 1300 R', precio: 17670, tags: ['Moto Naked', 'Deportivo', 'Grande (600cc+)', '700cc+', 'Carné A', 'Carretera', 'Premium', 'Gama alta', 'Con ABS', 'Control de tracción', 'Pantalla TFT', 'Conectividad'] },
+  { id: 175, marca: 'BENDA', modelo: 'CHINCHILLA', precio: 6250, tags: ['Moto Custom', 'Clásico', 'Carné A2', 'Carretera', 'Gama media', 'Urbana'] }, // asumida versión Chinchilla 500 (475,6cc)
+  { id: 519, marca: 'TRIUMPH', modelo: 'STREET TRIPLE RS', precio: 13895, tags: ['Moto Naked', 'Deportivo', 'Grande (600cc+)', '700cc+', 'Carné A', 'Carretera', 'Premium', 'Gama alta', 'Con ABS', 'Control de tracción', 'Pantalla TFT', 'Conectividad'] },
+  { id: 456, marca: 'HONDA', modelo: 'MSX125A', precio: 4200, tags: ['Moto Naked', 'Urbana', '125cc', 'Carné A1', 'City/Commuting', 'Compacto', 'Económica', 'Entry-level'] }, // Honda MSX125 Grom
+  { id: 424, marca: 'KOVE', modelo: '450 RALLY 2026', precio: 9499, tags: ['Trail', 'Moto Adventure', 'Adventure', 'Carné A2', 'Off-road/Aventura', 'Gama media', 'Trail Deportiva'] }, // versión Regular Edition 2026
+  { id: 483, marca: 'KTM', modelo: 'KTM 390 ADVENTURE X', precio: 5999, tags: ['Trail', 'Moto Adventure', 'Adventure', 'Media (300-400cc)', 'Carné A2', 'Off-road/Aventura', 'Gama media', 'Trail Deportiva'] },
+  { id: 241, marca: 'MH MOTORCYCLES', modelo: 'VRS', precio: 3295, tags: ['Scooter', 'Urbana', 'City/Commuting', '125cc', 'Carné A1', 'Gama media', 'Con ABS', 'Control de tracción', 'Pantalla TFT', 'Scooter Urban'] },
+  { id: 255, marca: 'MORBIDELLI', modelo: 'SC125 RE', precio: 2690, tags: ['Scooter', 'Clásico', 'Urbana', 'City/Commuting', '125cc', 'Carné A1', 'Económica', 'Con ABS', 'Control de tracción', 'Entry-level', 'Scooter Urban'] },
+  { id: 302, marca: 'KEEWAY', modelo: 'RKF 125 ABS', precio: 3190, tags: ['Moto Naked', 'Deportivo', '125cc', 'Carné A1', 'Carretera', 'Económica', 'Con ABS', 'Entry-level'] },
+  { id: 344, marca: 'PIAGGIO', modelo: 'BEVERLY 400 HPE', precio: 6799, tags: ['Scooter', 'Deportivo', 'Grand Turismo', 'Media (300-400cc)', 'Carné A2', 'Turismo', 'Gama media', 'Scooter Sport'] },
+  { id: 384, marca: 'CFMOTO', modelo: 'DUAL250', precio: 2995, tags: ['Trail', 'Moto Adventure', 'Adventure', 'Carné A2', 'Off-road/Aventura', 'Económica', 'Con ABS', 'Entry-level', 'Trail Deportiva'] },
 ];
 
 module.exports = { CURATED };

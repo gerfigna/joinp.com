@@ -112,11 +112,14 @@ function buildVehiculos(db, groups, keptColumns) {
   ensureVehiculosTable(db, keptColumns);
 
   const columns = [...KEY_COLUMNS, ...keptColumns];
+  const onConflict = keptColumns.length > 0
+    ? `DO UPDATE SET ${keptColumns.map((c) => `"${c}" = excluded."${c}"`).join(', ')}`
+    : 'DO NOTHING';
   const upsert = db.prepare(`
     INSERT INTO vehiculos (${columns.map((c) => `"${c}"`).join(', ')})
     VALUES (${columns.map(() => '?').join(', ')})
     ON CONFLICT (${KEY_COLUMNS.map((c) => `"${c}"`).join(', ')})
-    DO UPDATE SET ${keptColumns.map((c) => `"${c}" = excluded."${c}"`).join(', ')}
+    ${onConflict}
   `);
 
   db.exec('BEGIN');
