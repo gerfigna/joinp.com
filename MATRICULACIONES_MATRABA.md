@@ -446,34 +446,33 @@ Código de servicio del vehículo — versión nueva (`SERVICIO`, pos 189, len 3
 
 | Código | Descripción                                        |
 |--------|----------------------------------------------------|
-| `A00` | Público — Sin especificar                          |
-| `A01` | Público — Alquiler sin conductor                   |
-| `A02` | Público — Alquiler con conductor                   |
-| `A03` | Público — Aprendizaje de conducción                |
-| `A04` | Público — Taxi                                     |
-| `A05` | Público — Auxilio en carretera                     |
-| `A07` | Público — Ambulancia                               |
-| `A08` | Público — Funerario                                |
-| `A09` | Particular — Obras                                 |
-| `A10` | Público — Mercancías peligrosas                    |
-| `A11` | Público — Basurero                                 |
-| `A12` | Público — Transporte escolar                       |
-| `A13` | Público — Policía                                  |
-| `A14` | Público — Bomberos                                 |
-| `A15` | Público — Protección civil y salvamento            |
-| `A16` | Público — Defensa                                  |
-| `A18` | Público — Actividad económica                      |
-| `A20` | Público — Mercancías perecederas                   |
-| `B00` | Particular — Sin especificar                       |
-| `B06` | Particular — Agrícola                              |
-| `B07` | Particular — (sin descripción en documento fuente) |
-| `B09` | Particular — Obras                                 |
-| `B17` | Particular — Vivienda                              |
-| `B18` | Particular — Actividad económica                   |
-| `B19` | Particular — Recreativo                            |
-| `B21` | Particular — Vehículo para ferias                  |
-| `B21` | Particular — Vehículo para ferias                  |
-| `B21` | Particular — Vehículo Histórico                    |
+| `A00`  | Público — Sin especificar                          |
+| `A01`  | Público — Alquiler sin conductor                   |
+| `A02`  | Público — Alquiler con conductor                   |
+| `A03`  | Público — Aprendizaje de conducción                |
+| `A04`  | Público — Taxi                                     |
+| `A05`  | Público — Auxilio en carretera                     |
+| `A07`  | Público — Ambulancia                               |
+| `A08`  | Público — Funerario                                |
+| `A09`  | Particular — Obras                                 |
+| `A10`  | Público — Mercancías peligrosas                    |
+| `A11`  | Público — Basurero                                 |
+| `A12`  | Público — Transporte escolar                       |
+| `A13`  | Público — Policía                                  |
+| `A14`  | Público — Bomberos                                 |
+| `A15`  | Público — Protección civil y salvamento            |
+| `A16`  | Público — Defensa                                  |
+| `A18`  | Público — Actividad económica                      |
+| `A20`  | Público — Mercancías perecederas                   |
+| `B00`  | Particular — Sin especificar                       |
+| `B06`  | Particular — Agrícola                              |
+| `B07`  | Particular — (sin descripción en documento fuente) |
+| `B09`  | Particular — Obras                                 |
+| `B17`  | Particular — Vivienda                              |
+| `B18`  | Particular — Actividad económica                   |
+| `B19`  | Particular — Recreativo                            |
+| `B21`  | Particular — Vehículo para ferias                  |
+| `B22`  | Particular — Vehículo Histórico                    |
 
 ---
 
