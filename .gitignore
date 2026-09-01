@@ -3,3 +3,4 @@ node_modules/
 /.claude/settings.local.json
 /microdatos-etl/.claude/settings.local.json
 /.atl/
+/microdatos-etl/db/
