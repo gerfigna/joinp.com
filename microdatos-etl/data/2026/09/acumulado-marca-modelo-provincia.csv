@@ -1,0 +1,610 @@
+MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
+"APRILIA","RS 457","Cádiz","Andalucía","457",1
+"APRILIA","RX 125","Lleida","Cataluña","124",1
+"APRILIA","SR GT 125","Cádiz","Andalucía","125",2
+"APRILIA","SR GT 125","Córdoba","Andalucía","125",1
+"APRILIA","SR GT 125","Málaga","Andalucía","125",1
+"APRILIA","SR GT 125","Rioja (La)","La Rioja","125",1
+"APRILIA","SR GT 125","Tarragona","Cataluña","125",1
+"APRILIA","SR GT 400","Girona","Cataluña","399",1
+"APRILIA","SR GT 400","Madrid","Comunidad de Madrid","399",1
+"BAJAJ","PULSAR NS 125","Barcelona","Cataluña","124",1
+"BAJAJ","PULSAR NS 125","Gipuzkoa","País Vasco","124",1
+"BAJAJ","PULSAR NS 125","Illes Balears","Illes Balears","124",1
+"BAJAJ","PULSAR NS 125","Zaragoza","Aragón","124",1
+"BAJAJ","PULSAR NS 200","Sevilla","Andalucía","200",1
+"BENDA","NAPOLEON 125","Barcelona","Cataluña","125",1
+"BENDA","NAPOLEON 125","Illes Balears","Illes Balears","125",1
+"BENELLI","502C CRUISER","Alicante/Alacant","Comunidad Valenciana","500",1
+"BENELLI","BN125","Jaén","Andalucía","125",1
+"BENELLI","TRK 702","Cádiz","Andalucía","698",1
+"BENELLI","TRK 702","Ciudad Real","Castilla-La Mancha","698",1
+"BENELLI","TRK 902","Valencia/València","Comunidad Valenciana","904",1
+"BETA","N/A","Asturias","Principado de Asturias","293",2
+"BETA","N/A","Huesca","Aragón","293",1
+"BETA","N/A","Navarra","Comunidad Foral de Navarra","293",1
+"BMW","F 800 GS","Alicante/Alacant","Comunidad Valenciana","895",1
+"BMW","F 900 GS ADVENTURE","Madrid","Comunidad de Madrid","895",1
+"BMW","R 1300 GS","Alicante/Alacant","Comunidad Valenciana","1300",1
+"BMW","R 1300 GS","Barcelona","Cataluña","1300",1
+"BMW","R 1300 GS","Toledo","Castilla-La Mancha","1300",1
+"BMW","R 1300 GS ADVENTURE","Murcia","Región de Murcia","1300",1
+"BMW","R 1300 RS","Valencia/València","Comunidad Valenciana","1300",1
+"BMW","S 1000 RR","Bizkaia","País Vasco","999",1
+"BSA","BANTAM","Tarragona","Cataluña","334",1
+"BSA","SCRAMBLER","Asturias","Principado de Asturias","652",1
+"BSA","SCRAMBLER","Cantabria","Cantabria","652",1
+"CFMOTO","1000MT-X","Albacete","Castilla-La Mancha","946",1
+"CFMOTO","1000MT-X","Alicante/Alacant","Comunidad Valenciana","946",1
+"CFMOTO","1000MT-X","Barcelona","Cataluña","946",1
+"CFMOTO","1000MT-X","Valencia/València","Comunidad Valenciana","946",1
+"CFMOTO","125 NK","Alicante/Alacant","Comunidad Valenciana","124",1
+"CFMOTO","450MT","Alicante/Alacant","Comunidad Valenciana","449",1
+"CFMOTO","450MT","Málaga","Andalucía","449",1
+"CFMOTO","450MT","Valencia/València","Comunidad Valenciana","449",1
+"CFMOTO","675NK","Asturias","Principado de Asturias","674",1
+"CFMOTO","675NK","Zaragoza","Aragón","674",1
+"CFMOTO","675SR-R","Tarragona","Cataluña","674",1
+"CFMOTO","700MT","Girona","Cataluña","693",1
+"CFMOTO","800MT","Málaga","Andalucía","799",1
+"CFMOTO","800MT","Valencia/València","Comunidad Valenciana","799",1
+"CFMOTO","800MT-ES","Valencia/València","Comunidad Valenciana","799",1
+"CFMOTO","800MT-X","Barcelona","Cataluña","799",1
+"CFMOTO","800NK","Sevilla","Andalucía","799",1
+"CYCLONE","CARRERA 125","Córdoba","Andalucía","125",1
+"CYCLONE","LS-Z","Cádiz","Andalucía","124",1
+"CYCLONE","LS-Z","Córdoba","Andalucía","124",1
+"CYCLONE","LS-Z","Lugo","Galicia","124",1
+"CYCLONE","RA125 PLUS","Granada","Andalucía","124",1
+"CYCLONE","RT1","Asturias","Principado de Asturias","125",1
+"CYCLONE","RT1","Córdoba","Andalucía","125",1
+"DUCATI","MULTISTRADA V4","Pontevedra","Galicia","1158",1
+"EFUN","LION","Alicante/Alacant","Comunidad Valenciana","125",1
+"EFUN","LION","Palmas (Las)","Canarias","125",1
+"GASGAS","EC 300","Gipuzkoa","País Vasco","293",1
+"HERO MOTOCORP","X PULSE 200 4V","Granada","Andalucía","200",1
+"HERO MOTOCORP","X PULSE 200 4V","Madrid","Comunidad de Madrid","200",1
+"HERO MOTOCORP","X PULSE 200 4V","Tarragona","Cataluña","200",1
+"HERO MOTOCORP","XOOM 125R ZX","Jaén","Andalucía","125",1
+"HONDA","ADV 350","Alicante/Alacant","Comunidad Valenciana","330",1
+"HONDA","ADV 350","Barcelona","Cataluña","330",3
+"HONDA","ADV 350","Bizkaia","País Vasco","330",1
+"HONDA","ADV 350","Cádiz","Andalucía","330",2
+"HONDA","ADV 350","Ceuta","Ceuta","330",1
+"HONDA","ADV 350","Girona","Cataluña","330",2
+"HONDA","ADV 350","Huelva","Andalucía","330",1
+"HONDA","ADV 350","Illes Balears","Illes Balears","330",1
+"HONDA","ADV 350","Madrid","Comunidad de Madrid","330",2
+"HONDA","ADV 350","Málaga","Andalucía","330",1
+"HONDA","ADV 350","Pontevedra","Galicia","330",1
+"HONDA","ADV 350","Santa Cruz de Tenerife","Canarias","330",1
+"HONDA","ADV 350","Sevilla","Andalucía","330",2
+"HONDA","ADV 350","Valencia/València","Comunidad Valenciana","330",1
+"HONDA","ADV 350","Zamora","Castilla y León","330",1
+"HONDA","ADV 750","Barcelona","Cataluña","745",2
+"HONDA","ADV 750","Cádiz","Andalucía","745",1
+"HONDA","ADV 750","Madrid","Comunidad de Madrid","745",2
+"HONDA","ADV 750","Málaga","Andalucía","745",1
+"HONDA","ADV 750","Tarragona","Cataluña","745",1
+"HONDA","CB 125 F","Lleida","Cataluña","124",1
+"HONDA","CB 125 F","Málaga","Andalucía","124",1
+"HONDA","CB1000GT","Illes Balears","Illes Balears","1000",1
+"HONDA","CB1000GT","Lleida","Cataluña","1000",1
+"HONDA","CB1000GT","Lugo","Galicia","1000",1
+"HONDA","CB1000S","Lugo","Galicia","1000",1
+"HONDA","CB1000SP","Barcelona","Cataluña","1000",1
+"HONDA","CB650RA","Girona","Cataluña","649",1
+"HONDA","CB650RA","Santa Cruz de Tenerife","Canarias","649",1
+"HONDA","CB750 Hornet","Barcelona","Cataluña","755",4
+"HONDA","CB750 Hornet","Cádiz","Andalucía","755",1
+"HONDA","CB750 Hornet","Córdoba","Andalucía","755",1
+"HONDA","CB750 Hornet","Tarragona","Cataluña","755",3
+"HONDA","CB750 Hornet","Valencia/València","Comunidad Valenciana","755",1
+"HONDA","CBF 125","Almería","Andalucía","125",1
+"HONDA","CBF 125","Barcelona","Cataluña","125",2
+"HONDA","CBF 125","Málaga","Andalucía","125",1
+"HONDA","CBF 125","Palmas (Las)","Canarias","125",1
+"HONDA","CBF 125","Valladolid","Castilla y León","125",1
+"HONDA","CBR500","Barcelona","Cataluña","471",2
+"HONDA","CBR600R3","Alicante/Alacant","Comunidad Valenciana","599",1
+"HONDA","CBR600R3","Bizkaia","País Vasco","599",1
+"HONDA","CBR600R3","Madrid","Comunidad de Madrid","599",1
+"HONDA","CBR600R3","Málaga","Andalucía","599",2
+"HONDA","CRF1100L Africa Twin","Girona","Cataluña","1084",1
+"HONDA","FORZA 350","Barcelona","Cataluña","330",1
+"HONDA","FORZA 350","Ceuta","Ceuta","330",1
+"HONDA","FORZA 350","Girona","Cataluña","330",1
+"HONDA","FORZA 350","Illes Balears","Illes Balears","330",1
+"HONDA","FORZA 350","Madrid","Comunidad de Madrid","330",1
+"HONDA","FORZA 350","Murcia","Región de Murcia","330",1
+"HONDA","FORZA 350","Tarragona","Cataluña","330",1
+"HONDA","FORZA 750","Barcelona","Cataluña","745",1
+"HONDA","FORZA 750","Bizkaia","País Vasco","745",1
+"HONDA","FORZA 750","Girona","Cataluña","745",1
+"HONDA","FORZA 750","Ourense","Galicia","745",1
+"HONDA","FORZA 750","Palencia","Castilla y León","745",1
+"HONDA","FORZA125","Barcelona","Cataluña","125",3
+"HONDA","FORZA125","Cádiz","Andalucía","125",2
+"HONDA","FORZA125","Málaga","Andalucía","125",3
+"HONDA","FORZA125","Sevilla","Andalucía","125",1
+"HONDA","FORZA125","Tarragona","Cataluña","125",1
+"HONDA","FORZA125","Zaragoza","Aragón","125",2
+"HONDA","GB350S","Santa Cruz de Tenerife","Canarias","348",1
+"HONDA","NC 750 X","Castellón/Castelló","Comunidad Valenciana","745",1
+"HONDA","NC 750 X","Toledo","Castilla-La Mancha","745",1
+"HONDA","NX500","Álava/Araba","País Vasco","471",1
+"HONDA","NX500","Barcelona","Cataluña","471",1
+"HONDA","NX500","Granada","Andalucía","471",1
+"HONDA","NX500","Jaén","Andalucía","471",1
+"HONDA","NX500","Lleida","Cataluña","471",1
+"HONDA","NX500","Málaga","Andalucía","471",1
+"HONDA","NX500","Palencia","Castilla y León","471",1
+"HONDA","PCX 125","Almería","Andalucía","125",1
+"HONDA","PCX 125","Asturias","Principado de Asturias","125",1
+"HONDA","PCX 125","Barcelona","Cataluña","125",6
+"HONDA","PCX 125","Bizkaia","País Vasco","125",1
+"HONDA","PCX 125","Cádiz","Andalucía","125",3
+"HONDA","PCX 125","Girona","Cataluña","125",2
+"HONDA","PCX 125","Granada","Andalucía","125",1
+"HONDA","PCX 125","Illes Balears","Illes Balears","125",1
+"HONDA","PCX 125","Madrid","Comunidad de Madrid","125",9
+"HONDA","PCX 125","Murcia","Región de Murcia","125",4
+"HONDA","PCX 125","Navarra","Comunidad Foral de Navarra","125",2
+"HONDA","PCX 125","Salamanca","Castilla y León","125",1
+"HONDA","PCX 125","Valencia/València","Comunidad Valenciana","125",7
+"HONDA","PCX 125","Zaragoza","Aragón","125",1
+"HONDA","Rebel 500","Madrid","Comunidad de Madrid","471",1
+"HONDA","Rebel 500","Málaga","Andalucía","471",1
+"HONDA","SH Mode 125","Barcelona","Cataluña","125",3
+"HONDA","SH Mode 125","Girona","Cataluña","125",1
+"HONDA","SH125i","Alicante/Alacant","Comunidad Valenciana","125",2
+"HONDA","SH125i","Barcelona","Cataluña","125",6
+"HONDA","SH125i","Ceuta","Ceuta","125",1
+"HONDA","SH125i","Girona","Cataluña","125",4
+"HONDA","SH125i","Granada","Andalucía","125",1
+"HONDA","SH125i","Madrid","Comunidad de Madrid","125",1
+"HONDA","SH125i","Málaga","Andalucía","125",5
+"HONDA","SH125i","Pontevedra","Galicia","125",1
+"HONDA","SH125i","Valencia/València","Comunidad Valenciana","125",2
+"HONDA","SH350i","Barcelona","Cataluña","330",4
+"HONDA","SH350i","Girona","Cataluña","330",1
+"HONDA","ST125A","Córdoba","Andalucía","124",1
+"HONDA","ST125A","Palmas (Las)","Canarias","124",1
+"HONDA","VISION 110","Alicante/Alacant","Comunidad Valenciana","109",1
+"HONDA","VISION 110","Almería","Andalucía","109",1
+"HONDA","VISION 110","Barcelona","Cataluña","109",7
+"HONDA","VISION 110","Girona","Cataluña","109",1
+"HONDA","VISION 110","Madrid","Comunidad de Madrid","109",2
+"HONDA","VISION 110","Málaga","Andalucía","109",1
+"HONDA","XL750 Transalp","Huelva","Andalucía","755",1
+"HONDA","XL750 Transalp","Madrid","Comunidad de Madrid","755",2
+"HONDA","XL750 Transalp","Tarragona","Cataluña","755",1
+"HONDA","XL750 Transalp","Valencia/València","Comunidad Valenciana","755",1
+"HUSQVARNA","HUSQVARNA 701 ENDURO","Málaga","Andalucía","693",1
+"HUSQVARNA","HUSQVARNA 901 NORDEN E","Illes Balears","Illes Balears","889",1
+"HUSQVARNA","HUSQVARNA SVARTPILEN 4","Santa Cruz de Tenerife","Canarias","399",1
+"HUSQVARNA","HUSQVARNA VITPILEN 125","Barcelona","Cataluña","125",1
+"KAWASAKI","ELIMINATOR","Barcelona","Cataluña","451",1
+"KAWASAKI","KLE500","Granada","Andalucía","451",1
+"KAWASAKI","KLE500","Murcia","Región de Murcia","451",1
+"KAWASAKI","NINJA 1100SX","Cantabria","Cantabria","1099",1
+"KAWASAKI","NINJA ZX-10R","Almería","Andalucía","998",1
+"KAWASAKI","NINJA ZX-6R","Barcelona","Cataluña","636",2
+"KAWASAKI","VERSYS 1100","Almería","Andalucía","1099",1
+"KAWASAKI","VERSYS 1100","Murcia","Región de Murcia","1099",1
+"KAWASAKI","Z125","Coruña (A)","Galicia","125",1
+"KAWASAKI","Z125","Gipuzkoa","País Vasco","125",1
+"KAWASAKI","Z900","Almería","Andalucía","948",1
+"KAWASAKI","Z900","Madrid","Comunidad de Madrid","948",1
+"KEEWAY","GEMMA","Badajoz","Extremadura","117",1
+"KEEWAY","GEMMA","Barcelona","Cataluña","117",1
+"KEEWAY","GEMMA","Sevilla","Andalucía","117",1
+"KEEWAY","ICON 125 S","Málaga","Andalucía","124",1
+"KEEWAY","RKS 125","Albacete","Castilla-La Mancha","124",1
+"KEEWAY","VIESTE 125","Alicante/Alacant","Comunidad Valenciana","125",1
+"KEEWAY","VIESTE 125","Castellón/Castelló","Comunidad Valenciana","125",1
+"KEEWAY","VIESTE 125LX","Málaga","Andalucía","125",1
+"KEEWAY","XDV 125 EVO PRO","Ceuta","Ceuta","125",1
+"KEEWAY","XDV 125 EVO PRO","León","Castilla y León","125",1
+"KEEWAY","XDV 125 EVO PRO","Málaga","Andalucía","125",2
+"KEEWAY","XDV 125 EVO PRO","Santa Cruz de Tenerife","Canarias","125",1
+"KEEWAY","XDV 125 EVO PRO","Sevilla","Andalucía","125",1
+"KOVE","450 RALLY 2026","Barcelona","Cataluña","449",2
+"KOVE","450 RALLY 2026","Gipuzkoa","País Vasco","449",1
+"KOVE","450 RALLY 2026","Madrid","Comunidad de Madrid","449",1
+"KOVE","KOVE 350 RR","Gipuzkoa","País Vasco","344",1
+"KOVE","KOVE 625 X","Barcelona","Cataluña","581",2
+"KOVE","KOVE 625 X","Santa Cruz de Tenerife","Canarias","581",1
+"KOVE","KOVE 800 X GT","Barcelona","Cataluña","799",1
+"KOVE","KOVE 800 X PRO 2026","Barcelona","Cataluña","799",1
+"KOVE","KOVE 800 X PRO 2026","Gipuzkoa","País Vasco","799",1
+"KOVE","KOVE 800 X PRO 2026","Málaga","Andalucía","799",1
+"KOVE","KOVE 800 X RALLY","Barcelona","Cataluña","799",1
+"KOVE","KOVE 800 X RALLY","Zaragoza","Aragón","799",1
+"KTM","KTM 125 DUKE","Barcelona","Cataluña","125",1
+"KTM","KTM 125 DUKE","Madrid","Comunidad de Madrid","125",2
+"KTM","KTM 125 ENDURO","Ávila","Castilla y León","125",1
+"KTM","KTM 125 SMC R","Córdoba","Andalucía","125",1
+"KTM","KTM 125 SMC R","Coruña (A)","Galicia","125",1
+"KTM","KTM 125 SMC R","Santa Cruz de Tenerife","Canarias","125",1
+"KTM","KTM 300 EXC","Barcelona","Cataluña","293",1
+"KTM","KTM 300 EXC","Lugo","Galicia","293",1
+"KTM","KTM 300 EXC","Palmas (Las)","Canarias","293",2
+"KTM","KTM 350 EXC-F","Illes Balears","Illes Balears","350",1
+"KTM","KTM 390 ADVENTURE","Girona","Cataluña","373",1
+"KTM","KTM 390 ADVENTURE R","Almería","Andalucía","399",1
+"KTM","KTM 390 ADVENTURE R","Granada","Andalucía","399",1
+"KTM","KTM 390 ADVENTURE X","Madrid","Comunidad de Madrid","399",1
+"KTM","KTM 450 EXC-F","Granada","Andalucía","450",1
+"KTM","KTM 450 EXC-F","Illes Balears","Illes Balears","450",1
+"KTM","KTM 450 EXC-F","Madrid","Comunidad de Madrid","450",1
+"KTM","KTM 500 EXC-F","Illes Balears","Illes Balears","510",2
+"KTM","KTM 690 SMC R","Barcelona","Cataluña","693",1
+"KTM","KTM 790 DUKE","Valencia/València","Comunidad Valenciana","799",1
+"KTM","KTM 790 DUKE","Zaragoza","Aragón","799",1
+"KTM","KTM 890 ADVENTURE R","Córdoba","Andalucía","889",1
+"KTM","KTM 990 DUKE","Santa Cruz de Tenerife","Canarias","947",1
+"KYMCO","AGILITY NX 125","Álava/Araba","País Vasco","125",1
+"KYMCO","AGILITY NX 125","Alicante/Alacant","Comunidad Valenciana","125",1
+"KYMCO","AGILITY NX 125","Barcelona","Cataluña","125",3
+"KYMCO","AGILITY NX 125","Bizkaia","País Vasco","125",1
+"KYMCO","AGILITY NX 125","Cádiz","Andalucía","125",2
+"KYMCO","AGILITY NX 125","Coruña (A)","Galicia","125",1
+"KYMCO","AGILITY NX 125","Huelva","Andalucía","125",1
+"KYMCO","AGILITY NX 125","Illes Balears","Illes Balears","125",2
+"KYMCO","AGILITY NX 125","León","Castilla y León","125",1
+"KYMCO","AGILITY NX 125","Madrid","Comunidad de Madrid","125",1
+"KYMCO","AGILITY NX 125","Málaga","Andalucía","125",3
+"KYMCO","AGILITY NX 125","Navarra","Comunidad Foral de Navarra","125",1
+"KYMCO","AGILITY NX 125","Ourense","Galicia","125",1
+"KYMCO","AGILITY NX 125","Zaragoza","Aragón","125",1
+"KYMCO","AGILITY S","Alicante/Alacant","Comunidad Valenciana","125",1
+"KYMCO","AGILITY S","Almería","Andalucía","125",1
+"KYMCO","AGILITY S","Barcelona","Cataluña","125",1
+"KYMCO","AGILITY S","Cádiz","Andalucía","125",1
+"KYMCO","AGILITY S","Castellón/Castelló","Comunidad Valenciana","125",1
+"KYMCO","AGILITY S","Girona","Cataluña","125",1
+"KYMCO","AGILITY S","Granada","Andalucía","125",1
+"KYMCO","AGILITY S","Huelva","Andalucía","125",1
+"KYMCO","AGILITY S","Huesca","Aragón","125",1
+"KYMCO","AGILITY S","Murcia","Región de Murcia","125",1
+"KYMCO","DTX","Albacete","Castilla-La Mancha","124",2
+"KYMCO","DTX","Alicante/Alacant","Comunidad Valenciana","124",1
+"KYMCO","DTX","Almería","Andalucía","124",1
+"KYMCO","DTX","Barcelona","Cataluña","124",3
+"KYMCO","DTX","Bizkaia","País Vasco","124",1
+"KYMCO","DTX","Cádiz","Andalucía","124",1
+"KYMCO","DTX","Illes Balears","Illes Balears","124",1
+"KYMCO","DTX","León","Castilla y León","124",1
+"KYMCO","DTX","Madrid","Comunidad de Madrid","124",2
+"KYMCO","DTX","Murcia","Región de Murcia","124",2
+"KYMCO","DTX","Sevilla","Andalucía","124",2
+"KYMCO","DTX","Valencia/València","Comunidad Valenciana","124",1
+"KYMCO","PEOPLE S 125 E5+","Alicante/Alacant","Comunidad Valenciana","125",1
+"KYMCO","PEOPLE S 125 E5+","Barcelona","Cataluña","125",3
+"KYMCO","PEOPLE S 125 E5+","Gipuzkoa","País Vasco","125",1
+"KYMCO","PEOPLE S 125 E5+","Madrid","Comunidad de Madrid","125",1
+"KYMCO","SKYTOWN 125","Cádiz","Andalucía","125",1
+"KYMCO","SKYTOWN 125","Málaga","Andalucía","125",2
+"KYMCO","SUPER DINK GT","Barcelona","Cataluña","321",1
+"KYMCO","SUPER DINK GT 125 E5+","Alicante/Alacant","Comunidad Valenciana","124",1
+"KYMCO","SUPER DINK GT 125 E5+","Barcelona","Cataluña","124",2
+"KYMCO","SUPER DINK GT 125 E5+","Cádiz","Andalucía","124",1
+"KYMCO","SUPER DINK GT 125 E5+","Cantabria","Cantabria","124",1
+"LAMBRETTA","J125","Valencia/València","Comunidad Valenciana","125",1
+"LETBE","FLYGON","Granada","Andalucía","125",1
+"LETBE","ISLAND","Murcia","Región de Murcia","125",1
+"MACBOR","MONTANA XR1 125 EVO","Málaga","Andalucía","124",2
+"MACBOR","ROCKSTER 125 EVO E5+","Asturias","Principado de Asturias","125",1
+"MH MOTORCYCLES","VRT","Illes Balears","Illes Balears","124",1
+"MITT","125 DESERT","Santa Cruz de Tenerife","Canarias","125",1
+"MITT","125 NK","Madrid","Comunidad de Madrid","124",1
+"MITT","125GP","Coruña (A)","Galicia","124",1
+"MITT","125GTS","Sevilla","Andalucía","125",1
+"MITT","GT-S","Alicante/Alacant","Comunidad Valenciana","125",1
+"MITT","GT-S","Cantabria","Cantabria","125",1
+"MITT","KYLIN 750","Huelva","Andalucía","730",1
+"MITT","TY125T-26F","Asturias","Principado de Asturias","125",1
+"MITT","TY125T-26F","Zaragoza","Aragón","125",1
+"MITT","URBAN","Cádiz","Andalucía","125",1
+"MORBIDELLI","F125","Badajoz","Extremadura","125",1
+"MORBIDELLI","SC125LX","Barcelona","Cataluña","125",1
+"MORBIDELLI","SC125LX","Madrid","Comunidad de Madrid","125",1
+"MOTO GUZZI","STELVIO ""DUECENTO TRIB","Málaga","Andalucía","1042",1
+"MOTO MORINI","ALLTRHIKE","Palencia","Castilla y León","449",1
+"MOTO MORINI","X-CAPE 1200","Cantabria","Cantabria","1187",1
+"MOTO MORINI","X-CAPE 1200","Santa Cruz de Tenerife","Canarias","1187",1
+"MOTO MORINI","X-CAPE 700","Huelva","Andalucía","693",1
+"PEUGEOT","KISBEE M","Illes Balears","Illes Balears","125",2
+"PEUGEOT","KISBEE M","Málaga","Andalucía","125",1
+"PEUGEOT","TWEET FL 125 CC","Barcelona","Cataluña","125",1
+"PEUGEOT","TWEET FL 125 CC","Madrid","Comunidad de Madrid","125",1
+"PIAGGIO","LIBERTY 125 ABS","Alicante/Alacant","Comunidad Valenciana","124",1
+"PIAGGIO","LIBERTY 125 ABS","Barcelona","Cataluña","124",1
+"PIAGGIO","LIBERTY 125 ABS","Cádiz","Andalucía","124",1
+"PIAGGIO","LIBERTY 125 ABS","Málaga","Andalucía","124",2
+"PIAGGIO","MEDLEY 125","Granada","Andalucía","125",1
+"PIAGGIO","MEDLEY 125","Valencia/València","Comunidad Valenciana","125",1
+"PIAGGIO","MEDLEY 200","Illes Balears","Illes Balears","174",1
+"PIAGGIO","VESPA GTS","Barcelona","Cataluña","310",1
+"PIAGGIO","VESPA GTS","Illes Balears","Illes Balears","310",1
+"PIAGGIO","VESPA GTS 125","Madrid","Comunidad de Madrid","125",1
+"PIAGGIO","VESPA PRIMAVERA 125","Illes Balears","Illes Balears","124",1
+"PIAGGIO","VESPA PRIMAVERA 125","Málaga","Andalucía","124",1
+"PIAGGIO","VESPA PRIMAVERA 125","Pontevedra","Galicia","124",1
+"PIAGGIO","VESPA SPRINT 125","Madrid","Comunidad de Madrid","124",1
+"PIAGGIO","VESPA SPRINT 125","Melilla","Melilla","124",1
+"PIAGGIO","VESPA SPRINT 125","Sevilla","Andalucía","124",1
+"QJMOTOR","ATR 125 E5+","Barcelona","Cataluña","125",1
+"QJMOTOR","ATR 125 E5+","Sevilla","Andalucía","125",1
+"QJMOTOR","FORT 125 N E5+","Asturias","Principado de Asturias","125",1
+"QJMOTOR","FORT 125 N E5+","Barcelona","Cataluña","125",1
+"QJMOTOR","FORT 125 N E5+","Cádiz","Andalucía","125",1
+"QJMOTOR","FORT 125 N E5+","Pontevedra","Galicia","125",2
+"QJMOTOR","FORT 125 N E5+","Sevilla","Andalucía","125",1
+"QJMOTOR","FORT 125 N E5+","Valencia/València","Comunidad Valenciana","125",1
+"QJMOTOR","LTR 125 E5+","Málaga","Andalucía","125",1
+"QJMOTOR","MTX 125 E5+","Barcelona","Cataluña","125",1
+"QJMOTOR","MTX 125 E5+","Huelva","Andalucía","125",1
+"QJMOTOR","MTX 125 E5+","Lleida","Cataluña","125",1
+"QJMOTOR","MTX 125 E5+","Santa Cruz de Tenerife","Canarias","125",1
+"QJMOTOR","MTX 125 E5+","Valencia/València","Comunidad Valenciana","125",1
+"QJMOTOR","SQ 16 E5+","Barcelona","Cataluña","125",1
+"QJMOTOR","SRK 125 R E5+","Madrid","Comunidad de Madrid","125",1
+"QJMOTOR","SRK 125 S E5+","Madrid","Comunidad de Madrid","125",1
+"QJMOTOR","SRK 125 S E5+","Murcia","Región de Murcia","125",1
+"QJMOTOR","SRT 600 SX E5+","Asturias","Principado de Asturias","554",1
+"QJMOTOR","SRT 900 S","Illes Balears","Illes Balears","904",1
+"QJMOTOR","SRT 900 S","Lugo","Galicia","904",1
+"QJMOTOR","SRT 900 SX","Valencia/València","Comunidad Valenciana","904",1
+"QJMOTOR","SRV 125 E5+","Cádiz","Andalucía","125",1
+"QJMOTOR","SRV 125 E5+","Huelva","Andalucía","125",1
+"RIEJU","N/A","Pontevedra","Galicia","125",1
+"RIEJU","NKD 125","Barcelona","Cataluña","124",1
+"RIEJU","NKD 125","Córdoba","Andalucía","124",1
+"RIEJU","NKD 125","Navarra","Comunidad Foral de Navarra","124",2
+"RIEJU","NKD 125","Pontevedra","Galicia","124",1
+"RIEJU","NKD 125","Valencia/València","Comunidad Valenciana","124",2
+"RIEJU","RALLY 307","Girona","Cataluña","292",1
+"RIEJU","RALLY 307","Tarragona","Cataluña","292",1
+"RIEJU","XPLORA 707 S","León","Castilla y León","698",1
+"ROYAL ENFIELD","INTERCEPTOR BEAR 650","Málaga","Andalucía","648",1
+"SHERCO","125 SE-R","Cuenca","Castilla-La Mancha","125",1
+"SHERCO","300 SE-R","Tarragona","Cataluña","293",1
+"SHERCO","300 SEF-R","Tarragona","Cataluña","304",1
+"SHERCO","N.A","Granada","Andalucía","125",1
+"SUZUKI","ADDRESS 125","Alicante/Alacant","Comunidad Valenciana","124",1
+"SUZUKI","ADDRESS 125","Badajoz","Extremadura","124",1
+"SUZUKI","ADDRESS 125","Barcelona","Cataluña","124",2
+"SUZUKI","ADDRESS 125","Murcia","Región de Murcia","124",1
+"SUZUKI","AVENIS 125","Barcelona","Cataluña","124",1
+"SUZUKI","AVENIS 125","Illes Balears","Illes Balears","124",1
+"SUZUKI","AVENIS 125","Málaga","Andalucía","124",1
+"SUZUKI","BURGMAN 400","Castellón/Castelló","Comunidad Valenciana","400",1
+"SUZUKI","DR-Z400","Zaragoza","Aragón","398",1
+"SUZUKI","GSX-S 1000","Zaragoza","Aragón","999",1
+"SUZUKI","GSX-S125","Barcelona","Cataluña","124",2
+"SUZUKI","GSX-S125","Madrid","Comunidad de Madrid","124",1
+"SUZUKI","SV650GX","Madrid","Comunidad de Madrid","645",1
+"SUZUKI","V-Strom 800","Barcelona","Cataluña","776",1
+"SUZUKI","V-Strom 800","Madrid","Comunidad de Madrid","776",1
+"SUZUKI","V-Strom 800","Zaragoza","Aragón","776",1
+"SYM","ADX 125 LC TCS E5+","Lleida","Cataluña","125",1
+"SYM","ADX 300 TCS","Asturias","Principado de Asturias","278",1
+"SYM","ADX 300 TCS","Barcelona","Cataluña","278",1
+"SYM","CRUISYM 125 TCS E5+","Valencia/València","Comunidad Valenciana","124",1
+"SYM","JET 14","Alicante/Alacant","Comunidad Valenciana","125",1
+"SYM","JET 14","Barcelona","Cataluña","125",1
+"SYM","JET 14","Coruña (A)","Galicia","125",1
+"SYM","JET 14","Girona","Cataluña","125",1
+"SYM","JET 14","Madrid","Comunidad de Madrid","125",1
+"SYM","JET 14","Málaga","Andalucía","125",1
+"SYM","JET 14","Murcia","Región de Murcia","125",1
+"SYM","JET 14","Navarra","Comunidad Foral de Navarra","125",1
+"SYM","JET 14","Valencia/València","Comunidad Valenciana","125",1
+"SYM","JET 14","Zamora","Castilla y León","125",1
+"SYM","JET 14","Zaragoza","Aragón","125",2
+"SYM","JET X","Alicante/Alacant","Comunidad Valenciana","125",3
+"SYM","JET X","Barcelona","Cataluña","125",1
+"SYM","JET X","Bizkaia","País Vasco","125",1
+"SYM","JET X","Cádiz","Andalucía","125",1
+"SYM","JET X","Madrid","Comunidad de Madrid","125",1
+"SYM","SYMPHONY 125","Alicante/Alacant","Comunidad Valenciana","125",2
+"SYM","SYMPHONY 125","Barcelona","Cataluña","125",6
+"SYM","SYMPHONY 125","Burgos","Castilla y León","125",1
+"SYM","SYMPHONY 125","Cádiz","Andalucía","125",2
+"SYM","SYMPHONY 125","Girona","Cataluña","125",3
+"SYM","SYMPHONY 125","Illes Balears","Illes Balears","125",1
+"SYM","SYMPHONY 125","Madrid","Comunidad de Madrid","125",1
+"SYM","SYMPHONY 125","Palmas (Las)","Canarias","125",1
+"SYM","SYMPHONY 125","Valencia/València","Comunidad Valenciana","125",2
+"SYM","SYMPHONY 125","Zaragoza","Aragón","125",1
+"TRIUMPH","SCRAMBLER 1200 XE","Almería","Andalucía","1200",1
+"TRIUMPH","SCRAMBLER 400 X","Ciudad Real","Castilla-La Mancha","398",1
+"TRIUMPH","SPEED 400","Coruña (A)","Galicia","398",1
+"TRIUMPH","TF450-E","Santa Cruz de Tenerife","Canarias","450",1
+"TRIUMPH","TIGER SPORT 660","Tarragona","Cataluña","660",1
+"VOGE","625DSX","Barcelona","Cataluña","581",1
+"VOGE","625DSX","Pontevedra","Galicia","581",1
+"VOGE","625DSX","Sevilla","Andalucía","581",1
+"VOGE","625R","Murcia","Región de Murcia","581",1
+"VOGE","DS525X","Córdoba","Andalucía","494",1
+"VOGE","DS525X","Madrid","Comunidad de Madrid","494",1
+"VOGE","DS800X RALLY","Barcelona","Cataluña","798",1
+"VOGE","DS800X RALLY","Gipuzkoa","País Vasco","798",1
+"VOGE","DS800X RALLY","Illes Balears","Illes Balears","798",1
+"VOGE","DS800X RALLY","Madrid","Comunidad de Madrid","798",1
+"VOGE","DS800X RALLY","Málaga","Andalucía","798",1
+"VOGE","DS800X RALLY","Santa Cruz de Tenerife","Canarias","798",1
+"VOGE","DS800X RALLY","Segovia","Castilla y León","798",1
+"VOGE","DS900X","Barcelona","Cataluña","895",3
+"VOGE","DS900X","Cádiz","Andalucía","895",1
+"VOGE","DS900X","Coruña (A)","Galicia","895",1
+"VOGE","DS900X","Huelva","Andalucía","895",1
+"VOGE","DS900X","Madrid","Comunidad de Madrid","895",1
+"VOGE","DS900X","Málaga","Andalucía","895",1
+"VOGE","DS900X","Valencia/València","Comunidad Valenciana","895",1
+"VOGE","R125","Barcelona","Cataluña","125",2
+"VOGE","R125","Jaén","Andalucía","125",2
+"VOGE","R125","Madrid","Comunidad de Madrid","125",1
+"VOGE","R125","Ourense","Galicia","125",1
+"VOGE","R125","Santa Cruz de Tenerife","Canarias","125",1
+"VOGE","R125","Toledo","Castilla-La Mancha","125",1
+"VOGE","R125S","Álava/Araba","País Vasco","125",1
+"VOGE","R125S","Barcelona","Cataluña","125",1
+"VOGE","R125S","Coruña (A)","Galicia","125",1
+"VOGE","R125S","Murcia","Región de Murcia","125",1
+"VOGE","SR1","Alicante/Alacant","Comunidad Valenciana","125",1
+"VOGE","SR1","Madrid","Comunidad de Madrid","125",1
+"VOGE","SR1","Santa Cruz de Tenerife","Canarias","125",1
+"VOGE","SR1","Teruel","Aragón","125",1
+"VOGE","SR1","Valencia/València","Comunidad Valenciana","125",1
+"VOGE","SR16","Barcelona","Cataluña","125",1
+"VOGE","SR16","Gipuzkoa","País Vasco","125",2
+"VOGE","SR16","Málaga","Andalucía","125",1
+"VOGE","SR3","Madrid","Comunidad de Madrid","244",1
+"YAMAHA","MT-07","Asturias","Principado de Asturias","689",1
+"YAMAHA","MT-07","Badajoz","Extremadura","689",2
+"YAMAHA","MT-07","Madrid","Comunidad de Madrid","689",1
+"YAMAHA","MT-07","Palmas (Las)","Canarias","689",1
+"YAMAHA","MT-09","Málaga","Andalucía","890",1
+"YAMAHA","MT-125","Badajoz","Extremadura","125",1
+"YAMAHA","NMAX 125","Alicante/Alacant","Comunidad Valenciana","125",3
+"YAMAHA","NMAX 125","Almería","Andalucía","125",1
+"YAMAHA","NMAX 125","Badajoz","Extremadura","125",4
+"YAMAHA","NMAX 125","Barcelona","Cataluña","125",7
+"YAMAHA","NMAX 125","Cádiz","Andalucía","125",5
+"YAMAHA","NMAX 125","Cantabria","Cantabria","125",2
+"YAMAHA","NMAX 125","Castellón/Castelló","Comunidad Valenciana","125",1
+"YAMAHA","NMAX 125","Gipuzkoa","País Vasco","125",2
+"YAMAHA","NMAX 125","Girona","Cataluña","125",1
+"YAMAHA","NMAX 125","Granada","Andalucía","125",1
+"YAMAHA","NMAX 125","Guadalajara","Castilla-La Mancha","125",2
+"YAMAHA","NMAX 125","Huesca","Aragón","125",1
+"YAMAHA","NMAX 125","Illes Balears","Illes Balears","125",2
+"YAMAHA","NMAX 125","Jaén","Andalucía","125",1
+"YAMAHA","NMAX 125","León","Castilla y León","125",1
+"YAMAHA","NMAX 125","Lugo","Galicia","125",1
+"YAMAHA","NMAX 125","Madrid","Comunidad de Madrid","125",3
+"YAMAHA","NMAX 125","Málaga","Andalucía","125",1
+"YAMAHA","NMAX 125","Palmas (Las)","Canarias","125",1
+"YAMAHA","NMAX 125","Pontevedra","Galicia","125",3
+"YAMAHA","NMAX 125","Sevilla","Andalucía","125",1
+"YAMAHA","NMAX 125","Valencia/València","Comunidad Valenciana","125",8
+"YAMAHA","R125","Barcelona","Cataluña","125",1
+"YAMAHA","R125","Cádiz","Andalucía","125",1
+"YAMAHA","R125","Ceuta","Ceuta","125",1
+"YAMAHA","R125","Madrid","Comunidad de Madrid","125",2
+"YAMAHA","R125","Málaga","Andalucía","125",1
+"YAMAHA","R7","Madrid","Comunidad de Madrid","689",1
+"YAMAHA","RayZR 125","Granada","Andalucía","125",1
+"YAMAHA","RayZR 125","Illes Balears","Illes Balears","125",1
+"YAMAHA","RayZR 125","Jaén","Andalucía","125",1
+"YAMAHA","RayZR 125","Madrid","Comunidad de Madrid","125",1
+"YAMAHA","RayZR 125","Murcia","Región de Murcia","125",1
+"YAMAHA","RayZR 125","Zaragoza","Aragón","125",1
+"YAMAHA","TMAX 560","Badajoz","Extremadura","562",1
+"YAMAHA","TMAX 560","Barcelona","Cataluña","562",2
+"YAMAHA","TMAX 560","Illes Balears","Illes Balears","562",1
+"YAMAHA","TMAX 560","Lleida","Cataluña","562",1
+"YAMAHA","TMAX 560","Madrid","Comunidad de Madrid","562",1
+"YAMAHA","TRACER 700","Barcelona","Cataluña","689",2
+"YAMAHA","TRACER 700","Santa Cruz de Tenerife","Canarias","689",1
+"YAMAHA","Tracer 9 GT","Alicante/Alacant","Comunidad Valenciana","890",1
+"YAMAHA","Tracer 9 GT","Barcelona","Cataluña","890",1
+"YAMAHA","Tracer 9 GT","Cantabria","Cantabria","890",1
+"YAMAHA","Tracer 9 GT","Málaga","Andalucía","890",1
+"YAMAHA","WR125","Badajoz","Extremadura","125",1
+"YAMAHA","WR125","Barcelona","Cataluña","125",2
+"YAMAHA","XMAX 125","Alicante/Alacant","Comunidad Valenciana","125",2
+"YAMAHA","XMAX 125","Barcelona","Cataluña","125",5
+"YAMAHA","XMAX 125","Gipuzkoa","País Vasco","125",1
+"YAMAHA","XMAX 125","Huelva","Andalucía","125",1
+"YAMAHA","XMAX 125","Illes Balears","Illes Balears","125",1
+"YAMAHA","XMAX 125","Madrid","Comunidad de Madrid","125",1
+"YAMAHA","XMAX 125","Sevilla","Andalucía","125",1
+"YAMAHA","XMAX 125","Tarragona","Cataluña","125",1
+"YAMAHA","XMAX 125","Toledo","Castilla-La Mancha","125",1
+"YAMAHA","XMAX 300","Alicante/Alacant","Comunidad Valenciana","292",1
+"YAMAHA","XMAX 300","Barcelona","Cataluña","292",3
+"YAMAHA","XMAX 300","Huelva","Andalucía","292",2
+"YAMAHA","XMAX 300","Huesca","Aragón","292",1
+"YAMAHA","XMAX 300","Murcia","Región de Murcia","292",1
+"YAMAHA","XSR-125","Madrid","Comunidad de Madrid","125",1
+"YAMAHA","XSR-125","Tarragona","Cataluña","125",1
+"YAMAHA","XSR-900","Barcelona","Cataluña","890",1
+"YAMAHA","XTZ 700 Tenere","Cádiz","Andalucía","689",1
+"YAMAHA","XTZ 700 Tenere","Madrid","Comunidad de Madrid","689",2
+"YAMAHA","XTZ 700 Tenere","Murcia","Región de Murcia","689",1
+"YAMAHA","XTZ 700 Tenere","Sevilla","Andalucía","689",1
+"YAMAHA","YZF-R3","Guadalajara","Castilla-La Mancha","321",1
+"YAMAHA","YZF-R9","Cádiz","Andalucía","890",1
+"YAMAHA","YZF-R9","Illes Balears","Illes Balears","890",1
+"YAMAHA","YZF-R9","Madrid","Comunidad de Madrid","890",1
+"ZAIRON","ZS5","Málaga","Andalucía","125",1
+"ZONTES","125C","Cádiz","Andalucía","125",1
+"ZONTES","125C","Murcia","Región de Murcia","125",1
+"ZONTES","125C","Tarragona","Cataluña","125",1
+"ZONTES","125C","Valencia/València","Comunidad Valenciana","125",1
+"ZONTES","125E","Barcelona","Cataluña","125",5
+"ZONTES","125E","Palmas (Las)","Canarias","125",3
+"ZONTES","125V","Almería","Andalucía","125",1
+"ZONTES","125V","Barcelona","Cataluña","125",3
+"ZONTES","125V","Cáceres","Extremadura","125",1
+"ZONTES","125V","Cádiz","Andalucía","125",1
+"ZONTES","125V","Lleida","Cataluña","125",2
+"ZONTES","125V","Madrid","Comunidad de Madrid","125",1
+"ZONTES","125V","Málaga","Andalucía","125",5
+"ZONTES","125V","Murcia","Región de Murcia","125",2
+"ZONTES","125V","Tarragona","Cataluña","125",1
+"ZONTES","125V","Valencia/València","Comunidad Valenciana","125",1
+"ZONTES","125V","Valladolid","Castilla y León","125",1
+"ZONTES","125V","Zaragoza","Aragón","125",3
+"ZONTES","125X","Alicante/Alacant","Comunidad Valenciana","125",1
+"ZONTES","125X","Almería","Andalucía","125",3
+"ZONTES","125X","Asturias","Principado de Asturias","125",1
+"ZONTES","125X","Badajoz","Extremadura","125",4
+"ZONTES","125X","Barcelona","Cataluña","125",17
+"ZONTES","125X","Bizkaia","País Vasco","125",4
+"ZONTES","125X","Cáceres","Extremadura","125",1
+"ZONTES","125X","Cádiz","Andalucía","125",15
+"ZONTES","125X","Córdoba","Andalucía","125",4
+"ZONTES","125X","Gipuzkoa","País Vasco","125",4
+"ZONTES","125X","Huelva","Andalucía","125",3
+"ZONTES","125X","Madrid","Comunidad de Madrid","125",3
+"ZONTES","125X","Málaga","Andalucía","125",23
+"ZONTES","125X","Murcia","Región de Murcia","125",1
+"ZONTES","125X","Palmas (Las)","Canarias","125",1
+"ZONTES","125X","Pontevedra","Galicia","125",1
+"ZONTES","125X","Sevilla","Andalucía","125",6
+"ZONTES","125X","Tarragona","Cataluña","125",1
+"ZONTES","125X","Toledo","Castilla-La Mancha","125",1
+"ZONTES","125X","Valencia/València","Comunidad Valenciana","125",2
+"ZONTES","368D","Alicante/Alacant","Comunidad Valenciana","368",1
+"ZONTES","368D","Asturias","Principado de Asturias","368",1
+"ZONTES","368D","Cádiz","Andalucía","368",2
+"ZONTES","368E","Cantabria","Cantabria","368",1
+"ZONTES","368G","Barcelona","Cataluña","368",7
+"ZONTES","368G","Cádiz","Andalucía","368",2
+"ZONTES","368G","Cantabria","Cantabria","368",1
+"ZONTES","368G","Ceuta","Ceuta","368",3
+"ZONTES","368G","Córdoba","Andalucía","368",1
+"ZONTES","368G","Gipuzkoa","País Vasco","368",1
+"ZONTES","368G","Granada","Andalucía","368",1
+"ZONTES","368G","Jaén","Andalucía","368",1
+"ZONTES","368G","Madrid","Comunidad de Madrid","368",1
+"ZONTES","368G","Málaga","Andalucía","368",3
+"ZONTES","368G","Sevilla","Andalucía","368",4
+"ZONTES","368G","Valencia/València","Comunidad Valenciana","368",7
+"ZONTES","368G","Valladolid","Castilla y León","368",2
+"ZONTES","368K","Asturias","Principado de Asturias","368",1
+"ZONTES","368K","Navarra","Comunidad Foral de Navarra","368",1
+"ZONTES","368M","Sevilla","Andalucía","368",1
+"ZONTES","703F","Córdoba","Andalucía","699",1
+"ZONTES","703F","Tarragona","Cataluña","699",1
+"ZONTES","703RR","Málaga","Andalucía","699",1
+"ZONTES","ZT125-G1","Cádiz","Andalucía","125",1
+"ZONTES","ZT125-G1","Córdoba","Andalucía","125",1
+"ZONTES","ZT125-G1","Jaén","Andalucía","125",1
+"ZONTES","ZT125-G1","Madrid","Comunidad de Madrid","125",1
+"ZONTES","ZT125-U1","Zaragoza","Aragón","125",1
