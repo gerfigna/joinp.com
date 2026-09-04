@@ -18,6 +18,25 @@
  * No FOREIGN KEY is declared between matriculaciones_moto and municipios:
  * matriculaciones_moto has rows for some COD_MUNICIPIO_INE_VEH not present in
  * poblacion.csv (e.g. blank/legacy codes), so a real FK would reject those.
+ *
+ * Also parses db/poblacion_2025_municipios.csv (INE: población por municipio
+ * desglosada por franja de edad, 21 franjas x ~8100 municipios) into 21 extra
+ * "POBLACION_EDAD_*" columns on `municipios`, one per franja. This is treated
+ * as a single reference snapshot (año 2025), not a time series: the age
+ * distribution of a municipio is assumed roughly stable year to year, so a
+ * future refresh overwrites these same columns instead of adding a new año.
+ * The reference año is documented in code (POBLACION_EDAD_ANIO below) rather
+ * than stored as a column/row value.
+ *
+ * Also parses two DGT censo-de-conductores files (pipe-delimited, provincia +
+ * sexo + otra dimensión) into 5 "PERMISOS_MOTO_*" columns on `provincia`,
+ * summed by provincia (sexo/edad/antigüedad breakdowns are dropped — nothing
+ * else in the DB is disaggregated by sexo or driver edad to correlate them
+ * against): total permisos tipo A (de
+ * conductores_censo_2025_censo_prov_sexo_clase_edad_2025.txt) plus the AM/A1/
+ * A2/A subclasses (de conductores_censo_2025_censo_prov_sexo_clase_antig_2025.txt),
+ * which map to the cilindrada tiers used in vehiculos tags (AM≤50cc,
+ * A1≤125cc, A2≤400cc aprox., A sin restricción).
  */
 
 const fs = require('fs');
@@ -31,6 +50,15 @@ const { MESES, parseClimaCsv } = require('./lib/clima');
 const RENTA_CSV_PATH = path.join(__dirname, 'db', 'renta-nacional.csv');
 const POBLACION_CSV_PATH = path.join(__dirname, 'db', 'poblacion.csv');
 const RENTA_YEAR = '2023';
+
+// Snapshot reference año for the POBLACION_EDAD_* columns — see file header comment.
+const POBLACION_EDAD_CSV_PATH = path.join(__dirname, 'db', 'poblacion_2025_municipios.csv');
+const POBLACION_EDAD_ANIO = '2025';
+
+// Snapshot reference año for the PERMISOS_MOTO_* columns — see file header comment.
+const PERMISOS_EDAD_CSV_PATH = path.join(__dirname, 'db', 'conductores_censo_2025_censo_prov_sexo_clase_edad_2025.txt');
+const PERMISOS_ANTIG_CSV_PATH = path.join(__dirname, 'db', 'conductores_censo_2025_censo_prov_sexo_clase_antig_2025.txt');
+const PERMISOS_MOTO_ANIO = '2025';
 
 const CLIMA_DIR = path.join(__dirname, 'db', 'clima');
 const CLIMA_FILES = [
@@ -67,6 +95,29 @@ function parseValue(raw) {
 function readCsvLines(csvPath) {
   const raw = fs.readFileSync(csvPath, 'utf8').replace(/^﻿/, '');
   return raw.split(/\r\n|\n/).filter((l) => l.trim() !== '');
+}
+
+/**
+ * Splits one CSV line on commas, respecting double-quoted fields that may
+ * contain commas (e.g. "Ballestero, El"). Only handles the simple case used
+ * by poblacion_2025_municipios.csv: no escaped quotes inside fields.
+ */
+function parseCsvLine(line) {
+  const fields = [];
+  let field = '';
+  let inQuotes = false;
+  for (const char of line) {
+    if (char === '"') {
+      inQuotes = !inQuotes;
+    } else if (char === ',' && !inQuotes) {
+      fields.push(field);
+      field = '';
+    } else {
+      field += char;
+    }
+  }
+  fields.push(field);
+  return fields;
 }
 
 /**
@@ -130,6 +181,100 @@ function parsePoblacion() {
 }
 
 /**
+ * Converts an INE franja_edad label ("De 20 a 24 años", "100 y más años")
+ * into a column name suffix ("20_24", "100_MAS").
+ */
+function franjaEdadColumnSuffix(label) {
+  const rango = label.match(/^De (\d+) a (\d+) años$/);
+  if (rango) return `${rango[1]}_${rango[2]}`;
+  const plus = label.match(/^(\d+) y más años$/);
+  if (plus) return `${plus[1]}_MAS`;
+  throw new Error(`Franja de edad no reconocida: "${label}"`);
+}
+
+function franjaEdadSortKey(label) {
+  return parseInt(label.match(/\d+/)[0], 10);
+}
+
+/**
+ * Parses db/poblacion_2025_municipios.csv into { columns, valoresPorMunicipio },
+ * where columns is the ordered list of POBLACION_EDAD_* column names and
+ * valoresPorMunicipio maps municipioId -> { columnName: poblacion }.
+ */
+function parsePoblacionEdad() {
+  const lines = readCsvLines(POBLACION_EDAD_CSV_PATH);
+  const header = parseCsvLine(lines[0]);
+  const idx = Object.fromEntries(header.map((h, i) => [h, i]));
+
+  const franjas = new Set();
+  const valoresPorMunicipio = new Map(); // municipioId -> { columnName: poblacion }
+
+  for (const line of lines.slice(1)) {
+    const cols = parseCsvLine(line);
+    const municipioId = cols[idx['cod_municipio']];
+    const franjaEdad = cols[idx['franja_edad']];
+    const poblacion = parseValue(cols[idx['poblacion']]);
+
+    franjas.add(franjaEdad);
+    const columnName = `POBLACION_EDAD_${franjaEdadColumnSuffix(franjaEdad)}`;
+    if (!valoresPorMunicipio.has(municipioId)) valoresPorMunicipio.set(municipioId, {});
+    valoresPorMunicipio.get(municipioId)[columnName] = poblacion;
+  }
+
+  const columns = [...franjas]
+    .sort((a, b) => franjaEdadSortKey(a) - franjaEdadSortKey(b))
+    .map((label) => `POBLACION_EDAD_${franjaEdadColumnSuffix(label)}`);
+
+  return { columns, valoresPorMunicipio };
+}
+
+/**
+ * Parses the two DGT censo-de-conductores files into per-provincia totals:
+ * PERMISOS_MOTO_TOTAL_2025 (NUM_PERMISOS_A summed across sexo+edad) and
+ * PERMISOS_MOTO_{AM,A1,A2,A}_2025 (NUM_CONDUCTORES summed across sexo+antigüedad
+ * for each CLASE_PERMISO). Returns { columns, valoresPorProvincia }.
+ */
+function parsePermisosMoto() {
+  const columns = [
+    'PERMISOS_MOTO_TOTAL_2025',
+    'PERMISOS_MOTO_AM_2025',
+    'PERMISOS_MOTO_A1_2025',
+    'PERMISOS_MOTO_A2_2025',
+    'PERMISOS_MOTO_A_2025',
+  ];
+  const valoresPorProvincia = new Map(); // provinciaId -> { [column]: total }
+  const zero = () => Object.fromEntries(columns.map((c) => [c, 0]));
+
+  const edadLines = readCsvLines(PERMISOS_EDAD_CSV_PATH);
+  const edadHeader = edadLines[0].split('|');
+  const edadIdx = Object.fromEntries(edadHeader.map((h, i) => [h, i]));
+  for (const line of edadLines.slice(1)) {
+    const cols = line.split('|');
+    const provinciaId = cols[edadIdx['COD_PROVINCIA']];
+    const total = parseValue(cols[edadIdx['NUM_PERMISOS_A']]) ?? 0;
+    if (!valoresPorProvincia.has(provinciaId)) valoresPorProvincia.set(provinciaId, zero());
+    valoresPorProvincia.get(provinciaId)['PERMISOS_MOTO_TOTAL_2025'] += total;
+  }
+
+  const CLASE_A_COLUMN = { AM: 'PERMISOS_MOTO_AM_2025', A1: 'PERMISOS_MOTO_A1_2025', A2: 'PERMISOS_MOTO_A2_2025', A: 'PERMISOS_MOTO_A_2025' };
+  const antigLines = readCsvLines(PERMISOS_ANTIG_CSV_PATH);
+  const antigHeader = antigLines[0].split('|');
+  const antigIdx = Object.fromEntries(antigHeader.map((h, i) => [h, i]));
+  for (const line of antigLines.slice(1)) {
+    const cols = line.split('|');
+    const provinciaId = cols[antigIdx['COD_PROVINCIA']];
+    const clase = cols[antigIdx['CLASE_PERMISO']].trim();
+    const column = CLASE_A_COLUMN[clase];
+    if (!column) continue; // otras clases (B, C, D, LCM, LVA...) no aplican a motos
+    const conductores = parseValue(cols[antigIdx['NUM_CONDUCTORES']]) ?? 0;
+    if (!valoresPorProvincia.has(provinciaId)) valoresPorProvincia.set(provinciaId, zero());
+    valoresPorProvincia.get(provinciaId)[column] += conductores;
+  }
+
+  return { columns, valoresPorProvincia };
+}
+
+/**
  * Reads the 4 AEMET db/clima/*_Provincias.csv files and returns, per metric
  * prefix, the ordered column names (13 per metric: 12 meses + anual, suffixed
  * with the reference period) and a lookup by provincia id.
@@ -156,8 +301,9 @@ function parseClima() {
   return { metrics, valoresPorProvincia };
 }
 
-function buildComunidadesYProvincias(db, clima) {
+function buildComunidadesYProvincias(db, clima, permisos) {
   const climaColumns = clima.metrics.flatMap((m) => m.columns);
+  const permisosColumns = permisos.columns;
 
   // municipios references provincia/comunidad_autonoma via FOREIGN KEY, so it
   // must be dropped first; buildMunicipios() recreates it afterwards.
@@ -177,30 +323,38 @@ function buildComunidadesYProvincias(db, clima) {
       NOMBRE_PROVINCIA TEXT NOT NULL,
       COMUNIDAD_AUTONOMA_ID TEXT NOT NULL,
       ${climaColumns.map((c) => `"${c}" REAL`).join(',\n      ')},
+      -- Censo de conductores DGT, snapshot año ${PERMISOS_MOTO_ANIO}. No es serie
+      -- temporal: se sobrescribe al refrescar.
+      ${permisosColumns.map((c) => `"${c}" INTEGER`).join(',\n      ')},
       FOREIGN KEY (COMUNIDAD_AUTONOMA_ID) REFERENCES comunidad_autonoma(id)
     );
   `);
 
   const insertComunidad = db.prepare('INSERT INTO comunidad_autonoma (id, NOMBRE_COMUNIDAD_AUTONOMA) VALUES (?, ?)');
+  const columns = [...climaColumns, ...permisosColumns];
   const insertProvincia = db.prepare(
-    `INSERT INTO provincia (id, NOMBRE_PROVINCIA, COMUNIDAD_AUTONOMA_ID, ${climaColumns.map((c) => `"${c}"`).join(', ')}) VALUES (?, ?, ?, ${climaColumns.map(() => '?').join(', ')})`
+    `INSERT INTO provincia (id, NOMBRE_PROVINCIA, COMUNIDAD_AUTONOMA_ID, ${columns.map((c) => `"${c}"`).join(', ')}) VALUES (?, ?, ?, ${columns.map(() => '?').join(', ')})`
   );
 
   db.exec('BEGIN');
   for (const [id, nombre] of COMUNIDADES_AUTONOMAS) insertComunidad.run(id, nombre);
   for (const [id, nombre, comunidadId] of PROVINCIAS) {
-    insertProvincia.run(id, nombre, comunidadId, ...clima.valoresPorProvincia.get(id));
+    const permisosValores = permisos.valoresPorProvincia.get(id);
+    if (!permisosValores) throw new Error(`No hay datos de permisos de conducir para la provincia ${id}`);
+    const permisosValues = permisosColumns.map((c) => permisosValores[c]);
+    insertProvincia.run(id, nombre, comunidadId, ...clima.valoresPorProvincia.get(id), ...permisosValues);
   }
   db.exec('COMMIT');
 
-  console.log(`comunidad_autonoma: ${COMUNIDADES_AUTONOMAS.length} filas, provincia: ${PROVINCIAS.length} filas (+${climaColumns.length} columnas de clima)`);
+  console.log(`comunidad_autonoma: ${COMUNIDADES_AUTONOMAS.length} filas, provincia: ${PROVINCIAS.length} filas (+${climaColumns.length} columnas de clima, +${permisosColumns.length} columnas de permisos de moto)`);
 }
 
-function buildMunicipios(db, renta, poblacion) {
+function buildMunicipios(db, renta, poblacion, poblacionEdad) {
   const rentaAño = [...renta.values()][0].año;
   const poblacionAño = [...poblacion.values()][0].año;
   const rentaColumns = INDICATOR_ORDER.map((ind) => `${toSnakeCase(ind)}_${rentaAño}`);
   const poblacionColumn = `POBLACION_${poblacionAño}`;
+  const edadColumns = poblacionEdad.columns;
 
   db.exec('DROP TABLE IF EXISTS municipios_renta');
   db.exec('DROP TABLE IF EXISTS municipios');
@@ -212,6 +366,9 @@ function buildMunicipios(db, renta, poblacion) {
       COMUNIDAD_AUTONOMA_ID TEXT NOT NULL,
       ${rentaColumns.map((c) => `"${c}" INTEGER`).join(',\n      ')},
       "${poblacionColumn}" INTEGER,
+      -- Distribución de población por franja de edad, snapshot año ${POBLACION_EDAD_ANIO} (INE).
+      -- No es serie temporal: se asume estable entre años y se sobrescribe al refrescar.
+      ${edadColumns.map((c) => `"${c}" INTEGER`).join(',\n      ')},
       FOREIGN KEY (PROVINCIA_ID) REFERENCES provincia(id),
       FOREIGN KEY (COMUNIDAD_AUTONOMA_ID) REFERENCES comunidad_autonoma(id)
     );
@@ -219,7 +376,7 @@ function buildMunicipios(db, renta, poblacion) {
 
   const provinciaById = new Map(PROVINCIAS.map(([id, , comunidadId]) => [id, comunidadId]));
 
-  const columns = [...rentaColumns, poblacionColumn];
+  const columns = [...rentaColumns, poblacionColumn, ...edadColumns];
   const insert = db.prepare(
     `INSERT INTO municipios (id, NOMBRE_MUNICIPIO, PROVINCIA_ID, COMUNIDAD_AUTONOMA_ID, ${columns.map((c) => `"${c}"`).join(', ')}) VALUES (?, ?, ?, ?, ${columns.map(() => '?').join(', ')})`
   );
@@ -229,11 +386,13 @@ function buildMunicipios(db, renta, poblacion) {
     const provinciaId = id.slice(0, 2);
     const comunidadId = provinciaById.get(provinciaId);
     const rentaValues = INDICATOR_ORDER.map((ind) => renta.get(id)?.valores[ind] ?? null);
-    insert.run(id, nombre, provinciaId, comunidadId, ...rentaValues, poblacionValor);
+    const edadValores = poblacionEdad.valoresPorMunicipio.get(id) ?? {};
+    const edadValues = edadColumns.map((c) => edadValores[c] ?? null);
+    insert.run(id, nombre, provinciaId, comunidadId, ...rentaValues, poblacionValor, ...edadValues);
   }
   db.exec('COMMIT');
 
-  console.log(`municipios: ${poblacion.size} filas (${renta.size} con datos de renta), columnas: ${columns.join(', ')}`);
+  console.log(`municipios: ${poblacion.size} filas (${renta.size} con datos de renta, ${poblacionEdad.valoresPorMunicipio.size} con distribución por edad), columnas: ${columns.join(', ')}`);
 }
 
 function ensureMunicipioIndex(db) {
@@ -246,11 +405,21 @@ function ensureMunicipioIndex(db) {
 function main() {
   const renta = parseRenta();
   const poblacion = parsePoblacion();
+  const poblacionEdad = parsePoblacionEdad();
   const clima = parseClima();
+  const permisos = parsePermisosMoto();
   const db = openDatabase();
 
-  buildComunidadesYProvincias(db, clima);
-  buildMunicipios(db, renta, poblacion);
+  // matriculaciones_moto.MUNICIPIO_ID has a FOREIGN KEY into municipios(id),
+  // and node:sqlite enforces FKs by default, so dropping/recreating municipios
+  // below would fail once matriculaciones_moto has rows. FK pragma changes are
+  // no-ops inside a transaction, so it must be toggled outside any BEGIN/COMMIT.
+  // Existing rows aren't re-validated when FKs are turned back on — only future
+  // writes are — so this is safe for a schema-maintenance script like this one.
+  db.exec('PRAGMA foreign_keys = OFF');
+  buildComunidadesYProvincias(db, clima, permisos);
+  buildMunicipios(db, renta, poblacion, poblacionEdad);
+  db.exec('PRAGMA foreign_keys = ON');
   ensureMunicipioIndex(db);
 
   db.close();

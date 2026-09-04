@@ -44,26 +44,10 @@ const TAGS = [
   ['Off-road/Aventura', 'Uso principal'],
   ['Mixta', 'Uso principal'],
 
-  // Por posicionamiento
-  ['Beginner/Iniciación', 'Posicionamiento'],
-  ['Gama media', 'Posicionamiento'],
-  ['Gama alta', 'Posicionamiento'],
-  ['Entry-level', 'Posicionamiento'],
-  ['Mainstream', 'Posicionamiento'],
-
-  // Por características técnicas
-  ['Con ABS', 'Características técnicas'],
-  ['Control de tracción', 'Características técnicas'],
-  ['Híbrido', 'Características técnicas'],
-  ['Start & Stop', 'Características técnicas'],
-  ['Pantalla TFT', 'Características técnicas'],
-  ['Conectividad', 'Características técnicas'],
-
   // Por audiencia
   ['Carné A1', 'Audiencia'],
   ['Carné A2', 'Audiencia'],
   ['Carné A', 'Audiencia'],
-  ['Para mujeres', 'Audiencia'],
 
   // Combinaciones útiles
   ['Scooter Urban', 'Combinación'],
