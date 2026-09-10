@@ -169,7 +169,9 @@ async function main() {
     console.log(`  Recalculated annual: ${year}`);
   }
 
-  writeMetadata();
+  if (processedMonths.size > 0) {
+    writeMetadata();
+  }
   console.log('Done.');
 }
 
