@@ -26,9 +26,9 @@ jobs:
         run: node download-microdatos.js
         working-directory: microdatos-etl
 
-      - name: Run e-ETL
-        run: node download-microdatos-electrica.js
-        working-directory: microdatos-etl
+#      - name: Run e-ETL
+#        run: node download-microdatos-electrica.js
+#        working-directory: microdatos-etl
 
       - name: Commit data changes
         run: |
