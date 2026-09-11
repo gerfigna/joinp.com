@@ -28,6 +28,36 @@ const BRAND_EXACT = {
   SUZUKI:  { 'UB125L': 'ADDRESS 125', 'UZ125': 'AVENIS 125', 'DL800': 'V-Strom 800', 'DL800U': 'V-Strom 800', 'GSX800': 'GSX-8S', 'GSX800U': 'GSX-8S', 'GSX800T': 'GSX-8S', 'DL1050': 'V-Strom 1050', 'AN400': 'BURGMAN 400' },
 };
 
+// Same brand/model name reused across very different displacements (DGT often
+// leaves MODELO_ITV bare, e.g. "DTX", without the size the manufacturer uses
+// to distinguish them). Bands are keyed by the model's base name (with any
+// trailing " <digits>" already stripped) and matched by CILINDRADA_ITV (cc).
+const BRAND_MODEL_CC_BANDS = {
+  KYMCO: {
+    DTX: [
+      { maxCc: 200, suffix: '125' },
+      { maxCc: Infinity, suffix: '350' },
+    ],
+  },
+  BENDA: {
+    NAPOLEON: [
+      { maxCc: 200, suffix: '125' },
+      { maxCc: 400, suffix: '250' },
+      { maxCc: Infinity, suffix: '500' },
+    ],
+  },
+};
+
+function splitModelByCilindrada(marca, modelo, cilindrada) {
+  const base = modelo.replace(/\s+\d+$/, '').trim();
+  const bands = BRAND_MODEL_CC_BANDS[marca]?.[base];
+  if (!bands) return null;
+  const cc = parseFloat(cilindrada);
+  if (isNaN(cc)) return null;
+  const band = bands.find((b) => cc <= b.maxCc);
+  return band ? `${base} ${band.suffix}` : null;
+}
+
 const BRAND_PREFIX = {
   SYM:     [['SYMPHONY 125', 'SYMPHONY 125'], ['SYMPHONY NEW', 'SYMPHONY 125'], ['SYMPHONY  NEW', 'SYMPHONY 125'], ['JET 14', 'JET 14'], ['JET X', 'JET X']],
   YAMAHA:  [['MTN690', 'MT-07'], ['MTT890', 'Tracer 9 GT'], ['MWS125', 'TRICITY 125'], ['XTZ690', 'XTZ 700 Tenere'], ['MTN125', 'MT-125'], ['MTM125', 'XSR-125'], ['XP560', 'TMAX 560'], ['CZD300', 'XMAX 300'], ['YZF125', 'R125'], ['MTN890', 'MT-09'], ['MTT690', 'TRACER 700'], ['MTM690', 'XSR-700'], ['YZF890', 'YZF-R9'], ['MTN1000', 'MT-10'], ['MTM890', 'XSR-900'], ['YZF320', 'YZF-R3'], ['MXT890', 'NIKEN GT']],
@@ -170,9 +200,11 @@ function normalizeComunidad(code) {
   return PROVINCIA_TO_COMUNIDAD[code];
 }
 
-function normalizeModel(marca, modelo) {
+function normalizeModel(marca, modelo, cilindrada) {
   const exact = BRAND_EXACT[marca]?.[modelo];
   if (exact) return exact;
+  const ccSplit = splitModelByCilindrada(marca, modelo, cilindrada);
+  if (ccSplit) return ccSplit;
   for (const [prefix, canonical] of (BRAND_PREFIX[marca] || [])) {
     if (modelo.startsWith(prefix)) return canonical;
   }

@@ -32,11 +32,11 @@ function isMotorcycleRow(line) {
  */
 function extractRowFields(line) {
   const marca     = normalizeBrand(getField(line, 'MARCA_ITV'));
-  const modelo    = normalizeModel(marca, getField(line, 'MODELO_ITV'));
+  const cilindrada = getField(line, 'CILINDRADA_ITV');
+  const modelo    = normalizeModel(marca, getField(line, 'MODELO_ITV'), cilindrada);
   const codProvincia = getField(line, 'COD_PROVINCIA_VEH');
   const provincia = normalizeProvince(codProvincia);
   const comunidad = normalizeComunidad(codProvincia);
-  const cilindrada = getField(line, 'CILINDRADA_ITV');
   return {
     fecMatricula:   getField(line, 'FEC_MATRICULA'),
     codClaseMat:    getField(line, 'COD_CLASE_MAT'),
@@ -47,6 +47,18 @@ function extractRowFields(line) {
     comunidad,
     cilindrada,
   };
+}
+
+/**
+ * Returns true for placeholder MODELO_ITV values ("N/A", "---") that carry no
+ * real model information. Rows with these values are excluded from model-keyed
+ * outputs (daily CSVs, marca-modelo-provincia aggregates) but still counted in
+ * power aggregates, which don't key by model.
+ * @param {string} modelo
+ * @returns {boolean}
+ */
+function isPlaceholderModel(modelo) {
+  return modelo === 'N/A' || modelo === '---';
 }
 
 /**
@@ -155,4 +167,4 @@ function extractElectricFields(line) {
   };
 }
 
-module.exports = { isMotorcycleRow, extractRowFields, extractPowerFields, isElectricMotorcycleRow, extractElectricFields };
+module.exports = { isMotorcycleRow, extractRowFields, extractPowerFields, isPlaceholderModel, isElectricMotorcycleRow, extractElectricFields };

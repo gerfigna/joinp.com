@@ -29,7 +29,7 @@ const fs = require('fs');
 
 const { httpGet } = require('./lib/http');
 const { extractTxtFromZip } = require('./lib/zip');
-const { isMotorcycleRow, extractPowerFields, extractRowFields } = require('./lib/filter');
+const { isMotorcycleRow, extractPowerFields, extractRowFields, isPlaceholderModel } = require('./lib/filter');
 const { PowerAggregator, potenciaMonthlyPath } = require('./lib/power-aggregate');
 const { writeAggregates } = require('./lib/aggregate');
 
@@ -133,7 +133,9 @@ async function processMonthFromDailyZips(year, month) {
       if (!isMotorcycleRow(line)) continue;
       const power = extractPowerFields(line);
       if (power) aggregator.add(power.marca, power.kw);
+      count++;
       const f = extractRowFields(line);
+      if (isPlaceholderModel(f.modelo)) continue;
       const key = `${f.marca}\t${f.modelo}`;
       if (!provinciaData.has(key)) provinciaData.set(key, { count: 0, cilindradaCounts: new Map(), provinciaCounts: new Map() });
       const entry = provinciaData.get(key);
@@ -141,7 +143,6 @@ async function processMonthFromDailyZips(year, month) {
       if (f.cilindrada) entry.cilindradaCounts.set(f.cilindrada, (entry.cilindradaCounts.get(f.cilindrada) || 0) + 1);
       const prov = entry.provinciaCounts.get(f.provincia);
       if (prov) { prov.count++; } else { entry.provinciaCounts.set(f.provincia, { count: 1, comunidad: f.comunidad }); }
-      count++;
     }
     console.log(`${count} rows`);
     totalValid += count;

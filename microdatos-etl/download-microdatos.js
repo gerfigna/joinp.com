@@ -12,7 +12,7 @@ const { normalizeProvince } = require('./lib/normalize');
 const { writeAggregates, writeAnnualAggregate, monthDir, csvField, parseCsvLine } = require('./lib/aggregate');
 const { httpGet } = require('./lib/http');
 const { extractTxtFromZip } = require('./lib/zip');
-const { isMotorcycleRow, extractRowFields } = require('./lib/filter');
+const { isMotorcycleRow, extractRowFields, isPlaceholderModel } = require('./lib/filter');
 
 async function fetchZipUrls() {
   console.log('Downloading listing HTML...');
@@ -49,6 +49,7 @@ function processTxt(txt) {
   for (const line of txt.split('\n')) {
     if (!isMotorcycleRow(line)) continue;
     const f = extractRowFields(line);
+    if (isPlaceholderModel(f.modelo)) continue;
     rows.push([f.fecMatricula, f.codClaseMat, f.fecTramitacion, f.marca, f.modelo, f.provincia, f.comunidad, f.cilindrada]);
   }
   return rows;
