@@ -4,3 +4,4 @@ node_modules/
 /microdatos-etl/.claude/settings.local.json
 /.atl/
 /microdatos-etl/db/
+/.mcp.json
