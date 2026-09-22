@@ -1538,16 +1538,26 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","CB 125 F","Tarragona","Cataluña","124",3
 "HONDA","CB 125 F","Valencia/València","Comunidad Valenciana","124",5
 "HONDA","CB 125 F","Valladolid","Castilla y León","124",1
-"HONDA","CB 500 F","Barcelona","Cataluña","471",4
-"HONDA","CB 500 F","Bizkaia","País Vasco","471",1
-"HONDA","CB 500 F","Cádiz","Andalucía","471",3
+"HONDA","CB 500 F","Álava/Araba","País Vasco","471",1
+"HONDA","CB 500 F","Almería","Andalucía","471",1
+"HONDA","CB 500 F","Badajoz","Extremadura","471",1
+"HONDA","CB 500 F","Barcelona","Cataluña","471",13
+"HONDA","CB 500 F","Bizkaia","País Vasco","471",3
+"HONDA","CB 500 F","Cádiz","Andalucía","471",4
 "HONDA","CB 500 F","Cantabria","Cantabria","471",1
-"HONDA","CB 500 F","Madrid","Comunidad de Madrid","471",3
+"HONDA","CB 500 F","Illes Balears","Illes Balears","471",1
+"HONDA","CB 500 F","Jaén","Andalucía","471",1
+"HONDA","CB 500 F","Lleida","Cataluña","471",1
+"HONDA","CB 500 F","Madrid","Comunidad de Madrid","471",4
+"HONDA","CB 500 F","Málaga","Andalucía","471",2
 "HONDA","CB 500 F","Murcia","Región de Murcia","471",1
-"HONDA","CB 500 F","Santa Cruz de Tenerife","Canarias","471",1
+"HONDA","CB 500 F","Palmas (Las)","Canarias","471",1
+"HONDA","CB 500 F","Santa Cruz de Tenerife","Canarias","471",2
 "HONDA","CB 500 F","Sevilla","Andalucía","471",3
 "HONDA","CB 500 F","Toledo","Castilla-La Mancha","471",1
+"HONDA","CB 500 F","Valencia/València","Comunidad Valenciana","471",3
 "HONDA","CB 500 F","Valladolid","Castilla y León","471",1
+"HONDA","CB 500 F","Zaragoza","Aragón","471",1
 "HONDA","CB1000","Valencia/València","Comunidad Valenciana","1000",1
 "HONDA","CB1000GT","Palmas (Las)","Canarias","1000",1
 "HONDA","CB1000SP","Barcelona","Cataluña","1000",1
@@ -1555,21 +1565,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","CB1000SP","Gipuzkoa","País Vasco","1000",1
 "HONDA","CB1000SP","Girona","Cataluña","1000",1
 "HONDA","CB1000SP","Navarra","Comunidad Foral de Navarra","1000",1
-"HONDA","CB500FAC","Álava/Araba","País Vasco","471",1
-"HONDA","CB500FAC","Almería","Andalucía","471",1
-"HONDA","CB500FAC","Badajoz","Extremadura","471",1
-"HONDA","CB500FAC","Barcelona","Cataluña","471",9
-"HONDA","CB500FAC","Bizkaia","País Vasco","471",2
-"HONDA","CB500FAC","Cádiz","Andalucía","471",1
-"HONDA","CB500FAC","Illes Balears","Illes Balears","471",1
-"HONDA","CB500FAC","Jaén","Andalucía","471",1
-"HONDA","CB500FAC","Lleida","Cataluña","471",1
-"HONDA","CB500FAC","Madrid","Comunidad de Madrid","471",1
-"HONDA","CB500FAC","Málaga","Andalucía","471",2
-"HONDA","CB500FAC","Palmas (Las)","Canarias","471",1
-"HONDA","CB500FAC","Santa Cruz de Tenerife","Canarias","471",1
-"HONDA","CB500FAC","Valencia/València","Comunidad Valenciana","471",3
-"HONDA","CB500FAC","Zaragoza","Aragón","471",1
 "HONDA","CB650RA","Alicante/Alacant","Comunidad Valenciana","649",1
 "HONDA","CB650RA","Asturias","Principado de Asturias","649",3
 "HONDA","CB650RA","Badajoz","Extremadura","649",1

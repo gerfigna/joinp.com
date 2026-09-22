@@ -703,33 +703,29 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "BENDA","LFC700","Valladolid","Castilla y León","680",1
 "BENDA","LFC700","Zaragoza","Aragón","680",2
 "BENDA","NAPOLEON","Albacete","Castilla-La Mancha","476",1
-"BENDA","NAPOLEON","Alicante/Alacant","Comunidad Valenciana","249",4
+"BENDA","NAPOLEON","Alicante/Alacant","Comunidad Valenciana","249",3
 "BENDA","NAPOLEON","Almería","Andalucía","476",4
 "BENDA","NAPOLEON","Asturias","Principado de Asturias","476",3
 "BENDA","NAPOLEON","Badajoz","Extremadura","476",1
-"BENDA","NAPOLEON","Barcelona","Cataluña","476",5
-"BENDA","NAPOLEON","Bizkaia","País Vasco","476",3
+"BENDA","NAPOLEON","Barcelona","Cataluña","476",4
+"BENDA","NAPOLEON","Bizkaia","País Vasco","476",1
 "BENDA","NAPOLEON","Cáceres","Extremadura","249",1
-"BENDA","NAPOLEON","Cádiz","Andalucía","476",3
-"BENDA","NAPOLEON","Córdoba","Andalucía","476",1
+"BENDA","NAPOLEON","Cádiz","Andalucía","476",2
 "BENDA","NAPOLEON","Coruña (A)","Galicia","476",1
-"BENDA","NAPOLEON","Girona","Cataluña","476",4
+"BENDA","NAPOLEON","Girona","Cataluña","476",2
 "BENDA","NAPOLEON","Guadalajara","Castilla-La Mancha","476",1
-"BENDA","NAPOLEON","Illes Balears","Illes Balears","476",4
-"BENDA","NAPOLEON","León","Castilla y León","476",1
-"BENDA","NAPOLEON","Madrid","Comunidad de Madrid","476",8
+"BENDA","NAPOLEON","Illes Balears","Illes Balears","476",3
+"BENDA","NAPOLEON","Madrid","Comunidad de Madrid","249",4
 "BENDA","NAPOLEON","Málaga","Andalucía","476",2
-"BENDA","NAPOLEON","Murcia","Región de Murcia","476",2
 "BENDA","NAPOLEON","Navarra","Comunidad Foral de Navarra","476",1
-"BENDA","NAPOLEON","Palencia","Castilla y León","476",1
-"BENDA","NAPOLEON","Palmas (Las)","Canarias","476",2
-"BENDA","NAPOLEON","Pontevedra","Galicia","476",2
-"BENDA","NAPOLEON","Santa Cruz de Tenerife","Canarias","249",2
-"BENDA","NAPOLEON","Sevilla","Andalucía","476",2
+"BENDA","NAPOLEON","Palmas (Las)","Canarias","476",1
+"BENDA","NAPOLEON","Pontevedra","Galicia","476",1
+"BENDA","NAPOLEON","Santa Cruz de Tenerife","Canarias","249",1
+"BENDA","NAPOLEON","Sevilla","Andalucía","476",1
 "BENDA","NAPOLEON","Tarragona","Cataluña","476",1
 "BENDA","NAPOLEON","Toledo","Castilla-La Mancha","249",1
-"BENDA","NAPOLEON","Valencia/València","Comunidad Valenciana","476",5
-"BENDA","NAPOLEON","Valladolid","Castilla y León","476",2
+"BENDA","NAPOLEON","Valencia/València","Comunidad Valenciana","249",4
+"BENDA","NAPOLEON","Valladolid","Castilla y León","476",1
 "BENDA","NAPOLEON","Zaragoza","Aragón","249",2
 "BENDA","NAPOLEON 125","Alicante/Alacant","Comunidad Valenciana","125",17
 "BENDA","NAPOLEON 125","Almería","Andalucía","125",6
@@ -804,23 +800,34 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "BENDA","NAPOLEON 250","Valencia/València","Comunidad Valenciana","249",1
 "BENDA","NAPOLEON 250","Valladolid","Castilla y León","249",1
 "BENDA","NAPOLEON 250","Zaragoza","Aragón","249",3
-"BENDA","NAPOLEON 500","Alicante/Alacant","Comunidad Valenciana","476",1
+"BENDA","NAPOLEON 500","Alicante/Alacant","Comunidad Valenciana","476",2
 "BENDA","NAPOLEON 500","Almería","Andalucía","476",5
 "BENDA","NAPOLEON 500","Asturias","Principado de Asturias","476",1
 "BENDA","NAPOLEON 500","Badajoz","Extremadura","476",1
-"BENDA","NAPOLEON 500","Barcelona","Cataluña","476",5
+"BENDA","NAPOLEON 500","Barcelona","Cataluña","476",6
+"BENDA","NAPOLEON 500","Bizkaia","País Vasco","476",2
+"BENDA","NAPOLEON 500","Cádiz","Andalucía","476",1
 "BENDA","NAPOLEON 500","Cantabria","Cantabria","476",2
 "BENDA","NAPOLEON 500","Ceuta","Ceuta","476",1
 "BENDA","NAPOLEON 500","Ciudad Real","Castilla-La Mancha","476",1
+"BENDA","NAPOLEON 500","Córdoba","Andalucía","476",1
 "BENDA","NAPOLEON 500","Coruña (A)","Galicia","476",1
 "BENDA","NAPOLEON 500","Cuenca","Castilla-La Mancha","476",1
-"BENDA","NAPOLEON 500","Girona","Cataluña","476",1
+"BENDA","NAPOLEON 500","Girona","Cataluña","476",3
+"BENDA","NAPOLEON 500","Illes Balears","Illes Balears","476",1
+"BENDA","NAPOLEON 500","León","Castilla y León","476",1
 "BENDA","NAPOLEON 500","Lleida","Cataluña","476",1
-"BENDA","NAPOLEON 500","Madrid","Comunidad de Madrid","476",4
+"BENDA","NAPOLEON 500","Madrid","Comunidad de Madrid","476",8
+"BENDA","NAPOLEON 500","Murcia","Región de Murcia","476",2
 "BENDA","NAPOLEON 500","Ourense","Galicia","476",1
-"BENDA","NAPOLEON 500","Santa Cruz de Tenerife","Canarias","476",2
+"BENDA","NAPOLEON 500","Palencia","Castilla y León","476",1
+"BENDA","NAPOLEON 500","Palmas (Las)","Canarias","476",1
+"BENDA","NAPOLEON 500","Pontevedra","Galicia","476",1
+"BENDA","NAPOLEON 500","Santa Cruz de Tenerife","Canarias","476",3
+"BENDA","NAPOLEON 500","Sevilla","Andalucía","476",1
 "BENDA","NAPOLEON 500","Tarragona","Cataluña","476",1
-"BENDA","NAPOLEON 500","Valencia/València","Comunidad Valenciana","476",4
+"BENDA","NAPOLEON 500","Valencia/València","Comunidad Valenciana","476",5
+"BENDA","NAPOLEON 500","Valladolid","Castilla y León","476",1
 "BENDA","NAPOLEON 500","Zaragoza","Aragón","476",3
 "BENDA","V-CRUISE","Cádiz","Andalucía","125",1
 "BENDA","V-CRUISE","Castellón/Castelló","Comunidad Valenciana","125",1
@@ -4237,39 +4244,45 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","CB 125 F","Valencia/València","Comunidad Valenciana","124",31
 "HONDA","CB 125 F","Valladolid","Castilla y León","124",6
 "HONDA","CB 125 F","Zaragoza","Aragón","124",8
+"HONDA","CB 500 F","Álava/Araba","País Vasco","471",1
 "HONDA","CB 500 F","Albacete","Castilla-La Mancha","471",1
-"HONDA","CB 500 F","Alicante/Alacant","Comunidad Valenciana","471",2
-"HONDA","CB 500 F","Asturias","Principado de Asturias","471",3
-"HONDA","CB 500 F","Badajoz","Extremadura","471",2
-"HONDA","CB 500 F","Barcelona","Cataluña","471",39
-"HONDA","CB 500 F","Bizkaia","País Vasco","471",2
-"HONDA","CB 500 F","Cádiz","Andalucía","471",5
-"HONDA","CB 500 F","Cantabria","Cantabria","471",3
-"HONDA","CB 500 F","Castellón/Castelló","Comunidad Valenciana","471",1
-"HONDA","CB 500 F","Córdoba","Andalucía","471",1
+"HONDA","CB 500 F","Alicante/Alacant","Comunidad Valenciana","471",4
+"HONDA","CB 500 F","Almería","Andalucía","471",1
+"HONDA","CB 500 F","Asturias","Principado de Asturias","471",5
+"HONDA","CB 500 F","Badajoz","Extremadura","471",3
+"HONDA","CB 500 F","Barcelona","Cataluña","471",80
+"HONDA","CB 500 F","Bizkaia","País Vasco","471",7
+"HONDA","CB 500 F","Cádiz","Andalucía","471",6
+"HONDA","CB 500 F","Cantabria","Cantabria","471",4
+"HONDA","CB 500 F","Castellón/Castelló","Comunidad Valenciana","471",2
+"HONDA","CB 500 F","Ciudad Real","Castilla-La Mancha","471",1
+"HONDA","CB 500 F","Córdoba","Andalucía","471",2
 "HONDA","CB 500 F","Coruña (A)","Galicia","471",2
-"HONDA","CB 500 F","Gipuzkoa","País Vasco","471",1
-"HONDA","CB 500 F","Girona","Cataluña","471",4
-"HONDA","CB 500 F","Granada","Andalucía","471",4
-"HONDA","CB 500 F","Illes Balears","Illes Balears","471",3
-"HONDA","CB 500 F","Lleida","Cataluña","471",3
-"HONDA","CB 500 F","Madrid","Comunidad de Madrid","471",17
-"HONDA","CB 500 F","Málaga","Andalucía","471",9
+"HONDA","CB 500 F","Gipuzkoa","País Vasco","471",2
+"HONDA","CB 500 F","Girona","Cataluña","471",9
+"HONDA","CB 500 F","Granada","Andalucía","471",8
+"HONDA","CB 500 F","Huelva","Andalucía","471",1
+"HONDA","CB 500 F","Illes Balears","Illes Balears","471",6
+"HONDA","CB 500 F","Jaén","Andalucía","471",1
+"HONDA","CB 500 F","León","Castilla y León","471",3
+"HONDA","CB 500 F","Lleida","Cataluña","471",4
+"HONDA","CB 500 F","Madrid","Comunidad de Madrid","471",29
+"HONDA","CB 500 F","Málaga","Andalucía","471",20
 "HONDA","CB 500 F","Melilla","Melilla","471",1
-"HONDA","CB 500 F","Murcia","Región de Murcia","471",5
-"HONDA","CB 500 F","Navarra","Comunidad Foral de Navarra","471",3
-"HONDA","CB 500 F","Ourense","Galicia","471",1
-"HONDA","CB 500 F","Palmas (Las)","Canarias","471",1
-"HONDA","CB 500 F","Pontevedra","Galicia","471",3
+"HONDA","CB 500 F","Murcia","Región de Murcia","471",6
+"HONDA","CB 500 F","Navarra","Comunidad Foral de Navarra","471",5
+"HONDA","CB 500 F","Ourense","Galicia","471",2
+"HONDA","CB 500 F","Palmas (Las)","Canarias","471",7
+"HONDA","CB 500 F","Pontevedra","Galicia","471",5
 "HONDA","CB 500 F","Salamanca","Castilla y León","471",3
-"HONDA","CB 500 F","Santa Cruz de Tenerife","Canarias","471",5
-"HONDA","CB 500 F","Sevilla","Andalucía","471",7
-"HONDA","CB 500 F","Tarragona","Cataluña","471",5
+"HONDA","CB 500 F","Santa Cruz de Tenerife","Canarias","471",8
+"HONDA","CB 500 F","Sevilla","Andalucía","471",8
+"HONDA","CB 500 F","Tarragona","Cataluña","471",6
 "HONDA","CB 500 F","Toledo","Castilla-La Mancha","471",2
-"HONDA","CB 500 F","Valencia/València","Comunidad Valenciana","471",5
+"HONDA","CB 500 F","Valencia/València","Comunidad Valenciana","471",12
 "HONDA","CB 500 F","Valladolid","Castilla y León","471",3
 "HONDA","CB 500 F","Zamora","Castilla y León","471",1
-"HONDA","CB 500 F","Zaragoza","Aragón","471",3
+"HONDA","CB 500 F","Zaragoza","Aragón","471",5
 "HONDA","CB1000","Alicante/Alacant","Comunidad Valenciana","1000",2
 "HONDA","CB1000","Barcelona","Cataluña","1000",9
 "HONDA","CB1000","Cádiz","Andalucía","1000",1
@@ -4334,38 +4347,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","CB1000SP","Pontevedra","Galicia","1000",1
 "HONDA","CB1000SP","Santa Cruz de Tenerife","Canarias","1000",5
 "HONDA","CB1000SP","Sevilla","Andalucía","1000",1
-"HONDA","CB500FAC","Álava/Araba","País Vasco","471",1
-"HONDA","CB500FAC","Alicante/Alacant","Comunidad Valenciana","471",2
-"HONDA","CB500FAC","Almería","Andalucía","471",1
-"HONDA","CB500FAC","Asturias","Principado de Asturias","471",2
-"HONDA","CB500FAC","Badajoz","Extremadura","471",1
-"HONDA","CB500FAC","Barcelona","Cataluña","471",41
-"HONDA","CB500FAC","Bizkaia","País Vasco","471",5
-"HONDA","CB500FAC","Cádiz","Andalucía","471",1
-"HONDA","CB500FAC","Cantabria","Cantabria","471",1
-"HONDA","CB500FAC","Castellón/Castelló","Comunidad Valenciana","471",1
-"HONDA","CB500FAC","Ciudad Real","Castilla-La Mancha","471",1
-"HONDA","CB500FAC","Córdoba","Andalucía","471",1
-"HONDA","CB500FAC","Gipuzkoa","País Vasco","471",1
-"HONDA","CB500FAC","Girona","Cataluña","471",5
-"HONDA","CB500FAC","Granada","Andalucía","471",4
-"HONDA","CB500FAC","Huelva","Andalucía","471",1
-"HONDA","CB500FAC","Illes Balears","Illes Balears","471",3
-"HONDA","CB500FAC","Jaén","Andalucía","471",1
-"HONDA","CB500FAC","León","Castilla y León","471",3
-"HONDA","CB500FAC","Lleida","Cataluña","471",1
-"HONDA","CB500FAC","Madrid","Comunidad de Madrid","471",12
-"HONDA","CB500FAC","Málaga","Andalucía","471",11
-"HONDA","CB500FAC","Murcia","Región de Murcia","471",1
-"HONDA","CB500FAC","Navarra","Comunidad Foral de Navarra","471",2
-"HONDA","CB500FAC","Ourense","Galicia","471",1
-"HONDA","CB500FAC","Palmas (Las)","Canarias","471",6
-"HONDA","CB500FAC","Pontevedra","Galicia","471",2
-"HONDA","CB500FAC","Santa Cruz de Tenerife","Canarias","471",3
-"HONDA","CB500FAC","Sevilla","Andalucía","471",1
-"HONDA","CB500FAC","Tarragona","Cataluña","471",1
-"HONDA","CB500FAC","Valencia/València","Comunidad Valenciana","471",7
-"HONDA","CB500FAC","Zaragoza","Aragón","471",2
 "HONDA","CB650RA","Álava/Araba","País Vasco","649",3
 "HONDA","CB650RA","Albacete","Castilla-La Mancha","649",3
 "HONDA","CB650RA","Alicante/Alacant","Comunidad Valenciana","649",21
@@ -8817,131 +8798,135 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "KYMCO","AK 550","Valencia/València","Comunidad Valenciana","550",1
 "KYMCO","AK 550","Valladolid","Castilla y León","550",1
 "KYMCO","DTX","Álava/Araba","País Vasco","124",1
-"KYMCO","DTX","Albacete","Castilla-La Mancha","124",26
-"KYMCO","DTX","Alicante/Alacant","Comunidad Valenciana","124",73
-"KYMCO","DTX","Almería","Andalucía","124",31
-"KYMCO","DTX","Asturias","Principado de Asturias","124",36
-"KYMCO","DTX","Badajoz","Extremadura","124",24
-"KYMCO","DTX","Barcelona","Cataluña","124",167
-"KYMCO","DTX","Bizkaia","País Vasco","124",37
-"KYMCO","DTX","Burgos","Castilla y León","124",1
-"KYMCO","DTX","Cáceres","Extremadura","124",9
-"KYMCO","DTX","Cádiz","Andalucía","124",69
-"KYMCO","DTX","Cantabria","Cantabria","124",16
-"KYMCO","DTX","Castellón/Castelló","Comunidad Valenciana","124",10
-"KYMCO","DTX","Ciudad Real","Castilla-La Mancha","124",7
-"KYMCO","DTX","Córdoba","Andalucía","124",11
-"KYMCO","DTX","Coruña (A)","Galicia","124",22
-"KYMCO","DTX","Cuenca","Castilla-La Mancha","124",3
-"KYMCO","DTX","Gipuzkoa","País Vasco","124",6
-"KYMCO","DTX","Girona","Cataluña","124",12
-"KYMCO","DTX","Granada","Andalucía","124",45
+"KYMCO","DTX","Albacete","Castilla-La Mancha","124",9
+"KYMCO","DTX","Alicante/Alacant","Comunidad Valenciana","124",17
+"KYMCO","DTX","Almería","Andalucía","124",9
+"KYMCO","DTX","Asturias","Principado de Asturias","124",12
+"KYMCO","DTX","Badajoz","Extremadura","124",7
+"KYMCO","DTX","Barcelona","Cataluña","124",70
+"KYMCO","DTX","Bizkaia","País Vasco","124",10
+"KYMCO","DTX","Cáceres","Extremadura","124",5
+"KYMCO","DTX","Cádiz","Andalucía","124",28
+"KYMCO","DTX","Cantabria","Cantabria","124",4
+"KYMCO","DTX","Castellón/Castelló","Comunidad Valenciana","124",3
+"KYMCO","DTX","Ciudad Real","Castilla-La Mancha","124",1
+"KYMCO","DTX","Córdoba","Andalucía","124",6
+"KYMCO","DTX","Coruña (A)","Galicia","124",9
+"KYMCO","DTX","Cuenca","Castilla-La Mancha","124",2
+"KYMCO","DTX","Gipuzkoa","País Vasco","124",3
+"KYMCO","DTX","Girona","Cataluña","124",3
+"KYMCO","DTX","Granada","Andalucía","124",20
 "KYMCO","DTX","Guadalajara","Castilla-La Mancha","124",1
-"KYMCO","DTX","Huelva","Andalucía","124",25
+"KYMCO","DTX","Huelva","Andalucía","124",10
 "KYMCO","DTX","Huesca","Aragón","124",1
-"KYMCO","DTX","Illes Balears","Illes Balears","124",61
-"KYMCO","DTX","Jaén","Andalucía","124",24
-"KYMCO","DTX","León","Castilla y León","124",5
-"KYMCO","DTX","Lleida","Cataluña","124",7
-"KYMCO","DTX","Madrid","Comunidad de Madrid","124",85
-"KYMCO","DTX","Málaga","Andalucía","124",79
-"KYMCO","DTX","Murcia","Región de Murcia","124",80
-"KYMCO","DTX","Navarra","Comunidad Foral de Navarra","124",10
-"KYMCO","DTX","Ourense","Galicia","124",10
-"KYMCO","DTX","Palmas (Las)","Canarias","124",18
-"KYMCO","DTX","Pontevedra","Galicia","124",13
-"KYMCO","DTX","Rioja (La)","La Rioja","124",6
-"KYMCO","DTX","Salamanca","Castilla y León","124",3
-"KYMCO","DTX","Santa Cruz de Tenerife","Canarias","124",33
-"KYMCO","DTX","Segovia","Castilla y León","124",2
-"KYMCO","DTX","Sevilla","Andalucía","124",54
+"KYMCO","DTX","Illes Balears","Illes Balears","124",23
+"KYMCO","DTX","Jaén","Andalucía","124",6
+"KYMCO","DTX","León","Castilla y León","124",1
+"KYMCO","DTX","Lleida","Cataluña","124",2
+"KYMCO","DTX","Madrid","Comunidad de Madrid","124",21
+"KYMCO","DTX","Málaga","Andalucía","124",37
+"KYMCO","DTX","Murcia","Región de Murcia","124",30
+"KYMCO","DTX","Navarra","Comunidad Foral de Navarra","124",4
+"KYMCO","DTX","Ourense","Galicia","124",2
+"KYMCO","DTX","Palmas (Las)","Canarias","124",6
+"KYMCO","DTX","Pontevedra","Galicia","124",1
+"KYMCO","DTX","Rioja (La)","La Rioja","124",2
+"KYMCO","DTX","Salamanca","Castilla y León","124",1
+"KYMCO","DTX","Santa Cruz de Tenerife","Canarias","124",13
+"KYMCO","DTX","Sevilla","Andalucía","124",14
 "KYMCO","DTX","Soria","Castilla y León","124",1
-"KYMCO","DTX","Tarragona","Cataluña","124",44
+"KYMCO","DTX","Tarragona","Cataluña","124",18
 "KYMCO","DTX","Teruel","Aragón","124",1
-"KYMCO","DTX","Toledo","Castilla-La Mancha","124",10
-"KYMCO","DTX","Valencia/València","Comunidad Valenciana","124",105
-"KYMCO","DTX","Valladolid","Castilla y León","124",8
-"KYMCO","DTX","Zamora","Castilla y León","124",2
-"KYMCO","DTX","Zaragoza","Aragón","124",23
+"KYMCO","DTX","Toledo","Castilla-La Mancha","124",1
+"KYMCO","DTX","Valencia/València","Comunidad Valenciana","124",33
+"KYMCO","DTX","Valladolid","Castilla y León","124",3
+"KYMCO","DTX","Zamora","Castilla y León","124",1
+"KYMCO","DTX","Zaragoza","Aragón","124",6
 "KYMCO","DTX 125","Álava/Araba","País Vasco","124",2
-"KYMCO","DTX 125","Albacete","Castilla-La Mancha","124",11
-"KYMCO","DTX 125","Alicante/Alacant","Comunidad Valenciana","124",26
-"KYMCO","DTX 125","Almería","Andalucía","124",19
-"KYMCO","DTX 125","Asturias","Principado de Asturias","124",25
-"KYMCO","DTX 125","Badajoz","Extremadura","124",8
-"KYMCO","DTX 125","Barcelona","Cataluña","124",71
-"KYMCO","DTX 125","Bizkaia","País Vasco","124",14
+"KYMCO","DTX 125","Albacete","Castilla-La Mancha","124",24
+"KYMCO","DTX 125","Alicante/Alacant","Comunidad Valenciana","124",59
+"KYMCO","DTX 125","Almería","Andalucía","124",31
+"KYMCO","DTX 125","Asturias","Principado de Asturias","124",39
+"KYMCO","DTX 125","Badajoz","Extremadura","124",19
+"KYMCO","DTX 125","Barcelona","Cataluña","124",123
+"KYMCO","DTX 125","Bizkaia","País Vasco","124",31
 "KYMCO","DTX 125","Burgos","Castilla y León","124",1
-"KYMCO","DTX 125","Cáceres","Extremadura","124",4
-"KYMCO","DTX 125","Cádiz","Andalucía","124",46
-"KYMCO","DTX 125","Cantabria","Cantabria","124",12
-"KYMCO","DTX 125","Castellón/Castelló","Comunidad Valenciana","124",3
-"KYMCO","DTX 125","Ciudad Real","Castilla-La Mancha","124",6
-"KYMCO","DTX 125","Córdoba","Andalucía","124",8
-"KYMCO","DTX 125","Coruña (A)","Galicia","124",7
-"KYMCO","DTX 125","Gipuzkoa","País Vasco","124",6
-"KYMCO","DTX 125","Girona","Cataluña","124",4
-"KYMCO","DTX 125","Granada","Andalucía","124",14
-"KYMCO","DTX 125","Huelva","Andalucía","124",13
-"KYMCO","DTX 125","Illes Balears","Illes Balears","124",26
-"KYMCO","DTX 125","Jaén","Andalucía","124",6
-"KYMCO","DTX 125","León","Castilla y León","124",4
-"KYMCO","DTX 125","Lleida","Cataluña","124",2
+"KYMCO","DTX 125","Cáceres","Extremadura","124",5
+"KYMCO","DTX 125","Cádiz","Andalucía","124",74
+"KYMCO","DTX 125","Cantabria","Cantabria","124",21
+"KYMCO","DTX 125","Castellón/Castelló","Comunidad Valenciana","124",6
+"KYMCO","DTX 125","Ciudad Real","Castilla-La Mancha","124",9
+"KYMCO","DTX 125","Córdoba","Andalucía","124",12
+"KYMCO","DTX 125","Coruña (A)","Galicia","124",15
+"KYMCO","DTX 125","Gipuzkoa","País Vasco","124",9
+"KYMCO","DTX 125","Girona","Cataluña","124",10
+"KYMCO","DTX 125","Granada","Andalucía","124",30
+"KYMCO","DTX 125","Huelva","Andalucía","124",25
+"KYMCO","DTX 125","Illes Balears","Illes Balears","124",48
+"KYMCO","DTX 125","Jaén","Andalucía","124",16
+"KYMCO","DTX 125","León","Castilla y León","124",8
+"KYMCO","DTX 125","Lleida","Cataluña","124",4
 "KYMCO","DTX 125","Lugo","Galicia","124",1
-"KYMCO","DTX 125","Madrid","Comunidad de Madrid","124",57
-"KYMCO","DTX 125","Málaga","Andalucía","124",48
-"KYMCO","DTX 125","Murcia","Región de Murcia","124",33
-"KYMCO","DTX 125","Navarra","Comunidad Foral de Navarra","124",2
-"KYMCO","DTX 125","Ourense","Galicia","124",3
+"KYMCO","DTX 125","Madrid","Comunidad de Madrid","124",89
+"KYMCO","DTX 125","Málaga","Andalucía","124",76
+"KYMCO","DTX 125","Murcia","Región de Murcia","124",64
+"KYMCO","DTX 125","Navarra","Comunidad Foral de Navarra","124",4
+"KYMCO","DTX 125","Ourense","Galicia","124",7
 "KYMCO","DTX 125","Palencia","Castilla y León","124",1
-"KYMCO","DTX 125","Palmas (Las)","Canarias","124",18
-"KYMCO","DTX 125","Pontevedra","Galicia","124",9
-"KYMCO","DTX 125","Rioja (La)","La Rioja","124",2
-"KYMCO","DTX 125","Salamanca","Castilla y León","124",1
-"KYMCO","DTX 125","Santa Cruz de Tenerife","Canarias","124",13
-"KYMCO","DTX 125","Sevilla","Andalucía","124",34
-"KYMCO","DTX 125","Tarragona","Cataluña","124",10
-"KYMCO","DTX 125","Toledo","Castilla-La Mancha","124",3
-"KYMCO","DTX 125","Valencia/València","Comunidad Valenciana","124",50
-"KYMCO","DTX 125","Zamora","Castilla y León","124",1
-"KYMCO","DTX 125","Zaragoza","Aragón","124",3
-"KYMCO","DTX 350","Albacete","Castilla-La Mancha","321",5
-"KYMCO","DTX 350","Alicante/Alacant","Comunidad Valenciana","321",22
-"KYMCO","DTX 350","Almería","Andalucía","321",10
-"KYMCO","DTX 350","Asturias","Principado de Asturias","321",14
-"KYMCO","DTX 350","Badajoz","Extremadura","321",4
-"KYMCO","DTX 350","Barcelona","Cataluña","321",61
-"KYMCO","DTX 350","Bizkaia","País Vasco","321",17
-"KYMCO","DTX 350","Cáceres","Extremadura","321",2
-"KYMCO","DTX 350","Cádiz","Andalucía","321",27
-"KYMCO","DTX 350","Cantabria","Cantabria","321",10
-"KYMCO","DTX 350","Castellón/Castelló","Comunidad Valenciana","321",6
+"KYMCO","DTX 125","Palmas (Las)","Canarias","124",26
+"KYMCO","DTX 125","Pontevedra","Galicia","124",16
+"KYMCO","DTX 125","Rioja (La)","La Rioja","124",3
+"KYMCO","DTX 125","Salamanca","Castilla y León","124",2
+"KYMCO","DTX 125","Santa Cruz de Tenerife","Canarias","124",26
+"KYMCO","DTX 125","Sevilla","Andalucía","124",59
+"KYMCO","DTX 125","Tarragona","Cataluña","124",24
+"KYMCO","DTX 125","Toledo","Castilla-La Mancha","124",9
+"KYMCO","DTX 125","Valencia/València","Comunidad Valenciana","124",101
+"KYMCO","DTX 125","Valladolid","Castilla y León","124",4
+"KYMCO","DTX 125","Zamora","Castilla y León","124",2
+"KYMCO","DTX 125","Zaragoza","Aragón","124",15
+"KYMCO","DTX 350","Albacete","Castilla-La Mancha","321",9
+"KYMCO","DTX 350","Alicante/Alacant","Comunidad Valenciana","321",45
+"KYMCO","DTX 350","Almería","Andalucía","321",20
+"KYMCO","DTX 350","Asturias","Principado de Asturias","321",24
+"KYMCO","DTX 350","Badajoz","Extremadura","321",10
+"KYMCO","DTX 350","Barcelona","Cataluña","321",106
+"KYMCO","DTX 350","Bizkaia","País Vasco","321",27
+"KYMCO","DTX 350","Burgos","Castilla y León","321",1
+"KYMCO","DTX 350","Cáceres","Extremadura","321",5
+"KYMCO","DTX 350","Cádiz","Andalucía","321",40
+"KYMCO","DTX 350","Cantabria","Cantabria","321",13
+"KYMCO","DTX 350","Castellón/Castelló","Comunidad Valenciana","321",10
 "KYMCO","DTX 350","Ceuta","Ceuta","321",1
-"KYMCO","DTX 350","Córdoba","Andalucía","321",2
-"KYMCO","DTX 350","Coruña (A)","Galicia","321",4
+"KYMCO","DTX 350","Ciudad Real","Castilla-La Mancha","321",3
+"KYMCO","DTX 350","Córdoba","Andalucía","321",3
+"KYMCO","DTX 350","Coruña (A)","Galicia","321",9
+"KYMCO","DTX 350","Cuenca","Castilla-La Mancha","321",1
 "KYMCO","DTX 350","Gipuzkoa","País Vasco","321",2
-"KYMCO","DTX 350","Girona","Cataluña","321",6
-"KYMCO","DTX 350","Granada","Andalucía","321",13
-"KYMCO","DTX 350","Huelva","Andalucía","321",2
-"KYMCO","DTX 350","Illes Balears","Illes Balears","321",14
-"KYMCO","DTX 350","Jaén","Andalucía","321",7
+"KYMCO","DTX 350","Girona","Cataluña","321",9
+"KYMCO","DTX 350","Granada","Andalucía","321",22
+"KYMCO","DTX 350","Huelva","Andalucía","321",5
+"KYMCO","DTX 350","Illes Balears","Illes Balears","321",30
+"KYMCO","DTX 350","Jaén","Andalucía","321",15
 "KYMCO","DTX 350","León","Castilla y León","321",3
-"KYMCO","DTX 350","Lleida","Cataluña","321",1
-"KYMCO","DTX 350","Madrid","Comunidad de Madrid","321",38
-"KYMCO","DTX 350","Málaga","Andalucía","321",26
-"KYMCO","DTX 350","Murcia","Región de Murcia","321",16
-"KYMCO","DTX 350","Navarra","Comunidad Foral de Navarra","321",5
-"KYMCO","DTX 350","Ourense","Galicia","321",3
-"KYMCO","DTX 350","Palmas (Las)","Canarias","321",8
-"KYMCO","DTX 350","Pontevedra","Galicia","321",3
-"KYMCO","DTX 350","Rioja (La)","La Rioja","321",2
-"KYMCO","DTX 350","Salamanca","Castilla y León","321",1
-"KYMCO","DTX 350","Santa Cruz de Tenerife","Canarias","321",12
-"KYMCO","DTX 350","Sevilla","Andalucía","321",19
-"KYMCO","DTX 350","Tarragona","Cataluña","321",10
-"KYMCO","DTX 350","Toledo","Castilla-La Mancha","321",3
-"KYMCO","DTX 350","Valencia/València","Comunidad Valenciana","321",28
-"KYMCO","DTX 350","Zaragoza","Aragón","321",4
+"KYMCO","DTX 350","Lleida","Cataluña","321",4
+"KYMCO","DTX 350","Madrid","Comunidad de Madrid","321",70
+"KYMCO","DTX 350","Málaga","Andalucía","321",40
+"KYMCO","DTX 350","Murcia","Región de Murcia","321",35
+"KYMCO","DTX 350","Navarra","Comunidad Foral de Navarra","321",9
+"KYMCO","DTX 350","Ourense","Galicia","321",7
+"KYMCO","DTX 350","Palmas (Las)","Canarias","321",12
+"KYMCO","DTX 350","Pontevedra","Galicia","321",8
+"KYMCO","DTX 350","Rioja (La)","La Rioja","321",5
+"KYMCO","DTX 350","Salamanca","Castilla y León","321",2
+"KYMCO","DTX 350","Santa Cruz de Tenerife","Canarias","321",19
+"KYMCO","DTX 350","Segovia","Castilla y León","321",2
+"KYMCO","DTX 350","Sevilla","Andalucía","321",34
+"KYMCO","DTX 350","Tarragona","Cataluña","321",22
+"KYMCO","DTX 350","Toledo","Castilla-La Mancha","321",6
+"KYMCO","DTX 350","Valencia/València","Comunidad Valenciana","321",49
+"KYMCO","DTX 350","Valladolid","Castilla y León","321",1
+"KYMCO","DTX 350","Zaragoza","Aragón","321",9
 "KYMCO","PEOPLE S 125","Ceuta","Ceuta","125",1
 "KYMCO","PEOPLE S 125","Palmas (Las)","Canarias","125",1
 "KYMCO","PEOPLE S 125","Santa Cruz de Tenerife","Canarias","125",1

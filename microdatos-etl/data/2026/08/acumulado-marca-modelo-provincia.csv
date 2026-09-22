@@ -1132,9 +1132,17 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","CB 125 F","Valladolid","Castilla y León","124",1
 "HONDA","CB 125 F","Zaragoza","Aragón","124",1
 "HONDA","CB 500 F","Asturias","Principado de Asturias","471",1
-"HONDA","CB 500 F","Barcelona","Cataluña","471",1
+"HONDA","CB 500 F","Barcelona","Cataluña","471",4
+"HONDA","CB 500 F","Ciudad Real","Castilla-La Mancha","471",1
+"HONDA","CB 500 F","Gipuzkoa","País Vasco","471",1
+"HONDA","CB 500 F","Huelva","Andalucía","471",1
+"HONDA","CB 500 F","León","Castilla y León","471",2
 "HONDA","CB 500 F","Lleida","Cataluña","471",1
+"HONDA","CB 500 F","Madrid","Comunidad de Madrid","471",2
+"HONDA","CB 500 F","Málaga","Andalucía","471",2
 "HONDA","CB 500 F","Murcia","Región de Murcia","471",1
+"HONDA","CB 500 F","Navarra","Comunidad Foral de Navarra","471",1
+"HONDA","CB 500 F","Palmas (Las)","Canarias","471",2
 "HONDA","CB 500 F","Santa Cruz de Tenerife","Canarias","471",2
 "HONDA","CB 500 F","Sevilla","Andalucía","471",1
 "HONDA","CB1000","Barcelona","Cataluña","1000",2
@@ -1167,15 +1175,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","CB1000SP","León","Castilla y León","1000",1
 "HONDA","CB1000SP","Pontevedra","Galicia","1000",1
 "HONDA","CB1000SP","Sevilla","Andalucía","1000",1
-"HONDA","CB500FAC","Barcelona","Cataluña","471",3
-"HONDA","CB500FAC","Ciudad Real","Castilla-La Mancha","471",1
-"HONDA","CB500FAC","Gipuzkoa","País Vasco","471",1
-"HONDA","CB500FAC","Huelva","Andalucía","471",1
-"HONDA","CB500FAC","León","Castilla y León","471",2
-"HONDA","CB500FAC","Madrid","Comunidad de Madrid","471",2
-"HONDA","CB500FAC","Málaga","Andalucía","471",2
-"HONDA","CB500FAC","Navarra","Comunidad Foral de Navarra","471",1
-"HONDA","CB500FAC","Palmas (Las)","Canarias","471",2
 "HONDA","CB650RA","Alicante/Alacant","Comunidad Valenciana","649",2
 "HONDA","CB650RA","Barcelona","Cataluña","649",7
 "HONDA","CB650RA","Bizkaia","País Vasco","649",3
