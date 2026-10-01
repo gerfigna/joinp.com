@@ -13,6 +13,7 @@ const { writeAggregates, writeAnnualAggregate, monthDir, csvField, parseCsvLine 
 const { httpGet } = require('./lib/http');
 const { extractTxtFromZip } = require('./lib/zip');
 const { isMotorcycleRow, extractRowFields, isPlaceholderModel } = require('./lib/filter');
+const { updateMetadata } = require('./lib/metadata');
 
 async function fetchZipUrls() {
   console.log('Downloading listing HTML...');
@@ -120,12 +121,11 @@ function findLastDataDate() {
 }
 
 function writeMetadata() {
-  const metadata = {
+  // Merge so lastCompleteMonth (written by download-microdatos-mes.js) is preserved.
+  const metaPath = updateMetadata({
     lastRun: new Date().toISOString(),
     lastDataDate: findLastDataDate(),
-  };
-  const metaPath = path.join(DATA_DIR, 'metadata.json');
-  fs.writeFileSync(metaPath, JSON.stringify(metadata, null, 2) + '\n');
+  });
   console.log(`  Metadata written: ${metaPath}`);
 }
 

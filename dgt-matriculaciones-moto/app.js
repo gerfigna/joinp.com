@@ -513,11 +513,17 @@
         const metaRes = await fetch('/microdatos-etl/data/metadata.json');
         if (metaRes.ok) {
           const meta = await metaRes.json();
-          const d = new Date(meta.lastDataDate + 'T00:00:00');
-          const isLastDayOfMonth = new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate() === d.getDate();
-          // getMonth() is 0-indexed: mid-month date (e.g. June 19) → getMonth()=5 → last complete = May (5, 1-indexed).
-          // If lastDataDate IS the month's last day, that month itself is complete → getMonth()+1 (1-indexed).
-          lastCompleteMonthNum = Math.max(1, isLastDayOfMonth ? d.getMonth() + 1 : d.getMonth());
+          const [lcmYear, lcmMonth] = (meta.lastCompleteMonth || '').split('-').map(Number);
+          if (lcmYear === currentYear && lcmMonth >= 1) {
+            // Written by the monthly ETL once a month's aggregates exist.
+            lastCompleteMonthNum = lcmMonth;
+          } else {
+            const d = new Date(meta.lastDataDate + 'T00:00:00');
+            const isLastDayOfMonth = new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate() === d.getDate();
+            // getMonth() is 0-indexed: mid-month date (e.g. June 19) → getMonth()=5 → last complete = May (5, 1-indexed).
+            // If lastDataDate IS the month's last day, that month itself is complete → getMonth()+1 (1-indexed).
+            lastCompleteMonthNum = Math.max(1, isLastDayOfMonth ? d.getMonth() + 1 : d.getMonth());
+          }
         }
       } catch { }
       lastCompleteMonth = lastCompleteMonthNum;

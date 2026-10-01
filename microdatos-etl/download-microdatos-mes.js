@@ -21,6 +21,7 @@
  *   data/YYYY/MM/acumulado-potencia-mensual.csv  (RANGO_POTENCIA, COUNT)
  *   data/YYYY/acumulado-marca-anual.csv          (MARCA_ITV, COUNT)
  *   data/YYYY/acumulado-potencia-anual.csv       (RANGO_POTENCIA, COUNT)
+ *   data/metadata.json                           (lastCompleteMonth: "YYYY-MM")
  *
  * Idempotent: safe to run multiple times.
  */
@@ -32,6 +33,7 @@ const { extractTxtFromZip } = require('./lib/zip');
 const { isMotorcycleRow, extractPowerFields, extractRowFields, isPlaceholderModel } = require('./lib/filter');
 const { PowerAggregator, potenciaMonthlyPath } = require('./lib/power-aggregate');
 const { writeAggregates } = require('./lib/aggregate');
+const { updateMetadata, findLastCompleteMonth } = require('./lib/metadata');
 
 const DAILY_LISTING_URL =
   `https://www.dgt.es/menusecundario/dgt-en-cifras/matraba-listados/matriculaciones-automoviles-diario.html`;
@@ -265,6 +267,10 @@ async function main() {
     agg.writeAnnual(year);
     console.log(`  Done: acumulado-marca-anual.csv, acumulado-potencia-anual.csv`);
   }
+
+  const lastCompleteMonth = findLastCompleteMonth();
+  updateMetadata({ lastCompleteMonth });
+  console.log(`Metadata: lastCompleteMonth = ${lastCompleteMonth}`);
 
   console.log('Done.');
 }
