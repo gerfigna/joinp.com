@@ -2,7 +2,8 @@ name: Microdatos ETL
 
 on:
   schedule:
-    - cron: '0 9 * * *'
+    - cron: '7 9 * * *'
+      timezone: Europe/Madrid
   workflow_dispatch:
 
 jobs:
@@ -25,10 +26,6 @@ jobs:
       - name: Run ETL
         run: node download-microdatos.js
         working-directory: microdatos-etl
-
-#      - name: Run e-ETL
-#        run: node download-microdatos-electrica.js
-#        working-directory: microdatos-etl
 
       - name: Commit data changes
         run: |
