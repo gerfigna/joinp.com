@@ -2,7 +2,7 @@ name: Microdatos ETL
 
 on:
   schedule:
-    - cron: '7 9 * * *'
+    - cron: '23 6,7,8,9,10 * * *'
       timezone: Europe/Madrid
   workflow_dispatch:
 

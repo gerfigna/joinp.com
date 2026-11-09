@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-`joinp.com` is a GitHub Pages monorepo that publishes interactive dashboards about vehicle registrations in Spain using open data from the DGT (Dirección General de Tráfico). The main feature is a motorcycle registrations dashboard (`dgt-matriculaciones-moto/`) fed by a Node.js ETL (`microdatos-etl/`) that runs on a scheduled GitHub Actions workflow every 6 hours.
+`joinp.com` is a GitHub Pages monorepo that publishes interactive dashboards about vehicle registrations in Spain using open data from the DGT (Dirección General de Tráfico). The main feature is a motorcycle registrations dashboard (`dgt-matriculaciones-moto/`) fed by a Node.js ETL (`microdatos-etl/`) that runs on a scheduled GitHub Actions workflow every morning (Europe/Madrid).
 
 ---
 
@@ -33,7 +33,7 @@ joinp.com/
 │           └── acumulado-marca-modelo-provincia.csv # Monthly aggregation by brand + model + province
 ├── openspec/                           # SDD artifacts (legacy openspec, all archived)
 └── .github/workflows/
-    ├── microdatos-etl.yml              # Scheduled ETL every 6h + manual dispatch
+    ├── microdatos-etl.yml              # Scheduled ETL hourly 06:23–10:23 Madrid + manual dispatch
     ├── claude.yml                      # Claude Code bot (@claude in issues/PRs)
     └── claude-code-review.yml          # Automated PR review
 ```
@@ -65,7 +65,7 @@ Open `dgt-matriculaciones-moto/index.html` directly in a browser. The dashboard 
 
 ### CI/CD
 
-- The ETL workflow (`microdatos-etl.yml`) runs automatically every 6 hours. It commits new data directly to `main` with the message `"Update microdatos-etl data"`.
+- The ETL workflow (`microdatos-etl.yml`) runs automatically at :23 past every hour from 06:00 to 10:00 (Europe/Madrid). GitHub can delay scheduled runs by hours under load, so several morning attempts are scheduled; runs after the first one that picks up new data simply find nothing new and skip the commit. It commits new data directly to `main` with the message `"Update microdatos-etl data"`.
 
 ---
 
@@ -132,6 +132,6 @@ Shared ETL logic lives in `microdatos-etl/lib/`. Add new shared logic there, not
 
 - **Monorepo on GitHub Pages**: each sub-project is a self-contained directory. There is no separate backend or API.
 - **CSVs as the data contract**: the ETL writes CSVs; the dashboard reads them. Changing their schema requires updating both sides simultaneously.
-- **Scheduled ETL via GitHub Actions**: no external scheduler or database. Data freshness is limited to ~6-hour windows.
+- **Scheduled ETL via GitHub Actions**: no external scheduler or database. Data is refreshed once a day, in the morning; GitHub may delay scheduled runs, so exact run times are not guaranteed.
 - **No framework, no bundler**: keeps deployment trivial (push to `main` = live). Any change to the frontend is immediately reflected after the Pages deploy.
 - **Model normalization in ETL, not frontend**: normalization rules are centralized in `lib/normalize.js` to keep the frontend dumb and the data clean at rest.
