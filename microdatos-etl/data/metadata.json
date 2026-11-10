@@ -1,5 +1,8 @@
 {
   "lastRun": "2026-11-10T07:37:21.273Z",
   "lastDataDate": "2026-11-09",
-  "lastCompleteMonth": "2026-10"
+  "lastCompleteMonth": "2026-10",
+  "dailyReconstructedMonths": [
+    "2026-10"
+  ]
 }

@@ -9,12 +9,16 @@
  * registrations by brand and power range into monthly and annual CSV files.
  *
  * Month range: 2015/01 — previous month of current date.
- * Skips months where the monthly potencia CSV already exists
- * (independent per output file).
+ * Skips months where the monthly potencia CSV already exists, unless that CSV
+ * was reconstructed from daily ZIPs (metadata.dailyReconstructedMonths): those
+ * are retried against the monthly ZIP so the official data replaces them once
+ * DGT publishes it.
  *
- * Fallback: if the monthly ZIP is unavailable and the month is within the last
- * 2 months, downloads each available daily ZIP for that month from the DGT
- * daily listing and reconstructs both marca and potencia aggregates.
+ * Fallback: if the monthly ZIP is unpublished and the month is within the last
+ * 2 months, downloads the daily ZIPs of that month from the DGT daily listing
+ * and reconstructs marca, potencia and marca/modelo/provincia aggregates. Only
+ * done when ALL the dailies are available (the listing already contains a day
+ * of a later month) and every download succeeds; otherwise nothing is written.
  *
  * Outputs:
  *   data/YYYY/MM/acumulado-marca-mensual.csv     (MARCA_ITV, COUNT)
@@ -32,8 +36,8 @@ const { httpGet } = require('./lib/http');
 const { extractTxtFromZip } = require('./lib/zip');
 const { isMotorcycleRow, extractPowerFields, extractRowFields, isPlaceholderModel } = require('./lib/filter');
 const { PowerAggregator, potenciaMonthlyPath } = require('./lib/power-aggregate');
-const { writeAggregates } = require('./lib/aggregate');
-const { updateMetadata, findLastCompleteMonth } = require('./lib/metadata');
+const { writeAggregates, writeAnnualAggregate } = require('./lib/aggregate');
+const { readMetadata, updateMetadata, findLastCompleteMonth } = require('./lib/metadata');
 
 const DAILY_LISTING_URL =
   `https://www.dgt.es/menusecundario/dgt-en-cifras/matraba-listados/matriculaciones-automoviles-diario.html`;
@@ -58,30 +62,35 @@ function isRecentMonth(year, month) {
 
 /**
  * Fetches the DGT daily listing and returns ZIP URLs for the given year/month.
+ * `complete` is true when the listing also holds a day of a later month, i.e.
+ * every daily of the requested month has already been published.
  * @param {string} year
  * @param {string} month
- * @returns {Promise<string[]>}
+ * @returns {Promise<{ urls: string[], complete: boolean }>}
  */
 async function fetchDailyZipUrls(year, month) {
   const url = `${DAILY_LISTING_URL}?cachebust=${Date.now()}`;
   const html = (await httpGet(url)).toString('utf8');
   const listMatch = html.match(/<ul[^>]+id=["']listado["'][^>]*>([\s\S]*?)<\/ul>/i);
-  if (!listMatch) return [];
+  if (!listMatch) return { urls: [], complete: false };
 
   const prefix = `export_mat_${year}${month}`;
   const re = /href=["']([^"']*export_mat_\d{8}\.zip[^"']*)["']/gi;
   const seen = new Set();
   const urls = [];
+  let complete = false;
   let m;
   while ((m = re.exec(listMatch[1])) !== null) {
     const raw = m[1];
+    const ym = (raw.match(/export_mat_(\d{6})\d{2}\.zip/) || [])[1];
+    if (ym && ym > `${year}${month}`) complete = true;
     const resolved = raw.startsWith('http') ? raw : `https://www.dgt.es${raw}`;
     if (resolved.includes(prefix) && !seen.has(resolved)) {
       seen.add(resolved);
       urls.push(resolved);
     }
   }
-  return urls.sort();
+  return { urls: urls.sort(), complete };
 }
 
 /**
@@ -95,8 +104,9 @@ async function processMonthFromDailyZips(year, month) {
   const label = `${year}/${month}`;
   console.log(`  Fetching daily ZIP URLs for ${label}…`);
   let dailyUrls;
+  let complete;
   try {
-    dailyUrls = await fetchDailyZipUrls(year, month);
+    ({ urls: dailyUrls, complete } = await fetchDailyZipUrls(year, month));
   } catch (err) {
     console.error(`  ERROR fetching daily listing: ${err.message}`);
     return false;
@@ -104,6 +114,11 @@ async function processMonthFromDailyZips(year, month) {
 
   if (dailyUrls.length === 0) {
     console.log(`  No daily ZIPs found for ${label} in listing`);
+    return false;
+  }
+
+  if (!complete) {
+    console.log(`  Daily ZIPs for ${label} are not complete yet (no later day in listing) — skipping`);
     return false;
   }
 
@@ -120,15 +135,15 @@ async function processMonthFromDailyZips(year, month) {
     try {
       zipBuf = await httpGet(url);
     } catch (err) {
-      console.log(`ERROR (${err.message}) — skipping`);
-      continue;
+      console.log(`ERROR (${err.message}) — aborting reconstruction`);
+      return false;
     }
     let txt;
     try {
       txt = extractTxtFromZip(zipBuf);
     } catch (err) {
-      console.log(`ERROR extracting ZIP (${err.message}) — skipping`);
-      continue;
+      console.log(`ERROR extracting ZIP (${err.message}) — aborting reconstruction`);
+      return false;
     }
     let count = 0;
     for (const line of txt.split('\n')) {
@@ -157,6 +172,10 @@ async function processMonthFromDailyZips(year, month) {
 
   aggregator.writeMonthly(year, month);
   writeAggregates(year, month, provinciaData);
+  const ym = `${year}-${month}`;
+  const reconstructed = new Set(readMetadata().dailyReconstructedMonths || []);
+  reconstructed.add(ym);
+  updateMetadata({ dailyReconstructedMonths: [...reconstructed].sort() });
   console.log(`  Reconstructed ${label} from ${dailyUrls.length} daily ZIPs (${totalValid} rows)`);
   return true;
 }
@@ -187,8 +206,8 @@ function allMonths() {
 async function processMonth(year, month) {
   const label = `${year}/${month}`;
 
-  // Independent skip check for each output
-  if (fs.existsSync(potenciaMonthlyPath(year, month))) {
+  const fromDailies = (readMetadata().dailyReconstructedMonths || []).includes(`${year}-${month}`);
+  if (fs.existsSync(potenciaMonthlyPath(year, month)) && !fromDailies) {
     console.log(`Skipping ${label} — monthly potencia CSV already exists`);
     return { validRows: 0, skippedRows: 0 };
   }
@@ -202,7 +221,9 @@ async function processMonth(year, month) {
     zipBuf = await httpGet(url);
   } catch (err) {
     console.error(`  ERROR downloading monthly ZIP for ${label}: ${err.message}`);
-    if (isRecentMonth(year, month)) {
+    if (fromDailies) {
+      console.log(`  Monthly ZIP not published yet — keeping aggregates reconstructed from dailies`);
+    } else if (isRecentMonth(year, month)) {
       console.log(`  Attempting fallback: reconstruct from daily ZIPs…`);
       await processMonthFromDailyZips(year, month);
     }
@@ -237,6 +258,11 @@ async function processMonth(year, month) {
   if (skippedRows > 0) console.log(`  ${skippedRows} filas omitidas (KW_ITV inválido)`);
 
   aggregator.writeMonthly(year, month);
+  if (fromDailies) {
+    // Official monthly data replaces the reconstruction: stop tracking it as daily-based.
+    const left = (readMetadata().dailyReconstructedMonths || []).filter((m) => m !== `${year}-${month}`);
+    updateMetadata({ dailyReconstructedMonths: left });
+  }
   return { validRows, skippedRows };
 }
 
@@ -249,8 +275,9 @@ async function main() {
   // whatever the daily ETL may have written to monthly CSVs since the last run.
   const currentYear = String(new Date().getFullYear());
   const processedYears = new Set([currentYear]);
+  const reconstructedMonths = new Set(readMetadata().dailyReconstructedMonths || []);
   for (const { year, month } of months) {
-    if (!fs.existsSync(potenciaMonthlyPath(year, month))) {
+    if (!fs.existsSync(potenciaMonthlyPath(year, month)) || reconstructedMonths.has(`${year}-${month}`)) {
       processedYears.add(year);
     }
   }
@@ -265,7 +292,8 @@ async function main() {
     console.log(`Reescribiendo acumulados anuales para ${year}…`);
     const agg = new PowerAggregator();
     agg.writeAnnual(year);
-    console.log(`  Done: acumulado-marca-anual.csv, acumulado-potencia-anual.csv`);
+    writeAnnualAggregate(year);
+    console.log(`  Done: acumulado-marca-anual.csv, acumulado-potencia-anual.csv, acumulado-marca-modelo-provincia-anual.csv`);
   }
 
   const lastCompleteMonth = findLastCompleteMonth();
