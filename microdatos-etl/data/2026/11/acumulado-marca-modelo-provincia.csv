@@ -710,6 +710,25 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HERO MOTOCORP","XOOM 125R ZX","Toledo","Castilla-La Mancha","125",1
 "HERO MOTOCORP","XOOM 125R ZX","Valencia/València","Comunidad Valenciana","125",3
 "HERO MOTOCORP","XOOM 125R ZX","Zaragoza","Aragón","125",2
+"HONDA","ADV 125","Álava/Araba","País Vasco","125",1
+"HONDA","ADV 125","Alicante/Alacant","Comunidad Valenciana","125",6
+"HONDA","ADV 125","Badajoz","Extremadura","125",1
+"HONDA","ADV 125","Barcelona","Cataluña","125",10
+"HONDA","ADV 125","Bizkaia","País Vasco","125",1
+"HONDA","ADV 125","Cádiz","Andalucía","125",11
+"HONDA","ADV 125","Castellón/Castelló","Comunidad Valenciana","125",1
+"HONDA","ADV 125","Córdoba","Andalucía","125",3
+"HONDA","ADV 125","Gipuzkoa","País Vasco","125",2
+"HONDA","ADV 125","Girona","Cataluña","125",5
+"HONDA","ADV 125","Granada","Andalucía","125",4
+"HONDA","ADV 125","Illes Balears","Illes Balears","125",2
+"HONDA","ADV 125","Lleida","Cataluña","125",1
+"HONDA","ADV 125","Madrid","Comunidad de Madrid","125",10
+"HONDA","ADV 125","Málaga","Andalucía","125",11
+"HONDA","ADV 125","Murcia","Región de Murcia","125",3
+"HONDA","ADV 125","Sevilla","Andalucía","125",2
+"HONDA","ADV 125","Tarragona","Cataluña","125",3
+"HONDA","ADV 125","Valencia/València","Comunidad Valenciana","125",5
 "HONDA","ADV 350","Alicante/Alacant","Comunidad Valenciana","330",6
 "HONDA","ADV 350","Almería","Andalucía","330",2
 "HONDA","ADV 350","Asturias","Principado de Asturias","330",6
@@ -762,25 +781,6 @@ MARCA_ITV,MODELO_ITV,PROVINCIA_VEH,COMUNIDAD_AUTONOMA,CILINDRADA_ITV,COUNT
 "HONDA","ADV 750","Santa Cruz de Tenerife","Canarias","745",5
 "HONDA","ADV 750","Sevilla","Andalucía","745",8
 "HONDA","ADV 750","Valencia/València","Comunidad Valenciana","745",2
-"HONDA","ADV125A","Álava/Araba","País Vasco","125",1
-"HONDA","ADV125A","Alicante/Alacant","Comunidad Valenciana","125",6
-"HONDA","ADV125A","Badajoz","Extremadura","125",1
-"HONDA","ADV125A","Barcelona","Cataluña","125",10
-"HONDA","ADV125A","Bizkaia","País Vasco","125",1
-"HONDA","ADV125A","Cádiz","Andalucía","125",11
-"HONDA","ADV125A","Castellón/Castelló","Comunidad Valenciana","125",1
-"HONDA","ADV125A","Córdoba","Andalucía","125",3
-"HONDA","ADV125A","Gipuzkoa","País Vasco","125",2
-"HONDA","ADV125A","Girona","Cataluña","125",5
-"HONDA","ADV125A","Granada","Andalucía","125",4
-"HONDA","ADV125A","Illes Balears","Illes Balears","125",2
-"HONDA","ADV125A","Lleida","Cataluña","125",1
-"HONDA","ADV125A","Madrid","Comunidad de Madrid","125",10
-"HONDA","ADV125A","Málaga","Andalucía","125",11
-"HONDA","ADV125A","Murcia","Región de Murcia","125",3
-"HONDA","ADV125A","Sevilla","Andalucía","125",2
-"HONDA","ADV125A","Tarragona","Cataluña","125",3
-"HONDA","ADV125A","Valencia/València","Comunidad Valenciana","125",5
 "HONDA","C125A","Barcelona","Cataluña","124",2
 "HONDA","C125A","Illes Balears","Illes Balears","124",1
 "HONDA","CB 125 F","Alicante/Alacant","Comunidad Valenciana","124",1

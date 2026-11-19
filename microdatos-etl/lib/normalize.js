@@ -42,6 +42,7 @@ const BRAND_EXACT = {
         'NSC110': 'VISION 110',
         'XL750C': 'XL750 Transalp',
         'XL750': 'XL750 Transalp',
+        'ADV125A': 'ADV 125',
         'ADV350A': 'ADV 350',
         'ADV750': 'ADV 750',
         'NSS350A': 'FORZA 350',
